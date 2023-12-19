@@ -1,0 +1,125 @@
+@media screen and (min-width: 1042px) {
+  .additional-resources {
+    &__wrapper {
+      .resources-card {
+        justify-content: space-between;
+        .resources-card__inner {
+          min-height: 550px;
+        }
+      }
+    }
+  }
+}
+.additional-resources {
+  padding: 120px 0;
+  &__wrapper {
+    &_heading {
+      font-family: "Nova-400";
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 63px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1d2228;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+    &_content {
+      font-family: "Nova-300";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1d2228;
+      max-width: 570px;
+      margin: 0 auto;
+      margin-bottom: 48px;
+    }
+    .resources-card {
+      max-width: 1290px;
+      width: 100%;
+      display: flex;
+      gap: 30px;
+
+      .resources-card__inner {
+        max-width: 410px;
+        width: 100%;
+        min-height: 550px;
+        padding: 20px 20px 30px 20px;
+        background-color: #fff;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+
+        &_img {
+          max-width: 370px;
+          width: 100%;
+          margin-bottom: 12px;
+        }
+        &_heading {
+          font-family: "Nova-700";
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1d2228;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+        &_content {
+          font-family: "Nova-300";
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 22px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1d2228;
+          margin-bottom: 20px;
+        }
+        &_button {
+          height: 50px;
+          padding: 0 35px;
+          border: 1px solid #5491d6;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: max-content;
+          .btn {
+            text-align: center;
+            font-family: "Nova-700";
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0em;
+            color: #5491d6;
+            text-transform: uppercase;
+          }
+          &:hover {
+            color: rgba(84, 145, 214, 1);
+            background-color: #5491d6;
+          }
+          &:hover a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1041px) {
+  .additional-resources {
+    &__wrapper {
+      .resources-card {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+}
+
+
+
+

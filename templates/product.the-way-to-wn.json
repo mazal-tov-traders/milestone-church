@@ -1,0 +1,345 @@
+{
+  "sections": {
+    "b332fabc-0cff-465b-9bfa-77de1c18a3e9": {
+      "type": "Image-banner-product-thewin",
+      "blocks": {
+        "d8aaaab8-6f34-49b9-b3c2-a9c4ee5c1258": {
+          "type": "content",
+          "settings": {
+            "content": "Coaching & Developing MENIN MATTERS OF Life & Faith"
+          }
+        },
+        "8bee47b5-27a5-4b8c-bce1-39033ca014a3": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy The Book",
+            "button_link_1": "#thewaytowin"
+          }
+        }
+      },
+      "block_order": [
+        "d8aaaab8-6f34-49b9-b3c2-a9c4ee5c1258",
+        "8bee47b5-27a5-4b8c-bce1-39033ca014a3"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Rectangle_4133714_2.jpg",
+        "hero_image": "shopify:\/\/shop_images\/TitleTransparent_1_1.png",
+        "secon_class": "thewinnn"
+      }
+    },
+    "bcef8fdb-4d85-48f2-ae16-41d151047c2d": {
+      "type": "section-author-post",
+      "blocks": {
+        "c6c7bc73-fb14-4def-8be5-8d95644d68ee": {
+          "type": "author",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1211969.png",
+            "heading": "<p>FOREWORD BY JOHN MAXWELL<\/p>"
+          }
+        },
+        "827b0b74-d468-4aa8-8d1e-7b769cec2d54": {
+          "type": "content",
+          "settings": {
+            "content": "<p>“<strong>The Way to Win<\/strong> provides us with clear and practical insights that can make a significant impact on those you influence. Life is not a game, but I do believe it’s possible to win in life. Not because you’re making someone else lose but because you’re competing with yourself to become the best version of who you are. You’re reaching your maximum potential and experiencing the life God created you to live.”<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c6c7bc73-fb14-4def-8be5-8d95644d68ee",
+        "827b0b74-d468-4aa8-8d1e-7b769cec2d54"
+      ],
+      "settings": {
+        "secon_class": "thewinnn"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "description",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "right",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "e0ce6000-a201-427c-b418-b1e455efe299": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>GROWTH AND DEVELOPMENT GUIDEFOR MEN<\/strong>"
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "31965910-c30d-40c9-955f-d28368ae3ed5": {
+          "type": "description",
+          "settings": {
+            "description": "<ul><li>Coaching for personal, spiritual, and professional areas of life<\/li><li>Concise and practical chapters<\/li><li>Helpful questions and leadership challenges<\/li><li>Great for groups or the individual reader<\/li><\/ul>"
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "8ec1482c-6fd5-4ee1-a430-fc9d2d95077c": {
+          "type": "content",
+          "settings": {
+            "content": "25% discount when you buy 10 or more books"
+          }
+        },
+        "4efa4abd-17f9-4962-b188-3c23177f35ba": {
+          "type": "button-link",
+          "settings": {
+            "button_link1": "https:\/\/www.amazon.com\/Way-Win-Coaching-Developing-Matters\/dp\/0578670038",
+            "icon_button1": "shopify:\/\/shop_images\/image_8_2.png",
+            "button_link2": "https:\/\/www.audible.com\/pd\/The-Way-to-Win-Audiobook\/B09RG7Q5H5",
+            "icon_button2": "shopify:\/\/shop_images\/image_2_1.png"
+          }
+        },
+        "9194a408-007d-4456-a769-061017e3d0a1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other ways to buy<\/p>"
+          }
+        },
+        "01d84b51-48b0-4b19-b936-ef982e604daa": {
+          "type": "image-product",
+          "settings": {
+            "image_product": "shopify:\/\/shop_images\/Rectangle_4133735.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e0ce6000-a201-427c-b418-b1e455efe299",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1",
+        "31965910-c30d-40c9-955f-d28368ae3ed5",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1",
+        "8ec1482c-6fd5-4ee1-a430-fc9d2d95077c",
+        "4efa4abd-17f9-4962-b188-3c23177f35ba",
+        "9194a408-007d-4456-a769-061017e3d0a1",
+        "01d84b51-48b0-4b19-b936-ef982e604daa"
+      ],
+      "settings": {
+        "product": "the-way-to-win",
+        "id_for_anchor": "thewaytowin",
+        "class": "towin",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "hide_variants": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "6283d730-9992-475f-83a2-d7e8557346f6": {
+      "type": "two-pictures",
+      "blocks": {
+        "af9d9770-a060-4ccb-9275-888a28651e90": {
+          "type": "bannerleft",
+          "settings": {
+            "banner_left": "shopify:\/\/shop_images\/1_1.png"
+          }
+        },
+        "2745ba6e-9db4-49ab-bedd-414d26eade19": {
+          "type": "bannerright",
+          "settings": {
+            "banner_right": "shopify:\/\/shop_images\/25years_1.png"
+          }
+        },
+        "15c07e74-0af9-4bf0-ba43-dbc0780cf38a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "sample chapter",
+            "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/WTW_Sample_Chapter.pdf?v=1702642545"
+          }
+        }
+      },
+      "block_order": [
+        "af9d9770-a060-4ccb-9275-888a28651e90",
+        "2745ba6e-9db4-49ab-bedd-414d26eade19",
+        "15c07e74-0af9-4bf0-ba43-dbc0780cf38a"
+      ],
+      "settings": {
+        "class_name": "towin",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_4.jpg",
+        "position_content": true
+      }
+    },
+    "fcb92fd6-252b-4aa4-bec4-d92b3ecd55e5": {
+      "type": "about-pastor",
+      "blocks": {
+        "219bd3ea-1a78-44cd-9755-76323e59f6e7": {
+          "type": "authors_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133725_5.jpg"
+          }
+        },
+        "f25f812a-6a65-4b01-baee-dbdd2691fb45": {
+          "type": "content",
+          "settings": {
+            "heading": "About",
+            "text": "<p>Pastor Jeff<\/p>",
+            "content": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "219bd3ea-1a78-44cd-9755-76323e59f6e7",
+        "f25f812a-6a65-4b01-baee-dbdd2691fb45"
+      ],
+      "settings": {
+        "heading": "about"
+      }
+    },
+    "f797c95d-1156-474c-b1d7-936b81d113cd": {
+      "type": "featured-collection",
+      "blocks": {
+        "43b523a0-36ac-4d40-95fc-676780d1ed1c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View all Books",
+            "button_link_1": "shopify:\/\/pages\/books"
+          }
+        }
+      },
+      "block_order": [
+        "43b523a0-36ac-4d40-95fc-676780d1ed1c"
+      ],
+      "settings": {
+        "title": "Other Resources",
+        "class": "",
+        "heading_size": "h1",
+        "description": "<p>You May Enjoy<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "you-may-enjoy",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "b332fabc-0cff-465b-9bfa-77de1c18a3e9",
+    "bcef8fdb-4d85-48f2-ae16-41d151047c2d",
+    "main",
+    "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a",
+    "related-products",
+    "6283d730-9992-475f-83a2-d7e8557346f6",
+    "fcb92fd6-252b-4aa4-bec4-d92b3ecd55e5",
+    "f797c95d-1156-474c-b1d7-936b81d113cd"
+  ]
+}

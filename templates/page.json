@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Milestone Resources",
+            "heading_size": "h0"
+          }
+        },
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Books",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1",
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_4133714_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "3cb4dbdb-bf86-4f71-9b9b-debee28f3913": {
+      "type": "custom-announcement-bar",
+      "settings": {
+        "main_text": "FREE EXCLUSIVE CONTENT FROM 'THE WAY TO WIN'",
+        "button_cross_svg": "<svg width=\"8\" height=\"8\" viewbox=\"0 0 8 8\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_46_838)\">\n<path d=\"M0.637615 7.75002C0.538822 7.75002 0.440028 7.71244 0.364968 7.63682C0.214282 7.48613 0.214282 7.24183 0.364968 7.09114L7.0931 0.363015C7.24378 0.212329 7.48808 0.212329 7.63877 0.363015C7.78946 0.513701 7.78946 0.758 7.63877 0.90878L0.910734 7.63682C0.835108 7.71197 0.736315 7.75002 0.637615 7.75002Z\" fill=\"#E5BE5E\"><\/path>\n<path d=\"M7.36622 7.75002C7.26742 7.75002 7.16872 7.71244 7.09357 7.63682L0.364968 0.90878C0.214282 0.758 0.214282 0.513701 0.364968 0.363015C0.515654 0.212329 0.759953 0.212329 0.910734 0.363015L7.63877 7.09114C7.78946 7.24183 7.78946 7.48613 7.63877 7.63682C7.56314 7.71197 7.46445 7.75002 7.36622 7.75002Z\" fill=\"#E5BE5E\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_46_838\">\n<rect width=\"7.5\" height=\"7.5\" fill=\"white\" transform=\"translate(0.25 0.25)\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "312ece60-bcd2-430f-943a-5c14c6f1cdbd": {
+          "type": "drower_menucontact",
+          "settings": {
+            "button_label_1": "CONTACT",
+            "button_link_1": "shopify:\/\/pages\/books",
+            "email": "<p>Info@resources.com<\/p>",
+            "phone": "<p>800-888-8686<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "312ece60-bcd2-430f-943a-5c14c6f1cdbd"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "heading_peage1": "<a href=\"\/pages\/books\" title=\"Books\">Books<\/a>",
+        "heading_peage2": "<a href=\"\/pages\/study-guides\" title=\"Study Guides\">Study Guides<\/a>",
+        "heading_peage3": "<a href=\"\/pages\/music\" title=\"Music\">Music<\/a>",
+        "heading_peage4": "<a href=\"https:\/\/www.connect.milestonechurch.com\/\" target=\"_blank\" title=\"Are You a Church?\">Are You a Church?<\/a>",
+        "menu": "drower-menu",
+        "menu_type_desktop": "drawer",
+        "sticky_header_type": "always",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "inverse",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 23,
+        "padding_bottom": 22
+      }
+    }
+  },
+  "order": [
+    "3cb4dbdb-bf86-4f71-9b9b-debee28f3913",
+    "header"
+  ]
+}

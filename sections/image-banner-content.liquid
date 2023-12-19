@@ -1,0 +1,156 @@
+<div class="banner banner-content {% if request.page_type != 'index' %}banner-img{% endif %} {{ page.title }}">
+  <div class="banner-innerr {{ section.settings.class }} {%- if section.settings.centered-content == true -%}banner-innerr-center{% endif %}">
+    <div class="page-width">
+      <div class="banner-innerr__box">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+              <h2 class="banner-innerr__box_heading">
+                {{ block.settings.heading }}
+              </h2>
+            {%- when 'content' -%}
+              {%- if block.settings.content != blank -%}
+                <div class="banner-innerr__box_text">
+                  <p>{{ block.settings.content }}</p>
+                </div>
+              {%- endif -%}
+            {%- when 'description' -%}
+              {%- if block.settings.description != blank -%}
+                <div class="banner-innerr__box_discription">
+                  <p>{{ block.settings.description }}</p>
+                </div>
+              {%- endif -%}
+            {%- when 'buttons' -%}
+              <div
+                class="banner-innerr__box_buttonss"
+              >
+                {%- if block.settings.button_label_1 != blank -%}
+                  <a
+                    {% if block.settings.button_link_1 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_1 }}"
+                    {% endif %}
+                    class="buttonn"
+                    id="{% if template == 'index' %}german{% else %}navigation-anchor__link{% endif %}"
+                  >
+                    {{- block.settings.button_label_1 | escape -}}
+                  </a>
+                {%- endif -%}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      {% if section.settings.hero_image != blank %}
+        <div class="banner-innerr__hero-image">
+          <img
+            src="{{ section.settings.hero_image | img_url: 'original' }}"
+            alt="image"
+            class="banner-innerr__hero-image_img"
+          >
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<style>
+  .banner-innerr.{{ section.settings.class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+</style>
+{% schema %}
+{
+  "name": "Banner + content blocks",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "class",
+      "label": "Second class for backgroun"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "checkbox",
+      "id": "centered-content",
+      "default": false,
+      "label": "Сentered Сontent"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "Content"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner + content blocks"
+    }
+  ]
+}
+{% endschema %}

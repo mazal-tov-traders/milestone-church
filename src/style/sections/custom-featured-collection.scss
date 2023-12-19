@@ -1,0 +1,109 @@
+.collection {
+  .card__information {
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+  }
+  .collection__title {
+    .title:not(:only-child) {
+      background-image: linear-gradient(90deg, transparent 96%, #e5be5e 0);
+      background-position: 0 56px;
+      background-repeat: no-repeat;
+      background-size: 51% 1px;
+      color: #e5be5e;
+      font-family: "Nova-700";
+      font-size: 20px;
+      letter-spacing: 0;
+      padding-bottom: 11px;
+      padding-top: 21px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .collection__description {
+      font-family: "Nova-400";
+      font-size: 50px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1d2228;
+      margin-top: 16px;
+      margin-bottom: 47px;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (min-width: 770px) {
+  .banner-innerr__box_buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 49px;
+      margin-top: 50px;
+    background: transparent;
+  
+    .buttonn {
+      font-family: "Nova-700";
+      font-size: 15px;
+      text-transform: uppercase;
+      color: rgba(84, 145, 214, 1);
+      border: 1px solid rgba(84, 145, 214, 1);
+      background-color: transparent;
+      padding: 11px 30px;
+      &:hover {
+        color: #fff;
+        background-color: rgba(84, 145, 214, 1);
+      }
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .banner-innerr__box_buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 49px;
+      margin-top: 50px;
+    background: transparent;
+  
+    .buttonn {
+      font-family: "Nova-700";
+      font-size: 15px;
+      text-transform: uppercase;
+      color: rgba(84, 145, 214, 1);
+      border: 1px solid rgba(84, 145, 214, 1);
+      background-color: transparent;
+      padding: 11px 30px;
+     
+    }
+}
+
+}
+color-background-2.isolate.gradient {
+  .collection {
+    margin-top: 4px;
+  }
+}
+color-background-1.isolate.gradient {
+  padding-bottom: 105px !important;
+}
+.collection__backgroun-fon{
+  padding-top: 105px;
+}
+
+@media screen and (max-width: 1340px) {
+  .grid:last-child {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .collection .grid__item.scroll-trigger.animate--slide-in {
+    padding: 20px;
+  }
+  .collection .collection__title .collection__description {
+    font-size: 30px;
+    font-family: "Nova-600";
+    margin-top: -7px;
+    margin-bottom: 0px;
+  }
+}
+

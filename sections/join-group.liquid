@@ -1,0 +1,151 @@
+<section id="{{ section.settings.id_for_anchor }}" class="join-group {{ section.settings.secon_class }}">
+  <div class="page-width">
+    <div class="join-group__wrapper">
+      {%- if section.settings.nubmer_navigat != blank -%}
+        <div class="join-group__wrapper_num-navi">{{ section.settings.nubmer_navigat }}</div>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <div class="join-group__wrapper_heading">{{ section.settings.heading }}</div>
+      {%- endif -%}
+      {%- if section.settings.content != blank -%}
+        <div class="join-group__wrapper_text">{{ section.settings.content }}</div>
+      {%- endif -%}
+      <div class="inner-box__block-content_btn-wrap">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'buttons' -%}
+              <div class="btn-wrap__button">
+                {%- if block.settings.button_label_1 != blank -%}
+                  <a
+                    {% if block.settings.button_link_1 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_1 }}"
+                    {% endif %}
+                    class="btn"
+                  >
+                    {{- block.settings.button_label_1 | escape -}}
+                  </a>
+                {%- endif -%}
+              </div>
+            {%- when 'buttonn' -%}
+              <div class="btn-wrap__button">
+                {%- if block.settings.button_label_2 != blank -%}
+                  <a
+                    {% if block.settings.button_link_2 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_2 }}"
+                    {% endif %}
+                    class="btn"
+                  >
+                    {{- block.settings.button_label_2 | escape -}}
+                  </a>
+                {%- endif -%}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .join-group.{{ section.settings.secon_class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1090px) {
+    .join-group{
+        height: 931px;
+    } 
+  }
+</style>
+{% schema %}
+{
+  "name": "join-group",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "nubmer_navigat",
+      "default": "1",
+      "label": "Section number for navigation"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Attend the series",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "id_for_anchor",
+      "label": "ID For Navigation Anchor"
+    },
+    {
+      "type": "text",
+      "id": "secon_class",
+      "default": "thewin",
+      "label": "class for image background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Button First",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "buttonn",
+      "name": "Button Second",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Join Group"
+    }
+  ]
+}
+{% endschema %}

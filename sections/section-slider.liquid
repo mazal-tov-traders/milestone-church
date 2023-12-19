@@ -1,0 +1,168 @@
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<div class="additional-wrapper">
+  <div class="slider-content page-width swiper">
+    <div class="slider-content__title">{{ section.settings.title }}</div>
+    <div class="slider-content__description">{{ section.settings.description }}</div>
+    <div class="slider-content__inner swiper-wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'post' %}
+            <div class="slider-content__wrapper swiper-slide">
+              <div class="slider-content__wrapper_header">
+                <div class="slider-content__iamge-heading-inner">
+                  {%- if block.settings.image != blank -%}
+                    <img
+                      src="{{ block.settings.image | img_url: 'original' }}"
+                      alt="image"
+                      class="slider-content__wrapper_header_image"
+                    >
+                  {% endif %}
+                  {%- if block.settings.heading != blank -%}
+                    <div class="slider-content__wrapper_header_heading">
+                      {{ block.settings.heading }}
+                    </div>
+                  {% endif %}
+                </div>
+                {%- if block.settings.heading != blank -%}
+                  {% render 'icon-quotation-mark' %}
+                {% endif %}
+              </div>
+              <div class="slider-content__wrapper_footer">
+                {%- if block.settings.content != blank -%}
+                  <div class="slider-content__wrapper_footer_content">
+                    {{ block.settings.content }}
+                  </div>
+                {% endif %}
+                {%- if block.settings.author != blank -%}
+                  <div class="slider-content__wrapper_footer_author">
+                    {{ block.settings.author }}
+                  </div>
+                {% endif %}
+                {%- if block.settings.date != blank -%}
+                  <div class="slider-content__wrapper_footer_date">
+                    {{ block.settings.date }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <div class="batton_wrapper page-width">
+    <div class="swiper-button-prev">
+      <svg class="swiper-button-fill" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 8.825L2.67341 5L7 1.175L5.66802 -5.82229e-08L2.18557e-07 5L5.66802 10L7 8.825Z"/>
+      </svg>
+    </div>
+    <div class="swiper-button-next">
+      <svg class="swiper-button-fill" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.13609e-08 8.825L4.32659 5L-3.85753e-07 1.175L1.33198 -5.82229e-08L7 5L1.33198 10L-5.13609e-08 8.825Z"/>
+      </svg>
+    </div>
+  </div>
+</div>
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.slider-content', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      slidePergroup: 1,
+      loop: true,
+      loopedSlides: 3,
+
+      lazy: {
+        enabled: true,
+        checkInView: true,
+        loadOnTransitionStart: true,
+        loadPrevNext: true,
+        loadPrevNextAmount: 1,
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        820: {
+          slidesPerView: 2,
+        },
+        1500: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Slider Content",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "post",
+      "name": "Post",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider Content"
+    }
+  ]
+}
+{% endschema %}

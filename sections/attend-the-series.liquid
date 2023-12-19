@@ -1,0 +1,237 @@
+<section id="{{ section.settings.id_for_anchor }}" class="attend-the-series {{ section.settings.secon_class }}">
+  <div class="page-width">
+    <div class="attend-the-series__wrapper">
+      {%- if section.settings.nubmer_navigat != blank -%}
+        <div class="attend-the-series__wrapper_num-navi">{{ section.settings.nubmer_navigat }}</div>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <div class="attend-the-series__wrapper_heading">{{ section.settings.heading }}</div>
+      {%- endif -%}
+      <div class="inner-box">
+        <div class="inner-box__block-content">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'title' -%}
+                {%- if block.settings.title != blank -%}
+                  <div class="inner-box__block-content_title">
+                    {{ block.settings.title }}
+                  </div>
+                {%- endif -%}
+              {%- when 'heading' -%}
+                {%- if block.settings.heading != blank -%}
+                  <div class="inner-box__block-content_heading">
+                    {{ block.settings.heading }}
+                  </div>
+                {%- endif -%}
+              {%- when 'content' -%}
+                {%- if block.settings.content != blank -%}
+                  <div class="inner-box__block-content_text">
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+          <div class="inner-box__block-content_btn-wrap">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'buttons' -%}
+                  <div class="btn-wrap__button">
+                    {%- if block.settings.button_label_1 != blank -%}
+                      <a
+                        {% if block.settings.button_link_1 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_1 }}"
+                        {% endif %}
+                        class="btn"
+                        target="_blank"
+                      >
+                        {{- block.settings.button_label_1 | escape -}}
+                      </a>
+                    {%- endif -%}
+                  </div>
+                {%- when 'buttonn' -%}
+                  <div class="btn-wrap__button">
+                    {%- if block.settings.button_label_2 != blank -%}
+                      <a
+                        {% if block.settings.button_link_2 == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link_2 }}"
+                        {% endif %}
+                        class="btn"
+                        target="_blank"
+                      >
+                        {{- block.settings.button_label_2 | escape -}}
+                      </a>
+                    {%- endif -%}
+                  </div>
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+        </div>
+        <div class="inner-box__block-events">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'events' -%}
+                <div class="inner-box__block-events_item">
+                  {%- if block.settings.date != blank -%}
+                    <div class="inner-box__block-events_item_date">{{ block.settings.date }}</div>
+                  {%- endif -%}
+                  {%- if block.settings.content != blank -%}
+                    <div class="inner-box__block-events_item_content">{{ block.settings.content }}</div>
+                  {%- endif -%}
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .attend-the-series.{{ section.settings.secon_class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+</style>
+{% schema %}
+{
+  "name": "attend-the-series",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "nubmer_navigat",
+      "default": "1",
+      "label": "Section number for navigation"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Attend the series",
+      "label": "Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "id_for_anchor",
+      "label": "ID For Navigation Anchor"
+    },
+    {
+      "type": "text",
+      "id": "secon_class",
+      "default": "thewin",
+      "label": "class for image background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "default": "Image banner",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Button First",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "buttonn",
+      "name": "Button Second",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "events",
+      "name": "Events",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "date",
+          "label": "Date"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Attend The Series"
+    }
+  ]
+}
+{% endschema %}

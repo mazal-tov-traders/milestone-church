@@ -1,0 +1,153 @@
+.banner-background {
+  .page-width {
+    .two-images__wrapper {
+      display: flex;
+      width: 100%;
+      padding: 65px 0;
+      &_left {
+        width: 50%;
+        .banner-img__left {
+          .image {
+            max-width: 882px;
+          }
+        }
+      }
+      &_right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 118px 0 121px 0;
+
+        .banner-img__right {
+          max-width: 630px;
+
+          .image {
+            width: 100%;
+          }
+        }
+        .banner-innerr__box_buttonss {
+          background-color: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(84, 145, 214, 1);
+          color: rgba(84, 145, 214, 1);
+          font-family: "Nova-700";
+          font-size: 15px;
+          letter-spacing: 0;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          max-width: 201px;
+          padding: 13px 34px;
+          width: 100%;
+
+          &:hover a {
+            color: #fff;
+            background-color: rgba(84, 145, 214, 1);
+          }
+          &:hover {
+            background-color: rgba(84, 145, 214, 1);
+          }
+          .buttonn {
+            color: rgba(84, 145, 214, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1369px) {
+  .banner-background {
+    .page-width {
+      .two-images__wrapper {
+        flex-wrap: wrap;
+        &_left {
+          width: 100%;
+          .banner-img__left {
+            .image {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+        &_right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// the win
+.banner.product-thewin {
+  .banner-inner-music {
+    padding: 71px 0;
+    .banner-music-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      .banner-innerr__box {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        &_title {
+        }
+        &_heading {
+        }
+        &_text {
+          background-image: linear-gradient(90deg,transparent 83%,#e5be5e 0);
+          background-position: 28px 9px;
+          background-repeat: no-repeat;
+          background-size: 44% 2px;
+          color: #fff;
+          font-family: 'Nova-400';
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: 0;
+          line-height: 32px;
+          max-width: 296px;
+          text-align: center;
+          padding-top: 11px;
+        }
+        &_buttonns {
+          background-color: transparent;
+          border: 1px solid #fff;
+          color: #fff;
+          font-family: "Nova-700";
+          font-size: 15px;
+          letter-spacing: 0;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          max-width: 180px;
+          height: 50px;
+          width: 100%;
+          margin-top: 20px;
+          &:hover a {
+            color: #fff;
+          }
+          &:hover {
+            background-color: rgba(84, 145, 214, 1);
+            border: 1px solid rgba(84, 145, 214, 1);
+          }
+          .buttone {
+            color: #fff;
+          }
+          
+        }
+      }
+      .banner-innerr__hero-image {
+        max-width: 246px;
+        width: 100%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

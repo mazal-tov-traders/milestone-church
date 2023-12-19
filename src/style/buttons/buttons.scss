@@ -1,0 +1,8 @@
+@import '../mixins/media.scss';
+
+
+
+.button--secondary {
+  background-color: transparent;
+  color: rgba(var(--color-foreground));
+}

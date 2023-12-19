@@ -1,0 +1,170 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign video_idd = section.settings.video_url.id
+
+  if section.settings.video != null
+    assign ratio_diff = section.settings.video.aspect_ratio | minus: section.settings.video_url.aspect_ratio | abs
+    if ratio_diff < 0.01 and ratio_diff > 0
+      assign fix_ratio = true
+    endif
+  endif
+-%}
+<div id="{{ section.settings.id_for_anchor }}" class="banner-video {{ section.settings.class }}">
+  <div class="banner-video__wrapper page-width">
+    {% if section.settings.heading != blank %}
+      <div class="banner-video__wrapper_heading">
+        {{ section.settings.heading }}
+      </div>
+    {% endif %}
+    {% if section.settings.content != blank %}
+      <div class="banner-video__wrapper_content">
+        {{ section.settings.content }}
+      </div>
+    {% endif %}
+    {% if section.settings.text != blank %}
+      <div class="banner-video__wrapper_text">
+        {{ section.settings.text }}
+      </div>
+    {% endif %}
+    {% if section.settings.description != blank %}
+      <div class="banner-video__wrapper_description">
+        {{ section.settings.description }}
+      </div>
+    {% endif %}
+    
+    <div class="banner-video__wraper_video-block">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'video' %}
+            <div class="video-block_wrapper">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | img_url: 'original' }}"
+                  alt="image"
+                  class="video__img-box_img"
+                >
+              {% endif %}
+              {% if block.settings.image_youtube != blank %}
+                <div class="img-link-wrapper">
+                  <img
+                    src="{{ block.settings.image_youtube | img_url: 'original' }}"
+                    alt="image"
+                    class="image-youtube"
+                    onclick="showPopup('{{ video_idd }}')"
+                  >
+                </div>
+              {% endif %}
+
+              {% if block.settings.content != blank %}
+                <div class="video-block__content">
+                  {{ block.settings.content }}
+                </div>
+              {% endif %}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="popup-video" id="popup">
+  <span class="close" onclick="closePopup()">{% render 'icon-close-black' %}</span>
+  <div id="videoContainer" class="video-container"></div>
+</div>
+
+{% style %}
+  .banner-video.{{ section.settings.class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 740px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+{% endstyle %}
+<script src="{{ 'video-popup.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "banner-and-video",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background Image"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.video.settings.video_url.label",
+      "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "id_for_anchor",
+      "label": "ID For Navigation Anchor"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "Second class for background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_youtube",
+          "label": "youtube icon"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner And Video"
+    }
+  ]
+}
+{% endschema %}

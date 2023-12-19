@@ -1,0 +1,126 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign video_idd = section.settings.video_url.id
+
+  if section.settings.video != null
+    assign ratio_diff = section.settings.video.aspect_ratio | minus: section.settings.video_url.aspect_ratio | abs
+    if ratio_diff < 0.01 and ratio_diff > 0
+      assign fix_ratio = true
+    endif
+  endif
+-%}
+<div class="banner-image-video {{ section.settings.class }}">
+  <div class="banner-image-video__wrapper page-width">
+    {% if section.settings.heading != blank %}
+      <div class="banner-image-video__wrapper_heading">
+        {{ section.settings.heading }}
+      </div>
+    {% endif %}
+    <div class="video-block">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'media' %}
+            <div class="video-block__wrapper">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | img_url: 'original' }}"
+                  alt="image"
+                  class="video-block__wrapper_image"
+                >
+              {% endif %}
+              {% if block.settings.image_youtube != blank %}
+                  <img
+                    src="{{ block.settings.image_youtube | img_url: 'original' }}"
+                    alt="image"
+                    class="video-block__wrapper_image-youtube"
+                    onclick="showPopup('{{ video_idd }}')"
+                  >
+              {% endif %}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="popup-video" id="popup">
+  <span class="close" onclick="closePopup()">{% render 'icon-close-black' %}</span>
+  <div id="videoContainer" class="video-container"></div>
+</div>
+
+{% style %}
+  .banner-image-video.{{ section.settings.class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 800px) {
+    .banner-image-video.{{ section.settings.class }}{
+      height: 100%;
+    }
+  }
+{% endstyle %}
+<script src="{{ 'video-popup.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "banner-image-video",
+  "tag": "section",
+  "class": "video-banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background Image"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.video.settings.video_url.label",
+      "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "Second class for background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "media",
+      "name": "Media",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_youtube",
+          "label": "youtube icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Image And Video"
+    }
+  ]
+}
+{% endschema %}

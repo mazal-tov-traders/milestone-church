@@ -1,0 +1,122 @@
+<section class="author-post {{ section.settings.secon_class }}">
+  <div class="author-post__wrapper page-width">
+    <div class="author-post__wrapper_svg">
+      <svg width="237" height="224" viewBox="0 0 237 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.2" d="M129.561 0.112349C132.946 19.2518 136.323 41.0315 139.7 59.553H98.5895C101.991 40.9914 105.367 19.1555 108.76 0C47.8723 4.94336 0 55.7091 0 117.597C0 164.471 27.4419 204.957 67.2066 224C70.4303 207.886 73.6621 196.121 76.8858 178.434H161.412C164.587 195.897 167.779 207.605 170.97 223.422C210.098 204.154 237 164.006 237 117.597C237.008 56.1505 189.821 5.67363 129.561 0.112349ZM82.1566 149.577C85.88 129.177 89.6114 108.802 93.3268 88.4027H144.979C148.694 108.802 152.41 129.193 156.133 149.577H82.1566Z" fill="url(#paint0_linear_212_2025)"/>
+        <defs>
+        <linearGradient id="paint0_linear_212_2025" x1="118.5" y1="0" x2="118.5" y2="224" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#E5BE5E"/>
+        <stop offset="1" stop-color="#E5BE5E" stop-opacity="0"/>
+        </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="content__wraper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'author' %}
+            <div class="author__inner">
+              <div class="author__img-box">
+                {% if block.settings.image != blank %}
+                  <div class="author__img-box_img">
+                    <img
+                      src="{{ block.settings.image | img_url: 'original' }}"
+                      alt="image"
+                      class="image"
+                    >
+                  </div>
+                {% endif %}
+                {% if block.settings.image_icon != blank %}
+                  <div class="author__img-box_img_icon">
+                    {{ block.settings.image_icon | image_url: width: 24 | image_tag }}
+                  </div>
+                {% endif %}
+              </div>
+              {% if block.settings.heading != blank %}
+                <div class="author__heading">
+                  {{ block.settings.heading }}
+                </div>
+              {% endif %}
+            </div>
+          {% when 'content' %}
+            <div class="content-box">
+              {% if block.settings.content != blank %}
+                <div class="content-box_text">
+                  {{ block.settings.content }}
+                </div>
+              {% endif %}
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<style>
+  .banner-inner-music.{{ section.settings.secon_class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+</style>
+{% schema %}
+{
+  "name": "Author Post",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "secon_class",
+      "default": "thewin",
+      "label": "class for image background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "author",
+      "name": "Author",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image Author"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_icon",
+          "label": "image icon"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "heading"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Author Post"
+    }
+  ]
+}
+{% endschema %}

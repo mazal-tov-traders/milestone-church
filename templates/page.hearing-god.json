@@ -1,0 +1,440 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hearing God",
+            "heading_size": "h0"
+          }
+        },
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Recognizing His voice in a world full of noise",
+            "color_text": "#ffffff",
+            "text_style": "body"
+          }
+        },
+        "46aff6f0-517b-4e21-8d57-5b758b72193c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Purchase a Book",
+            "button_link_1": "#miracleee",
+            "button_style_secondary_1": true,
+            "button_label_2": "Videos",
+            "button_link_2": "shopify:\/\/pages\/weekly-videos",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1",
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-text-1",
+        "46aff6f0-517b-4e21-8d57-5b758b72193c"
+      ],
+      "settings": {
+        "class": "hearing-god",
+        "image": "shopify:\/\/shop_images\/Rectangle_4133714_6.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "8c05c70a-a4dd-45f1-8b44-98477210f422": {
+      "type": "navigation-section",
+      "blocks": {
+        "d6d83ed5-3fb1-4468-a061-deda7f5d2a0e": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to Participate"
+          }
+        },
+        "9780fce8-616b-452d-8aa9-b581b1cb4e54": {
+          "type": "content",
+          "settings": {
+            "content": "There are 3 simple steps to fully engage with the Miracles series at Milestone Church."
+          }
+        },
+        "bd7532c0-9e80-4a7f-966a-c3907afc524d": {
+          "type": "navigat_first",
+          "settings": {
+            "navigat_first": "Attend the Series",
+            "navigate_link_1": "#attend1"
+          }
+        },
+        "4b012c9f-d3f3-44cc-a5e6-035746e44425": {
+          "type": "navigat_second",
+          "settings": {
+            "navigat_second": "Purchase a Book",
+            "navigate_link_2": "#miracleee"
+          }
+        },
+        "eaf4592a-cd70-41b5-96f1-9d8dedb427f1": {
+          "type": "navigat_third",
+          "settings": {
+            "navigat_third": "Join a Small Group",
+            "navigate_link_3": "#joinnn"
+          }
+        },
+        "73950251-ce15-45da-80a7-2f97cd9b2925": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133735_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "d6d83ed5-3fb1-4468-a061-deda7f5d2a0e",
+        "9780fce8-616b-452d-8aa9-b581b1cb4e54",
+        "bd7532c0-9e80-4a7f-966a-c3907afc524d",
+        "4b012c9f-d3f3-44cc-a5e6-035746e44425",
+        "eaf4592a-cd70-41b5-96f1-9d8dedb427f1",
+        "73950251-ce15-45da-80a7-2f97cd9b2925"
+      ],
+      "settings": {
+      }
+    },
+    "a21d985e-c235-4353-a2d8-36af5f983750": {
+      "type": "banner-video",
+      "blocks": {
+        "56c236e8-2126-4287-81f3-f446cbbfb34a": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133737_3.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1_a14e66d8-7731-43f0-9e50-6b7313607138.png",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "56c236e8-2126-4287-81f3-f446cbbfb34a"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_12.jpg",
+        "heading": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "content": "<p>Series Overview<\/p>",
+        "text": "<p>Does God know what I’m going through? Does He see me? Does He have something to say about my situation? How do I know what He’s saying?<\/p>",
+        "description": "<p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are. We invite you to join us for a new series in January, as we look at the incredible ways God communicates with us.<\/p>",
+        "id_for_anchor": "hdvideo",
+        "class": "videobann"
+      }
+    },
+    "c5e2f495-b76c-4472-b80d-cb9f655b3103": {
+      "type": "attend-the-series",
+      "blocks": {
+        "4d47e0d0-a3e1-4039-a2d8-ece5ba090b5b": {
+          "type": "title",
+          "settings": {
+            "title": "We encourage you to attend all 8-weeks to get the most out of the series."
+          }
+        },
+        "bb2cb3b9-a880-4ac1-864f-f0ad1c1e2551": {
+          "type": "heading",
+          "settings": {
+            "heading": "You can attend the series both in-person at one of our locations or online at live.milestonechurch.com."
+          }
+        },
+        "0d78b436-fd1f-4330-81ae-73d841956fcf": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Plan Your Visit",
+            "button_link_1": "https:\/\/milestonechurch.com\/visit-milestone\/"
+          }
+        },
+        "d586f2f8-f90e-4496-b9ce-a5161a235f39": {
+          "type": "buttonn",
+          "settings": {
+            "button_label_2": "Watch Online",
+            "button_link_2": "https:\/\/www.youtube.com\/@milestonechurch"
+          }
+        },
+        "6701c67e-2ec2-4069-a536-e262375fb2c2": {
+          "type": "events",
+          "settings": {
+            "date": "Jan 20-21",
+            "content": "Series Intro Part 1"
+          }
+        },
+        "df329bd9-c10d-4570-8c39-555bf50eb36c": {
+          "type": "events",
+          "settings": {
+            "date": "Jan 27-28",
+            "content": "Series Intro Part 2"
+          }
+        },
+        "1e3be94c-943c-4354-aa50-3c4796d8e8cc": {
+          "type": "events",
+          "settings": {
+            "date": "Feb 3-4",
+            "content": "Small Groups Launch"
+          }
+        }
+      },
+      "block_order": [
+        "4d47e0d0-a3e1-4039-a2d8-ece5ba090b5b",
+        "bb2cb3b9-a880-4ac1-864f-f0ad1c1e2551",
+        "0d78b436-fd1f-4330-81ae-73d841956fcf",
+        "d586f2f8-f90e-4496-b9ce-a5161a235f39",
+        "6701c67e-2ec2-4069-a536-e262375fb2c2",
+        "df329bd9-c10d-4570-8c39-555bf50eb36c",
+        "1e3be94c-943c-4354-aa50-3c4796d8e8cc"
+      ],
+      "settings": {
+        "nubmer_navigat": "1",
+        "heading": "Attend the series",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_11_f6979532-0052-4a1c-bb00-9d355878fddc.jpg",
+        "id_for_anchor": "attend1",
+        "secon_class": "atteend"
+      }
+    },
+    "42db2455-ea88-4cf9-94a6-d8fba61de7de": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "de79e1fa-2418-470b-b205-12d3e0f88d80": {
+          "type": "heading_second",
+          "settings": {
+            "heading1": "<p>We believe that this resource will help you grow closer to Jesus.<\/p>"
+          }
+        },
+        "219dd411-f230-48cf-b900-4e816a51713a": {
+          "type": "description",
+          "settings": {
+            "description": "<p>You can purchase a book below or during any of our weekend services.<\/p>"
+          }
+        },
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "71c97878-d821-4aae-8029-692a3d170baa": {
+          "type": "content",
+          "settings": {
+            "content": "25% discount when you buy 10 or more books"
+          }
+        }
+      },
+      "block_order": [
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-title-1",
+        "de79e1fa-2418-470b-b205-12d3e0f88d80",
+        "219dd411-f230-48cf-b900-4e816a51713a",
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-price-1",
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-quantity_selector-1",
+        "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-buy_buttons-1",
+        "71c97878-d821-4aae-8029-692a3d170baa"
+      ],
+      "settings": {
+        "product": "miracles",
+        "id_for_anchor": "miracleee",
+        "class": "mira",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_13.jpg",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "nubmer_navigat": "2",
+        "purchase": "Purchase a book",
+        "hide_variants": false,
+        "height": "931"
+      }
+    },
+    "93476d84-5b6c-4013-8f70-07495f85a3e3": {
+      "type": "join-group",
+      "blocks": {
+        "146ba21a-9b4f-4012-abbe-7737a2192fed": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Join a Group",
+            "button_link_1": "#https:\/\/my.milestonechurch.com\/groupfinder"
+          }
+        },
+        "8e212271-f53c-4d7a-8459-80aafbf92a08": {
+          "type": "buttonn",
+          "settings": {
+            "button_label_2": "Lead a Group",
+            "button_link_2": "https:\/\/my.milestonechurch.com\/groupregistration"
+          }
+        }
+      },
+      "block_order": [
+        "146ba21a-9b4f-4012-abbe-7737a2192fed",
+        "8e212271-f53c-4d7a-8459-80aafbf92a08"
+      ],
+      "settings": {
+        "nubmer_navigat": "3",
+        "heading": "Join a Small Group",
+        "content": "We believe Small Groups are the best way to find spiritual family and get connected with others. We’re here to help you find the perfect group, whether that’s onsite or online—just click the ‘Join a Group’ button below. ",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133726_2_334acd5c-36cf-4f19-98f0-59d78f050098.jpg",
+        "id_for_anchor": "joinnn",
+        "secon_class": "attend"
+      }
+    },
+    "e5846c80-b62d-473b-97f4-02ca551903c8": {
+      "type": "additional-resources",
+      "blocks": {
+        "d58c376f-d13e-4004-af09-5cfde2ade2bc": {
+          "type": "resources-card",
+          "settings": {
+            "resources_image": "shopify:\/\/shop_images\/Rectangle_4133724_2.jpg",
+            "heading": "Weekly Videos",
+            "content": "Pastor Jeff visited several of the locations where Jesus performed miracles and dives deeper into their significance through weekly videos that coordinate with the chapters in the book. ",
+            "button_label": "Watch Videos",
+            "button_link": "shopify:\/\/pages\/weekly-videos"
+          }
+        },
+        "3752b7af-9891-407b-98f2-a32fc7eec45c": {
+          "type": "resources-card",
+          "settings": {
+            "resources_image": "shopify:\/\/shop_images\/Rectangle_4133724_3.jpg",
+            "heading": "Leader Guide",
+            "content": "This guide has everything you need to lead your Small Group. It includes tips on what to communicate, how to pray, what to expect, and Small Group discussion questions. The leader guide is available for mobile download, or you can pick them up at your campus.",
+            "button_label": "Download Guide",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_Leader_Guide.pdf?v=1702906429"
+          }
+        },
+        "796f817e-6f8a-4489-ab65-66d16f1ce2f6": {
+          "type": "resources-card",
+          "settings": {
+            "resources_image": "shopify:\/\/shop_images\/Rectangle_4133724_4.jpg",
+            "heading": "Milestone Kid’s Resource",
+            "content": "This resource was designed to help your kid grow in God’s word and is a great way to bring them along in the Hearing God series. Each week features a scripture reading, an application activity, and a prayer.",
+            "button_label": "Download Here",
+            "button_link": "#https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_KidsResource_final_web.pdf?v=1702907107"
+          }
+        }
+      },
+      "block_order": [
+        "d58c376f-d13e-4004-af09-5cfde2ade2bc",
+        "3752b7af-9891-407b-98f2-a32fc7eec45c",
+        "796f817e-6f8a-4489-ab65-66d16f1ce2f6"
+      ],
+      "settings": {
+        "heading": "Additional Resources",
+        "content": "We’ve made it even easier for you to get the most out of this series by equipping you with additional resources. ",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_11_f6979532-0052-4a1c-bb00-9d355878fddc.jpg",
+        "secon_class": "aditt"
+      }
+    },
+    "1737a2ee-4fcc-4b62-8af0-17e25a691c94": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I participate in the Hearing God series while watching online?",
+            "icon": "none",
+            "row_content": "<p>You sure can! We'll have group options and resources both onsite and online.<\/p>",
+            "page": ""
+          }
+        },
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "If I’m not ready to join a group yet, can I still participate in the Miracle series?",
+            "icon": "none",
+            "row_content": "<p>Yes! When we created the Miracle series and book, we had you in mind. We invite you to join us from week to week during our weekend services: onsite or online.<\/p>",
+            "page": ""
+          }
+        },
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I purchase my book?",
+            "icon": "none",
+            "row_content": "<p>We have four options for purchasing a book:<\/p><ul><li>Purchase it in the commons during any of our weekend services at any of our campuses.<\/li><li>Stop by the Keller or McKinney campus Monday-Thursday between 9am-5pm to purchase.<\/li><li>Order a physical copy of the resource above and have it shipped to your house. <\/li><li>Purchase our E-Book <a href=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\">here<\/a>.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I host a group?",
+            "icon": "none",
+            "row_content": "<p>Yes you can! We love working with first-time group leaders. We'd like to get some info from you so we can help you succeed as a group leader. Please shoot an email to smallgroups@milestonechurch.com<\/p>",
+            "page": ""
+          }
+        },
+        "3418e6a7-154b-4073-a22c-29e5f3a3e576": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When do the groups start?",
+            "icon": "none",
+            "row_content": "<p>If you sign up to be a part of a Miracles Small Group, groups will begin meeting the week of September 9th. Please check with your group leader to confirm the day and time of week your group will meet. If you need assistance, please email smallgroups@milestonechurch.com.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-1",
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-2",
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-3",
+        "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-4",
+        "3418e6a7-154b-4073-a22c-29e5f3a3e576"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133726_3_e835fce1-ac63-48e6-8a3b-4566c95ba593.jpg",
+        "secon_class": "questtt",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa",
+    "8c05c70a-a4dd-45f1-8b44-98477210f422",
+    "a21d985e-c235-4353-a2d8-36af5f983750",
+    "c5e2f495-b76c-4472-b80d-cb9f655b3103",
+    "42db2455-ea88-4cf9-94a6-d8fba61de7de",
+    "93476d84-5b6c-4013-8f70-07495f85a3e3",
+    "e5846c80-b62d-473b-97f4-02ca551903c8",
+    "1737a2ee-4fcc-4b62-8af0-17e25a691c94"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "38e4cd99-362e-4aa4-9fee-7c7816a1ce89": {
+      "type": "section-image-baner-video",
+      "blocks": {
+        "a8e6a38a-e1c7-4f9e-8a35-0617a1e886e4": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Alive.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png"
+          }
+        }
+      },
+      "block_order": [
+        "a8e6a38a-e1c7-4f9e-8a35-0617a1e886e4"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Alive-In-You.jpg",
+        "heading": "<p>Alive in you<\/p>",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Z7XqdQJh1uM",
+        "class": "paid"
+      }
+    },
+    "347d3398-5fd2-419b-a464-e84e369e7f0b": {
+      "type": "banner-page-paid",
+      "blocks": {
+        "9a7e7995-70e2-40f8-a076-215da9bae85b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133722_4.jpg"
+          }
+        },
+        "637c830f-ce5a-45e1-80ee-cabbf3010584": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alive in you"
+          }
+        },
+        "152ba97f-d978-4f77-bad2-ed29e7edbd13": {
+          "type": "content",
+          "settings": {
+            "content": "\"Alive In You\" was recorded live at Elevate, the student ministry of Milestone Church. It's available to stream everywhere."
+          }
+        },
+        "315ba23b-8a70-49d6-8bae-e3f1b6443b99": {
+          "type": "social_media",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Mask_group.png",
+            "button_link1": "https:\/\/open.spotify.com\/album\/3k2AAG3eOV9XwhTOdvo5hm",
+            "image2": "shopify:\/\/shop_images\/image_7.png",
+            "button_link2": "https:\/\/www.youtube.com\/watch?v=Z7XqdQJh1uM&list=RDZ7XqdQJh1uM&start_radio=1&rv=I8IAawglEqU",
+            "image3": "shopify:\/\/shop_images\/Apple.png",
+            "button_link3": "https:\/\/music.apple.com\/us\/album\/alive-in-you-live-at-elevate-single\/1640357064",
+            "image4": "shopify:\/\/shop_images\/Amazon_1.png",
+            "button_link4": "https:\/\/music.amazon.com\/albums\/B0BB1C3W1J?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_9EZtdKQgUeJV4I0ZF2RiZG0PD&trackAsin=B0BB11FPVQ"
+          }
+        }
+      },
+      "block_order": [
+        "9a7e7995-70e2-40f8-a076-215da9bae85b",
+        "637c830f-ce5a-45e1-80ee-cabbf3010584",
+        "152ba97f-d978-4f77-bad2-ed29e7edbd13",
+        "315ba23b-8a70-49d6-8bae-e3f1b6443b99"
+      ],
+      "settings": {
+        "class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "38e4cd99-362e-4aa4-9fee-7c7816a1ce89",
+    "347d3398-5fd2-419b-a464-e84e369e7f0b"
+  ]
+}

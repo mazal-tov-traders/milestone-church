@@ -1,0 +1,182 @@
+.banner-music.index-banner-music{
+  .banner-inner-music {
+    .page-width {
+      .banner-innerr__box {
+        max-width: 520px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.banner-music {
+  .banner-inner-music {
+    height: 880px;
+    .page-width {
+      .banner-music-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 27px;
+        padding: 120px 0 120px 0;
+      }
+
+      .banner-innerr__box {
+        &_title {
+          background-image: linear-gradient(90deg, transparent 2%, #e5be5e 0);
+          background-position: 0% 39px;
+          background-repeat: no-repeat;
+          background-size: 3% 2px;
+          color: #e5be5e;
+          font-family: "Nova-700";
+          font-size: 20px;
+          letter-spacing: 0;
+          margin-top: 122px;
+          text-align: left;
+          padding-bottom: 10px;
+          text-transform: uppercase;
+          margin-bottom: 13px;
+        }
+        &_heading {
+          max-width: 500px;
+          font-family: "Nova-400";
+          font-size: 50px;
+          letter-spacing: 0em;
+          text-align: left;
+          text-transform: uppercase;
+          color: #fff;
+          margin-top: 0px;
+          line-height: 60px;
+          margin-bottom: 26px;
+        }
+        &_text {
+          max-width: 625px;
+          width: 100%;
+          font-family: "Nova-300";
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #fff;
+          opacity: 90%;
+          p{
+            max-width: 570px;
+          }
+        }
+        &_buttons {
+          display: flex;
+          justify-content: start;
+          margin-top: 49px;
+          margin-bottom: 10px;
+          background: transparent;
+          .buttonn {
+            font-family: "Nova-700";
+            font-size: 15px;
+            text-transform: uppercase;
+            color: rgba(84, 145, 214, 1);
+            letter-spacing: 0em;
+            border: 1px solid rgba(84, 145, 214, 1);
+            background-color: transparent;
+            padding: 11px 34px;
+            &:hover {
+              color: #fff;
+              background-color: rgba(84, 145, 214, 1);
+            }
+          }
+        }
+      }
+      .banner-innerr__hero-image {
+        max-width: 640px;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .banner-music.index-banner-music{
+    .banner-inner-music {
+      .page-width {
+        .banner-innerr__box {
+          max-width: 1360px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .banner-music {
+    .banner-inner-music {
+      height: auto !important;
+      .page-width {
+        .banner-music-wrapper {
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .banner-innerr__box {
+          &_heading {
+            width: 100%;
+            max-width: 100%;
+          }
+          &_title {
+            margin-top: 14px !important;
+            margin-bottom: 11px;
+            background-size: 6% 2px;
+          }
+          &_text {
+            width: 100%;
+            max-width: 100%;
+            font-family: 'Nova-300';
+            line-height: 32px;
+          }
+        }
+        .banner-innerr__hero-image {
+          padding: 0 0;
+          max-width: 1290px;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .banner-music {
+    .banner-inner-music {
+      .page-width {
+        .banner-music-wrapper {
+          padding: 80px 15px;
+          gap: 0px;
+        }
+
+        .banner-innerr__box_heading {
+          font-size: 30px;
+          line-height: 37px;
+        }
+        .banner-innerr__box_buttons {
+          background: transparent;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1px;
+          margin-top: 48px;
+          .buttonn {
+            max-width: 319px;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+// 
+
+
+
+.header-wrapper {
+  margin-top: 0px;
+}

@@ -1,0 +1,181 @@
+.card.card--card {
+  .card__content {
+    .card__information {
+      grid-row-start: 1;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 25px;
+      .card__heading.h5 {
+        font-family: "Nova-700";
+        font-size: 22px;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1d2228;
+        text-transform: uppercase;
+        padding-bottom: 0px;
+        a:not(.button):hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .card-wrapper__pric-button {
+      .button--secondary:after {
+        --border-opacity: none;
+      }
+      .quick-add__submit {
+        padding: 0rem;
+        width: 100% !important;
+        background-color: #e5be5e;
+        text-transform: uppercase;
+        font-family: "Nova-700";
+        font-size: 14px;
+        letter-spacing: 0em;
+        a:not(.button):hover {
+          text-decoration: none;
+        }
+      }
+      .quick-add.no-js-hidden {
+        margin: 0;
+      }
+      .form {
+        width: 147px;
+        height: 35px;
+        .button,
+        .shopify-challenge__button,
+        .customer button,
+        button.shopify-payment-button__button--unbranded {
+          min-width: calc(4rem + var(--buttons-border-width) * 2);
+          min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .grid {
+    column-gap: 28px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .collection {
+    .contains-card--product {
+      gap: 30px;
+    }
+    .grid__item.scroll-trigger.animate--slide-in {
+      max-width: 320px;
+      .card-wrapper.product-card-wrapper.underline-links-hover {
+        max-width: 280px;
+        margin-right: 0px;
+        margin-left: 0px;
+
+        .card__content {
+          padding: 17px 0px 10px;
+        }
+        .card__inner.ratio {
+          border: 1px solid #f1f1f1;
+          margin-top: 0px;
+          .card__content {
+            height: 250px;
+          }
+        }
+      }
+    }
+    .quick-add__submit {
+      line-height: 18px;
+      letter-spacing: -0.05em;
+    }
+
+    .form {
+      .button,
+      .shopify-challenge__button,
+      .customer button,
+      button.shopify-payment-button__button--unbranded {
+        padding-right: 7px;
+      }
+    }
+    .banner-innerr__box_buttons .buttonn {
+      padding: 11px 11px;
+      max-width: 320px;
+      width: 100%;
+      height: 50px;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+//
+.my-styles-for-collection {
+  li.scroll-trigger.animate--slide-in{
+    max-width: 410px;
+    width: 100%;
+    padding: 20px 20px 30px 20px;
+    background: #fff;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+
+    .card__content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 23px;
+
+      .card__information {
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+        .full-unstyled-link {
+          color: #1d2228;
+          font-family: "Nova-700";
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 18px;
+          text-transform: uppercase;
+        }
+        .card__description.truncate_description {
+          color: #1d2228;
+          font-family: "Nova-300";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 22px;
+          margin-top: 10px;
+        }
+      }
+      .quick-add__submit.button {
+        width: 148px;
+        gap: 8px;
+      }
+      .card-wrapper__pric-button {
+        display: flex;
+        justify-content: space-between;
+        .price-item.price-item--regular {
+          color: #1d2228;
+          font-family: "Nova-700";
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          .price-cent {
+            color: #1d2228;
+            line-height: 13px;
+            font-family: "Nova-700";
+            font-size: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .title-btn_add-cad {
+          color: #1d2228;
+          font-family: "Nova-700";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: -0.7px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

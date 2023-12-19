@@ -1,0 +1,99 @@
+.color-background-1.custom-collapsible {
+  .collapsible-content-wrapper-narrow {
+    max-width: 880px;
+    width: 100%;
+  }
+  .collapsible-content__header {
+    .collapsible-content__heading {
+      font-family: "Nova-400";
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1d2228;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+  }
+  .details-custom {
+    border-radius: 2px 2px 0px 0px;
+    max-width: 850px;
+    width: 100%;
+    .summary-custom {
+      min-height: 78.5px;
+      padding: 0 45px 0px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .accordion__title {
+        font-family: "Nova-300";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1d2228;
+      }
+    }
+
+    .accordion__content.rte {
+      border-top: 1px solid rgba(58, 57, 58, 0.3);
+      padding: 30px 40px;
+      display: flex;
+      align-items: center;
+      p {
+        color: #1d2228;
+        font-family: "Nova-300";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+        max-width: 770px;
+        width: 100%;
+      }
+    }
+  }
+  .icon-minuss {
+    display: none;
+  }
+  .accordion details[open] > summary .icon-minuss {
+    display: block;
+  }
+  .icon-pluss {
+    display: block;
+  }
+  .accordion details[open] > summary .icon-pluss {
+    display: none;
+  }
+  .accordion details[open] > summary .accordion__title {
+    color: #e5be5e !important;
+    font-family: "Nova-600" !important;
+    font-size: 20px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 32px !important;
+  }
+}
+
+//
+
+.color-background-1.custom-collapsible {
+  .details-custom {
+   .accordion__content.rte {
+      flex-direction: column;
+      ul {
+        width: 100%;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  .color-background-1.custom-collapsible .details-custom .summary-custom {
+
+    min-height: 78.5px;
+    padding: 5px 15px 5px 15px;
+  }
+}

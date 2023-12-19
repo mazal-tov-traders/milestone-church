@@ -1,0 +1,301 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Study Guides",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1"
+      ],
+      "settings": {
+        "class": "stude",
+        "image": "shopify:\/\/shop_images\/Rectangle_4133714_3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "8398cebe-a91e-4d00-8f2b-7b17f0fd04ed": {
+      "type": "section-page-music",
+      "blocks": {
+        "eca8785a-7b8b-4b66-937a-067dedefbc77": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hearing God"
+          }
+        },
+        "33ce40e9-a837-48df-9375-4b71302c4d5d": {
+          "type": "content",
+          "settings": {
+            "content": "Does God know what I’m going through? Does He see me? Does He have something to say about my situation? How do I know what He’s saying?"
+          }
+        },
+        "7c47702e-17f7-4180-8d5e-3016905ff40c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/pages\/hearing-god"
+          }
+        },
+        "0431ab79-d602-426f-8222-5aefea8aa131": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mir.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "eca8785a-7b8b-4b66-937a-067dedefbc77",
+        "33ce40e9-a837-48df-9375-4b71302c4d5d",
+        "7c47702e-17f7-4180-8d5e-3016905ff40c",
+        "0431ab79-d602-426f-8222-5aefea8aa131"
+      ],
+      "settings": {
+        "class": "",
+        "position_content": true,
+        "color_accent": ""
+      }
+    },
+    "36e2ca58-7b78-4019-989a-88caaa8bb9c6": {
+      "type": "section-page-music",
+      "blocks": {
+        "d5689604-ec5a-4e94-a1e7-1a42859c9136": {
+          "type": "heading",
+          "settings": {
+            "heading": "Seeds"
+          }
+        },
+        "6eafcc92-d070-4130-b7b1-6f1211c379b3": {
+          "type": "content",
+          "settings": {
+            "content": "An 8-week study to grow closer to God as you understand and study His Word. There are seeds all throughout the Bible. God is a master builder, and one of His primary building blocks is the seed."
+          }
+        },
+        "59b8daab-07fa-4647-b143-0a6e6b00c2d5": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "learn more",
+            "button_link_1": "shopify:\/\/products\/seeds"
+          }
+        },
+        "568b08f4-7a3a-4d51-9c4f-d4ee7f8a0cfd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SEEDS3.png"
+          }
+        }
+      },
+      "block_order": [
+        "d5689604-ec5a-4e94-a1e7-1a42859c9136",
+        "6eafcc92-d070-4130-b7b1-6f1211c379b3",
+        "59b8daab-07fa-4647-b143-0a6e6b00c2d5",
+        "568b08f4-7a3a-4d51-9c4f-d4ee7f8a0cfd"
+      ],
+      "settings": {
+        "class": "homm",
+        "background": "shopify:\/\/shop_images\/Sd-bg1.png",
+        "position_content": false,
+        "color_accent": ""
+      }
+    },
+    "a8166aae-e390-49f6-844c-affedf42d44b": {
+      "type": "section-page-music",
+      "blocks": {
+        "7df56cec-d027-4ed1-992f-b5d732f5ecef": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unshakable"
+          }
+        },
+        "35e093c3-0541-4e18-a069-ed2a43bbe892": {
+          "type": "content",
+          "settings": {
+            "content": "We all face challenges and obstacles that can feel insurmountable. Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts."
+          }
+        },
+        "e78b8442-9054-4c5b-958b-82c78d18e15b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BookMockup_Unshakable.png"
+          }
+        },
+        "6a600f04-d860-421a-a598-ba3f727644bb": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/unshakable"
+          }
+        }
+      },
+      "block_order": [
+        "7df56cec-d027-4ed1-992f-b5d732f5ecef",
+        "35e093c3-0541-4e18-a069-ed2a43bbe892",
+        "e78b8442-9054-4c5b-958b-82c78d18e15b",
+        "6a600f04-d860-421a-a598-ba3f727644bb"
+      ],
+      "settings": {
+        "class": "paiddd",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_8.jpg",
+        "position_content": true,
+        "color_accent": ""
+      }
+    },
+    "50eeca77-cbd3-4297-a94d-96ff2a2517b0": {
+      "type": "section-page-music",
+      "blocks": {
+        "8de5b956-9a69-4e10-82a6-cc39eeecbf81": {
+          "type": "heading",
+          "settings": {
+            "heading": "Miracles"
+          }
+        },
+        "6da655b4-1ceb-42fb-9fa0-40b8d8520d97": {
+          "type": "content",
+          "settings": {
+            "content": "No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us?"
+          }
+        },
+        "e8a3fe23-2def-448d-b765-676f933c8547": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/miracles"
+          }
+        },
+        "70708ef2-73b3-443c-b705-72632034f674": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mir.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "8de5b956-9a69-4e10-82a6-cc39eeecbf81",
+        "6da655b4-1ceb-42fb-9fa0-40b8d8520d97",
+        "e8a3fe23-2def-448d-b765-676f933c8547",
+        "70708ef2-73b3-443c-b705-72632034f674"
+      ],
+      "settings": {
+        "class": "alivee",
+        "background": "shopify:\/\/shop_images\/miracle-bg.png",
+        "position_content": false,
+        "color_accent": ""
+      }
+    },
+    "c8902fb9-8346-460c-952e-c0888da2eda6": {
+      "type": "section-page-music",
+      "blocks": {
+        "c7d4b417-0382-4791-8f07-ab565f88b44e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Closer"
+          }
+        },
+        "6c221af4-a68b-4452-a823-5acd037b3f65": {
+          "type": "content",
+          "settings": {
+            "content": "We invite you to go on a journey with Jesus – from His life to yours. We believe the closer you get to Jesus, the more authentic and life-changing He will become."
+          }
+        },
+        "35d79b54-d888-4f4b-8a47-411475d2443a": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/closer"
+          }
+        },
+        "b8b723ed-360e-41f2-94b6-b4151b5824f9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Closer-main-img.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "c7d4b417-0382-4791-8f07-ab565f88b44e",
+        "6c221af4-a68b-4452-a823-5acd037b3f65",
+        "35d79b54-d888-4f4b-8a47-411475d2443a",
+        "b8b723ed-360e-41f2-94b6-b4151b5824f9"
+      ],
+      "settings": {
+        "class": "",
+        "position_content": true,
+        "color_accent": ""
+      }
+    },
+    "61fa8012-2e72-4493-b675-9dabb49a189f": {
+      "type": "section-page-music",
+      "blocks": {
+        "98b7beb9-7cab-4fd6-ad48-af27348af3ac": {
+          "type": "heading",
+          "settings": {
+            "heading": "Promises"
+          }
+        },
+        "e6769d16-408d-43c7-a887-09df04afad10": {
+          "type": "content",
+          "settings": {
+            "content": "What if someone significant believed in your future so strongly that they put their name and reputation on the line? Now, imagine if God himself did that for you. "
+          }
+        },
+        "0a05c779-001b-4bee-8706-a260ef8bbfb4": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/promises"
+          }
+        },
+        "01ddac4f-458f-4bb7-a53c-3c23ae5b01a4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Promises018.png"
+          }
+        }
+      },
+      "block_order": [
+        "98b7beb9-7cab-4fd6-ad48-af27348af3ac",
+        "e6769d16-408d-43c7-a887-09df04afad10",
+        "0a05c779-001b-4bee-8706-a260ef8bbfb4",
+        "01ddac4f-458f-4bb7-a53c-3c23ae5b01a4"
+      ],
+      "settings": {
+        "class": "promise",
+        "background": "shopify:\/\/shop_images\/fon.jpg",
+        "position_content": false,
+        "color_accent": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa",
+    "8398cebe-a91e-4d00-8f2b-7b17f0fd04ed",
+    "36e2ca58-7b78-4019-989a-88caaa8bb9c6",
+    "a8166aae-e390-49f6-844c-affedf42d44b",
+    "50eeca77-cbd3-4297-a94d-96ff2a2517b0",
+    "c8902fb9-8346-460c-952e-c0888da2eda6",
+    "61fa8012-2e72-4493-b675-9dabb49a189f"
+  ]
+}

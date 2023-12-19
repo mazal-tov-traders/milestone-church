@@ -1,0 +1,88 @@
+.weekly-videos {
+  padding: 60px 0 119px 0;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+    row-gap: 28px;
+    &_video-card {
+      max-width: 410px;
+      padding: 20px;
+      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+
+      .img-wrapper {
+        max-width: 370px;
+        width: 100%;
+        margin-bottom: 12px;
+        position: relative;
+        display: inline-block;
+      }
+      .video-card_img {
+        max-width: 370px;
+        width: 100%;
+        height: auto;
+      }
+      .image-youtube {
+        cursor: pointer;
+        height: auto;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .video-block__content {
+        font-family: "Nova-700";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #1d2228;
+        margin-left: 1px;
+        text-transform: uppercase;
+        P {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .weekly-videos {
+    padding: 15px 0 90px;
+    &__wrapper {
+      gap: 12px;
+      row-gap: 15px;
+      justify-content: center;
+      &_video-card {
+        max-width: 169px;
+        padding: 5px;
+        .video-block__content {
+          font-size: 13px;
+          line-height: 19px;
+        }
+        .image-youtube {
+          max-width: 45px;
+        }
+        .img-wrapper {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+.banner.banner-content.banner-img .banner-innerr.banner-innerr-center .page-width .banner-innerr__box_text {
+  background-image: linear-gradient(90deg,transparent 85%,#fff 0);
+  background-position: 5px 7px;
+  background-repeat: no-repeat;
+  background-size: 52% 1px;
+  font-weight: 600;
+  margin-bottom: 37px;
+  margin-top: 5px;
+  max-width: 442px;
+  padding-top: 23px;
+  text-align: center;
+}

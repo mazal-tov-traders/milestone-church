@@ -1,0 +1,44 @@
+{% comment %} {{ 'custom-announcement-bar.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+<div id="announcementbar_wrap" class="custom-announcement-bar">
+  <div class="page-width">
+    <div class="custom-announcement-bar__wrap">
+      {% if section.settings.main_text != blank %}
+        <div class="custom-announcement-bar__wrap_text">
+          {{ section.settings.main_text }}
+        </div>
+      {% endif %}
+      {% if section.settings.button_cross_svg != blank %}
+        <div id="announcementbar_button-close" class="custom-announcement-bar__wrap_icon">
+          {{ section.settings.button_cross_svg }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "custom announcement",
+  "class": "custom-announcement-bar-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_text",
+      "label": "Text Main",
+      "default": "test"
+    },
+    {
+      "type": "html",
+      "id": "button_cross_svg",
+      "label": "Button cross"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom-announcement"
+    }
+  ]
+}
+{% endschema %}

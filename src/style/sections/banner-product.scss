@@ -1,0 +1,304 @@
+// section image-banner-content
+
+.banner.banner-content.banner-page-book {
+  flex-direction: column;
+
+  .banner-innerr {
+    height: 740px;
+    &__box {
+      max-width: 570px;
+      &_heading {
+        font-family: "Nova-400";
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: rgba(29, 34, 40, 1);
+      }
+      &_text {
+        margin-bottom: 20px;
+        p {
+          font-family: "Nova-300";
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(29, 34, 40, 1);
+          margin: 0;
+        }
+        P {
+          strong {
+            font-family: "Nova-600";
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(29, 34, 40, 1);
+          }
+        }
+      }
+      &_discription {
+        margin-bottom: 50px;
+        p {
+          font-family: "Nova-300";
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(29, 34, 40, 1);
+          margin: 0;
+        }
+        p {
+          strong {
+            font-family: "Nova-600";
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(29, 34, 40, 1);
+           
+          }
+        }
+      }
+      &_buttonss {
+        .buttonn {
+          font-family: "Nova-700";
+          font-size: 15px;
+          text-transform: uppercase;
+          color: #fff;
+          letter-spacing: 0em;
+          border: 1px solid rgba(84, 145, 214, 1);
+          background-color: rgba(84, 145, 214, 1);
+          padding: 16px 35px 16px 35px;
+        }
+      }
+    }
+  }
+}
+// section image-banner
+.shopify-section.section .banner--medium:not(.banner--adapt) {
+  min-height: 40rem;
+}
+.banner.banner-page-book {
+  .banner__content {
+    padding: 2rem;
+  }
+  .banner__box {
+    max-width: 71rem !important;
+    padding: 4rem 2.5rem;
+  }
+  .banner__heading {
+    font-family: "Nova-700";
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .banner__text {
+    font-family: "Nova-700";
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #e5be5e;
+    background-image: linear-gradient(90deg, transparent 95%, #e5be5e 0);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 51% 1px;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .banner--mobile-bottom:not(.banner--stacked) .banner__content {
+    position: absolute;
+    top: 19%;
+  }
+  .banner--medium.banner--mobile-bottom:not(.banner--adapt) .banner__media,
+  .banner--medium.banner--stacked:not(.banner--mobile-bottom):not(
+      .banner--adapt
+    )
+    > .banner__media {
+    // height: 44rem !important;
+  }
+}
+
+//
+
+.banner.banner-content {
+  flex-direction: column;
+}
+//  baner-product
+
+@media screen and (min-width: 1251px) {
+  .banner.banner-content.banner-product {
+    .banner-innerr__box {
+      margin-left: 61px;
+      margin-right: 64px;
+    }
+  }
+}
+@media screen and (min-width: 951px) {
+  .page-width.right-content {
+    flex-direction: row-reverse;
+  }
+  .banner.banner-content.banner-product {
+    .page-width {
+      justify-content: space-between;
+    }
+    .banner-innerr__box {
+      height: 740px;
+    }
+  }
+}
+
+.banner.banner-content.banner-product {
+  .page-width {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  .banner-innerr__box {
+    max-width: 570px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .banner-product__mobile-image {
+      max-width: 950px;
+      width: 100%;
+      margin-bottom: 20px;
+      .mobile-image {
+        width: 100%;
+      }
+    }
+    &_heading {
+      font-family: "Nova-400";
+      font-size: 50px;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-transform: uppercase;
+      color: rgba(29, 34, 40, 1);
+      margin-bottom: 30px;
+      margin-top: 0px;
+    }
+    &_text {
+      margin-bottom: 20px;
+      p {
+        margin: 0px;
+        font-family: "Nova-300";
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(29, 34, 40, 1);  
+      }
+      p {
+        strong {
+          font-family: "Nova-600";
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(29, 34, 40, 1);
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &_discription {
+      margin-bottom: 50px;
+      p {
+        display: flex;
+        margin: 0;
+        font-family: "Nova-300";
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(29, 34, 40, 1);
+      }
+      P {
+        strong {
+          font-family: "Nova-600";
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(29, 34, 40, 1);
+          
+        }
+      }
+    }
+    &_buttonss {
+      .buttonn {
+        font-family: "Nova-700";
+        background-color: #5491d6;
+        border: 1px solid #5491d6;
+        color: #fff;
+        font-family: Nova-700;
+        font-size: 15px;
+        letter-spacing: 0;
+        padding: 0px 35px;
+        text-transform: uppercase;
+        height: 50px;
+        line-height: 49px;
+        display: inline-block;
+      }
+    }
+    .social-media__wrapper {
+      display: flex;
+      .medis-social_button {
+        height: 50px;
+        padding: 0 20px;
+        .image {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  .banner.banner-content.banner-product {
+    .page-width {
+      justify-content: center;
+    }
+    .banner-innerr__box {
+      &_heading {
+        font-family: "Nova-600";
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+      }
+      &_discription {
+        margin-bottom: 30px;
+      }
+      &_buttonss {
+        display: flex;
+        justify-content: center;
+        .buttonn {
+          align-items: center;
+          display: flex;
+          max-width: 320px;
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

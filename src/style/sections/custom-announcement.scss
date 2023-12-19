@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap");
+.custom-announcement-bar {
+  height: 30px;
+  background-color: #1d2228;
+  &__wrap {
+    display: flex;
+    width: 100%;
+
+    &_text {
+      color: #e5be5e;
+      font-family: Josefin Sans, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: -0.05em;
+      text-align: center;
+      width: 99%;
+      padding: 7px 0 9px 11px;
+    }
+    &_icon {
+      width: 1%;
+      cursor: pointer;
+      padding-left: 1px;
+    }
+  }
+}
+.custom-announcement-bar.announcementbar-close {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .custom-announcement-bar {
+    height: 30px;
+    &__wrap {
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .custom-announcement-bar {
+    display: none;
+  }
+}

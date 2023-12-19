@@ -1,0 +1,170 @@
+.attend-the-series {
+  padding: 174px 0 109px 0;
+  &__wrapper {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+
+    &_num-navi {
+      background: #e5be5e;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      font-family: "Nova-600";
+      font-size: 30px;
+      font-weight: 600;
+      justify-content: center;
+      letter-spacing: 0;
+      line-height: 37px;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 16px;
+      align-items: center;
+    }
+    &_heading {
+      background-image: linear-gradient(90deg, transparent 0%, #e5be5e 0);
+      background-position: 50% 0px;
+      background-repeat: no-repeat;
+      background-size: 2% 1px;
+      font-family: "Nova-400";
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1d2228;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      padding-top: 10px;
+    }
+    .inner-box {
+      display: flex;
+      justify-content: space-between;
+      .inner-box__block-content {
+        max-width: 500px;
+        width: 100%;
+        &_title {
+          font-family: "Nova-400";
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 36px;
+          letter-spacing: 0em;
+          text-align: left;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+          color: #1d2228;
+        }
+        &_heading {
+          font-family: "Nova-400";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1d2228;
+          margin-bottom: 30px;
+        }
+        &_text {
+          font-family: "Nova-400";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #1d2228;
+          margin-bottom: 30px;
+        }
+        &_btn-wrap {
+          display: flex;
+          gap: 31px;
+          justify-content: left;
+          .btn-wrap__button {
+            height: 50px;
+            padding: 0 34px;
+            border: 1px solid #5491d6;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn {
+              text-align: center;
+              font-family: "Nova-700";
+              font-size: 15px;
+              font-weight: 700;
+              line-height: 18px;
+              letter-spacing: 0em;
+              color: #5491d6;
+              text-transform: uppercase;
+            }
+            &:hover {
+              color: rgba(84, 145, 214, 1);
+              background-color: #5491d6;
+            }
+            &:hover a {
+              color: #fff;
+            }
+          }
+        }
+      }
+      &__block-events {
+        max-width: 520px;
+        width: 100%;
+
+        &_item {
+          max-width: 520px;
+          width: 100%;
+          padding: 30px 60px;
+          margin-bottom: 10px;
+          background-color: #fff;
+          box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+          &_date {
+            padding: 10px 20px;
+            font-family: "Nova-700";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #fff;
+            background: #e5be5e;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            display: inline-block;
+          }
+          &_content {
+            color: #1d2228;
+            font-family: "Nova-700";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1136px) {
+  .attend-the-series__wrapper {
+    .inner-box {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 29px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .attend-the-series__wrapper {
+    .inner-box__block-events_item {
+      background-color: #fff;
+      margin-bottom: 10px;
+      max-width: 520px;
+      padding: 30px 15px;
+      width: 100%;
+    }
+  }
+}

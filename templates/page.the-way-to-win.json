@@ -1,0 +1,261 @@
+{
+  "sections": {
+    "0ce89e31-c092-4895-9008-89bf969c6243": {
+      "type": "image-banner-content",
+      "blocks": {
+        "ca99a608-c73f-4174-acb1-b74bbf642f16": {
+          "type": "content",
+          "settings": {
+            "content": "Coaching & Developing MENIN MATTERS OF Life & Faith"
+          }
+        },
+        "d16b99ad-e5f7-44ff-a6b6-79bf24c78e82": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy The Book",
+            "button_link_1": "shopify:\/\/products\/the-way-to-win"
+          }
+        }
+      },
+      "block_order": [
+        "ca99a608-c73f-4174-acb1-b74bbf642f16",
+        "d16b99ad-e5f7-44ff-a6b6-79bf24c78e82"
+      ],
+      "settings": {
+        "class": "theway",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133714_2.png",
+        "hero_image": "shopify:\/\/shop_images\/TitleTransparent_1.png"
+      }
+    },
+    "87274dac-5386-479e-a2de-ce6f0dc99a79": {
+      "type": "section-author-post",
+      "blocks": {
+        "8ceaa0fb-aa22-45e5-a1b7-0facff27f5bd": {
+          "type": "author",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_1.png",
+            "image_icon": "shopify:\/\/shop_images\/fi_107076_1.png",
+            "heading": "<p>FOREWORD BY <\/p><p>JOHN MAXWELL<\/p>"
+          }
+        },
+        "99de0952-2cfb-4389-a5f3-61a779767981": {
+          "type": "content",
+          "settings": {
+            "content": "<p><strong>“The Way to Win<\/strong> provides us with clear and practical insights that can make a significant impact on those you influence. <em>Life is not a game, but I do believe it’s possible to win in life.<\/em> Not because you’re making someone else lose but because you’re competing with yourself to become the best version of who you are. You’re reaching your maximum potential and experiencing the life God created you to live.”<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8ceaa0fb-aa22-45e5-a1b7-0facff27f5bd",
+        "99de0952-2cfb-4389-a5f3-61a779767981"
+      ],
+      "settings": {
+      }
+    },
+    "5d5faefb-2918-4417-a15e-948734019dc0": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "742cafa8-ba17-490d-9c82-ef2f7f24276e": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>GROWTH AND DEVELOPMENT GUIDE FOR MEN<\/strong>"
+          }
+        },
+        "b8c354d6-2075-40a4-9102-74fff8913cce": {
+          "type": "description",
+          "settings": {
+            "description": "<ul><li>Coaching for personal, spiritual, and professional areas of life<\/li><li>Concise and practical chapters<\/li><li>Helpful questions and leadership challenges<\/li><li>Great for groups or the individual reader<\/li><\/ul>"
+          }
+        },
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "8bbf17df-8518-46e4-bebf-cccfdd5b7358": {
+          "type": "content",
+          "settings": {
+            "content": "<em>25% discount when you buy 10 or more books<\/em>"
+          }
+        },
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "9a02b0ed-1648-4993-8226-fe7ee32cc23a": {
+          "type": "image-product",
+          "settings": {
+            "image_product": "shopify:\/\/shop_images\/Rectangle4133735.png"
+          }
+        },
+        "4d9c734f-9b34-46c2-a5ff-030c5406862f": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Other ways to buy<\/strong><\/p>"
+          }
+        },
+        "86f70b20-a9bd-46b4-b630-ce3becab3caf": {
+          "type": "button-link",
+          "settings": {
+            "button_link1": "https:\/\/www.amazon.com\/Way-Win-Coaching-Developing-Matters-ebook\/dp\/B08YQN2FM1",
+            "icon_button1": "shopify:\/\/shop_images\/image_8.png",
+            "button_link2": "https:\/\/www.audible.com\/pd\/The-Way-to-Win-Audiobook\/B09RG7Q5H5",
+            "icon_button2": "shopify:\/\/shop_images\/image_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-title-1",
+        "742cafa8-ba17-490d-9c82-ef2f7f24276e",
+        "b8c354d6-2075-40a4-9102-74fff8913cce",
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-price-1",
+        "8bbf17df-8518-46e4-bebf-cccfdd5b7358",
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-quantity_selector-1",
+        "template--21730105196851__5d5faefb-2918-4417-a15e-948734019dc0-buy_buttons-1",
+        "9a02b0ed-1648-4993-8226-fe7ee32cc23a",
+        "4d9c734f-9b34-46c2-a5ff-030c5406862f",
+        "86f70b20-a9bd-46b4-b630-ce3becab3caf"
+      ],
+      "settings": {
+        "product": "the-way-to-win",
+        "class": "",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "media_position": "right",
+        "hide_variants": true
+      }
+    },
+    "785e1e70-c641-4edf-a397-44b1a05931ed": {
+      "type": "two-pictures",
+      "blocks": {
+        "352e5674-e7cd-4333-baff-f9201862e8f2": {
+          "type": "bannerleft",
+          "settings": {
+            "banner_left": "shopify:\/\/shop_images\/1_1.png"
+          }
+        },
+        "05dd3f6d-64d6-4c58-bd74-bdfcbb306f1a": {
+          "type": "bannerright",
+          "settings": {
+            "banner_right": "shopify:\/\/shop_images\/25years_1.png"
+          }
+        },
+        "1a169baf-c0ae-466a-b743-3bc175ffba0b": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "sample chapter",
+            "button_link_1": "shopify:\/\/products\/the-way-to-win"
+          }
+        }
+      },
+      "block_order": [
+        "352e5674-e7cd-4333-baff-f9201862e8f2",
+        "05dd3f6d-64d6-4c58-bd74-bdfcbb306f1a",
+        "1a169baf-c0ae-466a-b743-3bc175ffba0b"
+      ],
+      "settings": {
+        "class_name": "twoimage",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_8.png",
+        "position_content": true
+      }
+    },
+    "8f6088fa-e1f7-4f84-8fdc-75c35c339b0a": {
+      "type": "about-pastor",
+      "blocks": {
+        "2647ca87-711f-4b8e-8d2c-5c739a94f5d5": {
+          "type": "authors_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133725_9.png"
+          }
+        },
+        "b12e5003-e23f-4096-bf1d-19216fed6814": {
+          "type": "content",
+          "settings": {
+            "heading": "About",
+            "text": "<p>Pastor Jeff<\/p>",
+            "content": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2647ca87-711f-4b8e-8d2c-5c739a94f5d5",
+        "b12e5003-e23f-4096-bf1d-19216fed6814"
+      ],
+      "settings": {
+        "heading": "about"
+      }
+    },
+    "5a512419-d730-4f4d-a65c-03af91c93596": {
+      "type": "featured-collection",
+      "blocks": {
+        "73479b9d-030b-48b6-b67c-69e83fd1c5f8": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View all Study Guides",
+            "button_link_1": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "73479b9d-030b-48b6-b67c-69e83fd1c5f8"
+      ],
+      "settings": {
+        "title": "Other Resources",
+        "heading_size": "h1",
+        "description": "<p>You May Enjoy<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "books",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "0ce89e31-c092-4895-9008-89bf969c6243",
+    "87274dac-5386-479e-a2de-ce6f0dc99a79",
+    "5d5faefb-2918-4417-a15e-948734019dc0",
+    "785e1e70-c641-4edf-a397-44b1a05931ed",
+    "8f6088fa-e1f7-4f84-8fdc-75c35c339b0a",
+    "5a512419-d730-4f4d-a65c-03af91c93596",
+    "main"
+  ]
+}

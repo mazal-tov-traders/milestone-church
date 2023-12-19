@@ -1,0 +1,317 @@
+{
+  "sections": {
+    "fcf192f2-2e74-404a-a578-7cc0a5731d53": {
+      "type": "image-banner-content",
+      "blocks": {
+        "c4468950-6318-433f-b1a8-96dc1667b1a6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Miracles"
+          }
+        },
+        "bbe7262e-d0b7-4222-892d-705a229d9543": {
+          "type": "content",
+          "settings": {
+            "content": "A Journey with Jesus - from His Life to Yours"
+          }
+        },
+        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy The Book",
+            "button_link_1": "#miracless"
+          }
+        }
+      },
+      "block_order": [
+        "c4468950-6318-433f-b1a8-96dc1667b1a6",
+        "bbe7262e-d0b7-4222-892d-705a229d9543",
+        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12"
+      ],
+      "settings": {
+        "class": "srsdsd",
+        "background": "shopify:\/\/shop_images\/banner-miracle.jpg",
+        "centered-content": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "description",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "right",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "e0ce6000-a201-427c-b418-b1e455efe299": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Is God close to me?<\/strong>"
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "31965910-c30d-40c9-955f-d28368ae3ed5": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Does He see what I’m going through? Will He show up with His miracle power when I need Him most?<br\/>Most of us have wrestled with these questions.<\/p><p>No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us? This book shows us how God shows up in our lives and meets us in our moment of need.<\/p><p>Miracles can be read as an individual, but it is also great for group studies.<\/p>"
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "4efa4abd-17f9-4962-b188-3c23177f35ba": {
+          "type": "button-link",
+          "settings": {
+            "button_link1": "https:\/\/www.amazon.com\/Way-Win-Coaching-Developing-Matters\/dp\/0578670038",
+            "icon_button1": "shopify:\/\/shop_images\/image_8_2.png",
+            "button_link2": "https:\/\/www.audible.com\/pd\/The-Way-to-Win-Audiobook\/B09RG7Q5H5",
+            "icon_button2": "shopify:\/\/shop_images\/image_2_1.png"
+          }
+        },
+        "9194a408-007d-4456-a769-061017e3d0a1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other ways to buy<\/p>"
+          }
+        },
+        "01d84b51-48b0-4b19-b936-ef982e604daa": {
+          "type": "image-product",
+          "settings": {
+            "image_product": "shopify:\/\/shop_images\/Mir.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e0ce6000-a201-427c-b418-b1e455efe299",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1",
+        "31965910-c30d-40c9-955f-d28368ae3ed5",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1",
+        "4efa4abd-17f9-4962-b188-3c23177f35ba",
+        "9194a408-007d-4456-a769-061017e3d0a1",
+        "01d84b51-48b0-4b19-b936-ef982e604daa"
+      ],
+      "settings": {
+        "product": "miracles",
+        "id_for_anchor": "miracless",
+        "class": "",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "hide_variants": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "b15a4225-26d2-46db-ad8e-4eff4d4b95de": {
+      "type": "banner-video",
+      "blocks": {
+        "17c3a791-2f8e-494b-b9cd-3c17aebc2db6": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Miracles-1920x1080.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "17c3a791-2f8e-494b-b9cd-3c17aebc2db6"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/3I1A0432-Enhanced-NR.jpg",
+        "heading": "<p>Message Series<\/p>",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=4ecy9Hb9HG8",
+        "content": "<p>Dive deeper into Miracles by pairing the book with our 8-week message series<\/p>",
+        "text": "",
+        "class": "seed"
+      }
+    },
+    "c3ac9b07-c27c-4582-bcc8-9f5d392c8c4b": {
+      "type": "image-banner-content",
+      "settings": {
+        "class": "",
+        "centered-content": false
+      }
+    },
+    "fcb92fd6-252b-4aa4-bec4-d92b3ecd55e5": {
+      "type": "about-pastor",
+      "blocks": {
+        "219bd3ea-1a78-44cd-9755-76323e59f6e7": {
+          "type": "authors_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133725_5.jpg"
+          }
+        },
+        "f25f812a-6a65-4b01-baee-dbdd2691fb45": {
+          "type": "content",
+          "settings": {
+            "heading": "About",
+            "text": "<p>Pastor Jeff<\/p>",
+            "content": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "219bd3ea-1a78-44cd-9755-76323e59f6e7",
+        "f25f812a-6a65-4b01-baee-dbdd2691fb45"
+      ],
+      "settings": {
+        "heading": "about"
+      }
+    },
+    "f797c95d-1156-474c-b1d7-936b81d113cd": {
+      "type": "featured-collection",
+      "blocks": {
+        "43b523a0-36ac-4d40-95fc-676780d1ed1c": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View all Books",
+            "button_link_1": "shopify:\/\/pages\/books"
+          }
+        }
+      },
+      "block_order": [
+        "43b523a0-36ac-4d40-95fc-676780d1ed1c"
+      ],
+      "settings": {
+        "title": "Other Resources",
+        "class": "",
+        "heading_size": "h1",
+        "description": "<p>You May Enjoy<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "you-may-enjoy-2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "fcf192f2-2e74-404a-a578-7cc0a5731d53",
+    "main",
+    "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a",
+    "related-products",
+    "b15a4225-26d2-46db-ad8e-4eff4d4b95de",
+    "c3ac9b07-c27c-4582-bcc8-9f5d392c8c4b",
+    "fcb92fd6-252b-4aa4-bec4-d92b3ecd55e5",
+    "f797c95d-1156-474c-b1d7-936b81d113cd"
+  ]
+}

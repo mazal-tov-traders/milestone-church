@@ -1,0 +1,292 @@
+{
+  "sections": {
+    "7ab61185-5e0f-413b-8810-ec082b18e2fc": {
+      "type": "image-banner-content",
+      "blocks": {
+        "c44e286a-e8df-4813-a6cc-b91c1e2b24b3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>The Way To Win<\/strong>"
+          }
+        },
+        "700cfb80-d496-402c-a5c5-183f6bdb6a2e": {
+          "type": "content",
+          "settings": {
+            "content": "A growth and development guide for men, this new resource aims to develop men in the areas that matter most."
+          }
+        },
+        "42d95422-c6c8-4b5e-882e-d1f1aae37118": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy The Book",
+            "button_link_1": "shopify:\/\/products\/the-way-to-win"
+          }
+        }
+      },
+      "block_order": [
+        "c44e286a-e8df-4813-a6cc-b91c1e2b24b3",
+        "700cfb80-d496-402c-a5c5-183f6bdb6a2e",
+        "42d95422-c6c8-4b5e-882e-d1f1aae37118"
+      ],
+      "settings": {
+        "class": "home",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133714.jpg",
+        "hero_image": "shopify:\/\/shop_images\/TWTW_book_transparent_1_1.png",
+        "centered-content": false
+      }
+    },
+    "d1e6bd71-d395-407c-8da5-9e951d3384e7": {
+      "type": "page-gallery",
+      "blocks": {
+        "286c4536-c51c-43e7-873e-8775dfab5deb": {
+          "type": "books-page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133590_1.jpg",
+            "heading": "<a href=\"\/pages\/books\" title=\"Books\">BOOKS<\/a>"
+          }
+        },
+        "59a26188-411d-4db5-9cf2-381087665a9d": {
+          "type": "study-guides-page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133590.jpg",
+            "heading": "<a href=\"\/pages\/study-guides\" title=\"Study Guides\">Study Guides<\/a>"
+          }
+        },
+        "786da075-81e7-456e-961a-ad9029e1a6e9": {
+          "type": "music-page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133592.png",
+            "heading": "<a href=\"\/pages\/music\" title=\"Music\">Music<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "286c4536-c51c-43e7-873e-8775dfab5deb",
+        "59a26188-411d-4db5-9cf2-381087665a9d",
+        "786da075-81e7-456e-961a-ad9029e1a6e9"
+      ],
+      "settings": {
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "blocks": {
+        "9ca4c9e3-b72f-471a-ab60-728303f387d5": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View all books",
+            "button_link_1": "shopify:\/\/pages\/books"
+          }
+        }
+      },
+      "block_order": [
+        "9ca4c9e3-b72f-471a-ab60-728303f387d5"
+      ],
+      "settings": {
+        "title": "",
+        "class": "",
+        "heading_size": "h2",
+        "description": "<p>BOOKS<\/p>",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "you-may-enjoy",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 92
+      }
+    },
+    "0c7d9e2e-a44b-4605-92d0-0d6b65888ec3": {
+      "type": "featured-collection",
+      "blocks": {
+        "434b6c52-f0e2-4e76-a417-1d0476240a62": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View all Study Guides",
+            "button_link_1": "shopify:\/\/pages\/study-guides"
+          }
+        }
+      },
+      "block_order": [
+        "434b6c52-f0e2-4e76-a417-1d0476240a62"
+      ],
+      "settings": {
+        "title": "",
+        "class": "imgfon",
+        "background": "shopify:\/\/shop_images\/fon.jpg",
+        "heading_size": "h1",
+        "description": "<p>Study Guides<\/p>",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "study-guides-collection",
+        "products_to_show": 3,
+        "columns_desktop": 2,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "1458c43a-ad5a-4427-a3c5-d95f7d0e58f3": {
+      "type": "about-video-section",
+      "blocks": {
+        "351bc986-61d0-4d2b-bb46-e9c169f2d924": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133725_3.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/XMLID_184__2.png",
+            "link": "Watch Now",
+            "title": "About Milestone Church",
+            "heading": "Reaching people\u2028Building Lives",
+            "content": "<p>Pastor Jeff Little dreamed of planting a church with one simple goal: help people begin a relationship with Jesus and see their lives built on the foundation of the Bible. The vision was to develop a church that was life-giving, spirit-filled, and would embody the mission of reaching people and building lives.<\/p><p>We see God impacting the regions of Keller, Haslet, and McKinney through Milestone Church every day and we want you to be a part! We invite you to join us for one of our weekend services or watch live online on Sundays.<\/p>"
+          }
+        },
+        "61cb2751-da23-458c-85f1-feb3ddfac644": {
+          "type": "Author",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133726_1.jpg",
+            "heading": "Pastor Jeff",
+            "content": "<p>Pastor Jeff has been in ministry for 30 years. He planted Milestone Church with a few friends in 2002, and it is now a family of thousands that continues to reach people and build lives throughout the region.<\/p><p>More than a passionate and dynamic communicator, Pastor Jeff is committed to developing people and training leaders to reach their God-given potential. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "351bc986-61d0-4d2b-bb46-e9c169f2d924",
+        "61cb2751-da23-458c-85f1-feb3ddfac644"
+      ],
+      "settings": {
+        "heading": "Story",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=4ZJzlpfn1Lo"
+      }
+    },
+    "8e811edf-c2d7-4ad8-87b7-9e9b43644cd5": {
+      "type": "banner-music-section",
+      "blocks": {
+        "8d0a4b55-0cb9-40b1-a775-6790836c0c7f": {
+          "type": "title",
+          "settings": {
+            "title": "New Music"
+          }
+        },
+        "b03a8cc2-0b6e-4f06-ba8b-aeb1de4eb282": {
+          "type": "heading",
+          "settings": {
+            "heading": "Milestone Worship, Faithful"
+          }
+        },
+        "4529b527-aca1-49e3-b2d4-9963c740602f": {
+          "type": "content",
+          "settings": {
+            "content": "Listen to Milestone Worship’s newest album, Faithful, which stories the songs that have anchored and unified our spiritual family through years of following Jesus together."
+          }
+        },
+        "32c0ac79-ec5b-4ea6-b0c0-42b4444b801d": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View all music",
+            "button_link_1": "shopify:\/\/pages\/music"
+          }
+        }
+      },
+      "block_order": [
+        "8d0a4b55-0cb9-40b1-a775-6790836c0c7f",
+        "b03a8cc2-0b6e-4f06-ba8b-aeb1de4eb282",
+        "4529b527-aca1-49e3-b2d4-9963c740602f",
+        "32c0ac79-ec5b-4ea6-b0c0-42b4444b801d"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_2.jpg",
+        "hero_image": "shopify:\/\/shop_images\/Rectangle_4133722.jpg",
+        "class": "index-banner-music"
+      }
+    },
+    "de9cb78e-ae6b-499f-bd15-b7173a2794f0": {
+      "type": "section-slider",
+      "blocks": {
+        "d94ec55f-599a-4333-a797-06aaf50e8757": {
+          "type": "post",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133621.jpg",
+            "heading": "The Way to Win",
+            "content": "<p>\"The Way To Win should be read and re-read over a lifetime. It takes things that I simply didn’t know how to do, and gives me practical steps to grow. I’m a better leader for my family, and for that reason alone I recommend this book. I’m still growing but I have a playbook now that I can use on a daily basis.\"<\/p>",
+            "author": "Steve Stallcup",
+            "date": "July 11, 2023"
+          }
+        },
+        "f0ad4e8a-2c9d-4f69-b43a-f5144f55579f": {
+          "type": "post",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133621_2.jpg",
+            "heading": "Promises",
+            "content": "<p>\"Promises is not only an absolutely stunning study guide, but is so foundational and life giving. I loved going through this study with my small group and understanding God’s promises to us in our most important relationships and biggest struggles. I understood God in a way I hadn’t ever grasped before; it brought me closer to Him.\"<\/p>",
+            "author": "Taelor Martinez",
+            "date": "August 20, 2023"
+          }
+        },
+        "a6a72320-4c68-4ab6-9042-a05789369024": {
+          "type": "post",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133621_4.jpg",
+            "heading": "Who Am I?",
+            "content": "<p>\"The Way To Win should be read and re-read over a lifetime. It takes things that I simply didn’t know how to do, and gives me practical steps to grow. I’m a better leader for my family, and for that reason alone I recommend this book. I’m still growing but I have a playbook now that I can use on a daily basis.\"<\/p>",
+            "author": "Steve Stallcup",
+            "date": "July 11, 2023"
+          }
+        },
+        "749c45e4-0278-41d1-9498-4fcdd55bf805": {
+          "type": "post",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133621.jpg",
+            "heading": "The Way To Win",
+            "content": "<p>\"The Way To Win should be read and re-read over a lifetime. It takes things that I simply didn’t know how to do, and gives me practical steps to grow. I’m a better leader for my family, and for that reason alone I recommend this book. I’m still growing but I have a playbook now that I can use on a daily basis.\"<\/p>",
+            "author": "Steve Stallcup",
+            "date": "July 11, 2023"
+          }
+        }
+      },
+      "block_order": [
+        "d94ec55f-599a-4333-a797-06aaf50e8757",
+        "f0ad4e8a-2c9d-4f69-b43a-f5144f55579f",
+        "a6a72320-4c68-4ab6-9042-a05789369024",
+        "749c45e4-0278-41d1-9498-4fcdd55bf805"
+      ],
+      "settings": {
+        "title": "<p>Heartfelt Testimonies<\/p>",
+        "description": "Shared Journeys"
+      }
+    }
+  },
+  "order": [
+    "7ab61185-5e0f-413b-8810-ec082b18e2fc",
+    "d1e6bd71-d395-407c-8da5-9e951d3384e7",
+    "featured_collection",
+    "0c7d9e2e-a44b-4605-92d0-0d6b65888ec3",
+    "1458c43a-ad5a-4427-a3c5-d95f7d0e58f3",
+    "8e811edf-c2d7-4ad8-87b7-9e9b43644cd5",
+    "de9cb78e-ae6b-499f-bd15-b7173a2794f0"
+  ]
+}

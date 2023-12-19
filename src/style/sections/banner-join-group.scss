@@ -1,0 +1,93 @@
+.join-group {
+  padding: 100px 0;
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    &_num-navi {
+      background: #e5be5e;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      font-family: "Nova-600";
+      font-size: 30px;
+      font-weight: 600;
+      justify-content: center;
+      letter-spacing: 0;
+      line-height: 37px;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 16px;
+      align-items: center;
+    }
+    &_heading {
+      background-image: linear-gradient(90deg, transparent 0%, #e5be5e 0);
+      background-position: 50% 0px;
+      background-repeat: no-repeat;
+      background-size: 2% 1px;
+      font-family: "Nova-400";
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1d2228;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+    &_text {
+      font-family: "Nova-300";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #1d2228;
+      margin-bottom: 50px;
+    }
+    .inner-box__block-content_btn-wrap {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      .btn-wrap__button {
+        height: 50px;
+        padding: 0 35px;
+        border: 1px solid #5491d6;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+          text-align: center;
+          font-family: "Nova-700";
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: 0em;
+          color: #5491d6;
+          text-transform: uppercase;
+        }
+        &:hover {
+          color: rgba(84, 145, 214, 1);
+          background-color: #5491d6;
+        }
+        &:hover a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .join-group__wrapper {
+    .inner-box__block-content_btn-wrap {
+      flex-wrap: wrap;
+      .btn-wrap__button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.banner-video {
+  padding-top: 80px;
+  position: relative;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_heading {
+      background-image: linear-gradient(90deg,transparent 77%,#e5be5e 0);
+    background-position: 10px 32px;
+    background-repeat: no-repeat;
+    background-size: 50% 1px;
+    color: #e5be5e;
+    font-family: Nova-700;
+    letter-spacing: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 28px;
+    line-height: 18px;
+    text-transform: uppercase;
+    p{
+      margin: 0px;
+    }
+    }
+    &_content {
+      max-width: 880px;
+      text-transform: uppercase;
+      font-family: "Nova-400";
+      font-size: 50px;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0px;
+      }
+    }
+    &_text {
+      font-family: "Nova-700";
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 10px;
+      max-width: 680px;
+      margin-top: 10px;
+      text-transform: uppercase;
+      p {
+        margin: 0;
+      }
+    }
+    &_description {
+      font-family: "Nova-400";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+      max-width: 680px;
+      p {
+        margin: 0;
+      }
+    }
+    .banner-video__wraper_video-block {
+      display: flex;
+      max-width: 800px;
+      z-index: 2;
+      position: absolute;
+      bottom: -84px;
+
+      .video-block_wrapper {
+        position: relative;
+        width: 100%;
+
+        .video__img-box_img {
+          width: 100%;
+        }
+        .img-link-wrapper {
+          cursor: pointer;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+.video-container {
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .banner-video__wrapper_content {
+    font-size: 37px;
+  }
+}

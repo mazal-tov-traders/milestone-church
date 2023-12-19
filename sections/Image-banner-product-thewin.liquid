@@ -1,0 +1,150 @@
+<div class="banner product-thewin">
+  <div class="banner-inner-music {{ section.settings.secon_class }}">
+    <div class="page-width">
+      <div class="banner-music-wrapper">
+        <div class="banner-innerr__box">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'title' -%}
+                <h2 class="banner-innerr__box_title">
+                  {{ block.settings.title }}
+                </h2>
+              {%- when 'heading' -%}
+                <h2 class="banner-innerr__box_heading">
+                  {{ block.settings.heading }}
+                </h2>
+              {%- when 'content' -%}
+                <div class="banner-innerr__box_text">
+                  <p>{{ block.settings.content }}</p>
+                </div>
+              {%- when 'buttons' -%}
+                <div
+                  class="banner-innerr__box_buttonns"
+                >
+                  {%- if block.settings.button_label_1 != blank -%}
+                    <a
+                      {% if block.settings.button_link_1 == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link_1 }}"
+                      {% endif %}
+                      class="buttone"
+                      id="navigation-anchor__link"
+                    >
+                      {{- block.settings.button_label_1 | escape -}}
+                    </a>
+                  {%- endif -%}
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+        {% if section.settings.hero_image != blank %}
+          <div class="banner-innerr__hero-image">
+            <img
+              src="{{ section.settings.hero_image | img_url: 'original' }}"
+              alt="image"
+              class="min-banner"
+            >
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .banner-inner-music.{{ section.settings.secon_class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+  }
+</style>
+{% schema %}
+{
+  "name": "banner-product-thewin",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "text",
+      "id": "secon_class",
+      "default": "thewin",
+      "label": "class for image background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "default": "Image banner",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Baner Product The Win"
+    }
+  ]
+}
+{% endschema %}

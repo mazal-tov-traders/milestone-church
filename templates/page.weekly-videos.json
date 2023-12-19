@@ -1,0 +1,135 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa": {
+      "type": "image-banner",
+      "blocks": {
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Weekly Videos",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1"
+      ],
+      "settings": {
+        "class": "",
+        "image": "shopify:\/\/shop_images\/Rectangle_4133714_7.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "e2537bb5-6e39-4c0a-a049-3b12b9e6be32": {
+      "type": "weekly-videos",
+      "blocks": {
+        "73a57bbc-a82b-4bae-98b4-6b76dec5dc60": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_5.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1_a14e66d8-7731-43f0-9e50-6b7313607138.png",
+            "heading": "<p>Preface - The Region of Tiberias<\/p>",
+            "video_url": "https:\/\/youtu.be\/7Ng9UjpoOpc"
+          }
+        },
+        "c32a57c8-bfde-4c67-956c-a7f0f4d45e0f": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_6.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
+            "heading": "<p>Introduction - The Southern Steps<\/p>",
+            "video_url": "https:\/\/youtu.be\/_XI69NYrdBI"
+          }
+        },
+        "4d0b1645-e57c-44e1-b32a-50412545aa55": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_7.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
+            "heading": "<p>Chapter 1 - The Sea of Galilee<\/p>",
+            "video_url": "https:\/\/youtu.be\/RisdXcarUm0"
+          }
+        },
+        "658fbdc9-02d2-4f4e-923c-821305e043cf": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_8.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
+            "heading": "<p>Chapter 2 - A Road Outside of Jerusalem<\/p>",
+            "video_url": "https:\/\/youtu.be\/QZj8UBULtrk"
+          }
+        },
+        "d26e58f5-3789-4c76-a6e1-a362756f286e": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_9.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
+            "heading": "<p>Chapter 3 - The Ruins of the Synagogue of Capernaum<\/p>",
+            "video_url": "https:\/\/youtu.be\/5NEEwf8fIkY"
+          }
+        },
+        "8e4d02d5-7108-4e6d-8f98-71b177e08419": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_11.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_5968852_34bf9f61-f346-41f8-859b-1e5b7ff4872b.png",
+            "heading": "<p>Chapter 4 - The Ruins of a Village at Capernaum<\/p>",
+            "video_url": "https:\/\/youtu.be\/qgIqHolpSdA"
+          }
+        },
+        "f6cd2db8-c7c7-480b-b7c9-5302e8412ee3": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_12.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_5968852_34bf9f61-f346-41f8-859b-1e5b7ff4872b.png",
+            "heading": "<p>Chapter 5 - The Mount of Olives Overlooking Bethany<\/p>",
+            "video_url": "https:\/\/youtu.be\/oLfDgn2S58Q"
+          }
+        },
+        "d54604b8-7134-4aed-a728-be84305d4ba7": {
+          "type": "video-card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133724_13.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/fi_5968852_34bf9f61-f346-41f8-859b-1e5b7ff4872b.png",
+            "heading": "<p>Chapter 6 - From the Shore of the Sea of Galilee<\/p>",
+            "video_url": "https:\/\/youtu.be\/YXQ5OM3KPcg"
+          }
+        }
+      },
+      "block_order": [
+        "73a57bbc-a82b-4bae-98b4-6b76dec5dc60",
+        "c32a57c8-bfde-4c67-956c-a7f0f4d45e0f",
+        "4d0b1645-e57c-44e1-b32a-50412545aa55",
+        "658fbdc9-02d2-4f4e-923c-821305e043cf",
+        "d26e58f5-3789-4c76-a6e1-a362756f286e",
+        "8e4d02d5-7108-4e6d-8f98-71b177e08419",
+        "f6cd2db8-c7c7-480b-b7c9-5302e8412ee3",
+        "d54604b8-7134-4aed-a728-be84305d4ba7"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa",
+    "e2537bb5-6e39-4c0a-a049-3b12b9e6be32"
+  ]
+}

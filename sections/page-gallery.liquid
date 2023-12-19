@@ -1,0 +1,127 @@
+<div class="page-links">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'books-page' %}
+        <div class="books-page">
+          <div class="books-page__wrapper">
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | img_url:  'original'}}"
+                alt="page_image"
+                class="books-page__wrapper_image"
+              >
+            {% endif %}
+            {%- if block.settings.heading != blank -%}
+              <div class="books-page__wrapper_heading">
+                {{ block.settings.heading }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% when 'study-guides-page' %}
+        <div class="study-guides-page">
+          <div class="study-guides-page__wrapper">
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | img_url:  'original'}}"
+                alt="page_image"
+                class="study-guides-page__wrapper_image"
+              >
+            {% endif %}
+            {%- if block.settings.heading != blank -%}
+              <div class="study-guides-page__wrapper_heading">
+                {{ block.settings.heading }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% when 'music-page' %}
+        <div class="music-page">
+          <div class="music-page__wrapper">
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | img_url:  'original'}}"
+                alt="page_image"
+                class="music-page__wrapper_image"
+                
+              >
+            {% endif %}
+            {%- if block.settings.heading != blank -%}
+              <div class="music-page__wrapper_heading">
+                {{ block.settings.heading }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Page Gallery",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "books-page",
+      "name": "Books Page",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "study-guides-page",
+      "name": "Study Guides Page",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "music-page",
+      "name": "Music Page",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Gallery"
+    }
+  ]
+}
+{% endschema %} 
+
+

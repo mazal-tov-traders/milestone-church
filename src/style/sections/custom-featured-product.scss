@@ -1,0 +1,325 @@
+.custom-featured-product {
+  .custom-featured-product_num-navi {
+    padding-top: 100px;
+    .number-navigat {
+      background: #e5be5e;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      font-family: "Nova-600";
+      font-size: 30px;
+      font-weight: 600;
+      justify-content: center;
+      letter-spacing: 0;
+      line-height: 37px;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 16px;
+      align-items: center;
+    }
+  }
+  .custom-featured-product_headingg {
+    background-image: linear-gradient(90deg, transparent 0%, #e5be5e 0);
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+    background-size: 2% 1px;
+    font-family: "Nova-400";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1d2228;
+    text-transform: uppercase;
+    padding-top: 12px;
+  }
+
+  .roduct__info-container {
+    margin: 0;
+  }
+  .product__info-wrapper {
+    max-width: 607px;
+
+    .wrapper-baton-and-quantity {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+      .price-per-item__container {
+        width: 100px;
+      }
+      .quantity {
+        width: 93px;
+        height: 50px;
+        border: 1px solid #c1c1c1;
+        .quantity__button {
+          width: 37px;
+        }
+      }
+      .product-form__input {
+        flex: 0 0 100%;
+        padding: 0;
+        margin: 0;
+        min-width: fit-content;
+        border: none;
+        max-width: 115px;
+      }
+
+      .quantity__label.form__label {
+        display: none;
+      }
+      .shopify-payment-button {
+        display: none;
+      }
+      .product-form {
+        width: 24.4rem;
+        width: 100%;
+        height: 50px;
+        margin: 0 !important;
+        background-color: #5390d5;
+        width: 24.4rem !important;
+
+        button {
+          &::before,
+          &::after {
+            display: none;
+          }
+          span {
+            font-family: "Nova-700";
+            font-size: 15px;
+            letter-spacing: 0em;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            padding: 0px 2px 0 8px;
+            text-transform: uppercase;
+          }
+        }
+
+        .product-form__submit {
+          padding: 0 7px;
+          svg {
+            margin-bottom: 3px;
+          }
+          .product-form__price {
+            &_rcp {
+              padding-left: 5px;
+              font-family: "Nova-700";
+              font-size: 15px;
+              line-height: 18px;
+              letter-spacing: 0em;
+              color: rgba(255, 255, 255, 1);
+              .price-cent {
+                font-family: "Nova-700";
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 8px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding-left: 0;
+              }
+            }
+            p {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+      }
+    }
+    .custom-featured-product__heading1 {
+      margin-bottom: 28px;
+      font-family: "Nova-400";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(29, 34, 40, 1);
+      text-transform: uppercase;
+      p {
+        margin: 0;
+      }
+
+      strong {
+        font-family: "Nova-400";
+        font-size: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(29, 34, 40, 1);
+      }
+    }
+
+    .custom-featured-product__heading {
+      margin-bottom: 2px;
+      strong {
+        font-family: "Nova-400";
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(29, 34, 40, 1);
+      }
+    }
+    .custom-featured-product__discription {
+      margin-bottom: 25px;
+      font-family: "Nova-400";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      p {
+        margin: 0 0 20px;
+      }
+
+      ul {
+        padding-left: 17px;
+
+        li {
+          font-family: "Nova-400";
+          font-size: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(29, 34, 40, 1);
+          line-height: 19.49px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .no-js-hidden {
+      .price-item.price-item--regular {
+        font-family: "Nova-600";
+        font-weight: 600;
+        font-size: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(29, 34, 40, 1);
+        .price-cent {
+          font-family: "Nova-700";
+          font-weight: 700;
+          color: #1d2228;
+          letter-spacing: 0;
+          text-align: left;
+          font-size: 23px;
+          line-height: 33px;
+        }
+      }
+    }
+
+    .custom-featured-product__content {
+      font-family: "Nova-400it";
+      font-size: 16px;
+      font-style: italic;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #1d2228;
+      margin-bottom: 30px;
+      width: 100%;
+      margin-top: 0px;
+      P {
+        margin-top: 0;
+      }
+    }
+    .custom-featured-product__text {
+      font-family: "Nova-600";
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      color: #1d2228;
+      margin-bottom: 35px;
+    }
+    .buttons-link-box {
+      display: flex;
+      gap: 20px;
+      .buttons-link-box__wrapper {
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 1);
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        &_button1 {
+          height: 100%;
+          padding: 12px 35px;
+          img {
+            height: 100%;
+          }
+        }
+        &_button2 {
+          height: 100%;
+          padding: 0px 10px;
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .product__media-wrapper {
+    display: inline-block;
+    text-align: end;
+    .image-product {
+      max-width: 550px;
+      width: 100%;
+    }
+  }
+  .product__info-container > * + * {
+    margin: 0.5rem 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .custom-featured-product {
+    .product__info-wrapper {
+      .wrapper-baton-and-quantity {
+        .product-form__input {
+          margin: 0 0 20px;
+        }
+      }
+    }
+    .product__info-wrapper {
+      .buttons-link-box {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+//
+@media screen and (min-width: 730px) {
+  .custom-featured-product.mira {
+    .grid__item.product__media-wrapper {
+      padding-left: 98px;
+    }
+    .product__info-wrapper {
+      padding: 0 0 0 98px !important;
+      .custom-featured-product__heading1 {
+        max-width: 546px;
+      }
+      .custom-featured-product__discription {
+        color: #1d2228;
+        font-family: "Nova-300";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        max-width: 357px;
+      }
+      .wrapper-baton-and-quantity {
+        .product-form__input {
+          border: none;
+          flex: 0 0 100%;
+          margin: 0;
+          max-width: 111px;
+        }
+      }
+    }
+  }
+  .custom-featured-product {
+    .product__media-wrapper {
+      height: 616px;
+    }
+  }
+}

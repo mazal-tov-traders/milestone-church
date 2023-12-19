@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f03f5877-a901-4e74-8cd9-30df79eab338": {
+      "type": "section-image-baner-video",
+      "blocks": {
+        "d5e5e5c7-b2c4-45ed-9571-2c7d2794d47b": {
+          "type": "media",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133737_1.jpg",
+            "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png"
+          }
+        }
+      },
+      "block_order": [
+        "d5e5e5c7-b2c4-45ed-9571-2c7d2794d47b"
+      ],
+      "settings": {
+        "background": "shopify:\/\/shop_images\/Rectangle_4133714_5.jpg",
+        "heading": "<p>You Paid It All<\/p>",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=ACX_vegow10",
+        "class": "paid"
+      }
+    },
+    "140d03f2-034c-4c52-9464-739f353a4452": {
+      "type": "banner-page-paid",
+      "blocks": {
+        "265b149d-2389-421f-a4ba-7f5b628360cc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133735_1.jpg"
+          }
+        },
+        "4d9acd56-d049-4b34-bf4d-3136af9edad6": {
+          "type": "heading",
+          "settings": {
+            "heading": "You Paid It All"
+          }
+        },
+        "18825485-e937-4bf3-b813-9194359d6f65": {
+          "type": "content",
+          "settings": {
+            "content": "This great, high energy song declaring what Jesus has done in our lives, and the promise that it brings can be found wherever you stream your music."
+          }
+        },
+        "26941067-1a06-4a53-853a-6b7a0707562c": {
+          "type": "social_media",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Mask_group.png",
+            "button_link1": "https:\/\/open.spotify.com\/album\/4wvtD99ygiRotIyyxCbou0?si=yHTLa01cSjOVP_iARqv3ig",
+            "image2": "shopify:\/\/shop_images\/image_7.png",
+            "button_link2": "https:\/\/youtu.be\/ACX_vegow10",
+            "image3": "shopify:\/\/shop_images\/Apple.png",
+            "button_link3": "https:\/\/music.apple.com\/us\/album\/you-paid-it-all-single\/1508221536",
+            "image4": "shopify:\/\/shop_images\/Amazon_1.png",
+            "button_link4": "https:\/\/music.amazon.com\/albums\/B08744SHQB?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_kIymeIYNRp2GSugzpCOVUQBv7"
+          }
+        }
+      },
+      "block_order": [
+        "265b149d-2389-421f-a4ba-7f5b628360cc",
+        "4d9acd56-d049-4b34-bf4d-3136af9edad6",
+        "18825485-e937-4bf3-b813-9194359d6f65",
+        "26941067-1a06-4a53-853a-6b7a0707562c"
+      ],
+      "settings": {
+        "class": "page-paid",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725_10.jpg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f03f5877-a901-4e74-8cd9-30df79eab338",
+    "140d03f2-034c-4c52-9464-739f353a4452"
+  ]
+}

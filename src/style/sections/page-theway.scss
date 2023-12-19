@@ -1,0 +1,40 @@
+// start image-banner-content
+.banner-innerr.theway {
+  .page-width {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 71px;
+    padding-top: 71px;
+    .banner-innerr__hero-image {
+      max-width: 246px;
+
+      img {
+        margin: 0;
+        max-width: 246px;
+        width: 100%;
+      }
+    }
+    .banner-innerr__box {
+      max-width: 269px;
+      text-align: center;
+      padding-top: 20px;
+      &_text {
+        background-image: linear-gradient(90deg,transparent 70%,#e5be5e 0);
+        background-position: 63px 0px;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        background-size: 34% 2px;
+        color: #fff;
+        font-family: 'Nova-400';
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+      &_button {
+      }
+    }
+  }
+}
+// end image-banner-content

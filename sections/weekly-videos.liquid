@@ -1,0 +1,144 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign video_idd = section.settings.video_url.id
+
+  if section.settings.video != null
+    assign ratio_diff = section.settings.video.aspect_ratio | minus: section.settings.video_url.aspect_ratio | abs
+    if ratio_diff < 0.01 and ratio_diff > 0
+      assign fix_ratio = true
+    endif
+  endif
+-%}
+
+<div class="weekly-videos">
+  <div class="weekly-videos__wrapper page-width">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'video-card' %}
+          <div class="weekly-videos__wrapper_video-card" data-video-url="{{ block.settings.video_url.id }}">
+            <div class='img-wrapper'>
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | img_url: 'original' }}"
+                alt="image"
+                class="video-card_img"
+                >
+            {% endif %}
+            {% if block.settings.image_youtube != blank %}
+              <img
+                src="{{ block.settings.image_youtube | img_url: 'original' }}"
+                alt="image"
+                class="image-youtube"
+                onclick="showPopup(this.closest('[data-video-url]').dataset.videoUrl)">
+            {% endif %}
+          </div>
+            {% if block.settings.heading != blank %}
+              <div class="video-block__content">
+                {{ block.settings.heading }}
+              </div>
+            {% endif %}
+          </div>
+        {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+<div class="popup-video" id="popup">
+  <span class="close" onclick="closePopup()">{% render 'icon-close-black' %}</span>
+  <div id="videoContainer" class="video-container"></div>
+</div>
+
+
+
+<script >
+  function showPopup(dataVideoUrl) {
+
+    if (!dataVideoUrl) return;
+  
+    const videoCard = document.querySelector(`[data-video-url="${dataVideoUrl}"]`);
+  
+    if (videoCard) {
+      showVideo(videoCard.dataset.videoUrl);
+    } else {
+
+      console.warn(`No video card found for data-video-url: ${dataVideoUrl}`);
+    }
+  }
+  
+  function showVideo(videoUrl) {
+    const popup = document.getElementById('popup');
+    const videoContainer = document.getElementById('videoContainer');
+  
+    videoContainer.innerHTML = '';
+  
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoUrl}`;
+    iframe.className = 'js-youtube';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+  
+    videoContainer.appendChild(iframe);
+  
+    popup.style.display = 'block';
+  }
+  
+  function closePopup() {
+    const popup = document.getElementById('popup');
+    const iframe = document.querySelector('#videoContainer iframe');
+  
+    if (iframe) {
+      iframe.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+    }
+  
+    if (popup) {
+      document.getElementById('videoContainer').innerHTML = '';
+      popup.style.display = 'none';
+    }
+  }
+</script>
+{% schema %}
+{
+  "name": "weekly-videos",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "video-card",
+      "name": "Video Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_youtube",
+          "label": "Youtube Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "heading"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube", "vimeo"],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.video.settings.video_url.label",
+          "info": "t:sections.video.settings.video_url.info"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Weekly Video"
+    }
+  ]
+}
+{% endschema %}

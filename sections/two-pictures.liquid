@@ -1,0 +1,145 @@
+<div class="banner-background {{ section.settings.class_name }}">
+  <div class="page-width">
+    <div class="two-images__wrapper {% if section.settings.position_content == false %}right-content{% endif %}">
+      <div class="two-images__wrapper_left">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'bannerleft' -%}
+              {% if block.settings.banner_left != blank %}
+                <div class="banner-img__left">
+                  <img
+                    src="{{ block.settings.banner_left | img_url: 'original' }}"
+                    alt="image"
+                    class="image"
+                  >
+                </div>
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      <div class="two-images__wrapper_right">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'bannerright' -%}
+              {% if block.settings.banner_right != blank %}
+                <div class="banner-img__right">
+                  <img
+                    src="{{ block.settings.banner_right | img_url: 'original' }}"
+                    alt="image"
+                    class="image"
+                  >
+                </div>
+              {% endif %}
+            {%- when 'buttons' -%}
+              <div
+                class="banner-innerr__box_buttonss"
+              >
+                {%- if block.settings.button_label_1 != blank -%}
+                  <a
+                    {% if block.settings.button_link_1 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_1 }}"
+                    {% endif %}
+                    class="buttonn"
+                  >
+                    {{- block.settings.button_label_1 | escape -}}
+                  </a>
+                {%- endif -%}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .banner-background.{{ section.settings.class_name }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 740px;
+  }
+
+  @media screen and (max-width: 1369px) {
+    .banner-background.{{ section.settings.class_name }}{
+        height: auto;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "Banner for two images",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "class_name",
+      "label": "Second class for backgroun"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background image"
+    },
+    {
+      "type": "checkbox",
+      "id": "position_content",
+      "default": true,
+      "label": "Content With Left"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "bannerleft",
+      "name": "image from left",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "banner_left",
+          "label": "Media"
+        }
+      ]
+    },
+    {
+      "type": "bannerright",
+      "name": "image from right",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "banner_right",
+          "label": "Media"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner for two images"
+    }
+  ]
+}
+{% endschema %}
