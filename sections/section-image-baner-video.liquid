@@ -14,13 +14,19 @@
 <div class="banner-image-video {{ section.settings.class }}">
   <div class="banner-image-video__wrapper page-width">
     {% if section.settings.heading != blank %}
-      <div class="banner-image-video__wrapper_heading">
+      <h1 class="banner-image-video__wrapper_heading">
         {{ section.settings.heading }}
-      </div>
+      </h1>
     {% endif %}
     <div class="video-block">
       {% for block in section.blocks %}
         {% case block.type %}
+          {%- when 'title_screen' -%}
+            {%- if block.settings.screen_reader_text != blank -%}
+              <h1 class="screen-reader-text">
+                {{ block.settings.screen_reader_text }}
+              </h1>
+            {% endif %}
           {% when 'media' %}
             <div class="video-block__wrapper">
               {% if block.settings.image != blank %}
@@ -113,6 +119,18 @@
           "type": "image_picker",
           "id": "image_youtube",
           "label": "youtube icon"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

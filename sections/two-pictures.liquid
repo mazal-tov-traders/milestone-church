@@ -31,22 +31,22 @@
                 </div>
               {% endif %}
             {%- when 'buttons' -%}
+              {%- if block.settings.button_label_1 != blank -%}
               <div
-                class="banner-innerr__box_buttonss"
+                class="banner-innerr__box_button"
               >
-                {%- if block.settings.button_label_1 != blank -%}
                   <a
                     {% if block.settings.button_link_1 == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="buttonn"
+                    class="my-custom-btn {{ section.settings.style_btn }}"
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
-                {%- endif -%}
               </div>
+            {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -84,6 +84,26 @@
       "type": "image_picker",
       "id": "background",
       "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "options": [
+        {
+          "value": "gold",
+          "label": "gold"
+        },
+        {
+          "value": "blue",
+          "label": "blue"
+        },
+        {
+          "value": "white",
+          "label": "white"
+        }
+      ],
+      "default": "white",
+      "label": "button color"
     },
     {
       "type": "checkbox",

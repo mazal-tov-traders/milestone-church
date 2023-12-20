@@ -119,6 +119,12 @@
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
+          {%- when 'title_screen' -%}
+            {%- if block.settings.screen_reader_text != blank -%}
+              <h1 class="screen-reader-text">
+                {{ block.settings.screen_reader_text }}
+              </h1>
+            {% endif %}
           {%- when 'heading' -%}
             <h2
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
@@ -142,7 +148,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="buttonn{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="my-custom-btn {{ section.settings.style_btn }} {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                   id="navigation-anchor__link"
                 >
                   {{- block.settings.button_label_1 | escape -}}
@@ -155,7 +161,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="buttonn{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="my-custom-btn {{ section.settings.style_btn }} {% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
                   id="navigation-anchor__link"
                 >
                   {{- block.settings.button_label_2 | escape -}}
@@ -296,6 +302,26 @@
       ],
       "default": "center",
       "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "options": [
+        {
+          "value": "gold",
+          "label": "gold"
+        },
+        {
+          "value": "blue",
+          "label": "blue"
+        },
+        {
+          "value": "white",
+          "label": "white"
+        }
+      ],
+      "default": "white",
+      "label": "button color"
     },
     {
       "type": "color_scheme",
@@ -491,6 +517,18 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

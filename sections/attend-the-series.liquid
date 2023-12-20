@@ -35,8 +35,8 @@
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'buttons' -%}
-                  <div class="btn-wrap__button">
-                    {%- if block.settings.button_label_1 != blank -%}
+                  {%- if block.settings.button_label_1 != blank -%}
+                    <div class="btn-wrap__button">
                       <a
                         {% if block.settings.button_link_1 == blank %}
                           role="link" aria-disabled="true"
@@ -48,11 +48,11 @@
                       >
                         {{- block.settings.button_label_1 | escape -}}
                       </a>
-                    {%- endif -%}
-                  </div>
+                    </div>
+                  {%- endif -%}
                 {%- when 'buttonn' -%}
-                  <div class="btn-wrap__button">
-                    {%- if block.settings.button_label_2 != blank -%}
+                  {%- if block.settings.button_label_2 != blank -%}
+                    <div class="btn-wrap__button">
                       <a
                         {% if block.settings.button_link_2 == blank %}
                           role="link" aria-disabled="true"
@@ -64,8 +64,8 @@
                       >
                         {{- block.settings.button_label_2 | escape -}}
                       </a>
-                    {%- endif -%}
-                  </div>
+                    </div>
+                  {%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
           </div>
@@ -74,14 +74,14 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'events' -%}
-                <div class="inner-box__block-events_item">
-                  {%- if block.settings.date != blank -%}
+                {%- if block.settings.date != blank -%}
+                  <div class="inner-box__block-events_item">
                     <div class="inner-box__block-events_item_date">{{ block.settings.date }}</div>
-                  {%- endif -%}
-                  {%- if block.settings.content != blank -%}
-                    <div class="inner-box__block-events_item_content">{{ block.settings.content }}</div>
-                  {%- endif -%}
-                </div>
+                    {%- if block.settings.content != blank -%}
+                      <div class="inner-box__block-events_item_content">{{ block.settings.content }}</div>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
         </div>

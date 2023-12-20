@@ -5,7 +5,7 @@
         <div class="join-group__wrapper_num-navi">{{ section.settings.nubmer_navigat }}</div>
       {%- endif -%}
       {%- if section.settings.heading != blank -%}
-        <div class="join-group__wrapper_heading">{{ section.settings.heading }}</div>
+        <h2 class="join-group__wrapper_heading">{{ section.settings.heading }}</h2>
       {%- endif -%}
       {%- if section.settings.content != blank -%}
         <div class="join-group__wrapper_text">{{ section.settings.content }}</div>
@@ -14,8 +14,8 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'buttons' -%}
-              <div class="btn-wrap__button">
-                {%- if block.settings.button_label_1 != blank -%}
+              {%- if block.settings.button_label_1 != blank -%}
+                <div class="btn-wrap__button">
                   <a
                     {% if block.settings.button_link_1 == blank %}
                       role="link" aria-disabled="true"
@@ -27,8 +27,8 @@
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
-                {%- endif -%}
-              </div>
+                </div>
+              {%- endif -%}
             {%- when 'buttonn' -%}
               <div class="btn-wrap__button">
                 {%- if block.settings.button_label_2 != blank -%}
@@ -64,7 +64,7 @@
   @media screen and (min-width: 1090px) {
     .join-group{
         min-height: 931px;
-    } 
+    }
   }
 </style>
 {% schema %}

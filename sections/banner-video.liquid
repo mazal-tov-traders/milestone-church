@@ -13,10 +13,20 @@
 -%}
 <div id="{{ section.settings.id_for_anchor }}" class="banner-video {{ section.settings.class }}">
   <div class="banner-video__wrapper page-width">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {%- when 'title_screen' -%}
+          {%- if block.settings.screen_reader_text != blank -%}
+            <h1 class="screen-reader-text">
+              {{ block.settings.screen_reader_text }}
+            </h1>
+          {% endif %}
+        {% endcase %}
+      {% endfor %}
     {% if section.settings.heading != blank %}
-      <div class="banner-video__wrapper_heading">
+      <h2 class="banner-video__wrapper_heading">
         {{ section.settings.heading }}
-      </div>
+      </h2>
     {% endif %}
     {% if section.settings.content != blank %}
       <div class="banner-video__wrapper_content">
@@ -157,6 +167,18 @@
           "type": "richtext",
           "id": "content",
           "label": "content"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

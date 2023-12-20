@@ -4,22 +4,35 @@
       <div class="banner-music-wrapper">
         <div class="banner-innerr__box">
           {%- for block in section.blocks -%}
+          
             {%- case block.type -%}
+              {%- when 'title_screen' -%}
+                {%- if block.settings.screen_reader_text != blank -%}
+                  <h1 class="screen-reader-text">
+                    {{ block.settings.screen_reader_text }}
+                  </h1>
+                {% endif %}
               {%- when 'title' -%}
-                <h2 class="banner-innerr__box_title">
-                  {{ block.settings.title }}
-                </h2>
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="banner-innerr__box_title">
+                    {{ block.settings.title }}
+                  </h2>
+                {% endif %}
               {%- when 'heading' -%}
-                <h2 class="banner-innerr__box_heading">
-                  {{ block.settings.heading }}
-                </h2>
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="banner-innerr__box_heading">
+                    {{ block.settings.heading }}
+                  </h2>
+                {% endif %}
               {%- when 'content' -%}
-                <div class="banner-innerr__box_text">
-                  <p>{{ block.settings.content }}</p>
-                </div>
+                {%- if block.settings.content != blank -%}
+                  <div class="banner-innerr__box_text">
+                    <p>{{ block.settings.content }}</p>
+                  </div>
+                {% endif %}
               {%- when 'buttons' -%}
                 <div
-                  class="banner-innerr__box_buttonns"
+                  class="my-custom-btn {{ section.settings.style_btn }}"
                 >
                   {%- if block.settings.button_label_1 != blank -%}
                     <a
@@ -28,7 +41,7 @@
                       {% else %}
                         href="{{ block.settings.button_link_1 }}"
                       {% endif %}
-                      class="buttone"
+                      class="btn"
                       id="navigation-anchor__link"
                     >
                       {{- block.settings.button_label_1 | escape -}}
@@ -81,6 +94,26 @@
       "id": "secon_class",
       "default": "thewin",
       "label": "class for image background"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "options": [
+        {
+          "value": "gold",
+          "label": "gold"
+        },
+        {
+          "value": "blue",
+          "label": "blue"
+        },
+        {
+          "value": "white",
+          "label": "white"
+        }
+      ],
+      "default": "white",
+      "label": "button color"
     }
   ],
   "blocks": [
@@ -137,6 +170,18 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

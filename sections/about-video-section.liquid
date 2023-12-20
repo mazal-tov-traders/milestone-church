@@ -15,9 +15,9 @@
 <section class="about-church">
   <div class="about-video page-width">
     {% if section.settings.heading != blank %}
-      <div class="about-video__tittle">
+      <h2 class="about-video__tittle">
         {{ section.settings.heading }}
-      </div>
+      </h2>
     {% endif %}
     <div class="about-video__wraper">
       {% for block in section.blocks %}
@@ -47,9 +47,9 @@
               </div>
               <div class="video__content-box">
                 {% if block.settings.title != blank %}
-                  <div class="video__content-box_title">
+                  <h2 class="video__content-box_title">
                     {{ block.settings.title }}
-                  </div>
+                  </h2>
                 {% endif %}
                 {% if block.settings.heading != blank %}
                   <div class="video__content-box_heading">

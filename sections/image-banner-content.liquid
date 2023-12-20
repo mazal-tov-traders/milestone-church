@@ -4,6 +4,12 @@
       <div class="banner-innerr__box">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {%- when 'title_screen' -%}
+              {%- if block.settings.screen_reader_text != blank -%}
+                <h1 class="screen-reader-text">
+                  {{ block.settings.screen_reader_text }}
+                </h1>
+              {% endif %}
             {%- when 'heading' -%}
               <h2 class="banner-innerr__box_heading">
                 {{ block.settings.heading }}
@@ -21,23 +27,23 @@
                 </div>
               {%- endif -%}
             {%- when 'buttons' -%}
-              <div
-                class="banner-innerr__box_buttonss"
-              >
-                {%- if block.settings.button_label_1 != blank -%}
+              {%- if block.settings.button_label_1 != blank -%}
+                <div
+                  class="banner-innerr__box_button"
+                >
                   <a
                     {% if block.settings.button_link_1 == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="buttonn"
-                    id="{% if template == 'index' %}german{% else %}navigation-anchor__link{% endif %}"
+                    class="my-custom-btn {{ section.settings.style_btn }}"
+                    id="{% if template == 'index' %}anchor{% else %}navigation-anchor__link{% endif %}"
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
-                {%- endif -%}
-              </div>
+                </div>
+              {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -87,6 +93,26 @@
       "id": "centered-content",
       "default": false,
       "label": "Сentered Сontent"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "options": [
+        {
+          "value": "gold",
+          "label": "gold"
+        },
+        {
+          "value": "blue",
+          "label": "blue"
+        },
+        {
+          "value": "white",
+          "label": "white"
+        }
+      ],
+      "default": "white",
+      "label": "button color"
     }
   ],
   "blocks": [
@@ -143,6 +169,18 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

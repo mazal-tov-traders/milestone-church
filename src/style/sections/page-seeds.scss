@@ -25,14 +25,11 @@
           padding-top: 23px;
         }
       }
-      .banner-innerr__box_buttonss {
+      .banner-innerr__box_button {
         display: flex;
         justify-content: center;
-        .buttonn {
-          background-color: #e5be5e;
-          border: 1px solid #e5be5e;
-          color: #fff;
-          max-width: 235px;
+        .banner-innerr__box_button {
+          max-width: max-content;
           width: 100%;
           padding: 0;
           display: flex;

@@ -2,47 +2,59 @@
   <div class="banner-inner-music">
     <div class="page-width">
       <div class="banner-music-wrapper">
-      <div class="banner-innerr__box">
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'title' -%}
-              <h2 class="banner-innerr__box_title">
-                {{ block.settings.title }}
-              </h2>
-            {%- when 'heading' -%}
-              <h2 class="banner-innerr__box_heading">
-                {{ block.settings.heading }}
-              </h2>
-            {%- when 'content' -%}
-              <div class="banner-innerr__box_text">
-                <p>{{ block.settings.content }}</p>
-              </div>
-            {%- when 'buttons' -%}
-              <div
-                class="banner-innerr__box_buttons"
-              >
-                {%- if block.settings.button_label_1 != blank -%}
-                  <a
-                    {% if block.settings.button_link_1 == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.button_link_1 }}"
-                    {% endif %}
-                    class="buttonn"
-                  >
-                    {{- block.settings.button_label_1 | escape -}}
-                  </a>
+        <div class="banner-innerr__box">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'title_screen' -%}
+                {%- if block.settings.screen_reader_text != blank -%}
+                  <h1 class="screen-reader-text">
+                    {{ block.settings.screen_reader_text }}
+                  </h1>
+                {% endif %}
+              {%- when 'title' -%}
+                {%- if block.settings.title != blank -%}
+                  <h2 class="banner-innerr__box_title">
+                    {{ block.settings.title }}
+                  </h2>
                 {%- endif -%}
-              </div>
+              {%- when 'heading' -%}
+                {%- if block.settings.heading != blank -%}
+                  <h2 class="banner-innerr__box_heading">
+                    {{ block.settings.heading }}
+                  </h2>
+                {%- endif -%}
+              {%- when 'content' -%}
+                {%- if block.settings.heading != blank -%}
+                  <div class="banner-innerr__box_text">
+                    <p>{{ block.settings.content }}</p>
+                  </div>
+                {%- endif -%}
+              {%- when 'buttons' -%}
+                {%- if block.settings.button_label_1 != blank -%}
+                  <div
+                    class="banner-innerr__box_button"
+                  >
+                    <a
+                      {% if block.settings.button_link_1 == blank %}
+                        role="link" aria-disabled="true"
+                      {% else %}
+                        href="{{ block.settings.button_link_1 }}"
+                      {% endif %}
+                      class="my-custom-btn {{ section.settings.style_btn }}"
+                    >
+                      {{- block.settings.button_label_1 | escape -}}
+                    </a>
+                  </div>
+                {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
-      </div>
-      {% if section.settings.hero_image != blank %}
-        <div class="banner-innerr__hero-image">
-          {{ section.settings.hero_image | image_url: width: 640 | image_tag }}
         </div>
-      {% endif %}
-    </div>
+        {% if section.settings.hero_image != blank %}
+          <div class="banner-innerr__hero-image">
+            {{ section.settings.hero_image | image_url: width: 640 | image_tag }}
+          </div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
@@ -69,6 +81,26 @@
       "type": "image_picker",
       "id": "hero_image",
       "label": "Hero image"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "options": [
+        {
+          "value": "gold",
+          "label": "gold"
+        },
+        {
+          "value": "blue",
+          "label": "blue"
+        },
+        {
+          "value": "white",
+          "label": "white"
+        }
+      ],
+      "default": "white",
+      "label": "button color"
     },
     {
       "type": "text",
@@ -131,6 +163,18 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

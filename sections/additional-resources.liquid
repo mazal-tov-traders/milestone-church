@@ -2,7 +2,7 @@
   <div class="page-width">
     <div class="additional-resources__wrapper">
       {%- if section.settings.heading != blank -%}
-        <div class="additional-resources__wrapper_heading">{{ section.settings.heading }}</div>
+        <h2 class="additional-resources__wrapper_heading">{{ section.settings.heading }}</h2>
       {%- endif -%}
       {%- if section.settings.content != blank -%}
         <div class="additional-resources__wrapper_content">{{ section.settings.content }}</div>
@@ -27,16 +27,19 @@
                 {%- endif -%}
                 {%- if block.settings.button_label != blank -%}
                   <div class="resources-card__inner_button">
-                    <a
-                      {% if block.settings.button_link == blank %}
-                        role="link" aria-disabled="true"
-                      {% else %}
-                        href="{{ block.settings.button_link }}"
-                      {% endif %}
-                      class="btn"
-                    >
-                      {{- block.settings.button_label | escape -}}
-                    </a>
+                      <a
+                        {% if block.settings.button_link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_link }}"
+                          {% if block.settings.button_link contains "https://" %}
+                            target="_blank"
+                          {% endif %}
+                        {% endif %}
+                        class="btn"
+                      >
+                        {{- block.settings.button_label | escape -}}
+                      </a>
                   </div>
                 {%- endif -%}
               </div>

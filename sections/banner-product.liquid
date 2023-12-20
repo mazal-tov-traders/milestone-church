@@ -13,10 +13,18 @@
         {% endif %}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {%- when 'title_screen' -%}
+              {%- if block.settings.screen_reader_text != blank -%}
+                <h1 class="screen-reader-text">
+                  {{ block.settings.screen_reader_text }}
+                </h1>
+              {% endif %}
             {%- when 'heading' -%}
-              <h2 class="banner-innerr__box_heading">
-                {{ block.settings.heading }}
-              </h2>
+              {%- if block.settings.heading != blank -%}
+                <h2 class="banner-innerr__box_heading">
+                  {{ block.settings.heading }}
+                </h2>
+              {%- endif -%}
             {%- when 'content' -%}
               {%- if block.settings.content != blank -%}
                 <div class="banner-innerr__box_text">
@@ -30,10 +38,10 @@
                 </div>
               {%- endif -%}
             {%- when 'buttons' -%}
-              <div
-                class="banner-innerr__box_buttonss"
-              >
-                {%- if block.settings.button_label_1 != blank -%}
+              {%- if block.settings.button_label_1 != blank -%}
+                <div
+                  class="banner-innerr__box_button"
+                >
                   <a
                     {% if block.settings.button_link_1 == blank %}
                       role="link" aria-disabled="true"
@@ -44,8 +52,8 @@
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
-                {%- endif -%}
-              </div>
+                </div>
+              {%- endif -%}
             {%- when 'social_media' -%}
               <div class="social-media__wrapper">
                 {% if block.settings.image1 != blank %}
@@ -253,6 +261,18 @@
           "type": "image_picker",
           "id": "image4",
           "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

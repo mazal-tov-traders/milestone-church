@@ -66,6 +66,12 @@
           >
             {%- for block in section.blocks -%}
               {% case block.type %}
+                {%- when 'title_screen' -%}
+                  {%- if block.settings.screen_reader_text != blank -%}
+                    <h1 class="screen-reader-text">
+                      {{ block.settings.screen_reader_text }}
+                    </h1>
+                  {% endif %}
                 {%- when 'heading' -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
@@ -92,7 +98,7 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
-                      class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+                      class="my-custom-btn {{ section.settings.style_btn }} {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
@@ -119,6 +125,26 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "options": [
+        {
+          "value": "gold",
+          "label": "gold"
+        },
+        {
+          "value": "blue",
+          "label": "blue"
+        },
+        {
+          "value": "white",
+          "label": "white"
+        }
+      ],
+      "default": "white",
+      "label": "button color"
     },
     {
       "type": "select",
@@ -457,6 +483,18 @@
           "id": "button_style_secondary",
           "default": false,
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

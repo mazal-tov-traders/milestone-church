@@ -62,25 +62,17 @@
             max-width: 570px;
           }
         }
-        &_buttons {
+        &_button {
           display: flex;
           justify-content: start;
           margin-top: 49px;
           margin-bottom: 10px;
           background: transparent;
-          .buttonn {
+          .my-custom-btn {
             font-family: "Nova-700";
             font-size: 15px;
-            text-transform: uppercase;
-            color: rgba(84, 145, 214, 1);
             letter-spacing: 0em;
-            border: 1px solid rgba(84, 145, 214, 1);
-            background-color: transparent;
             padding: 11px 34px;
-            &:hover {
-              color: #fff;
-              background-color: rgba(84, 145, 214, 1);
-            }
           }
         }
       }
@@ -157,14 +149,14 @@
           font-size: 30px;
           line-height: 37px;
         }
-        .banner-innerr__box_buttons {
+        .banner-innerr__box_button {
           background: transparent;
           display: flex;
           justify-content: center;
           margin-bottom: 1px;
           margin-top: 48px;
-          .buttonn {
-            max-width: 319px;
+          .my-custom-btn {
+            max-width: max-content;
             width: 100%;
             text-align: center;
           }

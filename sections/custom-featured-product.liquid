@@ -35,7 +35,9 @@
 {%- endif -%}
 <div id="{{ section.settings.id_for_anchor }}" class="custom-featured-product {{ section.settings.class }}">
   {%- if section.settings.nubmer_navigat != blank -%}
-    <div class="custom-featured-product_num-navi"><span class="number-navigat">{{ section.settings.nubmer_navigat }}</span></div>
+    <div class="custom-featured-product_num-navi">
+      <span class="number-navigat">{{ section.settings.nubmer_navigat }}</span>
+    </div>
   {%- endif -%}
   {%- if section.settings.purchase != blank -%}
     <div class="custom-featured-product_headingg">{{ section.settings.purchase }}</div>
@@ -366,7 +368,6 @@
                       product_form_id: product_form_id,
                       section_id: section.id
                     -%}
-
                     {% comment %} german {% endcomment %}
                 {%- endcase -%}
               {%- endfor -%}
@@ -398,6 +399,8 @@
                           >
                         </a>
                       </div>
+                    {% endif %}
+                    {% if block.settings.button_link2 != blank %}
                       <div class="buttons-link-box__wrapper">
                         <a
                           class="buttons-link-box__wrapper_button2"
