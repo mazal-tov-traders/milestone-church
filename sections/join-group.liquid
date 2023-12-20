@@ -23,6 +23,7 @@
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
                     class="btn"
+                    target="_blank"
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
@@ -38,6 +39,7 @@
                       href="{{ block.settings.button_link_2 }}"
                     {% endif %}
                     class="btn"
+                    target="_blank"
                   >
                     {{- block.settings.button_label_2 | escape -}}
                   </a>
@@ -61,7 +63,7 @@
   }
   @media screen and (min-width: 1090px) {
     .join-group{
-        height: 931px;
+        min-height: 931px;
     } 
   }
 </style>

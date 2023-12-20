@@ -6,7 +6,7 @@
         "d8aaaab8-6f34-49b9-b3c2-a9c4ee5c1258": {
           "type": "content",
           "settings": {
-            "content": "Coaching & Developing MENIN MATTERS OF Life & Faith"
+            "content": "Coaching & Developing MEN IN MATTERS OF Life & Faith"
           }
         },
         "8bee47b5-27a5-4b8c-bce1-39033ca014a3": {
@@ -128,7 +128,7 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>GROWTH AND DEVELOPMENT GUIDEFOR MEN<\/strong>"
+            "heading": "<strong>GROWTH AND DEVELOPMENT GUIDE FOR MEN<\/strong>"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
@@ -208,7 +208,10 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
-        "hide_variants": false
+        "nubmer_navigat": "",
+        "purchase": "",
+        "hide_variants": false,
+        "height": ""
       }
     },
     "related-products": {
@@ -236,7 +239,7 @@
         "af9d9770-a060-4ccb-9275-888a28651e90": {
           "type": "bannerleft",
           "settings": {
-            "banner_left": "shopify:\/\/shop_images\/1_1.png"
+            "banner_left": "shopify:\/\/shop_images\/TWTW_sample.png"
           }
         },
         "2745ba6e-9db4-49ab-bedd-414d26eade19": {
@@ -248,7 +251,7 @@
         "15c07e74-0af9-4bf0-ba43-dbc0780cf38a": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "sample chapter",
+            "button_label_1": "download a preview",
             "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/WTW_Sample_Chapter.pdf?v=1702642545"
           }
         }
@@ -260,7 +263,7 @@
       ],
       "settings": {
         "class_name": "towin",
-        "background": "shopify:\/\/shop_images\/Rectangle_4133725_4.jpg",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133714_2.jpg",
         "position_content": true
       }
     },

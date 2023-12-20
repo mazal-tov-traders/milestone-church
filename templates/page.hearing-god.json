@@ -32,7 +32,7 @@
             "button_label_1": "Purchase a Book",
             "button_link_1": "#miracleee",
             "button_style_secondary_1": true,
-            "button_label_2": "Videos",
+            "button_label_2": "Watch the Small GroupVideos",
             "button_link_2": "shopify:\/\/pages\/weekly-videos",
             "button_style_secondary_2": true
           }
@@ -282,14 +282,14 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Join a Group",
-            "button_link_1": "#https:\/\/my.milestonechurch.com\/groupfinder"
+            "button_link_1": "https:\/\/my.milestonechurch.com\/groupfinder"
           }
         },
         "8e212271-f53c-4d7a-8459-80aafbf92a08": {
           "type": "buttonn",
           "settings": {
             "button_label_2": "Lead a Group",
-            "button_link_2": "https:\/\/my.milestonechurch.com\/groupregistration"
+            "button_link_2": "https:\/\/my.milestonechurch.com\/page\/921"
           }
         }
       },
@@ -336,7 +336,7 @@
             "heading": "Milestone Kid’s Resource",
             "content": "This resource was designed to help your kid grow in God’s word and is a great way to bring them along in the Hearing God series. Each week features a scripture reading, an application activity, and a prayer.",
             "button_label": "Download Here",
-            "button_link": "#https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_KidsResource_final_web.pdf?v=1702907107"
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_KidsResource_final_web.pdf?v=1702907107"
           }
         }
       },
@@ -378,7 +378,7 @@
           "settings": {
             "heading": "How do I purchase my book?",
             "icon": "none",
-            "row_content": "<p>We have four options for purchasing a book:<\/p><ul><li>Purchase it in the commons during any of our weekend services at any of our campuses.<\/li><li>Stop by the Keller or McKinney campus Monday-Thursday between 9am-5pm to purchase.<\/li><li>Order a physical copy of the resource above and have it shipped to your house. <\/li><li>Purchase our E-Book <a href=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\">here<\/a>.<\/li><\/ul>",
+            "row_content": "<p>We have four options for purchasing a book:<\/p><ul><li>Purchase it in the commons during any of our weekend services at any of our campuses.<\/li><li>Stop by the Keller or McKinney campus Monday-Thursday between 9am-5pm to purchase.<\/li><li>Order a physical copy of the resource above and have it shipped to your house. <\/li><li>Purchase our E-Book <a href=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\" title=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\">here<\/a>.<\/li><\/ul>",
             "page": ""
           }
         },
@@ -396,7 +396,7 @@
           "settings": {
             "heading": "When do the groups start?",
             "icon": "none",
-            "row_content": "<p>If you sign up to be a part of a Miracles Small Group, groups will begin meeting the week of September 9th. Please check with your group leader to confirm the day and time of week your group will meet. If you need assistance, please email smallgroups@milestonechurch.com.<\/p>",
+            "row_content": "<p>If you sign up to be a part of a Miracles Small Group, groups will begin meeting the week of Feb 3rd. Please check with your group leader to confirm the day and time of week your group will meet. If you need assistance, please email smallgroups@milestonechurch.com.<\/p>",
             "page": ""
           }
         }

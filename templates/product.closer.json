@@ -138,6 +138,12 @@
             "heading": "<strong>Personal Study & New Believer Resource<\/strong>"
           }
         },
+        "e88b0236-9caa-44e6-95ff-4e5b70fbc3f9": {
+          "type": "heading_second",
+          "settings": {
+            "heading1": "<p>We invite you to go on a journey with Jesus – from His life to yours.<\/p>"
+          }
+        },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
@@ -148,7 +154,7 @@
         "31965910-c30d-40c9-955f-d28368ae3ed5": {
           "type": "description",
           "settings": {
-            "description": "<p>We invite you to go on a journey with Jesus – from His life to yours. We believe the closer you get to Jesus, the more authentic and life-changing He will become. He’ll always leave you wanting more.<\/p>"
+            "description": "<p>We believe the closer you get to Jesus, the more authentic and life-changing He will become. He’ll always leave you wanting more.<\/p>"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -168,21 +174,6 @@
           "settings": {
           }
         },
-        "4efa4abd-17f9-4962-b188-3c23177f35ba": {
-          "type": "button-link",
-          "settings": {
-            "button_link1": "https:\/\/www.amazon.com\/Way-Win-Coaching-Developing-Matters\/dp\/0578670038",
-            "icon_button1": "shopify:\/\/shop_images\/image_8_2.png",
-            "button_link2": "https:\/\/www.audible.com\/pd\/The-Way-to-Win-Audiobook\/B09RG7Q5H5",
-            "icon_button2": "shopify:\/\/shop_images\/image_2_1.png"
-          }
-        },
-        "9194a408-007d-4456-a769-061017e3d0a1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Other ways to buy<\/p>"
-          }
-        },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
           "type": "image-product",
           "settings": {
@@ -192,13 +183,12 @@
       },
       "block_order": [
         "e0ce6000-a201-427c-b418-b1e455efe299",
+        "e88b0236-9caa-44e6-95ff-4e5b70fbc3f9",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1",
         "31965910-c30d-40c9-955f-d28368ae3ed5",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1",
-        "4efa4abd-17f9-4962-b188-3c23177f35ba",
-        "9194a408-007d-4456-a769-061017e3d0a1",
         "01d84b51-48b0-4b19-b936-ef982e604daa"
       ],
       "settings": {
@@ -208,7 +198,10 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
-        "hide_variants": false
+        "nubmer_navigat": "",
+        "purchase": "",
+        "hide_variants": false,
+        "height": ""
       }
     },
     "related-products": {
@@ -251,6 +244,8 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=fSZRucrBgdk",
         "content": "<p>Dive deeper into Miracles by pairing the book with our 8-week message series<\/p>",
         "text": "",
+        "description": "",
+        "id_for_anchor": "",
         "class": "seed"
       }
     },

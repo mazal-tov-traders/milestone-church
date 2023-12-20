@@ -1,21 +1,15 @@
 {
   "sections": {
-    "fcf192f2-2e74-404a-a578-7cc0a5731d53": {
-      "type": "image-banner-content",
+    "58c3c204-3e14-41a7-9412-7fd85b2c8ac7": {
+      "type": "Image-banner-product-thewin",
       "blocks": {
-        "c4468950-6318-433f-b1a8-96dc1667b1a6": {
-          "type": "heading",
-          "settings": {
-            "heading": "Who Am I?"
-          }
-        },
-        "bbe7262e-d0b7-4222-892d-705a229d9543": {
+        "25f90c80-28ad-408c-9100-d843dcc9562d": {
           "type": "content",
           "settings": {
             "content": "Discovering the person you were created to be"
           }
         },
-        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12": {
+        "809499ed-0878-4b1a-b957-a5ca66c24e31": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Buy The Book",
@@ -24,14 +18,13 @@
         }
       },
       "block_order": [
-        "c4468950-6318-433f-b1a8-96dc1667b1a6",
-        "bbe7262e-d0b7-4222-892d-705a229d9543",
-        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12"
+        "25f90c80-28ad-408c-9100-d843dcc9562d",
+        "809499ed-0878-4b1a-b957-a5ca66c24e31"
       ],
       "settings": {
-        "class": "srsdsd",
-        "background": "shopify:\/\/shop_images\/WhoAmI_WebsiteHeader_2560x1037_2b5649d0-837e-4ba3-9b1b-67ed1e4268a4.jpg",
-        "centered-content": true
+        "background": "shopify:\/\/shop_images\/banner-who-am-i.jpg",
+        "hero_image": "shopify:\/\/shop_images\/Brand.png",
+        "secon_class": "thewin"
       }
     },
     "main": {
@@ -110,7 +103,13 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Discover who you were created to be.<\/strong>"
+            "heading": "<strong>Who am I?<\/strong>"
+          }
+        },
+        "a5883f25-81b5-4898-a1a4-e12a9cc2323a": {
+          "type": "heading_second",
+          "settings": {
+            "heading1": "<p>Life’s most basic question is also one of the most difficult to answer.<\/p>"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
@@ -123,7 +122,7 @@
         "31965910-c30d-40c9-955f-d28368ae3ed5": {
           "type": "description",
           "settings": {
-            "description": "<p>Life’s most basic question is also one of the most difficult to answer. Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath. We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/p>"
+            "description": "<p>Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath. We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/p>"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -143,21 +142,6 @@
           "settings": {
           }
         },
-        "4efa4abd-17f9-4962-b188-3c23177f35ba": {
-          "type": "button-link",
-          "settings": {
-            "button_link1": "https:\/\/www.amazon.com\/Way-Win-Coaching-Developing-Matters\/dp\/0578670038",
-            "icon_button1": "shopify:\/\/shop_images\/image_8_2.png",
-            "button_link2": "https:\/\/www.audible.com\/pd\/The-Way-to-Win-Audiobook\/B09RG7Q5H5",
-            "icon_button2": "shopify:\/\/shop_images\/image_2_1.png"
-          }
-        },
-        "9194a408-007d-4456-a769-061017e3d0a1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Other ways to buy<\/p>"
-          }
-        },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
           "type": "image-product",
           "settings": {
@@ -167,13 +151,12 @@
       },
       "block_order": [
         "e0ce6000-a201-427c-b418-b1e455efe299",
+        "a5883f25-81b5-4898-a1a4-e12a9cc2323a",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1",
         "31965910-c30d-40c9-955f-d28368ae3ed5",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1",
-        "4efa4abd-17f9-4962-b188-3c23177f35ba",
-        "9194a408-007d-4456-a769-061017e3d0a1",
         "01d84b51-48b0-4b19-b936-ef982e604daa"
       ],
       "settings": {
@@ -183,7 +166,10 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
-        "hide_variants": false
+        "nubmer_navigat": "",
+        "purchase": "",
+        "hide_variants": false,
+        "height": ""
       }
     },
     "related-products": {
@@ -274,7 +260,7 @@
     }
   },
   "order": [
-    "fcf192f2-2e74-404a-a578-7cc0a5731d53",
+    "58c3c204-3e14-41a7-9412-7fd85b2c8ac7",
     "main",
     "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a",
     "related-products",

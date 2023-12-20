@@ -234,7 +234,7 @@
             "heading": "The Way to Win",
             "content": "<p>\"The Way To Win should be read and re-read over a lifetime. It takes things that I simply didn’t know how to do, and gives me practical steps to grow. I’m a better leader for my family, and for that reason alone I recommend this book. I’m still growing but I have a playbook now that I can use on a daily basis.\"<\/p>",
             "author": "Steve Stallcup",
-            "date": "July 11, 2023"
+            "date": ""
           }
         },
         "f0ad4e8a-2c9d-4f69-b43a-f5144f55579f": {
@@ -244,7 +244,7 @@
             "heading": "Promises",
             "content": "<p>\"Promises is not only an absolutely stunning study guide, but is so foundational and life giving. I loved going through this study with my small group and understanding God’s promises to us in our most important relationships and biggest struggles. I understood God in a way I hadn’t ever grasped before; it brought me closer to Him.\"<\/p>",
             "author": "Taelor Martinez",
-            "date": "August 20, 2023"
+            "date": ""
           }
         },
         "a6a72320-4c68-4ab6-9042-a05789369024": {
@@ -254,29 +254,18 @@
             "heading": "Who Am I?",
             "content": "<p>\"The Way To Win should be read and re-read over a lifetime. It takes things that I simply didn’t know how to do, and gives me practical steps to grow. I’m a better leader for my family, and for that reason alone I recommend this book. I’m still growing but I have a playbook now that I can use on a daily basis.\"<\/p>",
             "author": "Steve Stallcup",
-            "date": "July 11, 2023"
-          }
-        },
-        "749c45e4-0278-41d1-9498-4fcdd55bf805": {
-          "type": "post",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133621.jpg",
-            "heading": "The Way To Win",
-            "content": "<p>\"The Way To Win should be read and re-read over a lifetime. It takes things that I simply didn’t know how to do, and gives me practical steps to grow. I’m a better leader for my family, and for that reason alone I recommend this book. I’m still growing but I have a playbook now that I can use on a daily basis.\"<\/p>",
-            "author": "Steve Stallcup",
-            "date": "July 11, 2023"
+            "date": ""
           }
         }
       },
       "block_order": [
         "d94ec55f-599a-4333-a797-06aaf50e8757",
         "f0ad4e8a-2c9d-4f69-b43a-f5144f55579f",
-        "a6a72320-4c68-4ab6-9042-a05789369024",
-        "749c45e4-0278-41d1-9498-4fcdd55bf805"
+        "a6a72320-4c68-4ab6-9042-a05789369024"
       ],
       "settings": {
-        "title": "<p>Heartfelt Testimonies<\/p>",
-        "description": "Shared Journeys"
+        "title": "",
+        "description": "Testimonials"
       }
     }
   },

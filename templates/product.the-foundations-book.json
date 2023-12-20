@@ -23,7 +23,7 @@
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/banner-def.jpg",
-        "hero_image": "shopify:\/\/shop_images\/tfb2.jpg",
+        "hero_image": "shopify:\/\/shop_images\/123.png",
         "secon_class": "thewinnn"
       }
     },
@@ -114,6 +114,12 @@
             "heading": "<strong>The Foundations Book<\/strong>"
           }
         },
+        "29cf7ef9-7173-48e9-bc51-020addf39d34": {
+          "type": "heading_second",
+          "settings": {
+            "heading1": "<p>In His most famous sermon, Jesus uses a remarkable story to teach a critical concept. <\/p>"
+          }
+        },
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-title-1": {
           "type": "title",
           "disabled": true,
@@ -124,7 +130,7 @@
         "b8b78567-9f0e-4592-8a35-3e51f932bda0": {
           "type": "description",
           "settings": {
-            "description": "<p>In His most famous sermon, Jesus uses a remarkable story to teach a critical concept. His story about a wise and foolish builder invites each of us to consider this fundamental question: What am I building my life on?<\/p><p>The truth is, we all build on something – and the foundation you choose determines the life you live. Many of us want to know what Jesus said about the most important aspects of life and how they apply to us today, but we don’t know where to start or how to make sense of it.<\/p><p>Whether you’re in a small group, studying with a friend, or going on the journey as an individual learner, The Foundations Book will not only help you discover what Jesus said, but will also give you simple, actionable steps you can take to practically build your life around His truth.<\/p>"
+            "description": "<p>His story about a wise and foolish builder invites each of us to consider this fundamental question: What am I building my life on?<\/p><p>The truth is, we all build on something – and the foundation you choose determines the life you live. Many of us want to know what Jesus said about the most important aspects of life and how they apply to us today, but we don’t know where to start or how to make sense of it.<\/p><p>Whether you’re in a small group, studying with a friend, or going on the journey as an individual learner, The Foundations Book will not only help you discover what Jesus said, but will also give you simple, actionable steps you can take to practically build your life around His truth.<\/p>"
           }
         },
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-quantity_selector-1": {
@@ -144,21 +150,6 @@
           "settings": {
           }
         },
-        "44000aab-2589-436d-9fc0-6ed979cccf0a": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Other ways to buy<\/p>"
-          }
-        },
-        "d87c15cf-e49b-4989-ae3b-094b1169f4eb": {
-          "type": "button-link",
-          "settings": {
-            "button_link1": "https:\/\/www.amazon.com\/Way-Win-Coaching-Developing-Matters\/dp\/0578670038",
-            "icon_button1": "shopify:\/\/shop_images\/image_8_2.png",
-            "button_link2": "https:\/\/www.audible.com\/pd\/The-Way-to-Win-Audiobook\/B09RG7Q5H5",
-            "icon_button2": "shopify:\/\/shop_images\/image_2_1.png"
-          }
-        },
         "2f9ffdb1-90df-4677-80cf-ac2e0fd6570c": {
           "type": "image-product",
           "settings": {
@@ -168,13 +159,12 @@
       },
       "block_order": [
         "27167353-0050-497a-8ad5-fd55cecdd89d",
+        "29cf7ef9-7173-48e9-bc51-020addf39d34",
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-title-1",
         "b8b78567-9f0e-4592-8a35-3e51f932bda0",
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-quantity_selector-1",
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-buy_buttons-1",
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-price-1",
-        "44000aab-2589-436d-9fc0-6ed979cccf0a",
-        "d87c15cf-e49b-4989-ae3b-094b1169f4eb",
         "2f9ffdb1-90df-4677-80cf-ac2e0fd6570c"
       ],
       "settings": {
@@ -184,7 +174,10 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
-        "hide_variants": false
+        "nubmer_navigat": "",
+        "purchase": "",
+        "hide_variants": false,
+        "height": ""
       }
     },
     "related-products": {

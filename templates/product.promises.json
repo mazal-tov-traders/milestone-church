@@ -30,7 +30,7 @@
       ],
       "settings": {
         "class": "srsdsd",
-        "background": "shopify:\/\/shop_images\/Promises_WebsiteHeader_2560x1037_c4644b38-ce43-49ce-8548-fff2bfab1346.png",
+        "background": "shopify:\/\/shop_images\/christina-deravedisian-7hsNO61NWY0-unsplash.jpg",
         "centered-content": true
       }
     },
@@ -110,7 +110,10 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
-        "hide_variants": false
+        "nubmer_navigat": "",
+        "purchase": "",
+        "hide_variants": false,
+        "height": ""
       }
     },
     "main": {
@@ -226,11 +229,13 @@
         "c1233588-9721-4284-af6b-9ce671e37092"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/Promises-video.png",
+        "background": "shopify:\/\/shop_images\/christina-deravedisian-7hsNO61NWY0-unsplash.jpg",
         "heading": "<p>Message Series<\/p>",
         "video_url": "https:\/\/www.youtube.com\/watch?v=cFto_lZKX_A",
         "content": "<p>Dive deeper into Promises by pairing the book with our 8-week message series.<\/p>",
         "text": "",
+        "description": "",
+        "id_for_anchor": "",
         "class": "seed"
       }
     },
@@ -240,38 +245,38 @@
         "class": ""
       }
     },
-    "d4d4705f-f807-442d-92b3-c515e8fe3b00": {
-      "type": "image-banner-content",
+    "f0ddb421-aad1-44ca-b428-bce43171e3e0": {
+      "type": "two-pictures",
       "blocks": {
-        "97cb8c66-6bbd-4a8d-8433-9d0c0c55e3d6": {
-          "type": "heading",
+        "071aa545-26c9-4524-b6e2-f0864c9b9742": {
+          "type": "bannerleft",
           "settings": {
-            "heading": "View A Sample"
+            "banner_left": "shopify:\/\/shop_images\/1_2.png"
           }
         },
-        "660c83d1-ab2d-4ca7-ad96-046fb8de7b7e": {
-          "type": "content",
+        "4bb1b6e5-12ff-476f-bf2c-1e94fcf67cd4": {
+          "type": "bannerright",
           "settings": {
-            "content": "PROMISES is perfect for small group studies, teaching series, and more."
+            "banner_right": "shopify:\/\/shop_images\/25years_1_6e5fdf24-97b6-4f4c-bbf0-eb8b5b8ba5f3.png"
           }
         },
-        "e605e953-788a-4551-8174-f323cf9b8aea": {
+        "59f70bf2-55c0-432e-bbb9-4b5768da19d1": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Download",
+            "button_label_1": "download a preview",
             "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/PromisesGuide_SAMPLE.pdf?v=1702659940"
           }
         }
       },
       "block_order": [
-        "97cb8c66-6bbd-4a8d-8433-9d0c0c55e3d6",
-        "660c83d1-ab2d-4ca7-ad96-046fb8de7b7e",
-        "e605e953-788a-4551-8174-f323cf9b8aea"
+        "071aa545-26c9-4524-b6e2-f0864c9b9742",
+        "4bb1b6e5-12ff-476f-bf2c-1e94fcf67cd4",
+        "59f70bf2-55c0-432e-bbb9-4b5768da19d1"
       ],
       "settings": {
-        "class": "guid",
-        "background": "shopify:\/\/shop_images\/PromisesBG4.png",
-        "centered-content": true
+        "class_name": "prom",
+        "background": "shopify:\/\/shop_images\/Rectangle_4133725.png",
+        "position_content": true
       }
     },
     "485dd8a1-c528-4945-a6de-e67397b3d96a": {
@@ -323,7 +328,7 @@
     "related-products",
     "7ca6c60b-1df9-4ae7-a130-3e6053504309",
     "2746153a-1073-4f33-a40d-cb79b9463fe1",
-    "d4d4705f-f807-442d-92b3-c515e8fe3b00",
+    "f0ddb421-aad1-44ca-b428-bce43171e3e0",
     "485dd8a1-c528-4945-a6de-e67397b3d96a"
   ]
 }

@@ -1,37 +1,30 @@
 {
   "sections": {
-    "fcf192f2-2e74-404a-a578-7cc0a5731d53": {
-      "type": "image-banner-content",
+    "5c4350d1-500c-4b3a-be50-3c62817ef6bb": {
+      "type": "Image-banner-product-thewin",
       "blocks": {
-        "c4468950-6318-433f-b1a8-96dc1667b1a6": {
-          "type": "heading",
-          "settings": {
-            "heading": "It’s Worth It 2.0"
-          }
-        },
-        "bbe7262e-d0b7-4222-892d-705a229d9543": {
+        "6eeef642-47de-4f54-924f-cec8a6c3b54f": {
           "type": "content",
           "settings": {
             "content": "Discovering God’s Plan for you in a place you might not expect"
           }
         },
-        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12": {
+        "f19435f1-9084-4cab-8e15-b1457d573bff": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Buy The Book",
+            "button_label_1": "Buy the book",
             "button_link_1": "#jeffwrote"
           }
         }
       },
       "block_order": [
-        "c4468950-6318-433f-b1a8-96dc1667b1a6",
-        "bbe7262e-d0b7-4222-892d-705a229d9543",
-        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12"
+        "6eeef642-47de-4f54-924f-cec8a6c3b54f",
+        "f19435f1-9084-4cab-8e15-b1457d573bff"
       ],
       "settings": {
-        "class": "srsdsd",
         "background": "shopify:\/\/shop_images\/Closer_WebsiteHeader_2560x1037_38cdb86f-3a0b-417b-a399-7d94a5f4bad5.jpg",
-        "centered-content": true
+        "hero_image": "shopify:\/\/shop_images\/IT_S_WORTh_IT2.0.png",
+        "secon_class": "thewin"
       }
     },
     "main": {
@@ -113,6 +106,12 @@
             "heading": "<strong>Ps. Jeff wrote this book with you in mind! <\/strong>"
           }
         },
+        "9e17b7da-a87b-486d-b292-02a8ce949b9a": {
+          "type": "heading_second",
+          "settings": {
+            "heading1": "<p>It’s Worth It 2.0 was created to help you:<\/p>"
+          }
+        },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
@@ -123,7 +122,7 @@
         "31965910-c30d-40c9-955f-d28368ae3ed5": {
           "type": "description",
           "settings": {
-            "description": "<p><strong>It’s Worth It 2.0 was created to help you:<\/strong><\/p><ul><li>See the hidden treasure waiting in God’s plan for your life<\/li><li>Take practical steps towards your purpose<\/li><li>Explore the values of Milestone Church and how they impact the way you live<\/li><li>Find the joy that comes from learning these things in a group with other people<\/li><\/ul>"
+            "description": "<ul><li>See the hidden treasure waiting in God’s plan for your life<\/li><li>Take practical steps towards your purpose<\/li><li>Explore the values of Milestone Church and how they impact the way you live<\/li><li>Find the joy that comes from learning these things in a group with other people<\/li><\/ul>"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -146,10 +145,9 @@
         "4efa4abd-17f9-4962-b188-3c23177f35ba": {
           "type": "button-link",
           "settings": {
-            "button_link1": "https:\/\/www.amazon.com\/Way-Win-Coaching-Developing-Matters\/dp\/0578670038",
+            "button_link1": "https:\/\/www.amazon.com\/Its-Worth-2-0-Discovering-Expect-ebook\/dp\/B0BRF62PRN\/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1702920525&sr=8-1",
             "icon_button1": "shopify:\/\/shop_images\/image_8_2.png",
-            "button_link2": "https:\/\/www.audible.com\/pd\/The-Way-to-Win-Audiobook\/B09RG7Q5H5",
-            "icon_button2": "shopify:\/\/shop_images\/image_2_1.png"
+            "button_link2": ""
           }
         },
         "9194a408-007d-4456-a769-061017e3d0a1": {
@@ -167,6 +165,7 @@
       },
       "block_order": [
         "e0ce6000-a201-427c-b418-b1e455efe299",
+        "9e17b7da-a87b-486d-b292-02a8ce949b9a",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1",
         "31965910-c30d-40c9-955f-d28368ae3ed5",
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1",
@@ -183,7 +182,10 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
-        "hide_variants": false
+        "nubmer_navigat": "",
+        "purchase": "",
+        "hide_variants": false,
+        "height": ""
       }
     },
     "related-products": {
@@ -211,7 +213,7 @@
         "17c3a791-2f8e-494b-b9cd-3c17aebc2db6": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Worth-It-2.0.png",
+            "image": "shopify:\/\/shop_images\/it-worth-it-video.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
             "content": ""
           }
@@ -223,9 +225,11 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Closer_WebsiteHeader.jpg",
         "heading": "<p>Message Series<\/p>",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_DfMg4r40Fw",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Ib1VnsAoGds",
         "content": "<p>Dive deeper into It’s Worth It 2.0 by pairing the book with our 6-week message series.<\/p>",
         "text": "",
+        "description": "",
+        "id_for_anchor": "",
         "class": "seed"
       }
     },
@@ -305,7 +309,7 @@
     }
   },
   "order": [
-    "fcf192f2-2e74-404a-a578-7cc0a5731d53",
+    "5c4350d1-500c-4b3a-be50-3c62817ef6bb",
     "main",
     "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a",
     "related-products",

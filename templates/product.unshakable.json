@@ -30,7 +30,7 @@
       ],
       "settings": {
         "class": "srsdsd",
-        "background": "shopify:\/\/shop_images\/Rectangle_4133714_3.jpg",
+        "background": "shopify:\/\/shop_images\/banner-who-am-i.jpg",
         "centered-content": true
       }
     },
@@ -219,7 +219,7 @@
         "c1233588-9721-4284-af6b-9ce671e37092": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/video-bg.png",
+            "image": "shopify:\/\/shop_images\/video-thumb_45424485-c648-460d-8938-e47d38ae884f.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
             "content": ""
           }
@@ -229,7 +229,7 @@
         "c1233588-9721-4284-af6b-9ce671e37092"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/Rectangle_4133725_6.jpg",
+        "background": "shopify:\/\/shop_images\/banner-who-am-i.jpg",
         "heading": "<p>Message Series<\/p>",
         "video_url": "https:\/\/www.youtube.com\/watch?v=rfZZZhV1gno",
         "content": "<p>Dive deeper into Unshakable by pairing the book with our 8-week message series.<\/p>",

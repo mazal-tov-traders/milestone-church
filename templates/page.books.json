@@ -24,7 +24,7 @@
       ],
       "settings": {
         "class": "",
-        "image": "shopify:\/\/shop_images\/Rectangle_4133714_1.jpg",
+        "image": "shopify:\/\/shop_images\/books-main-img.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -35,6 +35,48 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "4b512f58-2a02-47cb-ae10-9dde5cb3a01b": {
+      "type": "banner-product",
+      "blocks": {
+        "277167d5-4fc5-4799-9fe4-351d0c18788e": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Foundations Book"
+          }
+        },
+        "911c6f82-02fc-4919-801a-17c85648fb10": {
+          "type": "content",
+          "settings": {
+            "content": "In His most famous sermon, Jesus uses a remarkable story to teach a critical concept. His story about a wise and foolish builder invites each of us to consider this fundamental question:"
+          }
+        },
+        "27d706da-8bb1-4ddd-9687-c68a77840bfa": {
+          "type": "description",
+          "settings": {
+            "description": "<p><strong>What am I building my life on?<\/strong><\/p>"
+          }
+        },
+        "e3a09c89-5bd0-4d3f-af12-c7d566480e01": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/the-foundations-book"
+          }
+        }
+      },
+      "block_order": [
+        "277167d5-4fc5-4799-9fe4-351d0c18788e",
+        "911c6f82-02fc-4919-801a-17c85648fb10",
+        "27d706da-8bb1-4ddd-9687-c68a77840bfa",
+        "e3a09c89-5bd0-4d3f-af12-c7d566480e01"
+      ],
+      "settings": {
+        "class": "Foundations",
+        "background": "shopify:\/\/shop_images\/TFB---books-banner.jpg",
+        "Mobile_image": "shopify:\/\/shop_images\/TFB-mob.jpg",
+        "position_content": false
       }
     },
     "e983a94b-b2c2-4393-802d-76b09559d5c8": {
@@ -97,7 +139,7 @@
         "093d26d5-7740-4de3-b7f7-15a36d350504": {
           "type": "description",
           "settings": {
-            "description": "<p><strong>He’ll always leave you wanting more.<\/strong><\/p>"
+            "description": ""
           }
         },
         "49cc0725-6136-4e88-9a1e-6e3ac7f8c47f": {
@@ -259,13 +301,13 @@
         "95c69d2c-ce11-4ad8-aa0c-977d55e0ab82": {
           "type": "content",
           "settings": {
-            "content": "Life’s most basic question is also one of the most difficult to answer. Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath."
+            "content": "The Power of Connection in the Church is a churchleader’s guide for connecting guests and closing the back door. In this bookyou will discover how to intentionally serve people from their first visit, tobecoming a flourishing member."
           }
         },
         "69a4829c-8076-42ad-a242-8f2c1d0ecf8f": {
           "type": "description",
           "settings": {
-            "description": "<p><strong>We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/strong><\/p>"
+            "description": ""
           }
         },
         "60bcdeab-e4b3-46ee-aa0c-06fdf1c32589": {
@@ -293,6 +335,7 @@
   "order": [
     "main",
     "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa",
+    "4b512f58-2a02-47cb-ae10-9dde5cb3a01b",
     "e983a94b-b2c2-4393-802d-76b09559d5c8",
     "f21f4cfb-a848-4c15-95e6-ab5a8ba4b185",
     "e32f3fcc-885d-4441-8efb-b53a24901d2d",
