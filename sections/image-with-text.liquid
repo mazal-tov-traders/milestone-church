@@ -98,6 +98,9 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
+                      {% if block.settings.button_link contains "https://" %}
+                        target="_blank"
+                      {% endif %}
                       class="my-custom-btn {{ section.settings.style_btn }} {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >

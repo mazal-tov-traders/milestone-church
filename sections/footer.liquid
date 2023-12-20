@@ -117,6 +117,9 @@
                             {% else %}
                               href="{{ block.settings.button_link_1 }}"
                             {% endif %}
+                            {% if block.settings.button_link_1 contains "https://" %}
+                              target="_blank"
+                            {% endif %}
                             class="link-menu"
                           >
                             {{- block.settings.button_label_1 | escape -}}
@@ -135,7 +138,9 @@
                         {%- if block.settings.email != blank -%}
                           {% render 'icon-email' %}
                           <div class="email-addresses__wrapper_mail">
-                            <a href="mailto:{{ block.settings.email | strip_html}}">{{ block.settings.email }}</a>
+                            <a href="mailto:{{ block.settings.email | strip_html}}" {% if block.settings.email contains "https://" %}
+                              target="_blank"
+                            {% endif %}>{{ block.settings.email }}</a>
                           </div>
                         {% endif %}
                       </div>
@@ -199,6 +204,9 @@
                               role="link" aria-disabled="true"
                             {% else %}
                               href="{{ block.settings.button_link_2 }}"
+                            {% endif %}
+                            {% if block.settings.button_link_2 contains "https://" %}
+                              target="_blank"
                             {% endif %}
                             class="link-menu"
                           >
@@ -468,7 +476,7 @@
         </div>
       </div>
       <div class="dallas-web-design">              
-        Dallas and Plano Web Design Agency : <a href="https://www.webloftdesigns.com/" class="dallas-web-design_ref">Web Loft Designs</a>
+        Dallas and Plano Web Design Agency : <a href="https://www.webloftdesigns.com/" target="_blank" class="dallas-web-design_ref">Web Loft Designs</a>
       </div>
     </div>
   </div>

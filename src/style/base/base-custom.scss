@@ -44,4 +44,38 @@ body {
   }
 }
 
+// 
 
+.custom-featured-product .product__info-wrapper .wrapper-baton-and-quantity .quantity {
+  border: 1px solid #c1c1c1;
+  height: 50px;
+  /* width: 93px; */
+  padding: 0 11px;
+}
+
+
+.quantity {
+
+  width: calc(9rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  
+}
+
+.custom-featured-product .product__info-wrapper .wrapper-baton-and-quantity .quantity .quantity__button {
+  /* width: 37px; */
+  /* padding: 0 10px; */
+  /* padding-right: 10px; */
+}
+
+.quantity__button:not(:focus-visible):not(.focused), .quantity__input:not(:focus-visible):not(.focused) {
+  box-shadow: inherit;
+  background-color: inherit;
+  max-width: max-content;
+  width: 100%;
+}
+
+.quantity__button:not(:focus-visible):not(.focused), .quantity__input:not(:focus-visible):not(.focused) {
+  box-shadow: inherit;
+  background-color: inherit;
+  max-width: max-content;
+  width: 100%;
+}

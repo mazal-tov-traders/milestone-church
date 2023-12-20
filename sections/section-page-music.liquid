@@ -33,6 +33,9 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
+                    {% if block.settings.button_link_1 contains "https://" %}
+                      target="_blank"
+                    {% endif %}
                     class="buttonn"
                   >
                     {{- block.settings.button_label_1 | escape -}}
