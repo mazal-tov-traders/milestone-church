@@ -32,7 +32,7 @@
                 {% endif %}
               {%- when 'buttons' -%}
                 <div
-                  class="my-custom-btn {{ section.settings.style_btn }}"
+                  class="banner-innerr__box_button"
                 >
                   {%- if block.settings.button_label_1 != blank -%}
                     <a
@@ -41,7 +41,7 @@
                       {% else %}
                         href="{{ block.settings.button_link_1 }}"
                       {% endif %}
-                      class="btn"
+                      class="my-custom-btn {{ section.settings.style_btn }}"
                       id="navigation-anchor__link"
                     >
                       {{- block.settings.button_label_1 | escape -}}

@@ -3,7 +3,8 @@ quick-order-list {
 }
 
 quick-order-list .quantity {
-  width: calc(11rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  /* width: calc(11rem / var(--font-body-scale) + var(--inputs-border-width) * 2); */
+  width: calc(9rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   min-height: calc((var(--inputs-border-width) * 2) + 3.5rem);
 }
 
