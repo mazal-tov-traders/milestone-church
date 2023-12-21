@@ -28,7 +28,7 @@
 <style>
   header-drawer {
     justify-self: start;
-    margin-left: -1.2rem;
+    {% comment %} margin-left: -1.2rem; {% endcomment %}
   }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
@@ -251,13 +251,6 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
-    <div class="page-menu-inner">
-      <div class="page-menu-inner_page">{{ section.settings.heading_peage1 }}</div>
-      <div class="page-menu-inner_page">{{ section.settings.heading_peage2 }}</div>
-      <div class="page-menu-inner_page">{{ section.settings.heading_peage3 }}</div>
-      <div class="page-menu-inner_page">{{ section.settings.heading_peage4 }}</div>
-    </div>
-
     <div class=" header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -570,30 +563,6 @@
       "default": "middle-left",
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_help.content"
-    },
-    {
-      "type": "inline_richtext",
-      "id": "heading_peage1",
-      "default": "Name Page",
-      "label": "Page"
-    },
-    {
-      "type": "inline_richtext",
-      "id": "heading_peage2",
-      "default": "Name Page",
-      "label": "Page"
-    },
-    {
-      "type": "inline_richtext",
-      "id": "heading_peage3",
-      "default": "Name Page",
-      "label": "Page"
-    },
-    {
-      "type": "inline_richtext",
-      "id": "heading_peage4",
-      "default": "Name Page",
-      "label": "Page"
     },
     {
       "type": "link_list",

@@ -22,8 +22,6 @@
         font-size: 16px;
         letter-spacing: 0em;
         text-transform: uppercase;
-        color: rgba(29, 34, 40, 1);
-        padding: 0 21px 0 29px;
       }
     }
   }
@@ -66,45 +64,129 @@
 
 .custom-header {
   .header__inline-menu {
-    max-width: 674px;
     width: 100%;
-    .header__menu-item.list-menu__item.link.link--text.focus-inset {
-      line-height: 52px;
-      padding-left: 24px;
-      padding-right: 22px;
-    }
-  }
-  .page-menu-inner {
-    grid-area: page-menu-inner;
-    display: flex;
-    margin-right: 3vw;
-    max-width: 600px;
-    padding-left: 18px;
-    &_page {
-      &:hover a {
-        color: rgba(229, 190, 94, 1);
-      }
-      a {
-        font-family: "Nova-600";
-        font-size: 16px;
-        letter-spacing: 0em;
-        text-transform: uppercase;
-        color: #fff;
-        padding: 0 25px;
-      }
-    }
   }
 }
 .menu-drawer-container {
   display: none !important;
 }
-.header-wrapper.second-background{
-  .header--middle-left .header__heading-link, .header--top-left .header__heading-link {
+.header-wrapper.second-background {
+  .header--middle-left .header__heading-link,
+  .header--top-left .header__heading-link {
     margin-left: 1.85rem;
   }
 }
+@media screen and (min-width: 990px) {
+  a.header__active-menu-item,
+  a.header__menu-item.list-menu__item.link.link--text.focus-inset {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0px;
+    color: #fff;
 
-@media screen and (max-width: 991px) {
+    &:hover {
+      color: rgba(229, 190, 94, 1);
+      text-decoration: none;
+    }
+  }
+  .header-wrapper.second-background {
+    a.header__active-menu-item,
+    a.header__menu-item.list-menu__item.link.link--text.focus-inset {
+      color: #1d2228;
+      &:hover {
+        color: rgba(229, 190, 94, 1);
+        text-decoration: none;
+      }
+    }
+  }
+  .header__submenu.list-menu {
+    margin-top: 15px;
+    width: 291px;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+    padding: 10px 0px !important;
+    border: none;
+
+    li {
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 5px;
+        height: 19px;
+        background: #5491d6;
+        transform: translateX(-100%);
+        transition: trancform 0.3s ease-out;
+      }
+
+      &:hover {
+        &::before {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    a.header__menu-item.list-menu__item.link.link--text.focus-inset {
+      color: #1d2228;
+      padding: 10px 30px;
+
+      &:hover {
+        color: #5491d6;
+      }
+    }
+  }
+
+  details[open] > .header__menu-item {
+    text-decoration: none;
+  }
+  summary.header__menu-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px !important;
+    span {
+      height: 16px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+  }
+  details[open] summary.header__menu-item span {
+    color: rgba(229, 190, 94, 1);
+  }
+  .header-wrapper.color-background-1.gradient {
+    .custom-header.header {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 2000px;
+      padding: 30px;
+      .header__inline-menu {
+        flex: 1 0 0;
+        > .list-menu {
+          display: flex;
+          gap: 20px 25px;
+          justify-content: center;
+          @media screen and (min-width: 1100px) {
+            column-gap: 50px;
+          }
+        }
+      }
+    }
+  }
+  .header__icons {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 990px) {
   .header-wrapper {
     background-color: rgba(29, 34, 40, 1);
   }
@@ -121,9 +203,6 @@
     .page-menu-inner {
       display: none;
     }
-    .header-drawer_menu {
-      margin-left: 4vw;
-    }
   }
   .menu-drawer-container {
     display: block !important;
@@ -133,16 +212,11 @@
   }
 }
 
-
 @media screen and (max-width: 500px) {
   .header-wrapper {
     margin-top: -1px;
     .header__heading-link {
       padding: 5px 9px 5px 5px;
-    }
-    .header__icons {
-      padding-right: 0.4rem;
-      max-width: 79px;
     }
   }
   .header {

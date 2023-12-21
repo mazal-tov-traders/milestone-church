@@ -18,29 +18,48 @@
       {% case block.type %}
         {% when 'video-card' %}
           <div class="weekly-videos__wrapper_video-card" data-video-url="{{ block.settings.video_url.id }}">
-            <div class='img-wrapper'>
-            {% if block.settings.image != blank %}
-              <img
-                src="{{ block.settings.image | img_url: 'original' }}"
-                alt="image"
-                class="video-card_img"
+            <div class="img-wrapper">
+              {% if block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | img_url: 'original' }}"
+                  alt="image"
+                  class="video-card_img"
                 >
-            {% endif %}
-            {% if block.settings.image_youtube != blank %}
-              <img
-                src="{{ block.settings.image_youtube | img_url: 'original' }}"
-                alt="image"
-                class="image-youtube"
-                onclick="showPopup(this.closest('[data-video-url]').dataset.videoUrl)">
-            {% endif %}
-          </div>
+              {% endif %}
+              {% if block.settings.image_youtube != blank %}
+                <img
+                  src="{{ block.settings.image_youtube | img_url: 'original' }}"
+                  alt="image"
+                  class="image-youtube"
+                  onclick="showPopup(this.closest('[data-video-url]').dataset.videoUrl)"
+                >
+              {% endif %}
+            </div>
             {% if block.settings.heading != blank %}
               <h2 class="video-block__content">
                 {{ block.settings.heading }}
               </h2>
             {% endif %}
+            {%- if block.settings.button_label != blank -%}
+              <div class="video-block__wrapper-link">
+                {% render 'icon-pdf' %}
+                <a
+                  {% if block.settings.button_link == blank %}
+                    role="link" aria-disabled="true"
+                  {% else %}
+                    href="{{ block.settings.button_link }}"
+                  {% endif %}
+                  {% if block.settings.button_link contains 'https://' %}
+                    target="_blank"
+                  {% endif %}
+                  class="video-block__wrapper-link_link"
+                >
+                  {{- block.settings.button_label | escape -}}
+                </a>
+              </div>
+            {%- endif -%}
           </div>
-        {% endcase %}
+      {% endcase %}
     {% endfor %}
   </div>
 </div>
@@ -49,48 +68,44 @@
   <div id="videoContainer" class="video-container"></div>
 </div>
 
-
-
-<script >
+<script>
   function showPopup(dataVideoUrl) {
-
     if (!dataVideoUrl) return;
-  
+
     const videoCard = document.querySelector(`[data-video-url="${dataVideoUrl}"]`);
-  
+
     if (videoCard) {
       showVideo(videoCard.dataset.videoUrl);
     } else {
-
       console.warn(`No video card found for data-video-url: ${dataVideoUrl}`);
     }
   }
-  
+
   function showVideo(videoUrl) {
     const popup = document.getElementById('popup');
     const videoContainer = document.getElementById('videoContainer');
-  
+
     videoContainer.innerHTML = '';
-  
+
     const iframe = document.createElement('iframe');
     iframe.src = `https://www.youtube.com/embed/${videoUrl}`;
     iframe.className = 'js-youtube';
     iframe.allow = 'autoplay; encrypted-media';
     iframe.allowFullscreen = true;
-  
+
     videoContainer.appendChild(iframe);
-  
+
     popup.style.display = 'block';
   }
-  
+
   function closePopup() {
     const popup = document.getElementById('popup');
     const iframe = document.querySelector('#videoContainer iframe');
-  
+
     if (iframe) {
       iframe.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
     }
-  
+
     if (popup) {
       document.getElementById('videoContainer').innerHTML = '';
       popup.style.display = 'none';
@@ -102,8 +117,7 @@
   "name": "weekly-videos",
   "tag": "section",
   "class": "section",
-  "settings": [
-  ],
+  "settings": [],
   "blocks": [
     {
       "type": "video-card",
@@ -131,6 +145,16 @@
           "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
           "label": "t:sections.video.settings.video_url.label",
           "info": "t:sections.video.settings.video_url.info"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "File label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "File Link"
         }
       ]
     }

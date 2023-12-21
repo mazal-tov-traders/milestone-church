@@ -66,19 +66,26 @@
           >
             {%- for block in section.blocks -%}
               {% case block.type %}
-                {%- when 'title_screen' -%}
-                  {%- if block.settings.screen_reader_text != blank -%}
-                    <h1 class="screen-reader-text">
-                      {{ block.settings.screen_reader_text }}
-                    </h1>
-                  {% endif %}
                 {%- when 'heading' -%}
-                  <h2
-                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
-                    {{ block.shopify_attributes }}
-                  >
-                    {{ block.settings.heading }}
-                  </h2>
+                  {%- if block.settings.heading != blank -%}
+                    <h1
+                      class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.heading }}
+                    </h1>
+                  {% else %}
+                    {%- for block in section.blocks -%}
+                      {%- case block.type -%}
+                        {%- when 'title_screen' -%}
+                          {% if block.settings.screen_reader_text != blank %}
+                            <h1 class="screen-reader-text">
+                              {{ block.settings.screen_reader_text }}
+                            </h1>
+                          {% endif %}
+                      {% endcase %}
+                    {% endfor %}
+                  {% endif %}  
                 {%- when 'caption' -%}
                   <p
                     class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
@@ -491,13 +498,13 @@
     },
     {
       "type": "title_screen",
-      "name": "Screen Reader Text",
+      "name": "Hidden Main Title",
       "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
           "id": "screen_reader_text",
-          "label": "screen reader text"
+          "label": "Hidden Main Title"
         }
       ]
     }

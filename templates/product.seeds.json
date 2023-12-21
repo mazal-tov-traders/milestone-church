@@ -31,8 +31,8 @@
       "settings": {
         "class": "srsdsd",
         "background": "shopify:\/\/shop_images\/Rectangle_4133714_3.jpg",
-        "centered-content": true,
-        "style_btn": "gold"
+        "style_btn": "gold",
+        "centered-content": true
       }
     },
     "b1bd4938-a71c-4d34-9e2a-d0852c7c44da": {

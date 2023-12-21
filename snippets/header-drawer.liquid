@@ -153,17 +153,24 @@
                   {%- if link.links != blank -%}
                     <header-menu>
                       <details id="Details-HeaderMenu-{{ forloop.index }}">
-                        <summary class="header__menu-item list-menu__item link focus-inset menu-drawe-links">
+                        <summary class="header__menu-item list-menu__item link focus-inset menu-drawe-links page-menu-inner_page">
+                          <a
+                            href="{{ link.url }}"
+                            {% if link.url contains "https://" %}
+                              target="_blank"
+                            {% endif %}
+                            class="header__active-menu-item"
+                          >
+                            {{- link.title | escape -}}
+                          </a>
                           <span
                             {%- if link.child_active %}
                               class="header__active-menu-item"
                             {% endif %}
-                          >
-                            {{- link.title | escape -}}
-                          </span>
+                          >  
                           {% render 'icon-caret' %}
+                          </span>
                         </summary>
-
                         <ul
                           id="HeaderMenu-MenuList-{{ forloop.index }}"
                           class="header__submenu list-menu  gradient caption-large motion-reduce global-settings-popup"
@@ -240,7 +247,7 @@
                   <div class="menu-drawer_contact-inner">
 
                   
-
+                     
                     <div class="banner-innerr__box_button">
                       <a href="/collections/all" class="buttonn">View all books</a>
                     </div>

@@ -119,19 +119,26 @@
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {%- when 'title_screen' -%}
-            {%- if block.settings.screen_reader_text != blank -%}
-              <h1 class="screen-reader-text">
-                {{ block.settings.screen_reader_text }}
-              </h1>
-            {% endif %}
           {%- when 'heading' -%}
-            <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
-              {{ block.shopify_attributes }}
-            >
-              {{ block.settings.heading }}
-            </h2>
+            {%- if block.settings.heading != blank -%}
+              <h1
+                class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.heading }}
+              </h1>
+            {% else %}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'title_screen' -%}
+                    {% if block.settings.screen_reader_text != blank %}
+                      <h1 class="screen-reader-text">
+                        {{ block.settings.screen_reader_text }}
+                      </h1>
+                    {% endif %}
+                {% endcase %}
+              {% endfor %}
+            {% endif %}
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p style="color:{{ block.settings.color_text }};">{{ block.settings.text }}</p>
@@ -522,13 +529,13 @@
     },
     {
       "type": "title_screen",
-      "name": "Screen Reader Text",
+      "name": "Hidden Main Title",
       "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
           "id": "screen_reader_text",
-          "label": "screen reader text"
+          "label": "Hidden Main Title"
         }
       ]
     }

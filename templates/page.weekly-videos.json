@@ -30,6 +30,7 @@
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
+        "style_btn": "white",
         "color_scheme": "background-1",
         "image_behavior": "ambient",
         "mobile_content_alignment": "center",
@@ -46,7 +47,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_5.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1_a14e66d8-7731-43f0-9e50-6b7313607138.png",
             "heading": "<p>Preface - The Region of Tiberias<\/p>",
-            "video_url": "https:\/\/youtu.be\/7Ng9UjpoOpc"
+            "video_url": "https:\/\/youtu.be\/7Ng9UjpoOpc",
+            "button_label": "Lorem ipsum dolor",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_KidsResource_final_web.pdf?v=1702907107"
           }
         },
         "c32a57c8-bfde-4c67-956c-a7f0f4d45e0f": {
@@ -55,7 +58,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_6.jpg",
             "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
             "heading": "<p>Introduction - The Southern Steps<\/p>",
-            "video_url": "https:\/\/youtu.be\/_XI69NYrdBI"
+            "video_url": "https:\/\/youtu.be\/_XI69NYrdBI",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "4d0b1645-e57c-44e1-b32a-50412545aa55": {
@@ -64,7 +69,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_7.jpg",
             "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
             "heading": "<p>Chapter 1 - The Sea of Galilee<\/p>",
-            "video_url": "https:\/\/youtu.be\/RisdXcarUm0"
+            "video_url": "https:\/\/youtu.be\/RisdXcarUm0",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "658fbdc9-02d2-4f4e-923c-821305e043cf": {
@@ -73,7 +80,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_8.jpg",
             "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
             "heading": "<p>Chapter 2 - A Road Outside of Jerusalem<\/p>",
-            "video_url": "https:\/\/youtu.be\/QZj8UBULtrk"
+            "video_url": "https:\/\/youtu.be\/QZj8UBULtrk",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "d26e58f5-3789-4c76-a6e1-a362756f286e": {
@@ -82,7 +91,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_9.jpg",
             "image_youtube": "shopify:\/\/shop_images\/fi_5968852.png",
             "heading": "<p>Chapter 3 - The Ruins of the Synagogue of Capernaum<\/p>",
-            "video_url": "https:\/\/youtu.be\/5NEEwf8fIkY"
+            "video_url": "https:\/\/youtu.be\/5NEEwf8fIkY",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "8e4d02d5-7108-4e6d-8f98-71b177e08419": {
@@ -91,7 +102,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_11.jpg",
             "image_youtube": "shopify:\/\/shop_images\/fi_5968852_34bf9f61-f346-41f8-859b-1e5b7ff4872b.png",
             "heading": "<p>Chapter 4 - The Ruins of a Village at Capernaum<\/p>",
-            "video_url": "https:\/\/youtu.be\/qgIqHolpSdA"
+            "video_url": "https:\/\/youtu.be\/qgIqHolpSdA",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "f6cd2db8-c7c7-480b-b7c9-5302e8412ee3": {
@@ -100,7 +113,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_12.jpg",
             "image_youtube": "shopify:\/\/shop_images\/fi_5968852_34bf9f61-f346-41f8-859b-1e5b7ff4872b.png",
             "heading": "<p>Chapter 5 - The Mount of Olives Overlooking Bethany<\/p>",
-            "video_url": "https:\/\/youtu.be\/oLfDgn2S58Q"
+            "video_url": "https:\/\/youtu.be\/oLfDgn2S58Q",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "d54604b8-7134-4aed-a728-be84305d4ba7": {
@@ -109,7 +124,9 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133724_13.jpg",
             "image_youtube": "shopify:\/\/shop_images\/fi_5968852_34bf9f61-f346-41f8-859b-1e5b7ff4872b.png",
             "heading": "<p>Chapter 6 - From the Shore of the Sea of Galilee<\/p>",
-            "video_url": "https:\/\/youtu.be\/YXQ5OM3KPcg"
+            "video_url": "https:\/\/youtu.be\/YXQ5OM3KPcg",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },

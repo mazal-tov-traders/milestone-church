@@ -17,16 +17,21 @@
       <h1 class="banner-image-video__wrapper_heading">
         {{ section.settings.heading }}
       </h1>
-    {% endif %}
-    <div class="video-block">
-      {% for block in section.blocks %}
-        {% case block.type %}
+    {% else %}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
           {%- when 'title_screen' -%}
-            {%- if block.settings.screen_reader_text != blank -%}
+            {% if block.settings.screen_reader_text != blank %}
               <h1 class="screen-reader-text">
                 {{ block.settings.screen_reader_text }}
               </h1>
             {% endif %}
+        {% endcase %}
+      {% endfor %}
+    {% endif %}
+    <div class="video-block">
+      {% for block in section.blocks %}
+        {% case block.type %}
           {% when 'media' %}
             <div class="video-block__wrapper">
               {% if block.settings.image != blank %}
@@ -37,12 +42,12 @@
                 >
               {% endif %}
               {% if block.settings.image_youtube != blank %}
-                  <img
-                    src="{{ block.settings.image_youtube | img_url: 'original' }}"
-                    alt="image"
-                    class="video-block__wrapper_image-youtube"
-                    onclick="showPopup('{{ video_idd }}')"
-                  >
+                <img
+                  src="{{ block.settings.image_youtube | img_url: 'original' }}"
+                  alt="image"
+                  class="video-block__wrapper_image-youtube"
+                  onclick="showPopup('{{ video_idd }}')"
+                >
               {% endif %}
             </div>
         {% endcase %}
@@ -124,13 +129,13 @@
     },
     {
       "type": "title_screen",
-      "name": "Screen Reader Text",
+      "name": "Hidden Main Title",
       "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
           "id": "screen_reader_text",
-          "label": "screen reader text"
+          "label": "Hidden Main Title"
         }
       ]
     }

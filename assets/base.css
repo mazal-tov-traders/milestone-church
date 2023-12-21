@@ -124,8 +124,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .header.page-width,
   .utility-bar__grid.page-width {
-    padding-left: 0rem;
-    padding-right: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .page-width--narrow {
@@ -2500,7 +2500,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
   text-decoration: none;
   word-break: break-word;
 }
@@ -2545,13 +2545,13 @@ product-info .loading__spinner:not(.hidden) ~ *,
 @media screen and (min-width: 990px) {
   .header--middle-left .header__heading-link,
   .header--top-left .header__heading-link {
-    margin-left: -0.75rem;
+    /* margin-left: -0.75rem; */
   }
 
   .header__heading,
   .header__heading-link {
     justify-self: start;
-    margin-left: 1vw;
+    /* margin-left: 1vw; */
   }
 
   .header--middle-center .header__heading-link,
@@ -2572,12 +2572,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 2px;
-  max-width: 108px;
-  width: 100%;
-  gap: 4px;
+  gap: 15px;
   justify-content: space-between;
-  margin-right: 33px;
 }
 
 .header__icons .shopify-app-block {
@@ -2680,7 +2676,6 @@ menu-drawer + .header__search {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
     display: inline-flex;
-    padding-right: 10px;
   }
 
   .header:not(.header--top-center) > .header__search,
@@ -2867,14 +2862,14 @@ details[open] > .header__submenu {
   transition: text-decoration var(--duration-short) ease;
 }
 
-.header__menu-item:hover span {
+/* .header__menu-item:hover span {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
-}
+} */
 
-details[open] > .header__menu-item {
+/* details[open] > .header__menu-item {
   text-decoration: underline;
-}
+} */
 
 details[open]:hover > .header__menu-item {
   text-decoration-thickness: 0.2rem;

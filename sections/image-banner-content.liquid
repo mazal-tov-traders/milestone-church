@@ -4,16 +4,23 @@
       <div class="banner-innerr__box">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
-            {%- when 'title_screen' -%}
-              {%- if block.settings.screen_reader_text != blank -%}
-                <h1 class="screen-reader-text">
-                  {{ block.settings.screen_reader_text }}
-                </h1>
-              {% endif %}
             {%- when 'heading' -%}
-              <h2 class="banner-innerr__box_heading">
-                {{ block.settings.heading }}
-              </h2>
+              {%- if block.settings.heading != blank -%}
+                <h1 class="banner-innerr__box_heading">
+                  {{ block.settings.heading }}
+                </h1>
+              {% else %}
+                {%- for block in section.blocks -%}
+                  {%- case block.type -%}
+                    {%- when 'title_screen' -%}
+                      {% if block.settings.screen_reader_text != blank %}
+                        <h1 class="screen-reader-text">
+                          {{ block.settings.screen_reader_text }}
+                        </h1>
+                      {% endif %}
+                  {% endcase %}
+                {% endfor %}
+              {% endif %}
             {%- when 'content' -%}
               {%- if block.settings.content != blank -%}
                 <div class="banner-innerr__box_text">
@@ -67,7 +74,6 @@
     background-size: cover;
   }
 </style>
-
 
 {% schema %}
 {
@@ -176,13 +182,13 @@
     },
     {
       "type": "title_screen",
-      "name": "Screen Reader Text",
+      "name": "Hidden Main Title",
       "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
           "id": "screen_reader_text",
-          "label": "screen reader text"
+          "label": "Hidden Main Title"
         }
       ]
     }

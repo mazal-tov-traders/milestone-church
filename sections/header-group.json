@@ -27,12 +27,8 @@
       ],
       "settings": {
         "logo_position": "middle-left",
-        "heading_peage1": "<a href=\"\/pages\/books\" title=\"Books\">Books<\/a>",
-        "heading_peage2": "<a href=\"\/pages\/study-guides\" title=\"Study Guides\">Study Guides<\/a>",
-        "heading_peage3": "<a href=\"\/pages\/music\" title=\"Music\">Music<\/a>",
-        "heading_peage4": "<a href=\"https:\/\/www.connect.milestonechurch.com\/\" target=\"_blank\" title=\"Are You a Church?\">Are You a Church?<\/a>",
         "menu": "drower-menu",
-        "menu_type_desktop": "drawer",
+        "menu_type_desktop": "dropdown",
         "sticky_header_type": "always",
         "show_line_separator": false,
         "color_scheme": "background-1",

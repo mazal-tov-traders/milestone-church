@@ -39,8 +39,8 @@
         "class": "home",
         "background": "shopify:\/\/shop_images\/Rectangle_4133714.jpg",
         "hero_image": "shopify:\/\/shop_images\/TWTW_book_transparent_1_1.png",
-        "centered-content": false,
-        "style_btn": "white"
+        "style_btn": "white",
+        "centered-content": false
       }
     },
     "d1e6bd71-d395-407c-8da5-9e951d3384e7": {

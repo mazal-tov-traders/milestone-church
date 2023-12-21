@@ -30,12 +30,6 @@
                   >
                 </div>
               {% endif %}
-            {%- when 'title_screen' -%}
-              {%- if block.settings.screen_reader_text != blank -%}
-                <h1 class="screen-reader-text">
-                  {{ block.settings.screen_reader_text }}
-                </h1>
-              {% endif %}
             {%- when 'buttons' -%}
               {%- if block.settings.button_label_1 != blank -%}
                 <div
@@ -161,18 +155,6 @@
           "type": "image_picker",
           "id": "banner_right",
           "label": "Media"
-        }
-      ]
-    },
-    {
-      "type": "title_screen",
-      "name": "Screen Reader Text",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "inline_richtext",
-          "id": "screen_reader_text",
-          "label": "screen reader text"
         }
       ]
     }

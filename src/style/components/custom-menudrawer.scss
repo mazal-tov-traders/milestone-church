@@ -7,6 +7,30 @@
 }
 
 .menu-drawer {
+  .page-menu-inner {
+    grid-area: page-menu-inner;
+    display: flex;
+    margin-right: 3vw;
+    max-width: 600px;
+    padding-left: 18px;
+    &_page {
+      &:hover a {
+        color: rgba(229, 190, 94, 1);
+      }
+      a {
+        font-family: "Nova-600";
+        font-size: 16px;
+        letter-spacing: 0em;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      @media screen and (min-width: 990px) {
+        a {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
   .menu-drawer__inner-container {
     .menu-drawer__navigation {
       padding: 22px 30px 20px 35px;
@@ -267,4 +291,16 @@
   color: #fff;
 }
 
-
+@media screen and (max-width: 990px) {
+  .menu-drawer.motion-reduce.color-inverse {
+    .menu-drawer__navigation {
+      .header__menu-item {
+        display: flex;
+        justify-content: space-between;
+      }
+      summary.list-menu__item {
+        padding-right: 7px;
+    }
+    }
+  }
+}
