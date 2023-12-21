@@ -14,14 +14,14 @@
         "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Hearing God",
+            "heading": "",
             "heading_size": "h0"
           }
         },
         "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-text-1": {
           "type": "text",
           "settings": {
-            "text": "Recognizing His voice in a world full of noise",
+            "text": "",
             "color_text": "#ffffff",
             "text_style": "body"
           }
@@ -29,10 +29,10 @@
         "46aff6f0-517b-4e21-8d57-5b758b72193c": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Purchase a Book",
+            "button_label_1": "Lead a Small Group",
             "button_link_1": "#miracleee",
             "button_style_secondary_1": true,
-            "button_label_2": "Watch the Small GroupVideos",
+            "button_label_2": "",
             "button_link_2": "shopify:\/\/pages\/weekly-videos",
             "button_style_secondary_2": true
           }
@@ -45,7 +45,7 @@
       ],
       "settings": {
         "class": "hearing-god",
-        "image": "shopify:\/\/shop_images\/Rectangle_4133714_6.jpg",
+        "image": "shopify:\/\/shop_images\/1440x580.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -71,7 +71,7 @@
         "9780fce8-616b-452d-8aa9-b581b1cb4e54": {
           "type": "content",
           "settings": {
-            "content": "There are 3 simple steps to fully engage with the Miracles series at Milestone Church."
+            "content": "There are 3 simple steps to fully engage with the Hearing God series at Milestone Church."
           }
         },
         "bd7532c0-9e80-4a7f-966a-c3907afc524d": {
@@ -98,7 +98,7 @@
         "73950251-ce15-45da-80a7-2f97cd9b2925": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133735_2.jpg"
+            "image": "shopify:\/\/shop_images\/Illustration.jpg"
           }
         }
       },
@@ -119,7 +119,7 @@
         "56c236e8-2126-4287-81f3-f446cbbfb34a": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_4133737_3.jpg",
+            "image": "shopify:\/\/shop_images\/HearingGod-WebThumbnail-1920x1080.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1_a14e66d8-7731-43f0-9e50-6b7313607138.png",
             "content": ""
           }
@@ -129,9 +129,9 @@
         "56c236e8-2126-4287-81f3-f446cbbfb34a"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/Rectangle_4133725_12.jpg",
+        "background": "shopify:\/\/shop_images\/Screenshot_2023-12-21_at_11.54.48_AM.png",
         "heading": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Cb3Xr1cF1gk",
         "content": "<p>Series Overview<\/p>",
         "text": "<p>Does God know what I’m going through? Does He see me? Does He have something to say about my situation? How do I know what He’s saying?<\/p>",
         "description": "<p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are. We invite you to join us for a new series in January, as we look at the incredible ways God communicates with us.<\/p>",
@@ -313,9 +313,9 @@
         "d58c376f-d13e-4004-af09-5cfde2ade2bc": {
           "type": "resources-card",
           "settings": {
-            "resources_image": "shopify:\/\/shop_images\/Rectangle_4133724_2.jpg",
-            "heading": "Weekly Videos",
-            "content": "Pastor Jeff visited several of the locations where Jesus performed miracles and dives deeper into their significance through weekly videos that coordinate with the chapters in the book. ",
+            "resources_image": "shopify:\/\/shop_images\/Hearing_God_Weekly_Videos.jpg",
+            "heading": "Weekly Small Group Videos",
+            "content": "Pastor Jeff and Brandy shot these videos specifically for your weekly Small Group.",
             "button_label": "Watch Videos",
             "button_link": "shopify:\/\/pages\/weekly-videos"
           }
@@ -323,7 +323,7 @@
         "3752b7af-9891-407b-98f2-a32fc7eec45c": {
           "type": "resources-card",
           "settings": {
-            "resources_image": "shopify:\/\/shop_images\/Rectangle_4133724_3.jpg",
+            "resources_image": "shopify:\/\/shop_images\/Hearing_God_Leader_Guide.jpg",
             "heading": "Leader Guide",
             "content": "This guide has everything you need to lead your Small Group. It includes tips on what to communicate, how to pray, what to expect, and Small Group discussion questions. The leader guide is available for mobile download, or you can pick them up at your campus.",
             "button_label": "Download Guide",
@@ -333,7 +333,7 @@
         "796f817e-6f8a-4489-ab65-66d16f1ce2f6": {
           "type": "resources-card",
           "settings": {
-            "resources_image": "shopify:\/\/shop_images\/Rectangle_4133724_4.jpg",
+            "resources_image": "shopify:\/\/shop_images\/Hearing_God_Kids_Resource.jpg",
             "heading": "Milestone Kid’s Resource",
             "content": "This resource was designed to help your kid grow in God’s word and is a great way to bring them along in the Hearing God series. Each week features a scripture reading, an application activity, and a prayer.",
             "button_label": "Download Here",
@@ -379,7 +379,7 @@
           "settings": {
             "heading": "How do I purchase my book?",
             "icon": "none",
-            "row_content": "<p>We have four options for purchasing a book:<\/p><ul><li>Purchase it in the commons during any of our weekend services at any of our campuses.<\/li><li>Stop by the Keller or McKinney campus Monday-Thursday between 9am-5pm to purchase.<\/li><li>Order a physical copy of the resource above and have it shipped to your house. <\/li><li>Purchase our E-Book <a href=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\" title=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\">here<\/a>.<\/li><\/ul>",
+            "row_content": "<p>We have four options for purchasing a book:<\/p><ul><li>Purchase it in the commons during any of our weekend services at any of our campuses.<\/li><li>Stop by the Keller or McKinney campus Monday-Thursday between 9am-5pm to purchase.<\/li><li>Order a physical copy of the resource above and have it shipped to your house. <\/li><li>Purchase our E-Book <a href=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\" target=\"_blank\" title=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\">here<\/a>.<\/li><\/ul>",
             "page": ""
           }
         },
@@ -413,7 +413,7 @@
         "caption": "",
         "heading": "Frequently Asked Questions",
         "heading_size": "h1",
-        "background": "shopify:\/\/shop_images\/Rectangle_4133726_3_e835fce1-ac63-48e6-8a3b-4566c95ba593.jpg",
+        "background": "shopify:\/\/shop_images\/Screenshot_2023-12-21_at_11.54.48_AM.png",
         "secon_class": "questtt",
         "heading_alignment": "center",
         "layout": "row",
