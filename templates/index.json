@@ -3,6 +3,12 @@
     "7ab61185-5e0f-413b-8810-ec082b18e2fc": {
       "type": "image-banner-content",
       "blocks": {
+        "7f69c960-a4ac-417b-a262-48d8e2b73c4f": {
+          "type": "title_screen",
+          "settings": {
+            "screen_reader_text": "The way to win"
+          }
+        },
         "c44e286a-e8df-4813-a6cc-b91c1e2b24b3": {
           "type": "heading",
           "settings": {
@@ -24,6 +30,7 @@
         }
       },
       "block_order": [
+        "7f69c960-a4ac-417b-a262-48d8e2b73c4f",
         "c44e286a-e8df-4813-a6cc-b91c1e2b24b3",
         "700cfb80-d496-402c-a5c5-183f6bdb6a2e",
         "42d95422-c6c8-4b5e-882e-d1f1aae37118"
@@ -32,7 +39,8 @@
         "class": "home",
         "background": "shopify:\/\/shop_images\/Rectangle_4133714.jpg",
         "hero_image": "shopify:\/\/shop_images\/TWTW_book_transparent_1_1.png",
-        "centered-content": false
+        "centered-content": false,
+        "style_btn": "white"
       }
     },
     "d1e6bd71-d395-407c-8da5-9e951d3384e7": {
@@ -221,6 +229,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Rectangle_4133725_2.jpg",
         "hero_image": "shopify:\/\/shop_images\/Rectangle_4133722.jpg",
+        "style_btn": "white",
         "class": "index-banner-music"
       }
     },

@@ -30,26 +30,32 @@
                   >
                 </div>
               {% endif %}
+            {%- when 'title_screen' -%}
+              {%- if block.settings.screen_reader_text != blank -%}
+                <h1 class="screen-reader-text">
+                  {{ block.settings.screen_reader_text }}
+                </h1>
+              {% endif %}
             {%- when 'buttons' -%}
               {%- if block.settings.button_label_1 != blank -%}
-              <div
-                class="banner-innerr__box_button"
-              >
+                <div
+                  class="banner-innerr__box_button"
+                >
                   <a
                     {% if block.settings.button_link_1 == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    {% if block.settings.button_link_1 contains "https://" %}
+                    {% if block.settings.button_link_1 contains 'https://' %}
                       target="_blank"
                     {% endif %}
                     class="my-custom-btn {{ section.settings.style_btn }}"
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
-              </div>
-            {%- endif -%}
+                </div>
+              {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -155,6 +161,18 @@
           "type": "image_picker",
           "id": "banner_right",
           "label": "Media"
+        }
+      ]
+    },
+    {
+      "type": "title_screen",
+      "name": "Screen Reader Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "screen reader text"
         }
       ]
     }

@@ -27,10 +27,10 @@
                 </div>
               {%- endif -%}
             {%- when 'buttons' -%}
-              {%- if block.settings.button_label_1 != blank -%}
-                <div
-                  class="banner-innerr__box_button"
-                >
+              <div
+                class="banner-innerr__box_button"
+              >
+                {%- if block.settings.button_label_1 != blank -%}
                   <a
                     {% if block.settings.button_link_1 == blank %}
                       role="link" aria-disabled="true"
@@ -38,12 +38,12 @@
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
                     class="my-custom-btn {{ section.settings.style_btn }}"
-                    id="{% if template == 'index' %}anchor{% else %}navigation-anchor__link{% endif %}"
+                    id="{% if template == 'index' %}german{% else %}navigation-anchor__link{% endif %}"
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
-                </div>
-              {%- endif -%}
+                {%- endif -%}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -67,6 +67,8 @@
     background-size: cover;
   }
 </style>
+
+
 {% schema %}
 {
   "name": "Banner + content blocks",
@@ -89,12 +91,6 @@
       "label": "Hero image"
     },
     {
-      "type": "checkbox",
-      "id": "centered-content",
-      "default": false,
-      "label": "Сentered Сontent"
-    },
-    {
       "type": "select",
       "id": "style_btn",
       "options": [
@@ -113,6 +109,12 @@
       ],
       "default": "white",
       "label": "button color"
+    },
+    {
+      "type": "checkbox",
+      "id": "centered-content",
+      "default": false,
+      "label": "Сentered Сontent"
     }
   ],
   "blocks": [

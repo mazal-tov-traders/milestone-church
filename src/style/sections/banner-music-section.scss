@@ -1,4 +1,4 @@
-.banner-music.index-banner-music{
+.banner-music.index-banner-music {
   .banner-inner-music {
     .page-width {
       .banner-innerr__box {
@@ -58,7 +58,7 @@
           text-align: left;
           color: #fff;
           opacity: 90%;
-          p{
+          p {
             max-width: 570px;
           }
         }
@@ -87,7 +87,7 @@
 }
 
 @media screen and (max-width: 1370px) {
-  .banner-music.index-banner-music{
+  .banner-music.index-banner-music {
     .banner-inner-music {
       .page-width {
         .banner-innerr__box {
@@ -120,7 +120,7 @@
           &_text {
             width: 100%;
             max-width: 100%;
-            font-family: 'Nova-300';
+            font-family: "Nova-300";
             line-height: 32px;
           }
         }
@@ -159,15 +159,19 @@
             max-width: max-content;
             width: 100%;
             text-align: center;
+            font-family: 'Nova-700';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
           }
         }
       }
     }
   }
 }
-// 
-
-
+//
 
 .header-wrapper {
   margin-top: 0px;

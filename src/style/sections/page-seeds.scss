@@ -13,7 +13,7 @@
           margin-bottom: 0px;
         }
         &_text {
-          margin-bottom: 37px;
+          margin-bottom: 35px;
           margin-top: 5px;
           max-width: 442px;
           text-align: center;
@@ -26,21 +26,23 @@
         }
       }
       .banner-innerr__box_button {
-        display: flex;
+        display: flex;           
+        padding: 0;      
+        align-items: center;      
         justify-content: center;
-        .banner-innerr__box_button {
-          max-width: max-content;
-          width: 100%;
-          padding: 0;
-          display: flex;
-          align-items: center;
+        height: 50px;
+        margin-top: 35px;
+        .my-custom-btn {
           text-align: center;
-          justify-content: center;
-          height: 50px;
+          font-family: "Nova-700";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
         }
       }
     }
   }
 }
 
-//

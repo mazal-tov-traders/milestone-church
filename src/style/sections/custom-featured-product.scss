@@ -255,7 +255,6 @@
   }
   .product__media-wrapper {
     display: inline-block;
-    text-align: end;
     .image-product {
       max-width: 550px;
       width: 100%;
@@ -274,6 +273,9 @@
         }
       }
     }
+    .product__media-wrapper {
+      text-align: center;
+    }
     .product__info-wrapper {
       .buttons-link-box {
         display: flex;
@@ -285,7 +287,7 @@
 }
 
 //
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 801px) {
   .custom-featured-product.mira {
     .grid__item.product__media-wrapper {
       padding-left: 98px;
@@ -315,6 +317,9 @@
     }
   }
   .custom-featured-product {
+    .product__media-wrapper {
+      text-align: end;
+    }
     .product__media-wrapper {
       height: 616px;
     }

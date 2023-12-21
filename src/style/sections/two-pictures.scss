@@ -28,10 +28,15 @@
           }
         }
         .my-custom-btn {
-          font-family: "Nova-700";
-          font-size: 15px;
           letter-spacing: 0;
           padding: 13px 34px;
+          text-align: center;
+          font-family: 'Nova-700';
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
         }
       }
     }
@@ -92,11 +97,15 @@
           padding-top: 11px;
         }
         my-custom-btn{
-          font-family: "Nova-700";
-          font-size: 15px;
           letter-spacing: 0;
-          text-transform: uppercase;
-          margin-top: 20px;     
+          margin-top: 20px;   
+          text-align: center;
+          font-family: 'Nova-700';
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;  
         }
       }
       .banner-innerr__hero-image {
@@ -112,6 +121,12 @@
 // 
 
 .my-custom-btn {
+  text-align: center;
+  font-family: 'Nova-700';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;

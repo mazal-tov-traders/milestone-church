@@ -3,6 +3,12 @@
     "b332fabc-0cff-465b-9bfa-77de1c18a3e9": {
       "type": "Image-banner-product-thewin",
       "blocks": {
+        "956da3f6-eaa3-4dfa-85fa-c22e66b29fac": {
+          "type": "title_screen",
+          "settings": {
+            "screen_reader_text": "The way to win"
+          }
+        },
         "d8aaaab8-6f34-49b9-b3c2-a9c4ee5c1258": {
           "type": "content",
           "settings": {
@@ -18,13 +24,15 @@
         }
       },
       "block_order": [
+        "956da3f6-eaa3-4dfa-85fa-c22e66b29fac",
         "d8aaaab8-6f34-49b9-b3c2-a9c4ee5c1258",
         "8bee47b5-27a5-4b8c-bce1-39033ca014a3"
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/Rectangle_4133714_2.jpg",
         "hero_image": "shopify:\/\/shop_images\/TitleTransparent_1_1.png",
-        "secon_class": "thewinnn"
+        "secon_class": "thewinnn",
+        "style_btn": "white"
       }
     },
     "bcef8fdb-4d85-48f2-ae16-41d151047c2d": {
@@ -264,6 +272,7 @@
       "settings": {
         "class_name": "towin",
         "background": "shopify:\/\/shop_images\/Rectangle_4133714_2.jpg",
+        "style_btn": "white",
         "position_content": true
       }
     },
