@@ -81,6 +81,16 @@
   }
 }
 
+@media screen and (max-width: 990px) {
+  .join-group__wrapper {
+    .inner-box__block-content_btn-wrap {
+      gap: 20px;
+    }
+    &_text {
+      margin-bottom: 20px;
+    }
+  }
+}
 @media screen and (max-width: 480px) {
   .join-group__wrapper {
     .inner-box__block-content_btn-wrap {
@@ -94,4 +104,3 @@
     }
   }
 }
-

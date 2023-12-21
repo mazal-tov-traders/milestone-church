@@ -23,7 +23,7 @@
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
                     class="btn"
-                    {% if block.settings.button_link_1 contains "https://" %}
+                    {% if block.settings.button_link_1 contains 'https://' %}
                       target="_blank"
                     {% endif %}
                   >
@@ -41,7 +41,7 @@
                       href="{{ block.settings.button_link_2 }}"
                     {% endif %}
                     class="btn"
-                    {% if block.settings.button_link_2 contains "https://" %}
+                    {% if block.settings.button_link_2 contains 'https://' %}
                       target="_blank"
                     {% endif %}
                   >
@@ -65,9 +65,11 @@
     width: 100%;
     margin: 0 auto;
   }
-  @media screen and (min-width: 1090px) {
-    .join-group{
-        min-height: 931px;
+  @media screen and (max-width: 990px) {
+    .join-group.{{ section.settings.secon_class }}{
+      padding: 100px 0 440px 0;
+      background-position: center 100%;
+      background-size: auto 100%;
     }
   }
 </style>
