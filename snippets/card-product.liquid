@@ -379,7 +379,7 @@
 
     truncateElements.forEach(function(element) {
       var textContent = element.textContent.trim();
-      var truncatedText = textContent.length > 100 ? textContent.substring(0, 75) + "..." : textContent;
+      var truncatedText = textContent.length > 100 ? textContent.substring(0, 40) + "..." : textContent;
       element.textContent = truncatedText;
     });
   });

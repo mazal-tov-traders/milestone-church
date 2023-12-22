@@ -18,14 +18,13 @@
     .author__inner {
       display: flex;
       align-items: center;
-      max-width: 330px;
       margin-right: 40px;
       margin-left: 12px;
       .author__img-box {
         margin-right: 30px;
         margin-top: 10px;
         &_img {
-          width: 80px;
+          width: 150px;
           img {
             width: 100%;
           }

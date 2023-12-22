@@ -70,6 +70,7 @@
       &__buttons {
         width: 100%;
         margin: 0;
+        justify-content: center;
         @media (min-width: 430px) {
           width: auto;
         }
@@ -144,6 +145,10 @@
     left: 15%;
     bottom: 73px;
     z-index: 10;
+    @media (max-width: 1005px) {
+      bottom: 35px;
+      left: 3%;
+    }
   }
 
   .slideshow__controls {

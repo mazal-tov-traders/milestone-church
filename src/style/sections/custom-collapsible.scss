@@ -92,8 +92,18 @@
 }
 @media screen and (max-width: 500px){
   .color-background-1.custom-collapsible .details-custom .summary-custom {
-
     min-height: 78.5px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px 5px 20px;
+  }
+  .color-background-1.custom-collapsible .details-custom .accordion__content.rte {
+    padding: 20px 20px;
+  }
+  .color-background-1.custom-collapsible .accordion details[open]>summary .accordion__title {
+    font-size: 18px!important;
+    line-height: 25px!important;
   }
 }
+
+
+
+
