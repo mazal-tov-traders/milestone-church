@@ -71,6 +71,14 @@
         text-transform: uppercase;
       }
     }
+    .box_link-menu.second-link-menu {
+      .link-menu {
+        margin-top: 60px;
+        @media screen and (max-width: 700px) {
+          margin-top: 50px;
+        }
+      }
+    }
     .footer-logo-wrapper-desctop {
       margin-top: 146px;
     }

@@ -53,11 +53,15 @@
   </div>
 </div>
 <style>
-  .banner-inner-music {
+  .banner.banner-music.{{ section.settings.class }}{
     background-image: url({{ section.settings.background | image_url: width: 3840 }});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1920px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
   }
 </style>
 {% schema %}

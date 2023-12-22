@@ -117,7 +117,7 @@
                             {% else %}
                               href="{{ block.settings.button_link_1 }}"
                             {% endif %}
-                            {% if block.settings.button_link_1 contains "https://" %}
+                            {% if block.settings.button_link_1 contains 'https://' %}
                               target="_blank"
                             {% endif %}
                             class="link-menu"
@@ -138,12 +138,36 @@
                         {%- if block.settings.email != blank -%}
                           {% render 'icon-email' %}
                           <div class="email-addresses__wrapper_mail">
-                            <a href="mailto:{{ block.settings.email | strip_html}}" {% if block.settings.email contains "https://" %}
-                              target="_blank"
-                            {% endif %}>{{ block.settings.email }}</a>
+                            <a
+                              href="mailto:{{ block.settings.email | strip_html}}"
+                              {% if block.settings.email contains 'https://' %}
+                                target="_blank"
+                              {% endif %}
+                            >
+                              {{- block.settings.email -}}
+                            </a>
                           </div>
                         {% endif %}
                       </div>
+                      {%- if block.settings.button_label_2 != blank -%}
+                        <div
+                          class="box_link-menu second-link-menu"
+                        >
+                          <a
+                            {% if block.settings.button_link_2 == blank %}
+                              role="link" aria-disabled="true"
+                            {% else %}
+                              href="{{ block.settings.button_link_2 }}"
+                            {% endif %}
+                            {% if block.settings.button_link_2 contains 'https://' %}
+                              target="_blank"
+                            {% endif %}
+                            class="link-menu"
+                          >
+                            {{- block.settings.button_label_2 | escape -}}
+                          </a>
+                        </div>
+                      {%- endif -%}
                     </div>
                   {%- when 'link_list' -%}
                     <div class="footer-menu-inner">
@@ -205,7 +229,7 @@
                             {% else %}
                               href="{{ block.settings.button_link_2 }}"
                             {% endif %}
-                            {% if block.settings.button_link_2 contains "https://" %}
+                            {% if block.settings.button_link_2 contains 'https://' %}
                               target="_blank"
                             {% endif %}
                             class="link-menu"
@@ -470,13 +494,30 @@
       <div class="footer__copyright caption">
         <small class="copyright__content">&copy; {{ 'now' | date: '%Y' }} Resources. All Rights Reserved </small>
         <div class="privacy-policy__content">
-          <a {% if section.settings.link_page_terms_use == blank %} role="link" aria-disabled="true" {% else %} href="{{ section.settings.link_page_terms_use }}"{% endif %} class="terms-of-Use">Terms of Use</a>
+          <a
+            {% if section.settings.link_page_terms_use == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ section.settings.link_page_terms_use }}"
+            {% endif %}
+            class="terms-of-Use"
+            >Terms of Use</a
+          >
           |
-          <a {% if section.settings.link_page_police == blank %} role="link" aria-disabled="true" {% else %} href="{{ section.settings.link_page_police }}"{% endif %} class="privacy-policy">Privacy Policy</a>
+          <a
+            {% if section.settings.link_page_police == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ section.settings.link_page_police }}"
+            {% endif %}
+            class="privacy-policy"
+            >Privacy Policy</a
+          >
         </div>
       </div>
-      <div class="dallas-web-design">              
-        Dallas and Plano Web Design Agency : <a href="https://www.webloftdesigns.com/" target="_blank" class="dallas-web-design_ref">Web Loft Designs</a>
+      <div class="dallas-web-design">
+        Dallas and Plano Web Design Agency :
+        <a href="https://www.webloftdesigns.com/" target="_blank" class="dallas-web-design_ref">Web Loft Designs</a>
       </div>
     </div>
   </div>
@@ -571,6 +612,16 @@
           "type": "richtext",
           "id": "phone",
           "label": "Phone Number"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "label": "link label"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "link"
         }
       ]
     },
