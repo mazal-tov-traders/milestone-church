@@ -34,7 +34,7 @@
             {%- when 'buttons' -%}
               {%- if block.settings.button_label_1 != blank -%}
                 <div
-                  class="banner-innerr__box_button"
+                  class="banner-innerr__box_button-product-book"
                 >
                   <a
                     {% if block.settings.button_link_1 == blank %}
@@ -42,7 +42,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="buttonn"
+                    class="btn"
                     {% if block.settings.button_link_1 contains "https://" %}
                       target="_blank"
                     {% endif %}

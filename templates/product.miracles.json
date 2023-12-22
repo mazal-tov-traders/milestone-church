@@ -31,6 +31,7 @@
       "settings": {
         "class": "srsdsd",
         "background": "shopify:\/\/shop_images\/banner-miracle.jpg",
+        "style_btn": "white",
         "centered-content": true
       }
     },
@@ -231,7 +232,7 @@
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/3I1A0432-Enhanced-NR.jpg",
-        "heading": "<p>Message Series<\/p>",
+        "heading": "",
         "video_url": "https:\/\/www.youtube.com\/watch?v=KsAOLcfzP48",
         "content": "<p>Dive deeper into Miracles by pairing the book with our 8-week message series<\/p>",
         "text": "",
@@ -244,6 +245,7 @@
       "type": "image-banner-content",
       "settings": {
         "class": "",
+        "style_btn": "white",
         "centered-content": false
       }
     },
@@ -259,8 +261,8 @@
         "f25f812a-6a65-4b01-baee-dbdd2691fb45": {
           "type": "content",
           "settings": {
-            "heading": "About",
-            "text": "<p>Pastor Jeff<\/p>",
+            "heading": "",
+            "text": "<p>Meet Pastor Jeff<\/p>",
             "content": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>"
           }
         }

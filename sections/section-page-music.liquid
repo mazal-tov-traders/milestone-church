@@ -19,7 +19,7 @@
             {%- when 'buttons' -%}
               {%- if block.settings.button_label_1 != blank -%}
                 <div
-                  class="banner-innerr__box_button"
+                  class="banner-innerr__box_button-section-music"
                 >
                   <a
                     {% if block.settings.button_link_1 == blank %}
@@ -30,7 +30,7 @@
                     {% if block.settings.button_link_1 contains "https://" %}
                       target="_blank"
                     {% endif %}
-                    class="buttonn"
+                    class="btn"
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>

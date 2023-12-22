@@ -40,7 +40,7 @@
     padding-bottom: 49px;
     margin-top: 50px;
     background: transparent;
-  
+
     .buttonn {
       font-family: "Nova-700";
       font-size: 15px;
@@ -55,15 +55,16 @@
       }
     }
   }
+ 
 }
 @media screen and (max-width: 769px) {
   .banner-innerr__box_button {
     display: flex;
     justify-content: center;
     padding-bottom: 49px;
-      margin-top: 50px;
+    margin-top: 50px;
     background: transparent;
-  
+
     .buttonn {
       font-family: "Nova-700";
       font-size: 15px;
@@ -72,10 +73,8 @@
       border: 1px solid rgba(84, 145, 214, 1);
       background-color: transparent;
       padding: 11px 30px;
-     
     }
-}
-
+  }
 }
 color-background-2.isolate.gradient {
   .collection {
@@ -85,7 +84,7 @@ color-background-2.isolate.gradient {
 color-background-1.isolate.gradient {
   padding-bottom: 105px !important;
 }
-.collection__backgroun-fon{
+.collection__backgroun-fon {
   padding-top: 105px;
 }
 
@@ -106,4 +105,3 @@ color-background-1.isolate.gradient {
     margin-bottom: 0px;
   }
 }
-
