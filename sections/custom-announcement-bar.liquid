@@ -1,7 +1,6 @@
 {% comment %} {{ 'custom-announcement-bar.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 <div id="announcementbar_wrap" class="custom-announcement-bar">
-  <div class="page-width">
     <div class="custom-announcement-bar__wrap">
       {% if section.settings.main_text != blank %}
         <div class="custom-announcement-bar__wrap_text">
@@ -14,7 +13,6 @@
         </div>
       {% endif %}
     </div>
-  </div>
 </div>
 
 

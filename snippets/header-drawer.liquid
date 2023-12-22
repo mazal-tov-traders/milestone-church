@@ -152,7 +152,7 @@
                 <li>
                   {%- if link.links != blank -%}
                     <header-menu>
-                      <details id="Details-HeaderMenu-{{ forloop.index }}">
+                      <details id="Details-HeaderMenu-{{ forloop.index }}" class="for-rotate-svg">
                         <summary class="header__menu-item list-menu__item link focus-inset menu-drawe-links page-menu-inner_page">
                           <a
                             href="{{ link.url }}"
@@ -164,10 +164,8 @@
                             {{- link.title | escape -}}
                           </a>
                           <span
-                            {%- if link.child_active %}
-                              class="header__active-menu-item"
-                            {% endif %}
-                          >  
+                            class="wrapper-mobile-icon-cart {%- if link.child_active %}header__active-menu-item{% endif %}"
+                          >
                           {% render 'icon-caret' %}
                           </span>
                         </summary>
@@ -244,14 +242,10 @@
             {% for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'drower_menucontact' -%}
-                  <div class="menu-drawer_contact-inner">
-
-                  
-                     
-                    <div class="banner-innerr__box_button">
-                      <a href="/collections/all" class="buttonn">View all books</a>
+                  <div class="menu-drawer_contact-inner"> 
+                    <div class="menu-drawer__box_button">
+                      <a href="/collections/all" class="btn">View all books</a>
                     </div>
-
                     <div
                       class="drawer_menu-contact"
                     >

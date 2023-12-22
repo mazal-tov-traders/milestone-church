@@ -5,6 +5,12 @@
 .header__submenu.list-menu {
   padding: 0rem 0;
 }
+a.header__menu-item.list-menu__item.link.link--text.focus-inset {
+  &:hover {
+    color: rgba(229, 190, 94, 1);
+    text-decoration: none;
+  }
+}
 
 .menu-drawer {
   .page-menu-inner {
@@ -31,6 +37,7 @@
       }
     }
   }
+
   .menu-drawer__inner-container {
     .menu-drawer__navigation {
       padding: 22px 30px 20px 35px;
@@ -89,7 +96,6 @@
       line-height: 20px;
       letter-spacing: 0em;
       text-align: left;
-      color: rgba(255, 255, 255, 1);
       text-transform: uppercase;
     }
   }
@@ -164,7 +170,7 @@
   .menu-drawer_contact-inner {
     margin-top: 50px;
 
-    .banner-innerr__box_button {
+    .menu-drawer__box_button {
       margin-bottom: 49px;
       background: rgba(84, 145, 214, 1);
       border: 1px solid rgba(84, 145, 214, 1);
@@ -178,9 +184,9 @@
       align-items: center;
       text-align: center;
       justify-content: center;
-      max-width: 320px;
       width: 100%;
-      .buttonn {
+      height: 50px;
+      .btn {
         color: #fff;
       }
     }
@@ -190,7 +196,7 @@
       display: flex;
       justify-content: center;
       margin-bottom: 17px;
-      width: 320px;
+      width: 100%;
       svg {
         margin-bottom: 0px;
       }
@@ -212,7 +218,7 @@
       align-items: center;
       display: flex;
       justify-content: center;
-      width: 320px;
+      width: 100%;
       cursor: pointer;
       &_mail {
         margin-left: 12px;
@@ -232,14 +238,6 @@
 
 .menu-drawer .menu-drawer_contact-inner {
   margin-top: 28px;
-}
-
-.menu-drawer {
-  .menu-drawer_contact-inner {
-    .banner-innerr__box_button {
-      height: 50px;
-    }
-  }
 }
 
 .drawer_menu-contact {
@@ -285,11 +283,6 @@
   padding: 3rem 3rem !important;
 }
 
-.menu-drawer
-  .header__menu-item.list-menu__item.link.link--text.focus-inset
-  span {
-  color: #fff;
-}
 
 @media screen and (max-width: 990px) {
   .menu-drawer.motion-reduce.color-inverse {
@@ -300,7 +293,13 @@
       }
       summary.list-menu__item {
         padding-right: 7px;
-    }
+      }
     }
   }
 }
+
+
+
+// .header-wrapper.second-background .header__menu-item.list-menu__item.link.link--text.focus-inset {
+//   /* color: #000; */
+// }

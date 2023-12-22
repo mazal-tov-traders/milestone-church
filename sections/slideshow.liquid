@@ -168,30 +168,48 @@
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+              <h1 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
                 {{ block.settings.heading }}
-              </h2>
-            {%- endif -%}
+              </h1>
+            {% else %}
+              {% if block.settings.screen_reader_text != blank %}
+                <h1 class="screen-reader-text">
+                  {{ block.settings.screen_reader_text }}
+                </h1>
+              {% endif %}
+            {% endif %}
+
             {%- if block.settings.subheading != blank -%}
               <div class="banner__text rte" {{ block.shopify_attributes }}>
                 <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
-              <div class="banner__buttons">
+              <div class="banner__buttons my-custom-button">
                 <a
                   {% if block.settings.link %}
                     href="{{ block.settings.link }}"
                   {% else %}
                     role="link" aria-disabled="true"
                   {% endif %}
-                  class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
+                  {% if block.settings.button_link contains 'https://' %}
+                    target="_blank"
+                  {% endif %}
+                  class="my-custom-btn {{ section.settings.style_btn }} {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
                 >
                   {{- block.settings.button_label | escape -}}
                 </a>
               </div>
             {%- endif -%}
           </div>
+          {% if block.settings.illustration != blank %}
+            <div class="slideshow__image">
+              <img
+                src="{{ block.settings.illustration | img_url: 'original' }}"
+                class="img"
+              >
+            </div>
+          {% endif %}
         </div>
       </div>
     {%- endfor -%}
@@ -279,7 +297,7 @@
 {
   "name": "t:sections.slideshow.name",
   "tag": "section",
-  "class": "section",
+  "class": "section-banner-slider",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -323,6 +341,26 @@
       ],
       "default": "medium",
       "label": "t:sections.slideshow.settings.slide_height.label"
+    },
+    {
+      "type": "select",
+      "id": "style_btn",
+      "options": [
+        {
+          "value": "gold",
+          "label": "gold"
+        },
+        {
+          "value": "blue",
+          "label": "blue"
+        },
+        {
+          "value": "white",
+          "label": "white"
+        }
+      ],
+      "default": "white",
+      "label": "button color"
     },
     {
       "type": "select",
@@ -414,6 +452,11 @@
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
         },
         {
+          "type": "image_picker",
+          "id": "illustration",
+          "label": "illustration"
+        },
+        {
           "type": "inline_richtext",
           "id": "heading",
           "default": "Image slide",
@@ -438,6 +481,11 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "screen_reader_text",
+          "label": "Hidden Main Title"
         },
         {
           "type": "inline_richtext",

@@ -29,7 +29,8 @@
                   {%- if link.child_active %}
                     class="header__active-menu-item"
                   {% endif %}
-                >  
+                  {% if request.page_type != 'index' %}class="wrapper-icon-caret"{% endif %}
+                > 
                 {% render 'icon-caret' %}
                 </span>
               </summary>

@@ -2607,16 +2607,16 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 32px;
+  width: 32px;
   fill: none;
   vertical-align: middle;
 }
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 32px;
+  width: 32px;
   padding: 0;
 }
 
