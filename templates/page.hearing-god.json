@@ -11,17 +11,17 @@
     "f12cfe83-32ec-404d-a4a9-a6d5ab5231fa": {
       "type": "image-banner",
       "blocks": {
-        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1": {
+        "0b54e5c0-f8b7-4586-a2ba-b6f32e875758": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "Hearing God",
             "heading_size": "h0"
           }
         },
-        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-text-1": {
+        "2132f774-a6c5-418c-a460-f515ed7ed8be": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "Recognizing His Voice in a world full of noise",
             "color_text": "#ffffff",
             "text_style": "body"
           }
@@ -29,8 +29,8 @@
         "46aff6f0-517b-4e21-8d57-5b758b72193c": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Lead a Small Group",
-            "button_link_1": "#miracleee",
+            "button_label_1": "Lead a group",
+            "button_link_1": "https:\/\/my.milestonechurch.com\/page\/921",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "shopify:\/\/pages\/weekly-videos",
@@ -39,13 +39,13 @@
         }
       },
       "block_order": [
-        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-heading-1",
-        "template--21649905123635__f12cfe83-32ec-404d-a4a9-a6d5ab5231fa-text-1",
+        "0b54e5c0-f8b7-4586-a2ba-b6f32e875758",
+        "2132f774-a6c5-418c-a460-f515ed7ed8be",
         "46aff6f0-517b-4e21-8d57-5b758b72193c"
       ],
       "settings": {
         "class": "hearing-god",
-        "image": "shopify:\/\/shop_images\/1440x580.jpg",
+        "image": "shopify:\/\/shop_images\/Hearing_God_Resources_Website_Header-100_7026a467-0248-450c-a9bf-b32e3b02da02.heic",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -53,7 +53,7 @@
         "desktop_content_alignment": "center",
         "style_btn": "white",
         "color_scheme": "background-1",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
@@ -84,7 +84,7 @@
         "4b012c9f-d3f3-44cc-a5e6-035746e44425": {
           "type": "navigat_second",
           "settings": {
-            "navigat_second": "Purchase a Book",
+            "navigat_second": "Purchase a Study Guide",
             "navigate_link_2": "#miracleee"
           }
         },
@@ -120,7 +120,7 @@
           "type": "video",
           "settings": {
             "image": "shopify:\/\/shop_images\/HearingGod-WebThumbnail-1920x1080.jpg",
-            "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1_a14e66d8-7731-43f0-9e50-6b7313607138.png",
+            "image_youtube": "shopify:\/\/shop_images\/black_button_2.png",
             "content": ""
           }
         }
@@ -220,27 +220,30 @@
         "de79e1fa-2418-470b-b205-12d3e0f88d80": {
           "type": "heading_second",
           "settings": {
-            "heading1": "<p>We believe that this resource will help you grow closer to Jesus.<\/p>"
+            "heading1": "<p>Grow closer to god as you understand and study his word<\/p>"
           }
         },
         "219dd411-f230-48cf-b900-4e816a51713a": {
           "type": "description",
           "settings": {
-            "description": "<p>You can purchase a book below or during any of our weekend services.<\/p>"
+            "description": "<p>Study guides will be available for purchase here or during weekend services starting January 20.<\/p>"
           }
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-price-1": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-quantity_selector-1": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-buy_buttons-1": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
@@ -248,6 +251,7 @@
         },
         "71c97878-d821-4aae-8029-692a3d170baa": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "content": "25% discount when you buy 10 or more books"
           }
@@ -271,7 +275,7 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "2",
-        "purchase": "Purchase a book",
+        "purchase": "Purchase a study guide",
         "hide_variants": false,
         "height": "931"
       }
@@ -368,18 +372,18 @@
         "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "If I’m not ready to join a group yet, can I still participate in the Miracle series?",
+            "heading": "If I’m not ready to join a group yet, can I still participate in the Hearing God series?",
             "icon": "none",
-            "row_content": "<p>Yes! When we created the Miracle series and book, we had you in mind. We invite you to join us from week to week during our weekend services: onsite or online.<\/p>",
+            "row_content": "<p>Yes! When we created the Hearing God series and book, we had you in mind. We invite you to join us from week to week during our weekend services: onsite or online.<\/p>",
             "page": ""
           }
         },
         "template--21752552030515__1737a2ee-4fcc-4b62-8af0-17e25a691c94-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I purchase my book?",
+            "heading": "How do I purchase my study guide?",
             "icon": "none",
-            "row_content": "<p>We have four options for purchasing a book:<\/p><ul><li>Purchase it in the commons during any of our weekend services at any of our campuses.<\/li><li>Stop by the Keller or McKinney campus Monday-Thursday between 9am-5pm to purchase.<\/li><li>Order a physical copy of the resource above and have it shipped to your house. <\/li><li>Purchase our E-Book <a href=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\" target=\"_blank\" title=\"https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours\/dp\/1954961146\/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694179044&sr=8-1\">here<\/a>.<\/li><\/ul>",
+            "row_content": "<p>We have four options for purchasing a study guide:<\/p><ul><li>Purchase it in the commons during any of our weekend services at any of our campuses.<\/li><li>Stop by the Keller or McKinney campus Monday-Thursday between 9am-5pm to purchase.<\/li><li>Order a physical copy of the resource above and have it shipped to your house. <\/li><\/ul>",
             "page": ""
           }
         },

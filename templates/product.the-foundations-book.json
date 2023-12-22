@@ -24,7 +24,8 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/banner-def.jpg",
         "hero_image": "shopify:\/\/shop_images\/123.png",
-        "secon_class": "thewinnn"
+        "secon_class": "thewinnn",
+        "style_btn": "white"
       }
     },
     "main": {
@@ -211,9 +212,9 @@
         "e1a13a6d-84d5-4b08-b1d8-a09e8df002dc": {
           "type": "content",
           "settings": {
-            "heading": "This book is uniquely designed:",
-            "text": "",
-            "content": "<ul><li>To help you discover what the Bible says about life’s most important questions<\/li><li>To give you the confidence to know how to read and understand the Bible for yourself.<\/li><li>To create meaningful conversations about how the most important ideas in Scripture apply to our lives.<\/li><\/ul>"
+            "heading": "",
+            "text": "<p>This book is uniquely designed to:<\/p>",
+            "content": "<ul><li>Help you discover what the Bible says about life’s most important questions<\/li><li>Give you the confidence to know how to read and understand the Bible for yourself.<\/li><li>Create meaningful conversations about how the most important ideas in Scripture apply to our lives.<\/li><\/ul>"
           }
         }
       },
@@ -240,10 +241,10 @@
         "35169363-9c99-4f8c-bec7-ef44311abd61"
       ],
       "settings": {
-        "title": "Other Resources",
+        "title": "",
         "class": "",
         "heading_size": "h1",
-        "description": "<p>You May Enjoy<\/p>",
+        "description": "<p> Other Resources You May Enjoy<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "you-may-enjoy-2",
