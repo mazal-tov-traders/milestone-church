@@ -15,16 +15,24 @@
             "button_label_1": "Buy the Book",
             "button_link_1": "#powerchurch"
           }
+        },
+        "952d3fdd-d5aa-4abc-bd81-8a4917760042": {
+          "type": "title_screen",
+          "settings": {
+            "screen_reader_text": "The Power of  Connection in the Church"
+          }
         }
       },
       "block_order": [
         "70ef6528-5e50-4521-becb-56c60d9cb8fc",
-        "8052424e-e7db-44c7-b41e-e2f40aad887d"
+        "8052424e-e7db-44c7-b41e-e2f40aad887d",
+        "952d3fdd-d5aa-4abc-bd81-8a4917760042"
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/Album-Announcement-Back.jpg",
         "hero_image": "shopify:\/\/shop_images\/TitleTransparent_1.png",
-        "secon_class": "thewin"
+        "secon_class": "thewin",
+        "style_btn": "white"
       }
     },
     "main": {

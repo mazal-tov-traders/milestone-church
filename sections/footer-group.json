@@ -19,7 +19,9 @@
             "button_label_1": "CONTACT",
             "button_link_1": "shopify:\/\/pages\/weekly-videos",
             "email": "<p>resources@milestonechurch.com<\/p>",
-            "phone": "<p>817-812-3600<\/p>"
+            "phone": "<p>817-812-3600<\/p>",
+            "button_label_2": "Milestone Church",
+            "button_link_2": "https:\/\/milestonechurch.com\/"
           }
         },
         "34a2522c-80be-4022-b7fd-8fa0b7b50bf9": {
@@ -42,13 +44,6 @@
             "heading": "<a href=\"\/pages\/music\" title=\"Music\">MUSIC<\/a>",
             "menu": "music"
           }
-        },
-        "39bfe5ca-8ad0-4f3d-ae5d-296ed6134552": {
-          "type": "itoms_link",
-          "settings": {
-            "button_label_2": "Milestone Church",
-            "button_link_2": "https:\/\/milestonechurch.com\/"
-          }
         }
       },
       "block_order": [
@@ -56,8 +51,7 @@
         "978d6168-bbb2-440b-8b16-e6e59b48f3a8",
         "34a2522c-80be-4022-b7fd-8fa0b7b50bf9",
         "2c6ea17f-b406-409b-ad24-5b7eeb5dd23f",
-        "7b5fae92-4b5c-40fd-9ab3-b591b9641a50",
-        "39bfe5ca-8ad0-4f3d-ae5d-296ed6134552"
+        "7b5fae92-4b5c-40fd-9ab3-b591b9641a50"
       ],
       "settings": {
         "color_scheme": "background-1",
