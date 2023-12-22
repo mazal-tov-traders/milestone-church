@@ -39,7 +39,7 @@
         }
       }
       &__heading {
-        font-family: Proxima Nova;
+        font-family: 'Nova-700';
         font-weight: 700;
         font-size: 60px;
         line-height: 60px;
@@ -56,7 +56,7 @@
       &__text {
         margin: 0 0 50px;
         p {
-          font-family: Proxima Nova;
+          font-family: 'Nova-600';
           font-weight: 600;
           font-size: 20px;
           line-height: 27px;
@@ -73,8 +73,8 @@
         @media (min-width: 430px) {
           width: auto;
         }
-        .button {
-          font-family: Proxima Nova;
+        .my-custom-btnn {
+          font-family: 'Nova-700';
           font-weight: 700;
           font-size: 15px;
           line-height: 18px;
