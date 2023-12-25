@@ -62,6 +62,10 @@
             margin: 0;
           }
         }
+        .banner-innerr__box_button-image-banner-content{
+          display: flex;
+          justify-content: center;
+        }
       }
       .banner-innerr__hero-image {
         img {
@@ -167,4 +171,3 @@
     }
   }
 }
-

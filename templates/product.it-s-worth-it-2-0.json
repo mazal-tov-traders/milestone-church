@@ -3,6 +3,12 @@
     "5c4350d1-500c-4b3a-be50-3c62817ef6bb": {
       "type": "Image-banner-product-thewin",
       "blocks": {
+        "9e9cde9c-8237-4697-9c56-f6f4f0d2b622": {
+          "type": "title_screen",
+          "settings": {
+            "screen_reader_text": "It's Worht It 2.0"
+          }
+        },
         "6eeef642-47de-4f54-924f-cec8a6c3b54f": {
           "type": "content",
           "settings": {
@@ -18,13 +24,15 @@
         }
       },
       "block_order": [
+        "9e9cde9c-8237-4697-9c56-f6f4f0d2b622",
         "6eeef642-47de-4f54-924f-cec8a6c3b54f",
         "f19435f1-9084-4cab-8e15-b1457d573bff"
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/Closer_WebsiteHeader_2560x1037_38cdb86f-3a0b-417b-a399-7d94a5f4bad5.jpg",
         "hero_image": "shopify:\/\/shop_images\/IT_S_WORTh_IT2.0.png",
-        "secon_class": "thewin"
+        "secon_class": "thewin",
+        "style_btn": "white"
       }
     },
     "main": {
@@ -237,6 +245,7 @@
       "type": "image-banner-content",
       "settings": {
         "class": "",
+        "style_btn": "white",
         "centered-content": false
       }
     },

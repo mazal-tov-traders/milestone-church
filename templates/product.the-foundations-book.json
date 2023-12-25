@@ -3,6 +3,12 @@
     "e9911ac2-0b1c-40c9-bdbe-9442447e0682": {
       "type": "Image-banner-product-thewin",
       "blocks": {
+        "adb9a068-899a-4878-ab25-d2a06df53094": {
+          "type": "title_screen",
+          "settings": {
+            "screen_reader_text": "The Foundations Book"
+          }
+        },
         "ba33fff9-6055-4a67-baff-4a31b9cf1e03": {
           "type": "content",
           "settings": {
@@ -18,6 +24,7 @@
         }
       },
       "block_order": [
+        "adb9a068-899a-4878-ab25-d2a06df53094",
         "ba33fff9-6055-4a67-baff-4a31b9cf1e03",
         "10531c0b-4161-41f6-98d5-116853521a1b"
       ],
