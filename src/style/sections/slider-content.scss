@@ -80,7 +80,7 @@
       text-transform: uppercase;
     }
     &__wrapper_footer {
-      padding: 0 35px 0;
+      padding: 0 35px 40px 35px;
       &_content {
         font-family: "Nova-300";
         font-size: 16px;
@@ -107,7 +107,6 @@
         letter-spacing: 0em;
         text-align: left;
         color: rgba(29, 34, 40, 1);
-        margin-bottom: 40px;
       }
     }
   }

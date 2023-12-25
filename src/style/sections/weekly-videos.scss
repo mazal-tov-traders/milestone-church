@@ -53,44 +53,56 @@
         justify-content: start;
         align-items: center;
         &_link {
-          font-family: 'Nova-400';
+          font-family: "Nova-400";
           font-size: 18px;
           font-weight: 400;
           letter-spacing: 0em;
           text-align: left;
-          color: #1D2228;
+          color: #1d2228;
           text-decoration: underline !important;
           text-decoration-thickness: 0.5px;
           text-underline-offset: 4px;
           :hover {
-            text-decoration:  underline;
+            text-decoration: underline;
           }
-
         }
       }
     }
   }
 }
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 911px) {
   .weekly-videos {
     padding: 15px 0 90px;
     &__wrapper {
       gap: 12px;
       row-gap: 15px;
+      width: 100%;
       justify-content: center;
       &_video-card {
-        max-width: 169px;
+        width: 48%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .weekly-videos {
+    &__wrapper {
+      &_video-card {
         padding: 5px;
         .video-block__content {
-          font-size: 13px;
-          line-height: 19px;
+          font-size: 12px;
+          line-height: 17px;
         }
         .image-youtube {
           max-width: 45px;
         }
         .img-wrapper {
           margin-bottom: 5px;
+        }
+        .video-block__wrapper-link_link {
+          font-size: 12px;
+          line-height: 12px;
+          text-underline-offset: 1px;
         }
       }
     }

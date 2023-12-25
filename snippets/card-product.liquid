@@ -155,7 +155,9 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          <div class="card__description truncate_description">{{ card_product.description }}</div>
+          <div class="card__description truncate_description">
+            {{ card_product.description | strip_html | truncate: 40 }}
+          </div>
         </div>
         <div class="card-wrapper__pric-button">
           <div class="card-information">
@@ -285,8 +287,9 @@
                       {% if card_product.selected_or_first_available_variant.available == false %}
                         disabled
                       {% endif %}
-                    >{% render 'icon-cart-min-black' %}
-                      <span class='title-btn_add-cad'>
+                    >
+                      {% render 'icon-cart-min-black' %}
+                      <span class="title-btn_add-cad">
                         {%- if card_product.selected_or_first_available_variant.available -%}
                           {{ 'products.product.add_to_cart' | t }}
                         {%- else -%}
@@ -370,19 +373,4 @@
     </div>
   </div>
 {%- endif -%}
-
-
-<script defer="defer">
-
-  document.addEventListener("DOMContentLoaded", function() {
-    var truncateElements = document.querySelectorAll(".truncate_description");
-
-    truncateElements.forEach(function(element) {
-      var textContent = element.textContent.trim();
-      var truncatedText = textContent.length > 100 ? textContent.substring(0, 40) + "..." : textContent;
-      element.textContent = truncatedText;
-    });
-  });
-</script>
-
 

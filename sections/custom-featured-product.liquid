@@ -391,6 +391,9 @@
                         <a
                           class="buttons-link-box__wrapper_button1"
                           href="{{ block.settings.button_link1 | strip_html}}"
+                          {% if block.settings.button_link1 contains "https://" %}
+                            target="_blank"
+                          {% endif %}
                         >
                           <img
                             src="{{ block.settings.icon_button1 | img_url: 'original' }}"
@@ -405,6 +408,9 @@
                         <a
                           class="buttons-link-box__wrapper_button2"
                           href="{{ block.settings.button_link2 | strip_html}}"
+                          {% if block.settings.button_link2 contains "https://" %}
+                            target="_blank"
+                          {% endif %}
                         >
                           <img
                             src="{{ block.settings.icon_button2 | img_url: 'original' }}"
