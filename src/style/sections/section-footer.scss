@@ -29,14 +29,23 @@
       margin-right: 14px;
     }
     .footer-block[data-cascade][style*="--animation-order: 6;"] {
-      max-width: 273px;
+      width: 273px;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-bottom: 67px;
       .box_link-menu {
         .link-menu {
           padding-left: 41px;
         }
       }
     }
+  }
+}
+@media screen and (max-width: 911px){
+  .footer-block[data-cascade][style*="--animation-order: 6;"]{
+    display: none;
   }
 }
 .footer.color-background-1.gradient {
@@ -345,4 +354,9 @@
     }
   }
 }
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.box_link-menu.second-link-menu{
+  margin-top: 60px;
+  @media screen and (max-width: 910px){
+    margin: 50px 0;
+  }
+}

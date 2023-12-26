@@ -199,6 +199,9 @@ details[open] summary .wrapper-icon-caret {
           display: flex;
           gap: 20px 18px;
           justify-content: center;
+          > li:last-child {
+            display: none;
+          }
         }
       }
     }

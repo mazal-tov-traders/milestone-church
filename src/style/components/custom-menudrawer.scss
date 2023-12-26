@@ -68,6 +68,11 @@ a.header__menu-item.list-menu__item.link.link--text.focus-inset {
   .menu-drawe-list_wrapper {
     list-style: none;
     padding-left: 0;
+    @media screen and (max-width: 990px) {
+      li:nth-child(4) {
+        display: none;
+      }
+    }
     summary.list-menu__item {
       margin-bottom: 20px;
       margin-top: 21px;
