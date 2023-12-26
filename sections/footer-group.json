@@ -5,12 +5,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "a9e04ed8-425e-4c01-9678-be73f0638243": {
-          "type": "image",
+        "cef69190-4778-421b-a26b-e8fad5f94cec": {
+          "type": "image_mobile",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group.png",
-            "image_width": 300,
-            "alignment": ""
+            "image": "shopify:\/\/shop_images\/Group_17b6a0bd-3052-43da-8ffc-bb39993ecf3d.png",
+            "image_width": 200,
+            "alignment": "center"
           }
         },
         "978d6168-bbb2-440b-8b16-e6e59b48f3a8": {
@@ -44,14 +44,23 @@
             "heading": "<a href=\"\/pages\/music\" title=\"Music\">MUSIC<\/a>",
             "menu": "music"
           }
+        },
+        "75c0d35b-0eb5-4efe-80b6-09b86fcfd998": {
+          "type": "image_desktop",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_17b6a0bd-3052-43da-8ffc-bb39993ecf3d.png",
+            "image_width": 275,
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
-        "a9e04ed8-425e-4c01-9678-be73f0638243",
+        "cef69190-4778-421b-a26b-e8fad5f94cec",
         "978d6168-bbb2-440b-8b16-e6e59b48f3a8",
         "34a2522c-80be-4022-b7fd-8fa0b7b50bf9",
         "2c6ea17f-b406-409b-ad24-5b7eeb5dd23f",
-        "7b5fae92-4b5c-40fd-9ab3-b591b9641a50"
+        "7b5fae92-4b5c-40fd-9ab3-b591b9641a50",
+        "75c0d35b-0eb5-4efe-80b6-09b86fcfd998"
       ],
       "settings": {
         "color_scheme": "background-1",
