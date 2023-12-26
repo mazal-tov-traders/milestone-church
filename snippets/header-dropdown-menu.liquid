@@ -50,6 +50,9 @@
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
+                        {% if childlink.url contains "https://" %}
+                          target="_blank"
+                        {% endif %}
                       >
                         {{ childlink.title | escape }}
                       </a>
@@ -75,6 +78,9 @@
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
+                                {% if grandchildlink.url contains "https://" %}
+                                  target="_blank"
+                                {% endif %}
                               >
                                 {{ grandchildlink.title | escape }}
                               </a>
@@ -95,6 +101,9 @@
             class="header__menu-item list-menu__item link link--text focus-inset"
             {% if link.current %}
               aria-current="page"
+            {% endif %}
+            {% if link.url contains "https://" %}
+              target="_blank"
             {% endif %}
           >
             <span
