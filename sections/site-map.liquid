@@ -1,0 +1,25 @@
+<section class="site-map__wrapper page-width">
+<h1 class="title-page">Site Map</h1>
+{% for page in pages %}
+  <li class="site-map__wrapper_pages"><a class="site-map__wrapper_pages_heading-link" href="{{ page.url }} {% if block.settings.page.url contains "https://" %}
+    target="_blank"
+  {% endif %}">{{ page.title }}</a></li>
+{% endfor %}
+</section>
+{% schema %}
+{
+  "name": "Site Map",
+  "tag": "section",
+  "class": "site-map",
+  "settings": [
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Site Map"
+    }
+  ]
+}
+{% endschema %}

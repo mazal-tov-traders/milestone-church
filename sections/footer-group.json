@@ -76,7 +76,8 @@
         "padding_top": 59,
         "padding_bottom": 32,
         "link_page_terms_use": "shopify:\/\/pages\/terms-of-use",
-        "link_page_police": "shopify:\/\/pages\/privacy-policy"
+        "link_page_police": "shopify:\/\/pages\/privacy-policy",
+        "link_page_site_map": "shopify:\/\/pages\/site-map"
       }
     }
   },

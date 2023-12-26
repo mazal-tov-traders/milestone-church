@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d6c0cb6d-a852-4950-82d5-db6ce87ded42": {
+      "type": "site-map",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d6c0cb6d-a852-4950-82d5-db6ce87ded42"
+  ]
+}

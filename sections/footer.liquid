@@ -536,6 +536,16 @@
             class="privacy-policy"
             >Privacy Policy</a
           >
+          |
+          <a
+            {% if section.settings.link_page_site_map == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ section.settings.link_page_site_map }}"
+            {% endif %}
+            class="footer-link-site-map"
+            >Site Map</a
+          >
         </div>
       </div>
       <div class="dallas-web-design">
@@ -884,6 +894,11 @@
       "type": "url",
       "id": "link_page_police",
       "label": "Policy Page"
+    },
+    {
+      "type": "url",
+      "id": "link_page_site_map",
+      "label": "Site Map"
     }
   ],
   "default": {
