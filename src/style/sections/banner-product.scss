@@ -118,9 +118,6 @@
 }
 @media screen and (max-width: 749px) {
   .banner--mobile-bottom:not(.banner--stacked) .banner__content {
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     padding: 50px 0 50px 0;
   }

@@ -15,7 +15,7 @@
       display: flex;
       align-items: center;
       text-transform: uppercase;
-      font-family: 'Nova-700';
+      font-family: "Nova-700";
       font-size: 15px;
       padding: 0 34px;
       font-weight: 700;
@@ -62,7 +62,7 @@
             margin: 0;
           }
         }
-        .banner-innerr__box_button-image-banner-content{
+        .banner-innerr__box_button-image-banner-content {
           display: flex;
           justify-content: center;
         }
@@ -150,7 +150,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            font-family: 'Nova-700';
+            font-family: "Nova-700";
             font-size: 15px;
             font-style: normal;
             font-weight: 700;
@@ -163,11 +163,22 @@
   }
 }
 @media screen and (max-width: 490px) {
-  .banner.hearing-god.banner-page-book{
-    .my-custom-button{
+  .banner.hearing-god.banner-page-book {
+    .my-custom-button {
       .buttonn {
         justify-content: center;
       }
     }
+  }
+}
+
+// custom-image-banner
+.custom-image-banner {
+  .banner {
+    @media screen and (min-width: 750px){
+      &.banner--medium:not(.banner--adapt) {
+        min-height: 400px;
+      }
+    } 
   }
 }

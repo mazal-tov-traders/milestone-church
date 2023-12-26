@@ -155,9 +155,27 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+
           <div class="card__description truncate_description">
-            {{ card_product.description | strip_html | truncate: 40 }}
+            {{ card_product.description }}
           </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var descriptionElements = document.querySelectorAll('.truncate_description');
+              descriptionElements.forEach(function (element) {
+                var descriptionText = element.textContent || element.innerText;
+
+                var regex = /[.!?]/;
+                var match = descriptionText.match(regex);
+
+                if (match) {
+                  var firstSentence = descriptionText.substring(0, match.index + 1);
+
+                  element.textContent = firstSentence;
+                }
+              });
+            });
+          </script>
         </div>
         <div class="card-wrapper__pric-button">
           <div class="card-information">
@@ -373,4 +391,3 @@
     </div>
   </div>
 {%- endif -%}
-
