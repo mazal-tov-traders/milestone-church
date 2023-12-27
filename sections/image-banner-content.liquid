@@ -1,3 +1,12 @@
+{%- capture css_variables -%}
+  --color-heading:{{ section.settings.colors_heading_label }};
+{%- endcapture -%}
+
+<style>
+  :root {
+    {{ css_variables | strip_newlines }}
+  }
+</style>
 <div class="banner banner-content {% if request.page_type != 'index' %}banner-img{% endif %} {{ page.title }}">
   <div class="banner-innerr {{ section.settings.class }} {%- if section.settings.centered-content == true -%}banner-innerr-center{% endif %}">
     <div class="page-width">
@@ -6,9 +15,10 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               {%- if block.settings.heading != blank -%}
-                <h1 class="banner-innerr__box_heading">
+                <h1 class="banner-plus-content_heading" style="color: var(--color-heading);">
                   {{ block.settings.heading }}
                 </h1>
+                <div class="border-line {% if section.settings.border_line == true %}on{% endif %}">.</div>
               {% else %}
                 {%- for block in section.blocks -%}
                   {%- case block.type -%}
@@ -79,7 +89,7 @@
 {
   "name": "Banner + content blocks",
   "tag": "section",
-  "class": "section",
+  "class": "banner-plus-content",
   "settings": [
     {
       "type": "text",
@@ -95,6 +105,17 @@
       "type": "image_picker",
       "id": "hero_image",
       "label": "Hero image"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_line",
+      "default": false,
+      "label": "ADD/REMOVE LINE"
+    },
+    {
+      "type": "color",
+      "id": "colors_heading_label",
+      "label": "Colors Heading Label"
     },
     {
       "type": "select",
@@ -200,3 +221,5 @@
   ]
 }
 {% endschema %}
+
+
