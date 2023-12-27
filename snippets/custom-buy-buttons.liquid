@@ -93,15 +93,16 @@
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
             </span>
-            <div class="product-form__price">
-              {% comment %} <p>-<span class="product-form__price_rcp">{{ product.selected_or_first_available_variant.price | money }}</span></p> {% endcomment %}
-              <p>&ndash;<span class="product-form__price_rcp">
-                {% assign price_parts = product.selected_or_first_available_variant.price | money | split: '.' %}
-                {% assign afterZero = price_parts[1] %}
-                {% assign money_price = price_parts[0] %}
-                {{ money_price }}.<sup class="price-cent">{{ afterZero }}</sup>
-              </span></p>
-            </div> 
+            <div class="product-form__price" data-price="{{product.selected_or_first_available_variant.price}}">
+              <p>
+                &ndash;<span class="product-form__price_rcp">
+                  {% assign price_parts = product.selected_or_first_available_variant.price | money | split: '.' %}
+                  {% assign afterZero = price_parts[1] %}
+                  {% assign money_price = price_parts[0] %}
+                  {{ money_price }}.<sup class="price-cent">{{ afterZero }}</sup>
+                </span>
+              </p>
+            </div>
             {%- render 'loading-spinner' -%}
           </button>
           {%- if show_dynamic_checkout -%}
@@ -158,8 +159,3 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
-
-
-
-
-

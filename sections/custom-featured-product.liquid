@@ -391,7 +391,7 @@
                         <a
                           class="buttons-link-box__wrapper_button1"
                           href="{{ block.settings.button_link1 | strip_html}}"
-                          {% if block.settings.button_link1 contains "https://" %}
+                          {% if block.settings.button_link1 contains 'https://' %}
                             target="_blank"
                           {% endif %}
                         >
@@ -408,7 +408,7 @@
                         <a
                           class="buttons-link-box__wrapper_button2"
                           href="{{ block.settings.button_link2 | strip_html}}"
-                          {% if block.settings.button_link2 contains "https://" %}
+                          {% if block.settings.button_link2 contains 'https://' %}
                             target="_blank"
                           {% endif %}
                         >
@@ -552,6 +552,40 @@
 
     document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function (event) {
       hiddenInput.value = event.currentTarget.value;
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function updatePrice(element, dataPrice, elementSum) {
+      let quantityInput = Number(element.querySelector('.quantity__input').value);
+      let resultPrice = quantityInput * dataPrice;
+      const formattedNumber = (resultPrice / 100).toFixed(2);
+      const [integerPart, decimalPart] = formattedNumber.split('.');
+
+      elementSum.innerHTML = `
+            <span class="product-form__price_rcp">     
+              $${integerPart}.<sup class="price-cent">${decimalPart}</sup>
+            </span>
+          `;
+    }
+
+    const buttonsWrapper = document.querySelectorAll('.wrapper-baton-and-quantity');
+
+    buttonsWrapper.forEach((element) => {
+      let dataPrice = parseFloat(element.querySelector('.product-form__price').getAttribute('data-price'));
+      let quantityButtons = element.querySelectorAll('.quantity__button');
+      let elementSum = element.querySelector('.product-form__price_rcp');
+      let quantityInputElement = element.querySelector('.quantity__input');
+      quantityInputElement.addEventListener('change', () => {
+        updatePrice(element, dataPrice, elementSum);
+      });
+
+      quantityButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          updatePrice(element, dataPrice, elementSum);
+        });
+      });
     });
   });
 </script>

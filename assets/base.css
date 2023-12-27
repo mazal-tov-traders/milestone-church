@@ -2417,7 +2417,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   column-gap: 1rem; */
 }
 
-
 @media screen and (max-width: 749px) {
   .header--has-app {
     grid-template-columns: auto 1fr auto;
@@ -3598,4 +3597,14 @@ details-disclosure > details {
     .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
+}
+
+/* german */
+:root {
+  --color-button-background: var(--color-button-background);
+  --color-color-button-label: var(--color-color-button-label);
+  --color-color-button-border: var(--color-color-button-border);
+  --hover-color-button-background: var(--hover-color-button-background);
+  --hover-color-button-border: var(--hover-color-button-border);
+  --hover-color-button-label: var(--hover-color-button-label);
 }

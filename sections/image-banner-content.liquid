@@ -1,12 +1,15 @@
-{%- capture css_variables -%}
-  --color-heading:{{ section.settings.colors_heading_label }};
-{%- endcapture -%}
-
-<style>
-  :root {
-    {{ css_variables | strip_newlines }}
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+      --color-button-background: {{ section.settings.color_button_backgroun }};
+      --color-color-button-label: {{ section.settings.color_button_label }};
+      --color-color-button-border: {{ section.settings.color_button_border }};
+      --hover-color-button-background: {{ section.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ section.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ section.settings.hover_color_button_label }};
   }
-</style>
+{%- endstyle -%}
+{{ 'image-banner-content.css' | asset_url | stylesheet_tag }}у
+
 <div class="banner banner-content {% if request.page_type != 'index' %}banner-img{% endif %} {{ page.title }}">
   <div class="banner-innerr {{ section.settings.class }} {%- if section.settings.centered-content == true -%}banner-innerr-center{% endif %}">
     <div class="page-width">
@@ -15,10 +18,10 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               {%- if block.settings.heading != blank -%}
-                <h1 class="banner-plus-content_heading" style="color: var(--color-heading);">
+                <h1 class="banner-plus-content_heading" style=" color: {{ block.settings.color_heading_label }};">
                   {{ block.settings.heading }}
                 </h1>
-                <div class="border-line {% if section.settings.border_line == true %}on{% endif %}">.</div>
+                <div class="border-line {% if section.settings.border_line == true %}on{% endif %}" {% if section.settings.border_line == true %}style=" border: 1px solid {{ block.settings.color_border_line }};"{% endif %}>.</div>
               {% else %}
                 {%- for block in section.blocks -%}
                   {%- case block.type -%}
@@ -33,13 +36,13 @@
               {% endif %}
             {%- when 'content' -%}
               {%- if block.settings.content != blank -%}
-                <div class="banner-innerr__box_text">
+                <div class="banner-innerr__box_text" style=" color: {{ block.settings.color_content_label }};">
                   <p>{{ block.settings.content }}</p>
                 </div>
               {%- endif -%}
             {%- when 'description' -%}
               {%- if block.settings.description != blank -%}
-                <div class="banner-innerr__box_discription">
+                <div class="banner-innerr__box_discription" style=" color: {{ block.settings.color_description_label }};">
                   <p>{{ block.settings.description }}</p>
                 </div>
               {%- endif -%}
@@ -54,8 +57,8 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="my-custom-btn {{ section.settings.style_btn }}"
-                    id="{% if template == 'index' %}german{% else %}navigation-anchor__link{% endif %}"
+                    class="my-custom-btn"
+                    id="{% if template == 'index' %}grn{% else %}navigation-anchor__link{% endif %}"
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
@@ -76,6 +79,7 @@
     </div>
   </div>
 </div>
+
 <style>
   .banner-innerr.{{ section.settings.class }}{
     background-image: url({{ section.settings.background | image_url: width: 3840 }});
@@ -113,11 +117,6 @@
       "label": "ADD/REMOVE LINE"
     },
     {
-      "type": "color",
-      "id": "colors_heading_label",
-      "label": "Colors Heading Label"
-    },
-    {
       "type": "select",
       "id": "style_btn",
       "options": [
@@ -142,6 +141,42 @@
       "id": "centered-content",
       "default": false,
       "label": "Сentered Сontent"
+    },
+    {
+      "type": "color",
+      "id": "color_button_backgroun",
+      "label": "Button Background Color",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "color_button_label",
+      "label": "Button Color Label",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "color_button_border",
+      "label": "Button Color Border",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_backgroun",
+      "label": "Hover Button Background Color",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_border",
+      "label": "Hover Button Color Border",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_label",
+      "label": "Hover Button Color Label",
+      "default": "#1D2228"
     }
   ],
   "blocks": [
@@ -155,6 +190,18 @@
           "id": "heading",
           "default": "Image banner",
           "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
+        },
+        {
+          "type": "color",
+          "id": "color_border_line",
+          "label": "Color Border Line",
+          "default": "#1D2228"
         }
       ]
     },
@@ -168,6 +215,12 @@
           "id": "content",
           "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -180,6 +233,12 @@
           "type": "richtext",
           "id": "description",
           "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_description_label",
+          "label": "Color Description Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -221,5 +280,3 @@
   ]
 }
 {% endschema %}
-
-
