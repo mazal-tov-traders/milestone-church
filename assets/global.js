@@ -1276,5 +1276,3 @@ if (closeButton && announcementBar) {
   });
 }
 
-
-

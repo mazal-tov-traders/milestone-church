@@ -161,6 +161,13 @@
             "button_link_1": "https:\/\/milestonechurch.com\/visit-milestone\/"
           }
         },
+        "d586f2f8-f90e-4496-b9ce-a5161a235f39": {
+          "type": "buttonn",
+          "settings": {
+            "button_label_2": "Watch Online",
+            "button_link_2": "https:\/\/www.youtube.com\/@milestonechurch"
+          }
+        },
         "6701c67e-2ec2-4069-a536-e262375fb2c2": {
           "type": "events",
           "settings": {

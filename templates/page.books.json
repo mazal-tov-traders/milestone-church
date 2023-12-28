@@ -30,6 +30,7 @@
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
+        "style_btn": "white",
         "color_scheme": "background-1",
         "image_behavior": "ambient",
         "mobile_content_alignment": "center",
@@ -75,7 +76,7 @@
       "settings": {
         "class": "Foundations",
         "background": "shopify:\/\/shop_images\/TFB---books-banner.jpg",
-        "Mobile_image": "shopify:\/\/shop_images\/TFB-mob.jpg",
+        "Mobile_image": "shopify:\/\/shop_images\/Foundations_Front_Cover_Only_-_5mb.jpg",
         "position_content": false
       }
     },
