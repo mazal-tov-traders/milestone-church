@@ -9,11 +9,19 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133714_47d0cfd7-63dd-488d-b386-2d96163791ab.jpg",
             "illustration": "shopify:\/\/shop_images\/TWTW_book_transparent_1.png",
             "heading": "The Way To Win",
+            "color_heading_label": "#fff",
             "heading_size": "h1",
             "screen_reader_text": "",
             "subheading": "A growth and development guide for men, this new resource aims to develop men in the areas that matter most.",
+            "color_subheading_label": "#fff",
             "button_label": "Buy The Book",
             "link": "shopify:\/\/products\/the-way-to-win",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -29,11 +37,19 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133714_1_ee90b37f-6327-4c1a-b857-332e316c42c5.jpg",
             "illustration": "shopify:\/\/shop_images\/TWTW_book_transparent_1_1_f108e5e6-43df-4e62-9736-7a69033d70af.png",
             "heading": "Hearing God",
+            "color_heading_label": "#fff",
             "heading_size": "h1",
             "screen_reader_text": "",
             "subheading": "New Series launching in January 2024!",
+            "color_subheading_label": "#fff",
             "button_label": "Buy The Book",
             "link": "shopify:\/\/pages\/hearing-god",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -49,11 +65,19 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133714_2_83dbecab-83a2-4a68-a6f5-35d18ed8611c.jpg",
             "illustration": "shopify:\/\/shop_images\/Foundations_Front_Cover_Only_-_5mb.jpg",
             "heading": "The Foundations Book",
+            "color_heading_label": "#fff",
             "heading_size": "h1",
             "screen_reader_text": "",
             "subheading": "Experience the best version of your life!",
+            "color_subheading_label": "#fff",
             "button_label": "Buy The Book",
             "link": "shopify:\/\/products\/the-foundations-book",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -72,7 +96,6 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
-        "style_btn": "white",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 7,
@@ -112,6 +135,8 @@
         "786da075-81e7-456e-961a-ad9029e1a6e9"
       ],
       "settings": {
+        "color_heading_label": "#fff",
+        "color_hover_heading_label": "#e5be5e"
       }
     },
     "featured_collection": {
@@ -206,9 +231,15 @@
             "image": "shopify:\/\/shop_images\/Rectangle_4133725_3.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__2.png",
             "link": "Watch Now",
+            "color_link_label": "#e5be5e",
             "title": "About Milestone Church",
+            "color_title_label": "#e5be5e",
+            "border_line": true,
+            "color_border_line": "#e5be5e",
             "heading": "Reaching people\u2028Building Lives",
-            "content": "<p>Pastor Jeff Little dreamed of planting a church with one simple goal: help people begin a relationship with Jesus and see their lives built on the foundation of the Bible. The vision was to develop a church that was life-giving, spirit-filled, and would embody the mission of reaching people and building lives.<\/p><p>We see God impacting the regions of Keller, Haslet, and McKinney through Milestone Church every day and we want you to be a part! We invite you to join us for one of our weekend services or watch live online on Sundays.<\/p>"
+            "color_heading_label": "#1d2228",
+            "content": "<p>Pastor Jeff Little dreamed of planting a church with one simple goal: help people begin a relationship with Jesus and see their lives built on the foundation of the Bible. The vision was to develop a church that was life-giving, spirit-filled, and would embody the mission of reaching people and building lives.<\/p><p>We see God impacting the regions of Keller, Haslet, and McKinney through Milestone Church every day and we want you to be a part! We invite you to join us for one of our weekend services or watch live online on Sundays.<\/p>",
+            "color_content_label": "#1D2228"
           }
         },
         "61cb2751-da23-458c-85f1-feb3ddfac644": {
@@ -216,7 +247,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_4133726_1.jpg",
             "heading": "Pastor Jeff",
-            "content": "<p>Pastor Jeff has been in ministry for 30 years. He planted Milestone Church with a few friends in 2002, and it is now a family of thousands that continues to reach people and build lives throughout the region.<\/p><p>More than a passionate and dynamic communicator, Pastor Jeff is committed to developing people and training leaders to reach their God-given potential. <\/p>"
+            "border_line": true,
+            "color_border_line": "#e5be5e",
+            "color_heading_label": "#e5be5e",
+            "content": "<p>Pastor Jeff has been in ministry for 30 years. He planted Milestone Church with a few friends in 2002, and it is now a family of thousands that continues to reach people and build lives throughout the region.<\/p><p>More than a passionate and dynamic communicator, Pastor Jeff is committed to developing people and training leaders to reach their God-given potential. <\/p>",
+            "color_content_label": "#1D2228"
           }
         }
       },
@@ -226,6 +261,7 @@
       ],
       "settings": {
         "heading": "Story",
+        "color_heading_label": "#e5be5e",
         "video_url": "https:\/\/www.youtube.com\/watch?v=4ZJzlpfn1Lo"
       }
     },
@@ -235,26 +271,35 @@
         "8d0a4b55-0cb9-40b1-a775-6790836c0c7f": {
           "type": "title",
           "settings": {
-            "title": "New Music"
+            "title": "New Music",
+            "color_title_label": "#e5be5e"
           }
         },
         "b03a8cc2-0b6e-4f06-ba8b-aeb1de4eb282": {
           "type": "heading",
           "settings": {
-            "heading": "Milestone Worship, Faithful"
+            "heading": "Milestone Worship, Faithful",
+            "color_heading_label": "#fff"
           }
         },
         "4529b527-aca1-49e3-b2d4-9963c740602f": {
           "type": "content",
           "settings": {
-            "content": "Listen to Milestone Worship’s newest album, Faithful, which stories the songs that have anchored and unified our spiritual family through years of following Jesus together."
+            "content": "Listen to Milestone Worship’s newest album, Faithful, which stories the songs that have anchored and unified our spiritual family through years of following Jesus together.",
+            "color_content_label": "#fff"
           }
         },
         "32c0ac79-ec5b-4ea6-b0c0-42b4444b801d": {
           "type": "buttons",
           "settings": {
             "button_label_1": "View all music",
-            "button_link_1": "shopify:\/\/pages\/music"
+            "button_link_1": "shopify:\/\/pages\/music",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491D6"
           }
         }
       },
@@ -267,7 +312,6 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Rectangle_4133725_2.jpg",
         "hero_image": "shopify:\/\/shop_images\/Rectangle_4133722.jpg",
-        "style_btn": "blue",
         "class": "index-banner-music"
       }
     },
@@ -279,9 +323,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_4133621.jpg",
             "heading": "The Way to Win",
+            "color_heading_label": "#1D2228",
             "content": "<p>\"The Way To Win should be read and re-read over a lifetime. It takes things that I simply didn’t know how to do, and gives me practical steps to grow. I’m a better leader for my family, and for that reason alone I recommend this book. I’m still growing but I have a playbook now that I can use on a daily basis.\"<\/p>",
+            "color_content_label": "#1D2228",
             "author": "Steve Stallcup",
-            "date": ""
+            "color_author_label": "#1D2228",
+            "date": "",
+            "color_date_label": "#1D2228"
           }
         },
         "f0ad4e8a-2c9d-4f69-b43a-f5144f55579f": {
@@ -289,9 +337,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_4133621_2.jpg",
             "heading": "Promises",
+            "color_heading_label": "#1D2228",
             "content": "<p>\"Promises is not only an absolutely stunning study guide, but is so foundational and life giving. I loved going through this study with my small group and understanding God’s promises to us in our most important relationships and biggest struggles. I understood God in a way I hadn’t ever grasped before; it brought me closer to Him.\"<\/p>",
+            "color_content_label": "#1D2228",
             "author": "Taelor Martinez",
-            "date": ""
+            "color_author_label": "#1D2228",
+            "date": "",
+            "color_date_label": "#1D2228"
           }
         },
         "a6a72320-4c68-4ab6-9042-a05789369024": {
@@ -299,9 +351,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_4133621_4.jpg",
             "heading": "Who Am I?",
+            "color_heading_label": "#1D2228",
             "content": "<p>\"In a world that constantly bombards us with messages about who we should be, \"Who Am I\" is a refreshing and much-needed reminder to anchor our identity in Jesus. It's a book that speaks directly to the heart, offering hope, encouragement, and a renewed sense of purpose.\"<\/p>",
+            "color_content_label": "#1D2228",
             "author": "Josh Richards",
-            "date": ""
+            "color_author_label": "#1D2228",
+            "date": "",
+            "color_date_label": "#1D2228"
           }
         }
       },
@@ -312,7 +368,11 @@
       ],
       "settings": {
         "title": "",
-        "description": "Testimonials"
+        "color_title_label": "#1D2228",
+        "border_line": false,
+        "color_border_line": "#1D2228",
+        "description": "Testimonials",
+        "color_description_label": "#1D2228"
       }
     }
   },

@@ -1959,7 +1959,7 @@ input[type="checkbox"] {
   text-align: center;
   background-color: transparent;
   border: 0;
-  padding: 0 0.5rem;
+  padding: 0;
   width: 100%;
   flex-grow: 1;
   -webkit-appearance: none;
@@ -2008,9 +2008,8 @@ input[type="checkbox"] {
 .quantity__button:not(:focus-visible):not(.focused),
 .quantity__input:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
-  max-width: max-content;
-  width: 100%;
+  background-color: inherit; 
+  width: 33%;
 }
 
 .quantity__input:-webkit-autofill,

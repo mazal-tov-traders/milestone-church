@@ -6,14 +6,21 @@
         "70ef6528-5e50-4521-becb-56c60d9cb8fc": {
           "type": "content",
           "settings": {
-            "content": "A Church Leader’s Guide for Connecting Guests and Closing the Back Door"
+            "content": "A Church Leader’s Guide for Connecting Guests and Closing the Back Door",
+            "color_content_label": "#fff"
           }
         },
         "8052424e-e7db-44c7-b41e-e2f40aad887d": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Buy the Book",
-            "button_link_1": "#powerchurch"
+            "button_link_1": "#powerchurch",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#fff"
           }
         },
         "952d3fdd-d5aa-4abc-bd81-8a4917760042": {
@@ -31,8 +38,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Album-Announcement-Back.jpg",
         "hero_image": "shopify:\/\/shop_images\/TitleTransparent_1.png",
-        "secon_class": "thewin",
-        "style_btn": "white"
+        "secon_class": "thewin"
       }
     },
     "main": {

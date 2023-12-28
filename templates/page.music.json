@@ -15,6 +15,7 @@
           "type": "heading",
           "settings": {
             "heading": "Milestone Worship",
+            "color_heading_label": "#fff",
             "heading_size": "h1"
           }
         }
@@ -49,20 +50,28 @@
         "d00a68ed-3192-4edf-a07f-c47ee228144f": {
           "type": "heading",
           "settings": {
-            "heading": "Faithful"
+            "heading": "Faithful",
+            "color_heading_label": "#1D2228"
           }
         },
         "0533a534-0d7a-4c76-b609-95a0f1fc5039": {
           "type": "content",
           "settings": {
-            "content": "This album stories the songs that have anchored and unified our spiritual family through years of following Jesus together."
+            "content": "This album stories the songs that have anchored and unified our spiritual family through years of following Jesus together.",
+            "color_content_label": "#1D2228"
           }
         },
         "a801af77-6f99-452c-a71d-740f78818797": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/pages\/faithful"
+            "button_link_1": "shopify:\/\/pages\/faithful",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -90,20 +99,28 @@
         "7597fe82-3c57-4f97-a992-af6c5199d3a1": {
           "type": "heading",
           "settings": {
-            "heading": "Home"
+            "heading": "Home",
+            "color_heading_label": "#1D2228"
           }
         },
         "64ab58d7-e515-42fe-9b45-846abd704c95": {
           "type": "content",
           "settings": {
-            "content": "This album was created to worship to and listen to around the house during your everyday life. Home can be found wherever you stream your music."
+            "content": "This album was created to worship to and listen to around the house during your everyday life. Home can be found wherever you stream your music.",
+            "color_content_label": "#1D2228"
           }
         },
         "1cbc08cc-90d9-4ee0-a12c-642faafc2dcf": {
           "type": "buttons",
           "settings": {
             "button_label_1": "learn more",
-            "button_link_1": "shopify:\/\/pages\/home-ep"
+            "button_link_1": "shopify:\/\/pages\/home-ep",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -132,20 +149,28 @@
         "2a818c45-d215-4dc7-b44b-04ed0403b8fc": {
           "type": "heading",
           "settings": {
-            "heading": "You Paid It All"
+            "heading": "You Paid It All",
+            "color_heading_label": "#1D2228"
           }
         },
         "2e5da66f-0099-4f1b-8e5f-d1309c2ef639": {
           "type": "content",
           "settings": {
-            "content": "This great, high energy song declaring what Jesus has done in our lives, and the promise that it brings can be found wherever you stream your music."
+            "content": "This great, high energy song declaring what Jesus has done in our lives, and the promise that it brings can be found wherever you stream your music.",
+            "color_content_label": "#1D2228"
           }
         },
         "ac247ff2-b97b-4963-8670-7407e4048fb9": {
           "type": "buttons",
           "settings": {
             "button_label_1": "learn more",
-            "button_link_1": "shopify:\/\/pages\/you-paid-it-all"
+            "button_link_1": "shopify:\/\/pages\/you-paid-it-all",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -174,20 +199,28 @@
         "b14c18f9-5c92-445c-94c1-cc356efc83e5": {
           "type": "heading",
           "settings": {
-            "heading": "Alive in You"
+            "heading": "Alive in You",
+            "color_heading_label": "#1D2228"
           }
         },
         "70c40632-9402-4036-a5bf-52f0ee2b145c": {
           "type": "content",
           "settings": {
-            "content": "\"Alive In You\" was recorded live at Elevate, the student ministry of Milestone Church. It's available to stream everywhere."
+            "content": "\"Alive In You\" was recorded live at Elevate, the student ministry of Milestone Church. It's available to stream everywhere.",
+            "color_content_label": "#1D2228"
           }
         },
         "a26ac4bc-9057-4acc-951e-85be57c06510": {
           "type": "buttons",
           "settings": {
             "button_label_1": "learn more",
-            "button_link_1": "shopify:\/\/pages\/alive-in-you"
+            "button_link_1": "shopify:\/\/pages\/alive-in-you",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },

@@ -15,6 +15,7 @@
           "type": "heading",
           "settings": {
             "heading": "Study Guides",
+            "color_heading_label": "#fff",
             "heading_size": "h0"
           }
         }
@@ -43,20 +44,28 @@
         "eca8785a-7b8b-4b66-937a-067dedefbc77": {
           "type": "heading",
           "settings": {
-            "heading": "Hearing God"
+            "heading": "Hearing God",
+            "color_heading_label": "#1D2228"
           }
         },
         "33ce40e9-a837-48df-9375-4b71302c4d5d": {
           "type": "content",
           "settings": {
-            "content": "Does God know what I’m going through? Does He see me? Does He have something to say about my situation? How do I know what He’s saying?"
+            "content": "Does God know what I’m going through? Does He see me? Does He have something to say about my situation? How do I know what He’s saying?",
+            "color_content_label": "#1D2228"
           }
         },
         "7c47702e-17f7-4180-8d5e-3016905ff40c": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/pages\/hearing-god"
+            "button_link_1": "shopify:\/\/pages\/hearing-god",
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         },
         "0431ab79-d602-426f-8222-5aefea8aa131": {
@@ -84,20 +93,28 @@
         "d5689604-ec5a-4e94-a1e7-1a42859c9136": {
           "type": "heading",
           "settings": {
-            "heading": "Seeds"
+            "heading": "Seeds",
+            "color_heading_label": "#1D2228"
           }
         },
         "6eafcc92-d070-4130-b7b1-6f1211c379b3": {
           "type": "content",
           "settings": {
-            "content": "An 8-week study to grow closer to God as you understand and study His Word. There are seeds all throughout the Bible. God is a master builder, and one of His primary building blocks is the seed."
+            "content": "An 8-week study to grow closer to God as you understand and study His Word. There are seeds all throughout the Bible. God is a master builder, and one of His primary building blocks is the seed.",
+            "color_content_label": "#1D2228"
           }
         },
         "59b8daab-07fa-4647-b143-0a6e6b00c2d5": {
           "type": "buttons",
           "settings": {
             "button_label_1": "learn more",
-            "button_link_1": "shopify:\/\/products\/seeds"
+            "button_link_1": "shopify:\/\/products\/seeds",
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         },
         "568b08f4-7a3a-4d51-9c4f-d4ee7f8a0cfd": {
@@ -126,13 +143,15 @@
         "7df56cec-d027-4ed1-992f-b5d732f5ecef": {
           "type": "heading",
           "settings": {
-            "heading": "Unshakable"
+            "heading": "Unshakable",
+            "color_heading_label": "#1D2228"
           }
         },
         "35e093c3-0541-4e18-a069-ed2a43bbe892": {
           "type": "content",
           "settings": {
-            "content": "We all face challenges and obstacles that can feel insurmountable. Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts."
+            "content": "We all face challenges and obstacles that can feel insurmountable. Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts.",
+            "color_content_label": "#1D2228"
           }
         },
         "e78b8442-9054-4c5b-958b-82c78d18e15b": {
@@ -145,7 +164,13 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/products\/unshakable"
+            "button_link_1": "shopify:\/\/products\/unshakable",
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -168,20 +193,28 @@
         "8de5b956-9a69-4e10-82a6-cc39eeecbf81": {
           "type": "heading",
           "settings": {
-            "heading": "Miracles"
+            "heading": "Miracles",
+            "color_heading_label": "#1D2228"
           }
         },
         "6da655b4-1ceb-42fb-9fa0-40b8d8520d97": {
           "type": "content",
           "settings": {
-            "content": "No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us?"
+            "content": "No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us?",
+            "color_content_label": "#1D2228"
           }
         },
         "e8a3fe23-2def-448d-b765-676f933c8547": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/products\/miracles"
+            "button_link_1": "shopify:\/\/products\/miracles",
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         },
         "70708ef2-73b3-443c-b705-72632034f674": {
@@ -210,20 +243,28 @@
         "c7d4b417-0382-4791-8f07-ab565f88b44e": {
           "type": "heading",
           "settings": {
-            "heading": "Closer"
+            "heading": "Closer",
+            "color_heading_label": "#1D2228"
           }
         },
         "6c221af4-a68b-4452-a823-5acd037b3f65": {
           "type": "content",
           "settings": {
-            "content": "We invite you to go on a journey with Jesus – from His life to yours. We believe the closer you get to Jesus, the more authentic and life-changing He will become."
+            "content": "We invite you to go on a journey with Jesus – from His life to yours. We believe the closer you get to Jesus, the more authentic and life-changing He will become.",
+            "color_content_label": "#1D2228"
           }
         },
         "35d79b54-d888-4f4b-8a47-411475d2443a": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/products\/closer"
+            "button_link_1": "shopify:\/\/products\/closer",
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         },
         "b8b723ed-360e-41f2-94b6-b4151b5824f9": {
@@ -251,20 +292,28 @@
         "98b7beb9-7cab-4fd6-ad48-af27348af3ac": {
           "type": "heading",
           "settings": {
-            "heading": "Promises"
+            "heading": "Promises",
+            "color_heading_label": "#1D2228"
           }
         },
         "e6769d16-408d-43c7-a887-09df04afad10": {
           "type": "content",
           "settings": {
-            "content": "What if someone significant believed in your future so strongly that they put their name and reputation on the line? Now, imagine if God himself did that for you. "
+            "content": "What if someone significant believed in your future so strongly that they put their name and reputation on the line? Now, imagine if God himself did that for you. ",
+            "color_content_label": "#1D2228"
           }
         },
         "0a05c779-001b-4bee-8706-a260ef8bbfb4": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/products\/promises"
+            "button_link_1": "shopify:\/\/products\/promises",
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         },
         "01ddac4f-458f-4bb7-a53c-3c23ae5b01a4": {

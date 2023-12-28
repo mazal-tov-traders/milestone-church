@@ -12,14 +12,21 @@
         "d8aaaab8-6f34-49b9-b3c2-a9c4ee5c1258": {
           "type": "content",
           "settings": {
-            "content": "Coaching & Developing MEN IN MATTERS OF Life & Faith"
+            "content": "Coaching & Developing MEN IN MATTERS OF Life & Faith",
+            "color_content_label": "#fff"
           }
         },
         "8bee47b5-27a5-4b8c-bce1-39033ca014a3": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Buy The Book",
-            "button_link_1": "#thewaytowin"
+            "button_link_1": "#thewaytowin",
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -31,8 +38,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Rectangle_4133714_2.jpg",
         "hero_image": "shopify:\/\/shop_images\/TitleTransparent_1_1.png",
-        "secon_class": "thewinnn",
-        "style_btn": "white"
+        "secon_class": "thewinnn"
       }
     },
     "bcef8fdb-4d85-48f2-ae16-41d151047c2d": {
@@ -260,7 +266,13 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "download a preview",
-            "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/WTW_Sample_Chapter.pdf?v=1702642545"
+            "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/WTW_Sample_Chapter.pdf?v=1702642545",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -272,7 +284,6 @@
       "settings": {
         "class_name": "towin",
         "background": "shopify:\/\/shop_images\/Rectangle_4133714_2.jpg",
-        "style_btn": "white",
         "position_content": true
       }
     },
@@ -318,7 +329,8 @@
       ],
       "settings": {
         "title": "Other Resources",
-        "class": "",
+        "class": "bgi",
+        "background": "shopify:\/\/shop_images\/fon_aeb37aa7-ea86-4769-a4c2-4d60c0e22611.jpg",
         "heading_size": "h1",
         "description": "<p>You May Enjoy<\/p>",
         "show_description": false,

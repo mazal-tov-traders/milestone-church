@@ -12,14 +12,21 @@
         "ba33fff9-6055-4a67-baff-4a31b9cf1e03": {
           "type": "content",
           "settings": {
-            "content": "How can we experience the best versions of our lives?"
+            "content": "How can we experience the best versions of our lives?",
+            "color_content_label": "#fff"
           }
         },
         "10531c0b-4161-41f6-98d5-116853521a1b": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Buy The Book",
-            "button_link_1": "#foundationss"
+            "button_link_1": "#foundationss",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -31,8 +38,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/banner-def.jpg",
         "hero_image": "shopify:\/\/shop_images\/123.png",
-        "secon_class": "thewinnn",
-        "style_btn": "white"
+        "secon_class": "thewinnn"
       }
     },
     "main": {

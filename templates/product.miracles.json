@@ -6,20 +6,28 @@
         "c4468950-6318-433f-b1a8-96dc1667b1a6": {
           "type": "heading",
           "settings": {
-            "heading": "Miracles"
+            "heading": "Miracles",
+            "color_heading_label": "#fff"
           }
         },
         "bbe7262e-d0b7-4222-892d-705a229d9543": {
           "type": "content",
           "settings": {
-            "content": "A Journey with Jesus - from His Life to Yours"
+            "content": "A Journey with Jesus - from His Life to Yours",
+            "color_content_label": "#fff"
           }
         },
         "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Buy The Book",
-            "button_link_1": "#miracless"
+            "button_link_1": "#miracless",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -31,7 +39,6 @@
       "settings": {
         "class": "srsdsd",
         "background": "shopify:\/\/shop_images\/banner-miracle.jpg",
-        "style_btn": "white",
         "centered-content": true
       }
     },
@@ -223,7 +230,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/video-thumb.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
-            "content": ""
+            "content": "",
+            "color_content_label": "#1D2228"
           }
         }
       },
@@ -233,10 +241,14 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/3I1A0432-Enhanced-NR.jpg",
         "heading": "",
+        "color_heading_label": "#1D2228",
         "video_url": "https:\/\/www.youtube.com\/watch?v=KsAOLcfzP48",
         "content": "<p>Dive deeper into Miracles by pairing the book with our 8-week message series<\/p>",
+        "color_content_label": "#fff",
         "text": "",
+        "color_text_label": "#1D2228",
         "description": "",
+        "color_description_label": "#1D2228",
         "id_for_anchor": "",
         "class": "seed"
       }
@@ -245,7 +257,6 @@
       "type": "image-banner-content",
       "settings": {
         "class": "",
-        "style_btn": "white",
         "centered-content": false
       }
     },

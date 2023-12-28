@@ -25,6 +25,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Rectangle_4133714_5.jpg",
         "heading": "<p>You Paid It All<\/p>",
+        "color_heading_label": "#fff",
         "video_url": "https:\/\/www.youtube.com\/watch?v=ACX_vegow10",
         "class": "paid"
       }
@@ -41,13 +42,15 @@
         "4d9acd56-d049-4b34-bf4d-3136af9edad6": {
           "type": "heading",
           "settings": {
-            "heading": "You Paid It All"
+            "heading": "You Paid It All",
+            "color_heading_label": "#1D2228"
           }
         },
         "18825485-e937-4bf3-b813-9194359d6f65": {
           "type": "content",
           "settings": {
-            "content": "This great, high energy song declaring what Jesus has done in our lives, and the promise that it brings can be found wherever you stream your music."
+            "content": "This great, high energy song declaring what Jesus has done in our lives, and the promise that it brings can be found wherever you stream your music.",
+            "color_content_label": "#1D2228"
           }
         },
         "26941067-1a06-4a53-853a-6b7a0707562c": {

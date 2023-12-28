@@ -12,14 +12,21 @@
         "6eeef642-47de-4f54-924f-cec8a6c3b54f": {
           "type": "content",
           "settings": {
-            "content": "Discovering God’s Plan for you in a place you might not expect"
+            "content": "Discovering God’s Plan for you in a place you might not expect",
+            "color_content_label": "#fff"
           }
         },
         "f19435f1-9084-4cab-8e15-b1457d573bff": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Buy the book",
-            "button_link_1": "#jeffwrote"
+            "button_link_1": "#jeffwrote",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -31,8 +38,7 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Closer_WebsiteHeader_2560x1037_38cdb86f-3a0b-417b-a399-7d94a5f4bad5.jpg",
         "hero_image": "shopify:\/\/shop_images\/IT_S_WORTh_IT2.0.png",
-        "secon_class": "thewin",
-        "style_btn": "white"
+        "secon_class": "thewin"
       }
     },
     "main": {
@@ -223,7 +229,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/it-worth-it-video.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
-            "content": ""
+            "content": "",
+            "color_content_label": "#1D2228"
           }
         }
       },
@@ -233,10 +240,14 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Closer_WebsiteHeader.jpg",
         "heading": "<p>Message Series<\/p>",
+        "color_heading_label": "#e5be5e",
         "video_url": "https:\/\/www.youtube.com\/watch?v=Ib1VnsAoGds",
         "content": "<p>Dive deeper into It’s Worth It 2.0 by pairing the book with our 6-week message series.<\/p>",
+        "color_content_label": "#fff",
         "text": "",
+        "color_text_label": "#1D2228",
         "description": "",
+        "color_description_label": "#1D2228",
         "id_for_anchor": "",
         "class": "seed"
       }
@@ -245,7 +256,6 @@
       "type": "image-banner-content",
       "settings": {
         "class": "",
-        "style_btn": "white",
         "centered-content": false
       }
     },

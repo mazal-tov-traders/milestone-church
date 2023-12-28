@@ -6,14 +6,21 @@
         "25f90c80-28ad-408c-9100-d843dcc9562d": {
           "type": "content",
           "settings": {
-            "content": "Discovering the person you were created to be"
+            "content": "Discovering the person you were created to be",
+            "color_content_label": "#fff"
           }
         },
         "809499ed-0878-4b1a-b957-a5ca66c24e31": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Buy The Book",
-            "button_link_1": "#whoamii"
+            "button_link_1": "#whoamii",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#fff"
           }
         }
       },

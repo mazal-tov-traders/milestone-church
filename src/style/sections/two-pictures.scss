@@ -6,7 +6,12 @@
       padding: 65px 0;
       &_left {
         width: 50%;
+
         .banner-img__left {
+          @media screen and (max-width: 1369px) {
+            display: flex;
+            justify-content: center;
+          }
           .image {
             max-width: 882px;
           }
@@ -28,15 +33,11 @@
           }
         }
         .my-custom-btn {
-          letter-spacing: 0;
           padding: 13px 34px;
-          text-align: center;
           font-family: 'Nova-700';
           font-size: 15px;
-          font-style: normal;
           font-weight: 700;
-          line-height: normal;
-          text-transform: uppercase;
+
         }
       }
     }

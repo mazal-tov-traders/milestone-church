@@ -52,29 +52,11 @@
       gap: 30px;
       justify-content: center;
       .btn-wrap__button {
-        height: 50px;
-        padding: 0 35px;
-        border: 1px solid #5491d6;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .btn {
-          text-align: center;
-          font-family: "Nova-700";
+        .btn-wrap__button {
           font-size: 15px;
           font-weight: 700;
           line-height: 18px;
           letter-spacing: 0em;
-          color: #5491d6;
-          text-transform: uppercase;
-        }
-        &:hover {
-          color: rgba(84, 145, 214, 1);
-          background-color: #5491d6;
-        }
-        &:hover a {
-          color: #fff;
         }
       }
     }

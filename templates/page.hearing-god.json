@@ -15,6 +15,7 @@
           "type": "heading",
           "settings": {
             "heading": "Hearing God",
+            "color_heading_label": "#ffffff",
             "heading_size": "h0"
           }
         },
@@ -34,7 +35,13 @@
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "shopify:\/\/pages\/weekly-videos",
-            "button_style_secondary_2": true
+            "button_style_secondary_2": true,
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#5491d6",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -51,7 +58,6 @@
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "style_btn": "white",
         "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -65,34 +71,48 @@
         "d6d83ed5-3fb1-4468-a061-deda7f5d2a0e": {
           "type": "heading",
           "settings": {
-            "heading": "How to Participate"
+            "heading": "How to Participate",
+            "color_heading_label": "#1d2228"
           }
         },
         "9780fce8-616b-452d-8aa9-b581b1cb4e54": {
           "type": "content",
           "settings": {
-            "content": "There are 3 simple steps to fully engage with the Hearing God series at Milestone Church."
+            "content": "There are 3 simple steps to fully engage with the Hearing God series at Milestone Church.",
+            "color_content_label": "#1d2228"
           }
         },
         "bd7532c0-9e80-4a7f-966a-c3907afc524d": {
           "type": "navigat_first",
           "settings": {
+            "number": "",
+            "color_number": "#1d2228",
+            "color_backgroun_number": "#1d2228",
             "navigat_first": "Attend the Series",
-            "navigate_link_1": "#attend1"
+            "navigate_link_1": "#attend1",
+            "color_navigate_label": "#1d2228"
           }
         },
         "4b012c9f-d3f3-44cc-a5e6-035746e44425": {
           "type": "navigat_second",
           "settings": {
+            "number": "",
+            "color_number": "#1d2228",
+            "color_backgroun_number": "#1d2228",
             "navigat_second": "Purchase a Study Guide",
-            "navigate_link_2": "#miracleee"
+            "navigate_link_2": "#miracleee",
+            "color_navigate_label": "#1d2228"
           }
         },
         "eaf4592a-cd70-41b5-96f1-9d8dedb427f1": {
           "type": "navigat_third",
           "settings": {
+            "number": "",
+            "color_number": "#1d2228",
+            "color_backgroun_number": "#1d2228",
             "navigat_third": "Join a Small Group",
-            "navigate_link_3": "#joinnn"
+            "navigate_link_3": "#joinnn",
+            "color_navigate_label": "#1d2228"
           }
         },
         "73950251-ce15-45da-80a7-2f97cd9b2925": {
@@ -121,7 +141,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/HearingGod-WebThumbnail-1920x1080.jpg",
             "image_youtube": "shopify:\/\/shop_images\/black_button_2.png",
-            "content": ""
+            "content": "",
+            "color_content_label": "#1d2228"
           }
         }
       },
@@ -131,10 +152,14 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/Screenshot_2023-12-21_at_11.54.48_AM.png",
         "heading": "",
+        "color_heading_label": "#1d2228",
         "video_url": "https:\/\/www.youtube.com\/watch?v=Cb3Xr1cF1gk",
         "content": "<p>Series Overview<\/p>",
+        "color_content_label": "#1d2228",
         "text": "<p>Does God know what I’m going through? Does He see me? Does He have something to say about my situation? How do I know what He’s saying?<\/p>",
+        "color_text_label": "#1d2228",
         "description": "<p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are. We invite you to join us for a new series in January, as we look at the incredible ways God communicates with us.<\/p>",
+        "color_description_label": "#1d2228",
         "id_for_anchor": "hdvideo",
         "class": "videobann"
       }
@@ -145,48 +170,68 @@
         "4d47e0d0-a3e1-4039-a2d8-ece5ba090b5b": {
           "type": "title",
           "settings": {
-            "title": "We encourage you to attend all 8-weeks to get the most out of the series."
+            "title": "We encourage you to attend all 8-weeks to get the most out of the series.",
+            "color_title_label": "#1d2228"
           }
         },
         "bb2cb3b9-a880-4ac1-864f-f0ad1c1e2551": {
           "type": "heading",
           "settings": {
-            "heading": "You can attend the series both in-person at one of our locations or online at live.milestonechurch.com."
+            "heading": "You can attend the series both in-person at one of our locations or online at live.milestonechurch.com.",
+            "color_heading_label": "#1d2228"
           }
         },
         "0d78b436-fd1f-4330-81ae-73d841956fcf": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Plan Your Visit",
-            "button_link_1": "https:\/\/milestonechurch.com\/visit-milestone\/"
+            "button_link_1": "https:\/\/milestonechurch.com\/visit-milestone\/",
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#5491d6",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         },
-        "d586f2f8-f90e-4496-b9ce-a5161a235f39": {
-          "type": "buttonn",
+        "74860e0c-6c09-4598-8cee-a0597c2d88b7": {
+          "type": "buttons",
           "settings": {
-            "button_label_2": "Watch Online",
-            "button_link_2": "https:\/\/www.youtube.com\/@milestonechurch"
+            "button_label_1": "Watch Online",
+            "button_link_1": "",
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#5491d6",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         },
         "6701c67e-2ec2-4069-a536-e262375fb2c2": {
           "type": "events",
           "settings": {
             "date": "Jan 20-21",
-            "content": "Series Intro Part 1"
+            "color_date_label": "#1d2228",
+            "content": "Series Intro Part 1",
+            "color_content_label": "#1d2228"
           }
         },
         "df329bd9-c10d-4570-8c39-555bf50eb36c": {
           "type": "events",
           "settings": {
             "date": "Jan 27-28",
-            "content": "Series Intro Part 2"
+            "color_date_label": "#1d2228",
+            "content": "Series Intro Part 2",
+            "color_content_label": "#1d2228"
           }
         },
         "1e3be94c-943c-4354-aa50-3c4796d8e8cc": {
           "type": "events",
           "settings": {
             "date": "Feb 3-4",
-            "content": "Small Groups Launch"
+            "color_date_label": "#1d2228",
+            "content": "Small Groups Launch",
+            "color_content_label": "#1d2228"
           }
         }
       },
@@ -194,14 +239,19 @@
         "4d47e0d0-a3e1-4039-a2d8-ece5ba090b5b",
         "bb2cb3b9-a880-4ac1-864f-f0ad1c1e2551",
         "0d78b436-fd1f-4330-81ae-73d841956fcf",
-        "d586f2f8-f90e-4496-b9ce-a5161a235f39",
+        "74860e0c-6c09-4598-8cee-a0597c2d88b7",
         "6701c67e-2ec2-4069-a536-e262375fb2c2",
         "df329bd9-c10d-4570-8c39-555bf50eb36c",
         "1e3be94c-943c-4354-aa50-3c4796d8e8cc"
       ],
       "settings": {
         "nubmer_navigat": "1",
+        "color_nubmer": "#1d2228",
+        "color_backgroun_number": "#1d2228",
+        "border_line": false,
+        "color_border_line": "#1d2228",
         "heading": "Attend the series",
+        "color_heading_label": "#1d2228",
         "background": "shopify:\/\/shop_images\/Rectangle_4133725_11_f6979532-0052-4a1c-bb00-9d355878fddc.jpg",
         "id_for_anchor": "attend1",
         "secon_class": "atteend"
@@ -287,25 +337,43 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Join a Group",
-            "button_link_1": "https:\/\/my.milestonechurch.com\/groupfinder"
+            "button_link_1": "https:\/\/my.milestonechurch.com\/groupfinder",
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#5491d6",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         },
-        "8e212271-f53c-4d7a-8459-80aafbf92a08": {
-          "type": "buttonn",
+        "d131291a-50ba-43b1-9f33-37b6ebe9beda": {
+          "type": "buttons",
           "settings": {
-            "button_label_2": "Lead a Group",
-            "button_link_2": "https:\/\/my.milestonechurch.com\/page\/921"
+            "button_label_1": "Lead a Group",
+            "button_link_1": "",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
       "block_order": [
         "146ba21a-9b4f-4012-abbe-7737a2192fed",
-        "8e212271-f53c-4d7a-8459-80aafbf92a08"
+        "d131291a-50ba-43b1-9f33-37b6ebe9beda"
       ],
       "settings": {
         "nubmer_navigat": "3",
+        "color_nubmer": "#1d2228",
+        "color_backgroun_number": "#1d2228",
+        "border_line": false,
+        "color_border_line": "#1d2228",
         "heading": "Join a Small Group",
+        "color_heading_label": "#1d2228",
         "content": "We believe Small Groups are the best way to find spiritual family and get connected with others. We’re here to help you find the perfect group, whether that’s onsite or online—just click the ‘Join a Group’ button below. ",
+        "color_Content_label": "#1d2228",
         "background": "shopify:\/\/shop_images\/Rectangle_4133726_2_334acd5c-36cf-4f19-98f0-59d78f050098.jpg",
         "id_for_anchor": "joinnn",
         "secon_class": "attend"

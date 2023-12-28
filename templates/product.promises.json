@@ -6,20 +6,28 @@
         "203bdf35-3216-4054-b30e-30285c1e635b": {
           "type": "heading",
           "settings": {
-            "heading": "Promises"
+            "heading": "Promises",
+            "color_heading_label": "#fff"
           }
         },
         "720490b9-7caf-4d54-9e73-6bfbae0c625c": {
           "type": "content",
           "settings": {
-            "content": "Confidence for Today. A Guarantee for Tomorrow."
+            "content": "Confidence for Today. A Guarantee for Tomorrow.",
+            "color_content_label": "#fff"
           }
         },
         "ef707a05-d3a6-4acd-a94b-6d66dabca8e2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "buy the study guide",
-            "button_link_1": "#anweek"
+            "button_link_1": "#anweek",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "rgba(0,0,0,0)",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -221,7 +229,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Prom-video.png",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
-            "content": ""
+            "content": "",
+            "color_content_label": "#1D2228"
           }
         }
       },
@@ -231,10 +240,14 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/christina-deravedisian-7hsNO61NWY0-unsplash.jpg",
         "heading": "<p>Message Series<\/p>",
+        "color_heading_label": "#e5be5e",
         "video_url": "https:\/\/www.youtube.com\/watch?v=cFto_lZKX_A",
         "content": "<p>Dive deeper into Promises by pairing the book with our 8-week message series.<\/p>",
+        "color_content_label": "#fff",
         "text": "",
+        "color_text_label": "#1D2228",
         "description": "",
+        "color_description_label": "#1D2228",
         "id_for_anchor": "",
         "class": "seed"
       }
@@ -264,7 +277,13 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "download a preview",
-            "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/PromisesGuide_SAMPLE.pdf?v=1702659940"
+            "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/PromisesGuide_SAMPLE.pdf?v=1702659940",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "rgba(0,0,0,0)",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#fff"
           }
         }
       },
