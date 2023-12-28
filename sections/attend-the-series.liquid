@@ -1,11 +1,37 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'buttons' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 <section id="{{ section.settings.id_for_anchor }}" class="attend-the-series {{ section.settings.secon_class }}">
   <div class="page-width">
     <div class="attend-the-series__wrapper">
       {%- if section.settings.nubmer_navigat != blank -%}
-        <div class="attend-the-series__wrapper_num-navi">{{ section.settings.nubmer_navigat }}</div>
+        <div class="attend-the-series__wrapper_num-navi" 
+          style=" color: {{ section.settings.color_nubmer }}; background-color:{{ section.settings.color_backgroun_number }};"
+        >
+          {{ section.settings.nubmer_navigat }}
+      </div>
       {%- endif -%}
+      <div
+        class="border-line {% if section.settings.border_line == true %}on{% endif %}"
+        style="border-color:{{ section.settings.color_border_line }};"
+      >
+        .
+      </div>
       {%- if section.settings.heading != blank -%}
-        <div class="attend-the-series__wrapper_heading">{{ section.settings.heading }}</div>
+        <div class="attend-the-series__wrapper_heading" style=" color:{{ section.settings.color_heading_label }};">{{ section.settings.heading }}</div>
       {%- endif -%}
       <div class="inner-box">
         <div class="inner-box__block-content">
@@ -13,19 +39,19 @@
             {%- case block.type -%}
               {%- when 'title' -%}
                 {%- if block.settings.title != blank -%}
-                  <div class="inner-box__block-content_title">
+                  <div class="inner-box__block-content_title" style=" color: {{ block.settings.color_title_label }};">
                     {{ block.settings.title }}
                   </div>
                 {%- endif -%}
               {%- when 'heading' -%}
                 {%- if block.settings.heading != blank -%}
-                  <div class="inner-box__block-content_heading">
+                  <div class="inner-box__block-content_heading" style=" color: {{ block.settings.color_heading_label }};">
                     {{ block.settings.heading }}
                   </div>
                 {%- endif -%}
               {%- when 'content' -%}
                 {%- if block.settings.content != blank -%}
-                  <div class="inner-box__block-content_text">
+                  <div class="inner-box__block-content_text" style=" color: {{ block.settings.color_content_label }};">
                     {{ block.settings.content }}
                   </div>
                 {%- endif -%}
@@ -36,35 +62,17 @@
               {%- case block.type -%}
                 {%- when 'buttons' -%}
                   {%- if block.settings.button_label_1 != blank -%}
-                    <div class="btn-wrap__button">
                       <a
                         {% if block.settings.button_link_1 == blank %}
                           role="link" aria-disabled="true"
                         {% else %}
                           href="{{ block.settings.button_link_1 }}"
                         {% endif %}
-                        class="btn"
+                        class="my-custom-btn"
                         target="_blank"
                       >
                         {{- block.settings.button_label_1 | escape -}}
                       </a>
-                    </div>
-                  {%- endif -%}
-                {%- when 'buttonn' -%}
-                  {%- if block.settings.button_label_2 != blank -%}
-                    <div class="btn-wrap__button">
-                      <a
-                        {% if block.settings.button_link_2 == blank %}
-                          role="link" aria-disabled="true"
-                        {% else %}
-                          href="{{ block.settings.button_link_2 }}"
-                        {% endif %}
-                        class="btn"
-                        target="_blank"
-                      >
-                        {{- block.settings.button_label_2 | escape -}}
-                      </a>
-                    </div>
                   {%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
@@ -76,9 +84,9 @@
               {%- when 'events' -%}
                 {%- if block.settings.date != blank -%}
                   <div class="inner-box__block-events_item">
-                    <div class="inner-box__block-events_item_date">{{ block.settings.date }}</div>
+                    <div class="inner-box__block-events_item_date" style=" color: {{ block.settings.color_date_label }};">{{ block.settings.date }}</div>
                     {%- if block.settings.content != blank -%}
-                      <div class="inner-box__block-events_item_content">{{ block.settings.content }}</div>
+                      <div class="inner-box__block-events_item_content" style=" color: {{ block.settings.color_content_label }};">{{ block.settings.content }}</div>
                     {%- endif -%}
                   </div>
                 {%- endif -%}
@@ -113,10 +121,40 @@
       "label": "Section number for navigation"
     },
     {
+      "type": "color",
+      "id": "color_nubmer",
+      "label": "Color Number",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "color_backgroun_number",
+      "label": "Color Backgroun Number",
+      "default": "#1D2228"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_line",
+      "default": false,
+      "label": "ADD/REMOVE LINE"
+    },
+    {
+      "type": "color",
+      "id": "color_border_line",
+      "label": "Color Border Line",
+      "default": "#1D2228"
+    },
+    {
       "type": "inline_richtext",
       "id": "heading",
       "default": "Attend the series",
       "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_heading_label",
+      "label": "Color Heading Label",
+      "default": "#1D2228"
     },
     {
       "type": "image_picker",
@@ -144,8 +182,13 @@
         {
           "type": "inline_richtext",
           "id": "title",
-          "default": "Image banner",
           "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -157,8 +200,13 @@
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "Image banner",
           "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -171,13 +219,19 @@
           "type": "inline_richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     },
     {
       "type": "buttons",
-      "name": "Button First",
-      "limit": 1,
+      "name": "Buttons",
+      "limit": 2,
       "settings": [
         {
           "type": "text",
@@ -189,24 +243,42 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
-        }
-      ]
-    },
-    {
-      "type": "buttonn",
-      "name": "Button Second",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label_2",
-          "default": "Button label",
-          "label": "Button label"
         },
         {
-          "type": "url",
-          "id": "button_link_2",
-          "label": "Button link"
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
         }
       ]
     },
@@ -221,9 +293,21 @@
           "label": "Date"
         },
         {
+          "type": "color",
+          "id": "color_date_label",
+          "label": "Color Date Label",
+          "default": "#1D2228"
+        },
+        {
           "type": "inline_richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     }

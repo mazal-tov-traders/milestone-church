@@ -74,7 +74,6 @@
         font-size: 16px;
         font-weight: 700;
         letter-spacing: -0.01em;
-        color: #e5be5e;
         text-decoration: underline;
         text-transform: uppercase;
         cursor: pointer;
@@ -86,22 +85,19 @@
         font-size: 20px;
         letter-spacing: 0em;
         text-align: left;
-        text-transform: uppercase;
-        color: #e5be5e;
-        padding-bottom: 10px;
-        background-image: linear-gradient(90deg, transparent 6%, #e5be5e 0);
-        background-position: -1% 38px;
-        background-repeat: no-repeat;
-        background-size: 4% 2px;
+        text-transform: uppercase;       
+      }
+      .border-line.on{
+        width: 20px;
+        margin-left: 0px;
       }
       &_heading {
-        color: #1d2228;
         font-family: "Nova-400";
         font-size: 50px;
         letter-spacing: 0;
         line-height: 58px;
         margin-top: 6px;
-        padding-bottom: 19px;
+        padding-bottom: 9px;
         text-align: left;
         text-transform: uppercase;
       }
@@ -111,7 +107,6 @@
         font-size: 20px;
         letter-spacing: 0em;
         text-align: left;
-        color: #1d2228;
         line-height: 31px;
         p {
           margin-top: 25px;
@@ -139,13 +134,11 @@
           font-size: 22px;
           letter-spacing: 0em;
           text-align: left;
-          color: #e5be5e;
-          padding-bottom: 10px;
-          background-image: linear-gradient(90deg, transparent 6%, #e5be5e 0);
-          background-position: -1% 43px;
-          background-repeat: no-repeat;
-          background-size: 8% 2px;
           text-transform: uppercase;
+        }
+        .border-line.on{
+          width: 20px;
+          margin-left: 0px;
         }
         &_text {
           font-family: "Nova-300";
@@ -207,10 +200,6 @@
         }
       }
       .video__content-box_title {
-        background-image: linear-gradient(90deg, transparent 6%, #e5be5e 0);
-        background-position: 2% 40px;
-        background-repeat: no-repeat;
-        background-size: 6% 2px;
         font-size: 20px;
         margin-top: 43px;
       }

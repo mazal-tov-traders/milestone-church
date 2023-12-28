@@ -42,20 +42,10 @@
         }
       }
       &_button-section-music {
-        .btn {
-          align-items: center;
-          background-color: #5491d6;
-          border: 1px solid #5491d6;
-          color: #fff;
-          font-family: Nova-700;
+        .my-custom-btn {
+          font-family: 'Nova-700';
           font-size: 15px;
           letter-spacing: 0;
-          padding: 0px 35px;
-          text-transform: uppercase;
-          height: 50px;
-          display: flex;
-          justify-content: center;
-          max-width: max-content;
         }
       }
     }

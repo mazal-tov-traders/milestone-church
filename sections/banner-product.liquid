@@ -1,3 +1,19 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'buttons' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 <div class="banner banner-content banner-product">
   <div class="baner-page-book {{ section.settings.class }}">
     <div class="page-width {% if section.settings.position_content == false %}right-content{% endif %}">
@@ -15,26 +31,26 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               {%- if block.settings.heading != blank -%}
-                <h2 class="banner-innerr__box_heading">
+                <h2 class="banner-innerr__box_heading" style=" color: {{ block.settings.color_heading_label }};">
                   {{ block.settings.heading }}
                 </h2>
               {%- endif -%}
             {%- when 'content' -%}
               {%- if block.settings.content != blank -%}
-                <div class="banner-innerr__box_text">
+                <div class="banner-innerr__box_text" style=" color: {{ block.settings.color_content_label }};">
                   <p>{{ block.settings.content }}</p>
                 </div>
               {%- endif -%}
             {%- when 'description' -%}
               {%- if block.settings.description != blank -%}
-                <div class="banner-innerr__box_discription">
+                <div class="banner-innerr__box_discription" style=" color: {{ block.settings.color_description_label }};">
                   <p>{{ block.settings.description }}</p>
                 </div>
               {%- endif -%}
             {%- when 'buttons' -%}
               {%- if block.settings.button_label_1 != blank -%}
                 <div
-                  class="banner-innerr__box_button-product-book"
+                  class="banner-innerr__box_button-product-book "
                 >
                   <a
                     {% if block.settings.button_link_1 == blank %}
@@ -42,7 +58,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="btn"
+                    class="my-custom-btn"
                     {% if block.settings.button_link_1 contains "https://" %}
                       target="_blank"
                     {% endif %}
@@ -51,45 +67,6 @@
                   </a>
                 </div>
               {%- endif -%}
-            {%- when 'social_media' -%}
-              <div class="social-media__wrapper">
-                {% if block.settings.image1 != blank %}
-                  <div class="medis-social_button">
-                    <img
-                      src="{{ block.settings.image1 | img_url: 'original' }}"
-                      alt="image"
-                      class="image"
-                    >
-                  </div>
-                {% endif %}
-                {% if block.settings.image2 != blank %}
-                  <div class="medis-social_button">
-                    <img
-                      src="{{ block.settings.image2 | img_url: 'original' }}"
-                      alt="image"
-                      class="image"
-                    >
-                  </div>
-                {% endif %}
-                {% if block.settings.image3 != blank %}
-                  <div class="medis-social_button">
-                    <img
-                      src="{{ block.settings.image3 | img_url: 'original' }}"
-                      alt="image"
-                      class="image"
-                    >
-                  </div>
-                {% endif %}
-                {% if block.settings.image4 != blank %}
-                  <div class="medis-social_button">
-                    <img
-                      src="{{ block.settings.image4 | img_url: 'original' }}"
-                      alt="image"
-                      class="image"
-                    >
-                  </div>
-                {% endif %}
-              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -176,6 +153,12 @@
           "id": "heading",
           "default": "Image banner",
           "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -187,8 +170,13 @@
         {
           "type": "inline_richtext",
           "id": "content",
-          "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -201,6 +189,12 @@
           "type": "richtext",
           "id": "description",
           "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_description_label",
+          "label": "Color Description Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -219,6 +213,42 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
         }
       ]
     },
@@ -230,33 +260,6 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
-        }
-      ]
-    },
-    {
-      "type": "social_media",
-      "name": "Social Media",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image1",
-          "label": "Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "image2",
-          "label": "Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "image3",
-          "label": "Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "image4",
           "label": "Image"
         }
       ]

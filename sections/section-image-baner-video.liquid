@@ -1,3 +1,9 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+      --color-heading-label: {{ section.settings.color_heading_label }};
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
@@ -14,7 +20,7 @@
 <div class="banner-image-video {{ section.settings.class }}">
   <div class="banner-image-video__wrapper page-width">
     {% if section.settings.heading != blank %}
-      <h1 class="banner-image-video__wrapper_heading">
+      <h1 class="banner-image-video__wrapper_heading section-heading">
         {{ section.settings.heading }}
       </h1>
     {% else %}
@@ -94,6 +100,12 @@
       "type": "richtext",
       "id": "heading",
       "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_heading_label",
+      "label": "Color Heading Label",
+      "default": "#1D2228"
     },
     {
       "type": "video_url",

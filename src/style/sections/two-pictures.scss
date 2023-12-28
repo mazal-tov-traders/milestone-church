@@ -82,11 +82,6 @@
         &_heading {
         }
         &_text {
-          background-image: linear-gradient(90deg,transparent 83%,#e5be5e 0);
-          background-position: 28px 9px;
-          background-repeat: no-repeat;
-          background-size: 44% 2px;
-          color: #fff;
           font-family: 'Nova-400';
           font-size: 20px;
           font-weight: 400;
@@ -121,55 +116,19 @@
 // 
 
 .my-custom-btn {
-  text-align: center;
   font-family: 'Nova-700';
   font-size: 15px;
-  font-style: normal;
   font-weight: 700;
+  text-align: center;
+  font-style: normal;
   line-height: normal;
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
   max-width: max-content;
   height: 50px;
   padding: 0 35px;
-  &:hover {
-    background-color: rgba(84, 145, 214, 1);
-    border: 1px solid rgba(84, 145, 214, 1);
-    color: #fff;
-  }
-}
-
-.my-custom-btn.gold {
-  background-color: #e5be5e;
-  border: 1px solid #e5be5e;
-  color: #fff;
-}
-
-.my-custom-btn.blue {
-  background-color: transparent;
-  color: rgba(84, 145, 214, 1);
-  border: 1px solid rgba(84, 145, 214, 1);
-
-  &:hover {
-    background-color: rgba(84, 145, 214, 1);
-    border: 1px solid rgba(84, 145, 214, 1);
-    color: #fff;
-  }
-}
-
-.my-custom-btn.white {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-  &:hover {
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: rgba(84, 145, 214, 1);
-  }
+  cursor: pointer;
+  transition: color 0.3s, background 0.3s;
 }

@@ -15,7 +15,7 @@
 <section class="about-church">
   <div class="about-video page-width">
     {% if section.settings.heading != blank %}
-      <h2 class="about-video__tittle">
+      <h2 class="about-video__tittle" style=" color: {{ section.settings.color_heading_label }};">
         {{ section.settings.heading }}
       </h2>
     {% endif %}
@@ -40,25 +40,31 @@
                   </div>
                 {% endif %}              
                 {% if block.settings.link != blank %}
-                  <div class="video__img-box_link" onclick="showPopup('{{ video_id }}')">
+                  <div class="video__img-box_link" style=" color: {{ block.settings.color_link_label }};" onclick="showPopup('{{ video_id }}')">
                     {{ block.settings.link }}
                   </div>
                 {% endif %} 
               </div>
               <div class="video__content-box">
                 {% if block.settings.title != blank %}
-                  <div class="video__content-box_title">
+                  <div class="video__content-box_title" style=" color: {{ block.settings.color_title_label }};">
                     {{ block.settings.title }}
                   </div>
                 {% endif %}
+                <div
+                  class="border-line {% if block.settings.border_line == true %}on{% endif %}"
+                  style="border-color:{{ block.settings.color_border_line }};"
+                >
+                  .
+                </div>
                 {% if block.settings.heading != blank %}
-                  <div class="video__content-box_heading">
+                  <div class="video__content-box_heading" style=" color: {{ block.settings.color_heading_label }};">
                     {{ block.settings.heading }}
                   </div>
                 {% endif %}
               </div>
               {% if block.settings.content != blank %}
-                <div class="video__content-box_text">
+                <div class="video__content-box_text" style=" color: {{ block.settings.color_content_label }};">
                   {{ block.settings.content }}
                 </div>
               {% endif %}
@@ -66,7 +72,7 @@
           {% when 'Author' %}
             <div class="author__footer-box">
               {% if block.settings.image != blank %}
-                <div class="author__footer-box_image"">
+                <div class="author__footer-box_image">
                   <img
                     src="{{ block.settings.image | img_url: 'original' }}"
                     alt="image"
@@ -76,12 +82,18 @@
               {% endif %}
               <div class="author__footer-box_content">
                 {% if block.settings.heading != blank %}
-                  <div class="author__footer-box_content_heading">
+                  <div class="author__footer-box_content_heading" style=" color: {{ block.settings.color_heading_label }};">
                     {{ block.settings.heading }}
                   </div>
                 {% endif %}
+                <div
+                  class="border-line {% if block.settings.border_line == true %}on{% endif %}"
+                  style="border-color:{{ block.settings.color_border_line }};"
+                >
+                  .
+                </div>
                 {% if block.settings.content != blank %}
-                  <div class="author__footer-box_content_text">
+                  <div class="author__footer-box_content_text" style=" color: {{ block.settings.color_content_label }};">
                     {{ block.settings.content }}
                   </div>
                 {% endif %}
@@ -115,6 +127,12 @@
       "label": "Heading"
     },
     {
+      "type": "color",
+      "id": "color_heading_label",
+      "label": "Color Heading Label",
+      "default": "#1D2228"
+    },
+    {
       "type": "video_url",
       "id": "video_url",
       "accept": ["youtube", "vimeo"],
@@ -145,9 +163,33 @@
           "label": "Watch Now"
         },
         {
+          "type": "color",
+          "id": "color_link_label",
+          "label": "Color Link Label",
+          "default": "#1D2228"
+        },
+        {
           "type": "inline_richtext",
           "id": "title",
           "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#1D2228"
+        }, 
+        {
+          "type": "checkbox",
+          "id": "border_line",
+          "default": false,
+          "label": "ADD/REMOVE LINE"
+        },
+        {
+          "type": "color",
+          "id": "color_border_line",
+          "label": "Color Border Line",
+          "default": "#1D2228"
         },
         {
           "type": "inline_richtext",
@@ -155,9 +197,21 @@
           "label": "Heading"
         },
         {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
+        }, 
+        {
           "type": "richtext",
           "id": "content",
-          "label": "content"
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -177,9 +231,33 @@
           "label": "Heading"
         },
         {
+          "type": "checkbox",
+          "id": "border_line",
+          "default": false,
+          "label": "ADD/REMOVE LINE"
+        },
+        {
+          "type": "color",
+          "id": "color_border_line",
+          "label": "Color Border Line",
+          "default": "#1D2228"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
+        }, 
+        {
           "type": "richtext",
           "id": "content",
-          "label": "content"
+          "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     }

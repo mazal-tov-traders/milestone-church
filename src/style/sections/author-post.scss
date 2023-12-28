@@ -1,28 +1,29 @@
 .author-post {
-  padding: 34px 0 103px 0;
+  padding: 58px 0 79px 0;
 
   &__wrapper {
     &_svg {
       display: flex;
       justify-content: flex-end;
       width: 100%;
-      padding-top: 25px;
-
+      padding-top: 4px;
+      padding-right: 131px;
       svg {
       }
     }
   }
   .content__wraper {
     display: flex;
-    margin-top: -14%;
+    align-items: center;
+    margin-top: -15.2%;
     .author__inner {
       display: flex;
       align-items: center;
-      margin-right: 40px;
-      margin-left: 12px;
+      margin-right: 37px;
+      margin-left: 8px;
       .author__img-box {
-        margin-right: 30px;
-        margin-top: 10px;
+        margin-right: 31px;
+        margin-top: 14px;
         &_img {
           width: 150px;
           img {
@@ -41,17 +42,12 @@
         }
       }
       .author__heading {
-        width: 220px;
+        width: 164px;
         font-family: "Nova-700";
         font-size: 20px;
         letter-spacing: 0em;
         text-align: left;
         color: rgba(84, 145, 214, 1);
-        padding-right: 50px;
-        background-image: linear-gradient(90deg, transparent 68%, #5491d6 0);
-        background-position: 74px 26px;
-        background-repeat: no-repeat;
-        background-size: 84% 2px;
         line-height: 28px;
         p {
           margin: 0;
@@ -114,5 +110,3 @@
 }
 
 //
-
-

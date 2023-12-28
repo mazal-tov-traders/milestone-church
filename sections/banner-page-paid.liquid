@@ -1,3 +1,19 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'buttons' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 <div class="banner-page-paid {{ section.settings.class }}">
   <div class="page-paid page-width">
     <div class="banner-innerr__box">
@@ -6,13 +22,13 @@
 
           {%- when 'heading' -%}
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner-innerr__box_heading">
+              <h2 class="banner-innerr__box_heading" style=" color: {{ block.settings.color_heading_label }};">
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
           {%- when 'content' -%}
             {%- if block.settings.content != blank -%}
-              <div class="banner-innerr__box_text">
+              <div class="banner-innerr__box_text" style=" color: {{ block.settings.color_content_label }};">
                 <p>{{ block.settings.content }}</p>
               </div>
             {%- endif -%}
@@ -27,7 +43,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="my-custom-btn {{ section.settings.style_btn }}"
+                  class="my-custom-btn"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -149,26 +165,6 @@
       "type": "image_picker",
       "id": "background",
       "label": "Background image"
-    },
-    {
-      "type": "select",
-      "id": "style_btn",
-      "options": [
-        {
-          "value": "gold",
-          "label": "gold"
-        },
-        {
-          "value": "blue",
-          "label": "blue"
-        },
-        {
-          "value": "white",
-          "label": "white"
-        }
-      ],
-      "default": "white",
-      "label": "button color"
     }
   ],
   "blocks": [
@@ -182,6 +178,12 @@
           "id": "heading",
           "default": "Image banner",
           "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -193,8 +195,13 @@
         {
           "type": "inline_richtext",
           "id": "content",
-          "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -213,6 +220,42 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
         }
       ]
     },

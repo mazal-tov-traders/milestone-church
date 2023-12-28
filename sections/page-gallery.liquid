@@ -1,3 +1,10 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {      
+          --color-heading-label: {{ section.settings.color_heading_label }};
+          --color-hover-heading-label: {{ section.settings.color_hover_heading_label }};
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 <div class="page-links">
   {% for block in section.blocks %}
     {% case block.type %}
@@ -43,7 +50,6 @@
                 src="{{ block.settings.image | img_url:  'original'}}"
                 alt="page_image"
                 class="music-page__wrapper_image"
-                
               >
             {% endif %}
             {%- if block.settings.heading != blank -%}
@@ -59,10 +65,23 @@
 
 {% schema %}
 {
-  "name": "Page Gallery",
+  "name": "Section Gallery",
   "tag": "section",
   "class": "section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "color",
+      "id": "color_heading_label",
+      "label": "Color Heading Label",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "color_hover_heading_label",
+      "label": "Color Hover Heading Label",
+      "default": "#1D2228"
+    }
+  ],
   "blocks": [
     {
       "type": "books-page",
@@ -118,10 +137,8 @@
   ],
   "presets": [
     {
-      "name": "Page Gallery"
+      "name": "Section Gallery"
     }
   ]
 }
-{% endschema %} 
-
-
+{% endschema %}

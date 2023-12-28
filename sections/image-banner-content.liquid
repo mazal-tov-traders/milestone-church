@@ -1,14 +1,19 @@
 {%- style -%}
   #shopify-section-{{ section.id }} {
-      --color-button-background: {{ section.settings.color_button_backgroun }};
-      --color-color-button-label: {{ section.settings.color_button_label }};
-      --color-color-button-border: {{ section.settings.color_button_border }};
-      --hover-color-button-background: {{ section.settings.hover_color_button_backgroun }};
-      --hover-color-button-border: {{ section.settings.hover_color_button_border }};
-      --hover-color-button-label: {{ section.settings.hover_color_button_label }};
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'buttons' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
   }
 {%- endstyle -%}
-{{ 'image-banner-content.css' | asset_url | stylesheet_tag }}у
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 
 <div class="banner banner-content {% if request.page_type != 'index' %}banner-img{% endif %} {{ page.title }}">
   <div class="banner-innerr {{ section.settings.class }} {%- if section.settings.centered-content == true -%}banner-innerr-center{% endif %}">
@@ -21,7 +26,6 @@
                 <h1 class="banner-plus-content_heading" style=" color: {{ block.settings.color_heading_label }};">
                   {{ block.settings.heading }}
                 </h1>
-                <div class="border-line {% if section.settings.border_line == true %}on{% endif %}" {% if section.settings.border_line == true %}style=" border: 1px solid {{ block.settings.color_border_line }};"{% endif %}>.</div>
               {% else %}
                 {%- for block in section.blocks -%}
                   {%- case block.type -%}
@@ -34,6 +38,13 @@
                   {% endcase %}
                 {% endfor %}
               {% endif %}
+            {%- when 'border_line' -%}
+              <div
+                class="border-line {% if block.settings.border_line == true %}on{% endif %}"
+                style="border-color:{{ block.settings.color_border_line }};"
+              >
+                .
+              </div>
             {%- when 'content' -%}
               {%- if block.settings.content != blank -%}
                 <div class="banner-innerr__box_text" style=" color: {{ block.settings.color_content_label }};">
@@ -42,7 +53,10 @@
               {%- endif -%}
             {%- when 'description' -%}
               {%- if block.settings.description != blank -%}
-                <div class="banner-innerr__box_discription" style=" color: {{ block.settings.color_description_label }};">
+                <div
+                  class="banner-innerr__box_discription"
+                  style=" color: {{ block.settings.color_description_label }};"
+                >
                   <p>{{ block.settings.description }}</p>
                 </div>
               {%- endif -%}
@@ -112,71 +126,9 @@
     },
     {
       "type": "checkbox",
-      "id": "border_line",
-      "default": false,
-      "label": "ADD/REMOVE LINE"
-    },
-    {
-      "type": "select",
-      "id": "style_btn",
-      "options": [
-        {
-          "value": "gold",
-          "label": "gold"
-        },
-        {
-          "value": "blue",
-          "label": "blue"
-        },
-        {
-          "value": "white",
-          "label": "white"
-        }
-      ],
-      "default": "white",
-      "label": "button color"
-    },
-    {
-      "type": "checkbox",
       "id": "centered-content",
       "default": false,
       "label": "Сentered Сontent"
-    },
-    {
-      "type": "color",
-      "id": "color_button_backgroun",
-      "label": "Button Background Color",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "color_button_label",
-      "label": "Button Color Label",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "color_button_border",
-      "label": "Button Color Border",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "hover_color_button_backgroun",
-      "label": "Hover Button Background Color",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "hover_color_button_border",
-      "label": "Hover Button Color Border",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "hover_color_button_label",
-      "label": "Hover Button Color Label",
-      "default": "#1D2228"
     }
   ],
   "blocks": [
@@ -196,12 +148,6 @@
           "id": "color_heading_label",
           "label": "Color Heading Label",
           "default": "#1D2228"
-        },
-        {
-          "type": "color",
-          "id": "color_border_line",
-          "label": "Color Border Line",
-          "default": "#1D2228"
         }
       ]
     },
@@ -213,13 +159,31 @@
         {
           "type": "inline_richtext",
           "id": "content",
-          "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "Content"
         },
         {
           "type": "color",
           "id": "color_content_label",
           "label": "Color Content Label",
+          "default": "#1D2228"
+        }
+      ]
+    },
+    {
+      "type": "border_line",
+      "name": "Border Line",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "border_line",
+          "default": false,
+          "label": "ADD/REMOVE LINE"
+        },
+        {
+          "type": "color",
+          "id": "color_border_line",
+          "label": "Color Border Line",
           "default": "#1D2228"
         }
       ]
@@ -257,6 +221,42 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
         }
       ]
     },

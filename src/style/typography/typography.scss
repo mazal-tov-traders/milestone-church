@@ -55,10 +55,7 @@ h3 {
 
 
 a:not(.button) {
-  color: rgb(var(--color-link));
-  font-weight: var(--font-body-weight-bold);
   text-decoration: none;
-
   &:hover {
     text-decoration: none;
   }

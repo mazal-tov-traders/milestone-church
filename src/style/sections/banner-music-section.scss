@@ -21,18 +21,16 @@
       }
 
       .banner-innerr__box {
+        .border-line.on{
+          width: 20px;
+          margin-left: 0px;
+        }
         &_title {
-          background-image: linear-gradient(90deg, transparent 2%, #e5be5e 0);
-          background-position: 0% 39px;
-          background-repeat: no-repeat;
-          background-size: 3% 2px;
-          color: #e5be5e;
           font-family: "Nova-700";
           font-size: 20px;
           letter-spacing: 0;
           margin-top: 122px;
           text-align: left;
-          padding-bottom: 10px;
           text-transform: uppercase;
           margin-bottom: 13px;
         }
@@ -43,7 +41,6 @@
           letter-spacing: 0em;
           text-align: left;
           text-transform: uppercase;
-          color: #fff;
           margin-top: 0px;
           line-height: 60px;
           margin-bottom: 26px;
@@ -56,7 +53,6 @@
           line-height: 32px;
           letter-spacing: 0em;
           text-align: left;
-          color: #fff;
           opacity: 90%;
           p {
             max-width: 570px;

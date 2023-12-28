@@ -24,11 +24,6 @@
       }
     }
     &__title {
-      background-image: linear-gradient(90deg, transparent 96%, #e5be5e 0);
-      background-position: 3px 42px;
-      background-repeat: no-repeat;
-      background-size: 51% 1px;
-      color: #e5be5e;
       font-family: "Nova-700";
       font-size: 20px;
       letter-spacing: 0;
@@ -48,8 +43,6 @@
       color: #1d2228;
       text-transform: uppercase;
       margin-bottom: 50px;
-    }
-    &_inner {
     }
     &__wrapper {
       background-color: #f8f7f5;
@@ -97,7 +90,6 @@
         line-height: 19px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(29, 34, 40, 1);
         margin-bottom: 5px;
       }
       &_date {
@@ -106,7 +98,6 @@
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(29, 34, 40, 1);
       }
     }
   }
@@ -178,9 +169,6 @@
       }
     }
     .slider-content__title {
-      background-image: linear-gradient(90deg, transparent 87%, #e5be5e 0);
-      background-position: 3px 42px;
-      background-size: 53% 1px;
       p {
         margin-bottom: 4px;
       }

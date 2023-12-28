@@ -1,3 +1,19 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'slide' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
@@ -168,7 +184,7 @@
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
-              <h1 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+              <h1 class="banner__heading inline-richtext {{ block.settings.heading_size }}" style=" color: {{ block.settings.color_heading_label }};">
                 {{ block.settings.heading }}
               </h1>
             {% else %}
@@ -180,7 +196,7 @@
             {% endif %}
 
             {%- if block.settings.subheading != blank -%}
-              <div class="banner__text rte" {{ block.shopify_attributes }}>
+              <div class="banner__text rte" style=" color: {{ block.settings.color_subheading_label }};" {{ block.shopify_attributes }}>
                 <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
@@ -344,26 +360,6 @@
     },
     {
       "type": "select",
-      "id": "style_btn",
-      "options": [
-        {
-          "value": "gold",
-          "label": "gold"
-        },
-        {
-          "value": "blue",
-          "label": "blue"
-        },
-        {
-          "value": "white",
-          "label": "white"
-        }
-      ],
-      "default": "white",
-      "label": "button color"
-    },
-    {
-      "type": "select",
       "id": "slider_visual",
       "options": [
         {
@@ -463,6 +459,12 @@
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
         },
         {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
+        },
+        {
           "type": "select",
           "id": "heading_size",
           "options": [
@@ -494,6 +496,12 @@
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
         },
         {
+          "type": "color",
+          "id": "color_subheading_label",
+          "label": "Color Subheading Label",
+          "default": "#1D2228"
+        },
+        {
           "type": "text",
           "id": "button_label",
           "default": "Button label",
@@ -504,6 +512,42 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.slideshow.blocks.slide.settings.link.label"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
         },
         {
           "type": "checkbox",

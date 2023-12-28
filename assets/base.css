@@ -3607,4 +3607,9 @@ details-disclosure > details {
   --hover-color-button-background: var(--hover-color-button-background);
   --hover-color-button-border: var(--hover-color-button-border);
   --hover-color-button-label: var(--hover-color-button-label);
+
+  --color-heading-label: var(--color-heading-label);
+  --color-hover-heading-label:  var(--color-hover-heading-label);
 }
+
+

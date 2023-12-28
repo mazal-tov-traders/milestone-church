@@ -16,12 +16,12 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="navigation-section__box_heading">
+            <h2 class="navigation-section__box_heading" style=" color: {{ block.settings.color_heading_label }};">
               {{ block.settings.heading }}
             </h2>
           {%- when 'content' -%}
             {%- if block.settings.content != blank -%}
-              <div class="navigation-section__box_text">
+              <div class="navigation-section__box_text" style=" color: {{ block.settings.color_content_label }};">
                 {{ block.settings.content }}
               </div>
             {%- endif -%}
@@ -36,8 +36,8 @@
                 class="navigation-anchor__link"
                 id="navigation-anchor__link"
               >
-                <div class="nav-num">1</div>
-                <div class="nav-text">{{- block.settings.navigat_first | escape -}}</div>
+                <div class="nav-num" style=" color: {{ block.settings.color_number }}; background-color: {{ block.settings.color_backgroun_number }};">{{ block.settings.number }}</div>
+                <div class="nav-text" style=" color: {{ block.settings.color_navigate_label }};">{{- block.settings.navigat_first | escape -}}</div>
               </a>
             {%- endif -%}
           {%- when 'navigat_second' -%}
@@ -51,8 +51,8 @@
                 class="navigation-anchor__link"
                 id="navigation-anchor__link"
               >
-                <div class="nav-num">2</div>
-                <div class="nav-text">{{- block.settings.navigat_second | escape -}}</div>
+                <div class="nav-num" style=" color: {{ block.settings.color_number }}; background-color: {{ block.settings.color_backgroun_number }};">{{ block.settings.number }}</div>
+                <div class="nav-text" style=" color: {{ block.settings.color_navigate_label }};">{{- block.settings.navigat_second | escape -}}</div>
               </a>
             {%- endif -%}
           {%- when 'navigat_third' -%}
@@ -66,8 +66,8 @@
                 class="navigation-anchor__link"
                 id="navigation-anchor__link"
               >
-                <div class="nav-num">3</div>
-                <div class="nav-text">{{- block.settings.navigat_third | escape -}}</div>
+                <div class="nav-num" style=" color: {{ block.settings.color_number }}; background-color:{{ block.settings.color_backgroun_number }};">{{ block.settings.number }}</div>
+                <div class="nav-text" style=" color: {{ block.settings.color_navigate_label }};">{{- block.settings.navigat_third | escape -}}</div>
               </a>
             {%- endif -%}
         {%- endcase -%}
@@ -92,6 +92,12 @@
           "type": "inline_richtext",
           "id": "heading",
           "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -104,6 +110,12 @@
           "type": "inline_richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -113,6 +125,23 @@
       "limit": 1,
       "settings": [
         {
+          "type": "text",
+          "id": "number",
+          "label": "Number link"
+        },
+        {
+          "type": "color",
+          "id": "color_number",
+          "label": "Color Number ",
+          "default": "#1D2228"
+        },
+        {
+          "type": "color",
+          "id": "color_backgroun_number",
+          "label": "Color Backgroun Number",
+          "default": "#1D2228"
+        },
+        {
           "type": "inline_richtext",
           "id": "navigat_first",
           "label": "Navigate label"
@@ -121,6 +150,12 @@
           "type": "url",
           "id": "navigate_link_1",
           "label": "Navigate link"
+        },
+        {
+          "type": "color",
+          "id": "color_navigate_label",
+          "label": "Color Navigate label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -130,6 +165,23 @@
       "limit": 1,
       "settings": [
         {
+          "type": "text",
+          "id": "number",
+          "label": "Number link"
+        },
+        {
+          "type": "color",
+          "id": "color_number",
+          "label": "Color Number ",
+          "default": "#1D2228"
+        },
+        {
+          "type": "color",
+          "id": "color_backgroun_number",
+          "label": "Color Backgroun Number",
+          "default": "#1D2228"
+        },
+        {
           "type": "inline_richtext",
           "id": "navigat_second",
           "label": "Navigate label"
@@ -138,6 +190,12 @@
           "type": "url",
           "id": "navigate_link_2",
           "label": "Navigate link"
+        },
+        {
+          "type": "color",
+          "id": "color_navigate_label",
+          "label": "Color Navigate label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -147,6 +205,23 @@
       "limit": 1,
       "settings": [
         {
+          "type": "text",
+          "id": "number",
+          "label": "Number link"
+        },
+        {
+          "type": "color",
+          "id": "color_number",
+          "label": "Color Number ",
+          "default": "#1D2228"
+        },
+        {
+          "type": "color",
+          "id": "color_backgroun_number",
+          "label": "Color Backgroun Number",
+          "default": "#1D2228"
+        },
+        {
           "type": "inline_richtext",
           "id": "navigat_third",
           "label": "Navigate label"
@@ -155,6 +230,12 @@
           "type": "url",
           "id": "navigate_link_3",
           "label": "Navigate link"
+        },
+        {
+          "type": "color",
+          "id": "color_navigate_label",
+          "label": "Color Navigate label",
+          "default": "#1D2228"
         }
       ]
     },
