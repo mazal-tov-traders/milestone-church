@@ -48,10 +48,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="my-custom-btn"
-                    {% if block.settings.button_link_1 contains 'https://' %}
-                      target="_blank"
-                    {% endif %}
+                    class="my-custom-btn" 
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>
@@ -165,7 +162,7 @@
     {
       "type": "buttons",
       "name": "Button",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "text",

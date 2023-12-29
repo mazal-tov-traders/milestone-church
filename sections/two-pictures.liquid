@@ -57,9 +57,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    {% if block.settings.button_link_1 contains 'https://' %}
-                      target="_blank"
-                    {% endif %}
+                    
                     class="my-custom-btn {{ section.settings.style_btn }}"
                   >
                     {{- block.settings.button_label_1 | escape -}}

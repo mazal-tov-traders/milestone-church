@@ -49,9 +49,7 @@
                   {% else %}
                     href="{{ block.settings.button_link }}"
                   {% endif %}
-                  {% if block.settings.button_link contains 'https://' %}
-                    target="_blank"
-                  {% endif %}
+                  
                   class="video-block__wrapper-link_link"
                 >
                   {{- block.settings.button_label | escape -}}

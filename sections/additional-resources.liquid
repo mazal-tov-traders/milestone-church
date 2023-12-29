@@ -32,9 +32,6 @@
                           role="link" aria-disabled="true"
                         {% else %}
                           href="{{ block.settings.button_link }}"
-                          {% if block.settings.button_link contains "https://" %}
-                            target="_blank"
-                          {% endif %}
                         {% endif %}
                         class="btn"
                       >

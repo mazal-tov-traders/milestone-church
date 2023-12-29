@@ -117,9 +117,7 @@
                             {% else %}
                               href="{{ block.settings.button_link_1 }}"
                             {% endif %}
-                            {% if block.settings.button_link_1 contains 'https://' %}
-                              target="_blank"
-                            {% endif %}
+                       
                             class="link-menu"
                           >
                             {{- block.settings.button_label_1 | escape -}}
@@ -140,9 +138,7 @@
                           <div class="email-addresses__wrapper_mail">
                             <a
                               href="mailto:{{ block.settings.email | strip_html}}"
-                              {% if block.settings.email contains 'https://' %}
-                                target="_blank"
-                              {% endif %}
+                           
                             >
                               {{- block.settings.email -}}
                             </a>
@@ -159,9 +155,7 @@
                             {% else %}
                               href="{{ block.settings.button_link_2 }}"
                             {% endif %}
-                            {% if block.settings.button_link_2 contains 'https://' %}
-                              target="_blank"
-                            {% endif %}
+                           
                             class="link-menu"
                           >
                             {{- block.settings.button_label_2 | escape -}}
@@ -229,9 +223,7 @@
                             {% else %}
                               href="{{ block.settings.button_link_2 }}"
                             {% endif %}
-                            {% if block.settings.button_link_2 contains 'https://' %}
-                              target="_blank"
-                            {% endif %}
+                          
                             class="link-menu"
                           >
                             {{- block.settings.button_label_2 | escape -}}
