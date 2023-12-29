@@ -15,7 +15,7 @@
           "type": "heading",
           "settings": {
             "heading": "Books",
-            "color_heading_label": "#fff",
+            "color_heading_label": "#ffffff",
             "heading_size": "h0"
           }
         }
@@ -45,21 +45,21 @@
           "type": "heading",
           "settings": {
             "heading": "The Foundations Book",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "911c6f82-02fc-4919-801a-17c85648fb10": {
           "type": "content",
           "settings": {
             "content": "In His most famous sermon, Jesus uses a remarkable story to teach a critical concept. His story about a wise and foolish builder invites each of us to consider this fundamental question:",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         },
         "27d706da-8bb1-4ddd-9687-c68a77840bfa": {
           "type": "description",
           "settings": {
             "description": "<p><strong>What am I building my life on?<\/strong><\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "e3a09c89-5bd0-4d3f-af12-c7d566480e01": {
@@ -67,12 +67,12 @@
           "settings": {
             "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/products\/the-foundations-book",
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -96,21 +96,21 @@
           "type": "heading",
           "settings": {
             "heading": "The Way to Win",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "176c1229-c34e-4f9e-8778-a7ba6160393c": {
           "type": "content",
           "settings": {
             "content": "Men understand development when it comes to sports, our careers, and our hobbies. There are tangible goals we can shoot for. And yet, when it comes to our spiritual lives, it often feels unattainable.",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         },
         "c36b0ed4-86dc-4071-bb44-2cad4a537f4e": {
           "type": "description",
           "settings": {
             "description": "<p><strong>This book is a journey to a deeper relationship with God that will develop you in the areas that matter most.<\/strong><\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "f16ff383-e722-4d32-9711-9d056101e57c": {
@@ -118,12 +118,12 @@
           "settings": {
             "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/products\/the-way-to-win",
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -147,21 +147,21 @@
           "type": "heading",
           "settings": {
             "heading": "Closer",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "f270a08e-5a41-40b5-889c-a870b4a71356": {
           "type": "content",
           "settings": {
             "content": "We invite you to go on a journey with Jesus – from His life to yours. We believe the closer you get to Jesus, the more authentic and life-changing He will become.",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         },
         "093d26d5-7740-4de3-b7f7-15a36d350504": {
           "type": "description",
           "settings": {
             "description": "",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "49cc0725-6136-4e88-9a1e-6e3ac7f8c47f": {
@@ -169,12 +169,12 @@
           "settings": {
             "button_label_1": "Learn more",
             "button_link_1": "shopify:\/\/products\/closer",
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -198,21 +198,21 @@
           "type": "heading",
           "settings": {
             "heading": "Miracles",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "97d2974b-82c5-4084-97aa-308a0e20cf6e": {
           "type": "content",
           "settings": {
             "content": "No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us?",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         },
         "4b4e59aa-04ff-41f5-94aa-17bdb12fde73": {
           "type": "description",
           "settings": {
             "description": "<p><strong>This book shows us how God shows up in our lives and meets us in our moment of need.<\/strong><\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "50daddee-28a5-4aad-a087-e28caae8169d": {
@@ -220,12 +220,12 @@
           "settings": {
             "button_label_1": "Learn more",
             "button_link_1": "shopify:\/\/products\/miracles",
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -249,21 +249,21 @@
           "type": "heading",
           "settings": {
             "heading": "Who Am I?",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "68f91cda-ba67-4afe-bb41-d36fb25e1edd": {
           "type": "content",
           "settings": {
             "content": "Life’s most basic question is also one of the most difficult to answer. Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath.",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         },
         "2a928646-6965-4879-891a-6bd056df286a": {
           "type": "description",
           "settings": {
             "description": "<p><strong>We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/strong><\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "0ef96693-fbc6-4452-bb4f-420f38622df1": {
@@ -271,12 +271,12 @@
           "settings": {
             "button_label_1": "Learn more",
             "button_link_1": "shopify:\/\/products\/who-am-i",
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -300,21 +300,21 @@
           "type": "heading",
           "settings": {
             "heading": "It’s Worth It 2.0",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "cb2aacc3-3904-4846-9115-72018b4a70fd": {
           "type": "content",
           "settings": {
             "content": "<strong>Ps. Jeff wrote this book with you in mind!<\/strong>",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         },
         "a2d9d0b1-854b-4fdf-a826-20daac867c78": {
           "type": "description",
           "settings": {
             "description": "<p>It’s Worth It 2.0 was created to help you: see the hidden treasure waiting in God’s plan for your life, take practical steps towards your purpose, explore the values of Milestone Church and how they impact the way you live, and find the joy that comes from learning these things in a group with other people.<\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "5d3acf34-ac6b-43a1-88fc-d9312fa671c0": {
@@ -322,12 +322,12 @@
           "settings": {
             "button_label_1": "Learn nore",
             "button_link_1": "shopify:\/\/products\/its-worth-it-2-0",
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -351,21 +351,21 @@
           "type": "heading",
           "settings": {
             "heading": "The Power of Connection in the Church",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "95c69d2c-ce11-4ad8-aa0c-977d55e0ab82": {
           "type": "content",
           "settings": {
             "content": "The Power of Connection in the Church is a churchleader’s guide for connecting guests and closing the back door. In this bookyou will discover how to intentionally serve people from their first visit, tobecoming a flourishing member.",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         },
         "69a4829c-8076-42ad-a242-8f2c1d0ecf8f": {
           "type": "description",
           "settings": {
             "description": "",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "60bcdeab-e4b3-46ee-aa0c-06fdf1c32589": {
@@ -373,12 +373,12 @@
           "settings": {
             "button_label_1": "Learn more",
             "button_link_1": "shopify:\/\/products\/the-power-of-connection-in-the-church",
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },

@@ -13,7 +13,7 @@
           "type": "content",
           "settings": {
             "content": "Coaching & Developing MEN IN MATTERS OF Life & Faith",
-            "color_content_label": "#fff"
+            "color_content_label": "#ffffff"
           }
         },
         "8bee47b5-27a5-4b8c-bce1-39033ca014a3": {
@@ -22,10 +22,10 @@
             "button_label_1": "Buy The Book",
             "button_link_1": "#thewaytowin",
             "color_button_backgroun": "rgba(0,0,0,0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
-            "hover_color_button_backgroun": "#fff",
-            "hover_color_button_border": "#fff",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
+            "hover_color_button_backgroun": "#ffffff",
+            "hover_color_button_border": "#ffffff",
             "hover_color_button_label": "#ffffff"
           }
         }
@@ -267,12 +267,12 @@
           "settings": {
             "button_label_1": "download a preview",
             "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/WTW_Sample_Chapter.pdf?v=1702642545",
-            "color_button_backgroun": "rgba(29, 34, 40, 0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
-            "hover_color_button_backgroun": "#fff",
-            "hover_color_button_border": "#fff",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
+            "hover_color_button_backgroun": "rgba(0,0,0,0)",
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
