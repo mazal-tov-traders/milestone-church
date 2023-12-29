@@ -264,25 +264,29 @@
           "type": "title",
           "disabled": true,
           "settings": {
+            "color_title_label": "#1D2228",
             "heading_size": "h1"
           }
         },
         "de79e1fa-2418-470b-b205-12d3e0f88d80": {
           "type": "heading_second",
           "settings": {
-            "heading1": "<p>Grow closer to god as you understand and study his word<\/p>"
+            "heading1": "<p>Grow closer to god as you understand and study his word<\/p>",
+            "color_heading1_label": "#1D2228"
           }
         },
         "219dd411-f230-48cf-b900-4e816a51713a": {
           "type": "description",
           "settings": {
-            "description": "<p>Study guides will be available for purchase here or during weekend services starting January 20.<\/p>"
+            "description": "<p>Study guides will be available for purchase here or during weekend services starting January 20.<\/p>",
+            "color_description_label": "#1D2228"
           }
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-price-1": {
           "type": "price",
           "disabled": true,
           "settings": {
+            "color_price_label": "#1D2228"
           }
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-quantity_selector-1": {
@@ -295,6 +299,12 @@
           "type": "buy_buttons",
           "disabled": true,
           "settings": {
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -303,7 +313,8 @@
           "type": "content",
           "disabled": true,
           "settings": {
-            "content": "25% discount when you buy 10 or more books"
+            "content": "25% discount when you buy 10 or more books",
+            "color_content_label": "#1D2228"
           }
         }
       },
@@ -325,7 +336,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "2",
+        "color_nubmer": "#1D2228",
+        "color_backgroun_number": "#e7dcca",
+        "border_line": false,
+        "color_border_line": "#1D2228",
         "purchase": "Purchase a study guide",
+        "color_purchase_label": "#1D2228",
         "hide_variants": false,
         "height": "931"
       }
@@ -387,9 +403,17 @@
           "settings": {
             "resources_image": "shopify:\/\/shop_images\/Hearing_God_Weekly_Videos.jpg",
             "heading": "Weekly Small Group Videos",
+            "color_heading_label": "#1D2228",
             "content": "Pastor Jeff and Brandy shot these videos specifically for your weekly Small Group.",
+            "color_content_label": "#1D2228",
             "button_label": "Watch Videos",
-            "button_link": "shopify:\/\/pages\/weekly-videos"
+            "button_link": "shopify:\/\/pages\/weekly-videos",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         },
         "3752b7af-9891-407b-98f2-a32fc7eec45c": {
@@ -397,9 +421,17 @@
           "settings": {
             "resources_image": "shopify:\/\/shop_images\/Hearing_God_Leader_Guide.jpg",
             "heading": "Leader Guide",
+            "color_heading_label": "#1D2228",
             "content": "This guide has everything you need to lead your Small Group. It includes tips on what to communicate, how to pray, what to expect, and Small Group discussion questions. The leader guide is available for mobile download, or you can pick them up at your campus.",
+            "color_content_label": "#1D2228",
             "button_label": "Download Guide",
-            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_Leader_Guide.pdf?v=1702906429"
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_Leader_Guide.pdf?v=1702906429",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         },
         "796f817e-6f8a-4489-ab65-66d16f1ce2f6": {
@@ -407,9 +439,17 @@
           "settings": {
             "resources_image": "shopify:\/\/shop_images\/Hearing_God_Kids_Resource.jpg",
             "heading": "Milestone Kid’s Resource",
+            "color_heading_label": "#1D2228",
             "content": "This resource was designed to help your kid grow in God’s word and is a great way to bring them along in the Hearing God series. Each week features a scripture reading, an application activity, and a prayer.",
+            "color_content_label": "#1D2228",
             "button_label": "Download Here",
-            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_KidsResource_final_web.pdf?v=1702907107"
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_KidsResource_final_web.pdf?v=1702907107",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -420,7 +460,9 @@
       ],
       "settings": {
         "heading": "Additional Resources",
+        "color_heading_label": "#1D2228",
         "content": "We’ve made it even easier for you to get the most out of this series by equipping you with additional resources. ",
+        "color_content_label": "#1D2228",
         "background": "shopify:\/\/shop_images\/Rectangle_4133725_11_f6979532-0052-4a1c-bb00-9d355878fddc.jpg",
         "secon_class": "aditt"
       }
@@ -483,7 +525,9 @@
       ],
       "settings": {
         "caption": "",
+        "color_caption_label": "#1D2228",
         "heading": "Frequently Asked Questions",
+        "color_heading_label": "#1D2228",
         "heading_size": "h1",
         "background": "shopify:\/\/shop_images\/Screenshot_2023-12-21_at_11.54.48_AM.png",
         "secon_class": "questtt",
@@ -495,7 +539,10 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "color_question_heading_label": "#1D2228",
+        "color_open_question_heading_label": "#e5be5e",
+        "color_row_content_label": "#1D2228"
       }
     }
   },
