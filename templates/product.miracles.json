@@ -7,14 +7,14 @@
           "type": "heading",
           "settings": {
             "heading": "Miracles",
-            "color_heading_label": "#fff"
+            "color_heading_label": "#ffffff"
           }
         },
         "bbe7262e-d0b7-4222-892d-705a229d9543": {
           "type": "content",
           "settings": {
             "content": "A Journey with Jesus - from His Life to Yours",
-            "color_content_label": "#fff"
+            "color_content_label": "#ffffff"
           }
         },
         "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12": {
@@ -22,12 +22,12 @@
           "settings": {
             "button_label_1": "Buy The Book",
             "button_link_1": "#miracless",
-            "color_button_backgroun": "rgba(29, 34, 40, 0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
-            "hover_color_button_backgroun": "#fff",
-            "hover_color_button_border": "#fff",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
+            "hover_color_button_backgroun": "#ffffff",
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -118,26 +118,30 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Is God close to me?<\/strong>"
+            "heading": "<strong>Is God close to me?<\/strong>",
+            "color_heading_label": "#1D2228"
           }
         },
         "3caee679-5b38-40ee-a91e-0350882b6892": {
           "type": "heading_second",
           "settings": {
-            "heading1": "<p>Does He see what I’m going through?<\/p>"
+            "heading1": "<p>Does He see what I’m going through?<\/p>",
+            "color_heading1_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
           "settings": {
+            "color_title_label": "#1D2228",
             "heading_size": "h1"
           }
         },
         "31965910-c30d-40c9-955f-d28368ae3ed5": {
           "type": "description",
           "settings": {
-            "description": "<p>Will He show up with His miracle power when I need Him most?<br\/>Most of us have wrestled with these questions.<\/p><p>No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us? This book shows us how God shows up in our lives and meets us in our moment of need.<\/p><p>Miracles can be read as an individual, but it is also great for group studies.<\/p>"
+            "description": "<p>Will He show up with His miracle power when I need Him most?<br\/>Most of us have wrestled with these questions.<\/p><p>No one performed miracles like Jesus. He restored sight to the blind, helped the lame walk, calmed the seas, and multiplied one boy’s lunch to feed thousands. The Bible is filled with miracles…but what is God trying to show us? This book shows us how God shows up in our lives and meets us in our moment of need.<\/p><p>Miracles can be read as an individual, but it is also great for group studies.<\/p>",
+            "color_description_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -148,6 +152,12 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -155,6 +165,7 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
           "type": "price",
           "settings": {
+            "color_price_label": "#1D2228"
           }
         },
         "4efa4abd-17f9-4962-b188-3c23177f35ba": {
@@ -168,7 +179,8 @@
         "9194a408-007d-4456-a769-061017e3d0a1": {
           "type": "text",
           "settings": {
-            "text": "<p>Other ways to buy<\/p>"
+            "text": "<p>Other ways to buy<\/p>",
+            "color_text_label": "#1D2228"
           }
         },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
@@ -198,7 +210,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
+        "color_nubmer": "#1D2228",
+        "color_backgroun_number": "#1D2228",
+        "border_line": false,
+        "color_border_line": "#1D2228",
         "purchase": "",
+        "color_purchase_label": "#1D2228",
         "hide_variants": false,
         "height": ""
       }
@@ -231,7 +248,7 @@
             "image": "shopify:\/\/shop_images\/video-thumb.jpg",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
             "content": "",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         }
       },
@@ -241,14 +258,14 @@
       "settings": {
         "background": "shopify:\/\/shop_images\/3I1A0432-Enhanced-NR.jpg",
         "heading": "",
-        "color_heading_label": "#1D2228",
+        "color_heading_label": "#1d2228",
         "video_url": "https:\/\/www.youtube.com\/watch?v=KsAOLcfzP48",
         "content": "<p>Dive deeper into Miracles by pairing the book with our 8-week message series<\/p>",
-        "color_content_label": "#fff",
+        "color_content_label": "#ffffff",
         "text": "",
-        "color_text_label": "#1D2228",
+        "color_text_label": "#1d2228",
         "description": "",
-        "color_description_label": "#1D2228",
+        "color_description_label": "#1d2228",
         "id_for_anchor": "",
         "class": "seed"
       }
@@ -273,7 +290,7 @@
           "type": "content",
           "settings": {
             "heading": "",
-            "text": "<p>Meet Pastor Jeff<\/p>",
+            "text": "<p>About Pastor Jeff<\/p>",
             "content": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>"
           }
         }
@@ -300,11 +317,12 @@
       "block_order": [
         "43b523a0-36ac-4d40-95fc-676780d1ed1c"
       ],
+      "disabled": true,
       "settings": {
-        "title": "Other Resources",
+        "title": "",
         "class": "",
         "heading_size": "h1",
-        "description": "<p>You May Enjoy<\/p>",
+        "description": "<p>Other Resources You May Enjoy<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "you-may-enjoy-2",

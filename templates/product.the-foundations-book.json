@@ -13,20 +13,21 @@
           "type": "content",
           "settings": {
             "content": "How can we experience the best versions of our lives?",
-            "color_content_label": "#fff"
+            "color_content_label": "#ffffff"
           }
         },
         "10531c0b-4161-41f6-98d5-116853521a1b": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Buy The Book",
             "button_link_1": "#foundationss",
-            "color_button_backgroun": "rgba(29, 34, 40, 0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -125,43 +126,58 @@
         "27167353-0050-497a-8ad5-fd55cecdd89d": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>The Foundations Book<\/strong>"
+            "heading": "<strong>The Foundations Book<\/strong>",
+            "color_heading_label": "#1D2228"
           }
         },
         "29cf7ef9-7173-48e9-bc51-020addf39d34": {
           "type": "heading_second",
+          "disabled": true,
           "settings": {
-            "heading1": "<p>In His most famous sermon, Jesus uses a remarkable story to teach a critical concept. <\/p>"
+            "heading1": "<p>In His most famous sermon, Jesus uses a remarkable story to teach a critical concept. <\/p>",
+            "color_heading1_label": "#1D2228"
           }
         },
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-title-1": {
           "type": "title",
           "disabled": true,
           "settings": {
+            "color_title_label": "#1D2228",
             "heading_size": "h1"
           }
         },
         "b8b78567-9f0e-4592-8a35-3e51f932bda0": {
           "type": "description",
           "settings": {
-            "description": "<p>His story about a wise and foolish builder invites each of us to consider this fundamental question: What am I building my life on?<\/p><p>The truth is, we all build on something – and the foundation you choose determines the life you live. Many of us want to know what Jesus said about the most important aspects of life and how they apply to us today, but we don’t know where to start or how to make sense of it.<\/p><p>Whether you’re in a small group, studying with a friend, or going on the journey as an individual learner, The Foundations Book will not only help you discover what Jesus said, but will also give you simple, actionable steps you can take to practically build your life around His truth.<\/p>"
+            "description": "<p>Jesus' story about a wise and foolish builder invites each of us to consider this fundamental question: What am I building my life on?<\/p><p>The truth is, we all build on something – and the foundation you choose determines the life you live. Many of us want to know what Jesus said about the most important aspects of life and how they apply to us today, but we don’t know where to start or how to make sense of it.<\/p><p>Whether you’re in a small group, studying with a friend, or going on the journey as an individual learner, The Foundations Book will not only help you discover what Jesus said, but will also give you simple, actionable steps you can take to practically build your life around His truth.<\/p>",
+            "color_description_label": "#1D2228"
           }
         },
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-quantity_selector-1": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-buy_buttons-1": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
         "template--21732794925332__7e9af4a3-51c2-4e98-bc6c-53f494e8a664-price-1": {
           "type": "price",
+          "disabled": true,
           "settings": {
+            "color_price_label": "#1D2228"
           }
         },
         "2f9ffdb1-90df-4677-80cf-ac2e0fd6570c": {
@@ -189,7 +205,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
+        "color_nubmer": "#1D2228",
+        "color_backgroun_number": "#1D2228",
+        "border_line": false,
+        "color_border_line": "#1D2228",
         "purchase": "",
+        "color_purchase_label": "#1D2228",
         "hide_variants": false,
         "height": ""
       }
@@ -235,6 +256,7 @@
         "28a36c93-948f-4c41-855e-35218e8a25c8",
         "e1a13a6d-84d5-4b08-b1d8-a09e8df002dc"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Book"
       }
@@ -253,6 +275,7 @@
       "block_order": [
         "35169363-9c99-4f8c-bec7-ef44311abd61"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "class": "",

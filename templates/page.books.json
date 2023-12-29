@@ -84,7 +84,7 @@
       ],
       "settings": {
         "class": "Foundations",
-        "background": "shopify:\/\/shop_images\/TFB---books-banner.jpg",
+        "background": "shopify:\/\/shop_images\/Screenshot_2023-12-29_at_11.02.46_AM.png",
         "Mobile_image": "shopify:\/\/shop_images\/Foundations_Front_Cover_Only_-_5mb.jpg",
         "position_content": false
       }
@@ -320,7 +320,7 @@
         "5d3acf34-ac6b-43a1-88fc-d9312fa671c0": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Learn nore",
+            "button_label_1": "Learn More",
             "button_link_1": "shopify:\/\/products\/its-worth-it-2-0",
             "color_button_backgroun": "#5491d6",
             "color_button_label": "#ffffff",

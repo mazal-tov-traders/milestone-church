@@ -7,7 +7,7 @@
           "type": "content",
           "settings": {
             "content": "Discovering the person you were created to be",
-            "color_content_label": "#fff"
+            "color_content_label": "#ffffff"
           }
         },
         "809499ed-0878-4b1a-b957-a5ca66c24e31": {
@@ -15,12 +15,12 @@
           "settings": {
             "button_label_1": "Buy The Book",
             "button_link_1": "#whoamii",
-            "color_button_backgroun": "rgba(29, 34, 40, 0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
-            "hover_color_button_backgroun": "#fff",
-            "hover_color_button_border": "#fff",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
+            "hover_color_button_backgroun": "#ffffff",
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -110,26 +110,30 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Who am I?<\/strong>"
+            "heading": "<strong>Who am I?<\/strong>",
+            "color_heading_label": "#1D2228"
           }
         },
         "a5883f25-81b5-4898-a1a4-e12a9cc2323a": {
           "type": "heading_second",
           "settings": {
-            "heading1": "<p>Life’s most basic question is also one of the most difficult to answer.<\/p>"
+            "heading1": "<p>Life’s most basic question is also one of the most difficult to answer.<\/p>",
+            "color_heading1_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
           "settings": {
+            "color_title_label": "#1D2228",
             "heading_size": "h1"
           }
         },
         "31965910-c30d-40c9-955f-d28368ae3ed5": {
           "type": "description",
           "settings": {
-            "description": "<p>Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath. We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/p>"
+            "description": "<p>Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath. We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/p>",
+            "color_description_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -140,6 +144,12 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -147,6 +157,7 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
           "type": "price",
           "settings": {
+            "color_price_label": "#1D2228"
           }
         },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
@@ -174,7 +185,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
+        "color_nubmer": "#1D2228",
+        "color_backgroun_number": "#1D2228",
+        "border_line": false,
+        "color_border_line": "#1D2228",
         "purchase": "",
+        "color_purchase_label": "#1D2228",
         "hide_variants": false,
         "height": ""
       }
@@ -210,8 +226,8 @@
         "f25f812a-6a65-4b01-baee-dbdd2691fb45": {
           "type": "content",
           "settings": {
-            "heading": "About",
-            "text": "<p>Pastor Jeff<\/p>",
+            "heading": "",
+            "text": "<p>About Pastor Jeff<\/p>",
             "content": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>"
           }
         }
@@ -238,6 +254,7 @@
       "block_order": [
         "43b523a0-36ac-4d40-95fc-676780d1ed1c"
       ],
+      "disabled": true,
       "settings": {
         "title": "Other Resources",
         "class": "",

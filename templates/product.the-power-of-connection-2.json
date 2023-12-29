@@ -7,7 +7,7 @@
           "type": "content",
           "settings": {
             "content": "A Church Leader’s Guide for Connecting Guests and Closing the Back Door",
-            "color_content_label": "#fff"
+            "color_content_label": "#ffffff"
           }
         },
         "8052424e-e7db-44c7-b41e-e2f40aad887d": {
@@ -15,12 +15,12 @@
           "settings": {
             "button_label_1": "Buy the Book",
             "button_link_1": "#powerchurch",
-            "color_button_backgroun": "rgba(29, 34, 40, 0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
-            "hover_color_button_backgroun": "#fff",
-            "hover_color_button_border": "#fff",
-            "hover_color_button_label": "#fff"
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
+            "hover_color_button_backgroun": "#ffffff",
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#ffffff"
           }
         },
         "952d3fdd-d5aa-4abc-bd81-8a4917760042": {
@@ -117,26 +117,30 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>You value people;<\/strong>"
+            "heading": "<strong>You value people;<\/strong>",
+            "color_heading_label": "#1D2228"
           }
         },
         "92083c35-a090-4092-9edc-2c9d6532339c": {
           "type": "heading_second",
           "settings": {
-            "heading1": "<p>connection ensures they feel that value.<\/p>"
+            "heading1": "<p>connection ensures they feel that value.<\/p>",
+            "color_heading1_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
           "settings": {
+            "color_title_label": "#1D2228",
             "heading_size": "h1"
           }
         },
         "31965910-c30d-40c9-955f-d28368ae3ed5": {
           "type": "description",
           "settings": {
-            "description": "<p>The Power of Connection in the Church is a church leader’s guide for connecting guests and closing the back door. In this book you will discover how to intentionally serve people from their first visit, to becoming a flourishing member. You’ll learn how to build a culture of connection that purposefully expresses the value that Jesus places on all people. It’s this connection culture that has allowed Milestone Church to grow to thousands of active members, while maintaining its heart for the one, and a focus on the next one coming.<\/p>"
+            "description": "<p>The Power of Connection in the Church is a church leader’s guide for connecting guests and closing the back door. In this book you will discover how to intentionally serve people from their first visit, to becoming a flourishing member. You’ll learn how to build a culture of connection that purposefully expresses the value that Jesus places on all people. It’s this connection culture that has allowed Milestone Church to grow to thousands of active members, while maintaining its heart for the one, and a focus on the next one coming.<\/p>",
+            "color_description_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -147,6 +151,12 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -154,6 +164,7 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
           "type": "price",
           "settings": {
+            "color_price_label": "#1D2228"
           }
         },
         "4efa4abd-17f9-4962-b188-3c23177f35ba": {
@@ -167,7 +178,8 @@
         "9194a408-007d-4456-a769-061017e3d0a1": {
           "type": "text",
           "settings": {
-            "text": "<p>Other ways to buy<\/p>"
+            "text": "<p>Other ways to buy<\/p>",
+            "color_text_label": "#1D2228"
           }
         },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
@@ -197,7 +209,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
+        "color_nubmer": "#1D2228",
+        "color_backgroun_number": "#1D2228",
+        "border_line": false,
+        "color_border_line": "#1D2228",
         "purchase": "",
+        "color_purchase_label": "#1D2228",
         "hide_variants": false,
         "height": ""
       }
@@ -233,8 +250,8 @@
         "f25f812a-6a65-4b01-baee-dbdd2691fb45": {
           "type": "content",
           "settings": {
-            "heading": "About",
-            "text": "<p>Pastor Steve<\/p>",
+            "heading": "",
+            "text": "<p>About Pastor Steve<\/p>",
             "content": "<p>Steve Chesnut and his wife Gabrielle were first-time guests on the first Sunday of Milestone Church in 2002. For over 20 years now, Steve has built teams and processes to ensure every guest has the same experience he and his wife had—an opportunity to be known, grow in Christ, find friends, and use their gifts. Now countless families have experienced this as Milestone Church has grown with multiple campuses reaching people and building lives throughout the Dallas\/Fort Worth region. <\/p><p>He earned a Bachelor’s in Religion from Belmont University and a Master’s in Communication from Southwestern Baptist Theological Seminary. He and Gabrielle have three kids and reside in Keller, TX.<\/p>"
           }
         }
@@ -261,6 +278,7 @@
       "block_order": [
         "43b523a0-36ac-4d40-95fc-676780d1ed1c"
       ],
+      "disabled": true,
       "settings": {
         "title": "Other Resources",
         "class": "",

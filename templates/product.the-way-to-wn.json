@@ -142,20 +142,23 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>GROWTH AND DEVELOPMENT GUIDE FOR MEN<\/strong>"
+            "heading": "<strong>GROWTH AND DEVELOPMENT GUIDE FOR MEN<\/strong>",
+            "color_heading_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
           "settings": {
+            "color_title_label": "#1D2228",
             "heading_size": "h1"
           }
         },
         "31965910-c30d-40c9-955f-d28368ae3ed5": {
           "type": "description",
           "settings": {
-            "description": "<ul><li>Coaching for personal, spiritual, and professional areas of life<\/li><li>Concise and practical chapters<\/li><li>Helpful questions and leadership challenges<\/li><li>Great for groups or the individual reader<\/li><\/ul>"
+            "description": "<ul><li>Coaching for personal, spiritual, and professional areas of life<\/li><li>Concise and practical chapters<\/li><li>Helpful questions and leadership challenges<\/li><li>Great for groups or the individual reader<\/li><\/ul>",
+            "color_description_label": "#1D2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -166,6 +169,12 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -173,12 +182,14 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
           "type": "price",
           "settings": {
+            "color_price_label": "#1D2228"
           }
         },
         "8ec1482c-6fd5-4ee1-a430-fc9d2d95077c": {
           "type": "content",
           "settings": {
-            "content": "25% discount when you buy 10 or more books"
+            "content": "25% discount when you buy 10 or more books",
+            "color_content_label": "#1D2228"
           }
         },
         "4efa4abd-17f9-4962-b188-3c23177f35ba": {
@@ -193,7 +204,8 @@
         "9194a408-007d-4456-a769-061017e3d0a1": {
           "type": "text",
           "settings": {
-            "text": "<p>Other ways to buy<\/p>"
+            "text": "<p>Other ways to buy<\/p>",
+            "color_text_label": "#1D2228"
           }
         },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
@@ -223,7 +235,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
+        "color_nubmer": "#1D2228",
+        "color_backgroun_number": "#1D2228",
+        "border_line": false,
+        "color_border_line": "#1D2228",
         "purchase": "",
+        "color_purchase_label": "#1D2228",
         "hide_variants": false,
         "height": ""
       }
@@ -300,7 +317,7 @@
           "type": "content",
           "settings": {
             "heading": "",
-            "text": "<p>Meet Pastor Jeff<\/p>",
+            "text": "<p>About Pastor Jeff<\/p>",
             "content": "<p>Jeff Little has been in ministry for 30 years. He planted Milestone Church in the Dallas\/Fort Worth area with a few friends in 2002. Milestone is now a family of thousands that continues to reach people and build lives throughout the region. More than a passionate and dynamic communicator, Jeff is committed to developing people and training leaders to reach their God-given potential.<\/p><p>He earned a Bachelor’s in Religion from Baylor University, a Master’s in Missiology from Southwestern Baptist Theological Seminary, and a doctorate from Southeastern University. He and his wife, Brandy, have four children and reside in Keller, TX.<\/p>"
           }
         }

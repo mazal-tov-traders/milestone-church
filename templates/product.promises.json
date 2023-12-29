@@ -7,14 +7,14 @@
           "type": "heading",
           "settings": {
             "heading": "Promises",
-            "color_heading_label": "#fff"
+            "color_heading_label": "#ffffff"
           }
         },
         "720490b9-7caf-4d54-9e73-6bfbae0c625c": {
           "type": "content",
           "settings": {
             "content": "Confidence for Today. A Guarantee for Tomorrow.",
-            "color_content_label": "#fff"
+            "color_content_label": "#ffffff"
           }
         },
         "ef707a05-d3a6-4acd-a94b-6d66dabca8e2": {
@@ -22,12 +22,12 @@
           "settings": {
             "button_label_1": "buy the study guide",
             "button_link_1": "#anweek",
-            "color_button_backgroun": "rgba(29, 34, 40, 0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
             "hover_color_button_backgroun": "rgba(0,0,0,0)",
-            "hover_color_button_border": "#fff",
-            "hover_color_button_label": "#fff"
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -49,30 +49,35 @@
           "type": "title",
           "disabled": true,
           "settings": {
+            "color_title_label": "#1D2228",
             "heading_size": "h1"
           }
         },
         "32fe27fa-bbc8-4302-868f-3c891bad72d7": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>An 8-week study guide <\/strong>"
+            "heading": "<strong>An 8-week study guide <\/strong>",
+            "color_heading_label": "#1D2228"
           }
         },
         "a646343b-40d3-4f8f-b368-c46bf0fddc15": {
           "type": "heading_second",
           "settings": {
-            "heading1": "<p>on the Promises of God.<\/p>"
+            "heading1": "<p>on the Promises of God.<\/p>",
+            "color_heading1_label": "#1D2228"
           }
         },
         "79434a07-c2e9-4ab7-afa2-58cbb6b6a531": {
           "type": "description",
           "settings": {
-            "description": "<p>What if someone significant believed in your future so strongly that they put their name and reputation on the line? Now, imagine if God himself did that for you. How would that change your confidence? How would it help you face your challenges?<\/p><p>Promises provides practical concepts, illustrations, context, bible verses, and questions. The Promises study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Promises can be read as an individual, but it is also great for group studies.<\/p>"
+            "description": "<p>What if someone significant believed in your future so strongly that they put their name and reputation on the line? Now, imagine if God himself did that for you. How would that change your confidence? How would it help you face your challenges?<\/p><p>Promises provides practical concepts, illustrations, context, bible verses, and questions. The Promises study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Promises can be read as an individual, but it is also great for group studies.<\/p>",
+            "color_description_label": "#1D2228"
           }
         },
         "template--21798232260915__b1bd4938-a71c-4d34-9e2a-d0852c7c44da-price-1": {
           "type": "price",
           "settings": {
+            "color_price_label": "#1D2228"
           }
         },
         "a73bb7de-55f4-4987-b702-b35c9f3acc7d": {
@@ -83,6 +88,12 @@
         "template--21798232260915__b1bd4938-a71c-4d34-9e2a-d0852c7c44da-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
+            "color_button_backgroun": "#5491D6",
+            "color_button_label": "#fff",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -96,7 +107,8 @@
         "60034bb4-9cd2-48f5-9458-a7eb84848d8d": {
           "type": "content",
           "settings": {
-            "content": "25% discount when you buy 10 or more guides"
+            "content": "25% discount when you buy 10 or more guides",
+            "color_content_label": "#1D2228"
           }
         }
       },
@@ -119,7 +131,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
+        "color_nubmer": "#1D2228",
+        "color_backgroun_number": "#1D2228",
+        "border_line": false,
+        "color_border_line": "#1D2228",
         "purchase": "",
+        "color_purchase_label": "#1D2228",
         "hide_variants": false,
         "height": ""
       }
@@ -230,7 +247,7 @@
             "image": "shopify:\/\/shop_images\/Prom-video.png",
             "image_youtube": "shopify:\/\/shop_images\/XMLID_184__1.png",
             "content": "",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         }
       },
@@ -239,15 +256,15 @@
       ],
       "settings": {
         "background": "shopify:\/\/shop_images\/christina-deravedisian-7hsNO61NWY0-unsplash.jpg",
-        "heading": "<p>Message Series<\/p>",
+        "heading": "",
         "color_heading_label": "#e5be5e",
         "video_url": "https:\/\/www.youtube.com\/watch?v=cFto_lZKX_A",
         "content": "<p>Dive deeper into Promises by pairing the book with our 8-week message series.<\/p>",
-        "color_content_label": "#fff",
+        "color_content_label": "#ffffff",
         "text": "",
-        "color_text_label": "#1D2228",
+        "color_text_label": "#1d2228",
         "description": "",
-        "color_description_label": "#1D2228",
+        "color_description_label": "#1d2228",
         "id_for_anchor": "",
         "class": "seed"
       }
@@ -264,7 +281,6 @@
         "071aa545-26c9-4524-b6e2-f0864c9b9742": {
           "type": "bannerleft",
           "settings": {
-            "banner_left": "shopify:\/\/shop_images\/1_2.png"
           }
         },
         "4bb1b6e5-12ff-476f-bf2c-1e94fcf67cd4": {
@@ -278,12 +294,12 @@
           "settings": {
             "button_label_1": "download a preview",
             "button_link_1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/PromisesGuide_SAMPLE.pdf?v=1702659940",
-            "color_button_backgroun": "rgba(29, 34, 40, 0)",
-            "color_button_label": "#fff",
-            "color_button_border": "#fff",
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
             "hover_color_button_backgroun": "rgba(0,0,0,0)",
-            "hover_color_button_border": "#fff",
-            "hover_color_button_label": "#fff"
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#ffffff"
           }
         }
       },
@@ -292,6 +308,7 @@
         "4bb1b6e5-12ff-476f-bf2c-1e94fcf67cd4",
         "59f70bf2-55c0-432e-bbb9-4b5768da19d1"
       ],
+      "disabled": true,
       "settings": {
         "class_name": "prom",
         "background": "shopify:\/\/shop_images\/Rectangle_4133725.png",
@@ -312,6 +329,7 @@
       "block_order": [
         "ef8215cd-e113-45a0-842b-a5b81482930d"
       ],
+      "disabled": true,
       "settings": {
         "title": "Other Resources",
         "class": "",
