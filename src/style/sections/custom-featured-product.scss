@@ -2,9 +2,7 @@
   .custom-featured-product_num-navi {
     padding-top: 100px;
     .number-navigat {
-      background: #e5be5e;
       border-radius: 50%;
-      color: #fff;
       display: flex;
       font-family: "Nova-600";
       font-size: 30px;
@@ -20,17 +18,12 @@
     }
   }
   .custom-featured-product_headingg {
-    background-image: linear-gradient(90deg, transparent 0%, #e5be5e 0);
-    background-position: 50% 0px;
-    background-repeat: no-repeat;
-    background-size: 2% 1px;
     font-family: "Nova-400";
     font-size: 50px;
     font-weight: 400;
     line-height: 60px;
     letter-spacing: 0em;
     text-align: center;
-    color: #1d2228;
     text-transform: uppercase;
     padding-top: 12px;
   }
@@ -83,7 +76,6 @@
             font-family: "Nova-700";
             font-size: 15px;
             letter-spacing: 0em;
-            color: rgba(255, 255, 255, 1);
             text-align: center;
             padding: 0px 2px 0 8px;
             text-transform: uppercase;
@@ -92,8 +84,15 @@
 
         .product-form__submit {
           padding: 0 7px;
-          background: #5491D6;
           height: 50px;
+          background-color: var(--color-button-background);
+          color: var(--color-color-button-label);
+          border: 1px solid var(--color-color-button-border);
+          &:hover {
+            background-color: var(--hover-color-button-background);
+            border: 1px solid var(--hover-color-button-border);
+            color: var(--hover-color-button-label);
+          }
           svg {
             margin-bottom: 3px;
           }
@@ -104,7 +103,6 @@
               font-size: 15px;
               line-height: 18px;
               letter-spacing: 0em;
-              color: rgba(255, 255, 255, 1);
               .price-cent {
                 font-family: "Nova-700";
                 font-size: 10px;
@@ -116,7 +114,7 @@
               }
             }
             p {
-              color: rgba(255, 255, 255, 1);
+              
             }
           }
         }
@@ -130,7 +128,6 @@
       line-height: 36px;
       letter-spacing: 0em;
       text-align: left;
-      color: rgba(29, 34, 40, 1);
       text-transform: uppercase;
       p {
         margin: 0;
@@ -142,7 +139,6 @@
         font-size: 50px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(29, 34, 40, 1);
       }
     }
 
@@ -155,7 +151,6 @@
         line-height: 60px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(29, 34, 40, 1);
         @media screen and (max-width: 500px) {
           font-size: 43px;
           line-height: 52px;
@@ -183,7 +178,6 @@
           font-size: 16px;
           letter-spacing: 0em;
           text-align: left;
-          color: rgba(29, 34, 40, 1);
           line-height: 19.49px;
           margin-bottom: 10px;
         }
@@ -191,16 +185,16 @@
     }
     .no-js-hidden {
       .price-item.price-item--regular {
+        color:  var( --color-price);
         font-family: "Nova-600";
         font-weight: 600;
         font-size: 36px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(29, 34, 40, 1);
         .price-cent {
+          color:  var( --color-price);
           font-family: "Nova-700";
           font-weight: 700;
-          color: #1d2228;
           letter-spacing: 0;
           text-align: left;
           font-size: 23px;
@@ -216,7 +210,6 @@
       line-height: 19px;
       letter-spacing: 0em;
       text-align: left;
-      color: #1d2228;
       margin-bottom: 30px;
       width: 100%;
       margin-top: 0px;
@@ -230,7 +223,6 @@
       line-height: 19px;
       letter-spacing: -0.03em;
       text-align: left;
-      color: #1d2228;
       margin-bottom: 35px;
     }
     .buttons-link-box {
@@ -305,7 +297,6 @@
         max-width: 546px;
       }
       .custom-featured-product__discription {
-        color: #1d2228;
         font-family: "Nova-300";
         font-size: 20px;
         font-style: normal;

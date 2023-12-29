@@ -20,7 +20,6 @@
       line-height: 63px;
       letter-spacing: 0em;
       text-align: center;
-      color: #1d2228;
       text-transform: uppercase;
       margin-bottom: 9px;
     }
@@ -31,7 +30,6 @@
       line-height: 32px;
       letter-spacing: 0em;
       text-align: center;
-      color: #1d2228;
       max-width: 570px;
       margin: 0 auto;
       margin-bottom: 48px;
@@ -64,7 +62,6 @@
           line-height: 18px;
           letter-spacing: 0em;
           text-align: left;
-          color: #1d2228;
           margin-bottom: 10px;
           text-transform: uppercase;
         }
@@ -75,36 +72,19 @@
           line-height: 22px;
           letter-spacing: 0em;
           text-align: left;
-          color: #1d2228;
           margin-bottom: 20px;
         }
         &_button {
-          height: 50px;
-          padding: 0 35px;
-          border: 1px solid #5491d6;
-          background-color: transparent;
           display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          margin-top: auto;
-          .btn {
-            text-align: center;
-            font-family: "Nova-700";
-            font-size: 15px;
-            font-weight: 700;
-            line-height: 18px;
-            letter-spacing: 0em;
-            color: #5491d6;
-            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: auto;
+          .my-custom-btn {
+            max-width: 100%;
+            width: 100%;
           }
-          &:hover {
-            color: rgba(84, 145, 214, 1);
-            background-color: #5491d6;
-          }
-          &:hover a {
-            color: #fff;
-          }
+         
         }
       }
     }

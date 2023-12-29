@@ -1,3 +1,21 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'buy_buttons' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- when 'price' -%}
+        --color-price: {{ block.settings.color_price_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'section-featured-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -36,11 +54,24 @@
 <div id="{{ section.settings.id_for_anchor }}" class="custom-featured-product {{ section.settings.class }}">
   {%- if section.settings.nubmer_navigat != blank -%}
     <div class="custom-featured-product_num-navi">
-      <span class="number-navigat">{{ section.settings.nubmer_navigat }}</span>
+      <span
+        class="number-navigat"
+        style=" color: {{ section.settings.color_nubmer }}; background-color:{{ section.settings.color_backgroun_number }};"
+      >
+        {{- section.settings.nubmer_navigat -}}
+      </span>
     </div>
   {%- endif -%}
+  <div
+    class="border-line {% if section.settings.border_line == true %}on{% endif %}"
+    style="border-color:{{ section.settings.color_border_line }};"
+  >
+    .
+  </div>
   {%- if section.settings.purchase != blank -%}
-    <div class="custom-featured-product_headingg">{{ section.settings.purchase }}</div>
+    <div class="custom-featured-product_headingg" style=" color: {{ section.settings.color_purchase_label }};">
+      {{ section.settings.purchase }}
+    </div>
   {%- endif -%}
   <section class="color imag">
     <div class="page-width section-{{ section.id }}-padding">
@@ -69,28 +100,44 @@
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'heading' -%}
-                  <h2 class="custom-featured-product__heading">
+                  <h2
+                    class="custom-featured-product__heading"
+                    style=" color: {{ block.settings.color_heading_label }};"
+                  >
                     {{ block.settings.heading }}
                   </h2>
                 {%- when 'heading_second' -%}
-                  <div class="custom-featured-product__heading1">
+                  <div
+                    class="custom-featured-product__heading1"
+                    style=" color: {{ block.settings.color_heading1_label }};"
+                  >
                     {{ block.settings.heading1 }}
                   </div>
                 {%- when 'content' -%}
                   {%- if block.settings.content != blank -%}
-                    <div class="custom-featured-product__content">
+                    <div
+                      class="custom-featured-product__content"
+                      style=" color: {{ block.settings.color_content_label }};"
+                    >
                       <p>{{ block.settings.content }}</p>
                     </div>
                   {%- endif -%}
                 {%- when 'description' -%}
                   {%- if block.settings.description != blank -%}
-                    <div class="custom-featured-product__discription">
+                    <div
+                      class="custom-featured-product__discription"
+                      style=" color: {{ block.settings.color_description_label }};"
+                    >
                       <p>{{ block.settings.description }}</p>
                     </div>
                   {%- endif -%}
 
                 {%- when 'title' -%}
-                  <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                  <h2
+                    class="product__title {{ block.settings.heading_size }}"
+                    {{ block.shopify_attributes }}
+                    style=" color: {{ block.settings.color_title_label }};"
+                  >
                     {%- if product.title != blank -%}
                       {{ product.title | escape }}
                     {%- else -%}
@@ -376,7 +423,7 @@
               {%- case block.type -%}
                 {%- when 'text' -%}
                   {%- if block.settings.text != blank -%}
-                    <div class="custom-featured-product__text">
+                    <div class="custom-featured-product__text" style=" color: {{ block.settings.color_text_label }};">
                       <p>{{ block.settings.text }}</p>
                     </div>
                   {%- endif -%}
@@ -391,7 +438,6 @@
                         <a
                           class="buttons-link-box__wrapper_button1"
                           href="{{ block.settings.button_link1 | strip_html}}"
-                     
                         >
                           <img
                             src="{{ block.settings.icon_button1 | img_url: 'original' }}"
@@ -406,7 +452,6 @@
                         <a
                           class="buttons-link-box__wrapper_button2"
                           href="{{ block.settings.button_link2 | strip_html}}"
-                    
                         >
                           <img
                             src="{{ block.settings.icon_button2 | img_url: 'original' }}"
@@ -555,15 +600,20 @@
   document.addEventListener('DOMContentLoaded', function () {
     function updatePrice(element, dataPrice, elementSum) {
       let quantityInput = Number(element.querySelector('.quantity__input').value);
-      let resultPrice = quantityInput * dataPrice;
-      const formattedNumber = (resultPrice / 100).toFixed(2);
+      let unitPrice = dataPrice;
+
+      if (quantityInput >= 10) {
+        unitPrice *= 0.75;
+      }
+
+      const formattedNumber = (unitPrice / 100).toFixed(2);
       const [integerPart, decimalPart] = formattedNumber.split('.');
 
       elementSum.innerHTML = `
-            <span class="product-form__price_rcp">     
-              $${integerPart}.<sup class="price-cent">${decimalPart}</sup>
-            </span>
-          `;
+        <span class="product-form__price_rcp">     
+          $${integerPart}.<sup class="price-cent">${decimalPart}</sup>
+        </span>
+      `;
     }
 
     const buttonsWrapper = document.querySelectorAll('.wrapper-baton-and-quantity');
@@ -606,6 +656,12 @@
       "limit": 1,
       "settings": [
         {
+          "type": "color",
+          "id": "color_title_label",
+          "label": "Color Title Label",
+          "default": "#1D2228"
+        },
+        {
           "type": "select",
           "id": "heading_size",
           "options": [
@@ -630,7 +686,15 @@
     {
       "type": "price",
       "name": "t:sections.featured-product.blocks.price.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "color_price_label",
+          "label": "Color Price Label",
+          "default": "#1D2228"
+        }
+      ]
     },
     {
       "type": "quantity_selector",
@@ -642,6 +706,42 @@
       "name": "t:sections.featured-product.blocks.buy_buttons.name",
       "limit": 1,
       "settings": [
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
+        },
         {
           "type": "checkbox",
           "id": "show_dynamic_checkout",
@@ -679,6 +779,12 @@
           "type": "richtext",
           "id": "heading1",
           "label": "Heading Second"
+        },
+        {
+          "type": "color",
+          "id": "color_heading1_label",
+          "label": "Color Heading Second Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -691,6 +797,12 @@
           "type": "inline_richtext",
           "id": "heading",
           "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -704,6 +816,12 @@
           "id": "content",
           "default": "25% discount when you buy 10 or more books",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -716,6 +834,12 @@
           "type": "richtext",
           "id": "description",
           "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "color_description_label",
+          "label": "Color Description Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -729,6 +853,12 @@
           "id": "text",
           "default": "<p>other ways to buy</p>",
           "label": "text"
+        },
+        {
+          "type": "color",
+          "id": "color_text_label",
+          "label": "Color Text Label",
+          "default": "#1D2228"
         }
       ]
     },
@@ -831,11 +961,40 @@
       "label": "Section number for navigation"
     },
     {
+      "type": "color",
+      "id": "color_nubmer",
+      "label": "Color Number",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "color_backgroun_number",
+      "label": "Color Backgroun Number",
+      "default": "#1D2228"
+    },
+    {
+      "type": "checkbox",
+      "id": "border_line",
+      "default": false,
+      "label": "ADD/REMOVE LINE"
+    },
+    {
+      "type": "color",
+      "id": "color_border_line",
+      "label": "Color Border Line",
+      "default": "#1D2228"
+    },
+    {
       "type": "inline_richtext",
       "id": "purchase",
       "label": "Purchase a Book"
     },
-
+    {
+      "type": "color",
+      "id": "color_purchase_label",
+      "label": "Color Purchase Label",
+      "default": "#1D2228"
+    },
     {
       "type": "checkbox",
       "id": "hide_variants",

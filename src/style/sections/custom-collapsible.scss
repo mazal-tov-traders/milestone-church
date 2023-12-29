@@ -34,7 +34,7 @@
         line-height: 22px;
         letter-spacing: 0em;
         text-align: left;
-        color: #1d2228;
+        color: var(--color-heading-label);
       }
     }
 
@@ -44,7 +44,7 @@
       display: flex;
       align-items: center;
       p {
-        color: #1d2228;
+        color: var(--color-row-content-label);
         font-family: "Nova-300";
         font-size: 18px;
         font-style: normal;
@@ -68,7 +68,7 @@
     display: none;
   }
   .accordion details[open] > summary .accordion__title {
-    color: #e5be5e !important;
+    color: var(--color-open-heading-label);
     font-family: "Nova-600" !important;
     font-size: 20px !important;
     font-style: normal;

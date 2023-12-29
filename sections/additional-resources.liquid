@@ -1,11 +1,27 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'resources-card' -%}
+      --color-button-background: {{ block.settings.color_button_backgroun }};
+      --color-color-button-label: {{ block.settings.color_button_label }};
+      --color-color-button-border: {{ block.settings.color_button_border }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 <section class="additional-resources {{ section.settings.secon_class }}">
   <div class="page-width">
     <div class="additional-resources__wrapper">
       {%- if section.settings.heading != blank -%}
-        <h2 class="additional-resources__wrapper_heading">{{ section.settings.heading }}</h2>
+        <h2 class="additional-resources__wrapper_heading" style=" color:{{ section.settings.color_heading_label }};">{{ section.settings.heading }}</h2>
       {%- endif -%}
       {%- if section.settings.content != blank -%}
-        <div class="additional-resources__wrapper_content">{{ section.settings.content }}</div>
+        <div class="additional-resources__wrapper_content" style=" color:{{ section.settings.color_content_label }};">{{ section.settings.content }}</div>
       {%- endif -%}
       <div class="resources-card">
         {%- for block in section.blocks -%}
@@ -20,10 +36,10 @@
                   >
                 {%- endif -%}
                 {%- if block.settings.heading != blank -%}
-                  <div class="resources-card__inner_heading">{{ block.settings.heading }}</div>
+                  <div class="resources-card__inner_heading" style=" color:{{ block.settings.color_heading_label }};">{{ block.settings.heading }}</div>
                 {%- endif -%}
                 {%- if block.settings.content != blank -%}
-                  <div class="resources-card__inner_content">{{ block.settings.content }}</div>
+                  <div class="resources-card__inner_content" style=" color:{{ block.settings.color_content_label }};">{{ block.settings.content }}</div>
                 {%- endif -%}
                 {%- if block.settings.button_label != blank -%}
                   <div class="resources-card__inner_button">
@@ -33,7 +49,7 @@
                         {% else %}
                           href="{{ block.settings.button_link }}"
                         {% endif %}
-                        class="btn"
+                        class="my-custom-btn"
                       >
                         {{- block.settings.button_label | escape -}}
                       </a>
@@ -68,9 +84,21 @@
       "label": "Heading"
     },
     {
+      "type": "color",
+      "id": "color_heading_label",
+      "label": "Color Heading Label",
+      "default": "#1D2228"
+    },
+    {
       "type": "inline_richtext",
       "id": "content",
       "label": "Content"
+    },
+    {
+      "type": "color",
+      "id": "color_content_label",
+      "label": "Color Content Label",
+      "default": "#1D2228"
     },
     {
       "type": "image_picker",
@@ -99,9 +127,21 @@
           "label": "Heading"
         },
         {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
+        },
+        {
           "type": "inline_richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content_label",
+          "label": "Color Content Label",
+          "default": "#1D2228"
         },
         {
           "type": "text",
@@ -112,6 +152,42 @@
           "type": "url",
           "id": "button_link",
           "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
         }
       ]
     }
