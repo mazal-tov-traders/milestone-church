@@ -70,10 +70,14 @@
     }
     .banner-video__wraper_video-block {
       display: flex;
-      max-width: 800px;
       z-index: 2;
+      @media screen and (min-width: 990px) {
+      max-width: 800px;
       position: absolute;
       bottom: -84px;
+      }
+      width: 100%;
+      margin-top: 20px;
 
       .video-block_wrapper {
         position: relative;
