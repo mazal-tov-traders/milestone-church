@@ -6,12 +6,7 @@ body {
 }
 
 .page-width {
-  padding: 0 2rem;
-
-  @include sm {
-    max-width: calc(var(--page-width) + 3rem * 2);
-    padding: 0 2.9rem;
-  }
+  padding: 0 35px;
 }
 
 .screen-reader-text {

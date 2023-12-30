@@ -10,11 +10,6 @@
   column-gap: 1rem;
   row-gap: 1rem;
 
-  &.list-social:only-child {
-    @include sm {
-      justify-content: flex-end;
-    }
-  }
 
   .list-social__link {
     border: 1px solid #fff;

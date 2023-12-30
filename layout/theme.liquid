@@ -351,6 +351,11 @@
         font-style: normal;
       }
      </style>
+     {% if collection.url == '/collections/all' %}
+      <script type="text/javascript">
+        window.location = "https://resources.milestonechurch.com/pages/books";
+      </script>
+      {% endif %}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

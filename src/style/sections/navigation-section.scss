@@ -1,8 +1,12 @@
 .navigation-section {
   .page-hearing-good {
     display: flex;
+    @media screen and (min-width: 450px) {
     padding-top: 120px;
     padding-bottom: 120px;
+    }
+    padding-top: 80px;
+    padding-bottom: 80px;
     gap: 90px;
     .navigation-section__box {
       display: flex;

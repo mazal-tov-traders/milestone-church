@@ -1,5 +1,8 @@
 .about-pastor {
   padding-bottom: 111px;
+  @media screen and (max-width: 500px) {
+    padding-bottom: 80px;
+  }
   &__heading {
     &_text {
       font-family: Noto Serif Display;
@@ -17,6 +20,9 @@
       -webkit-background-clip: text;
       color: transparent;
       opacity: 12%;
+      @media screen and (max-width: 450px) {
+        line-height: 166px;
+      }
     }
   }
   &__wrapper {
@@ -37,7 +43,7 @@
       max-width: 570px;
       padding-top: 17px;
       .content_heading {
-        background-image: linear-gradient(90deg,transparent 0%,#e5be5e 0);
+        background-image: linear-gradient(90deg, transparent 0%, #e5be5e 0);
         background-position: -1% 31px;
         background-repeat: no-repeat;
         background-size: 6% 3px;
@@ -108,6 +114,7 @@
       &_content {
         .content_text {
           font-size: 44px;
+          line-height: 44px;
           p {
             margin-bottom: 25px;
           }

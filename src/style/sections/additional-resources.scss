@@ -12,6 +12,9 @@
 }
 .additional-resources {
   padding: 120px 0;
+  @media screen and (max-width: 450px){
+    padding: 80px 0;
+  }
   &__wrapper {
     &_heading {
       font-family: "Nova-400";
@@ -22,6 +25,7 @@
       margin-bottom: 15px;
       line-height: 45px;
       font-size: 40px;
+      margin-top: 0;
       @media screen and (min-width: 500px) {
         margin-bottom: 9px;
         line-height: 63px;

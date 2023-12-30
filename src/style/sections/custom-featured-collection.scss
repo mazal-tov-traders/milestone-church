@@ -61,8 +61,8 @@
   .banner-innerr__box_button {
     display: flex;
     justify-content: center;
-    padding-bottom: 49px;
     margin-top: 50px;
+    margin-bottom: 20px;
     background: transparent;
 
     .buttonn {
@@ -86,6 +86,10 @@ color-background-1.isolate.gradient {
 }
 .collection__backgroun-fon {
   padding-top: 105px;
+  @media screen and (max-width: 460px) {
+    padding-top: 80px;
+  }
+
 }
 
 @media screen and (max-width: 1340px) {

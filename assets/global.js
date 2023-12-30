@@ -803,19 +803,45 @@ class SlideshowComponent extends SliderComponent {
     }, this.announcerBarAnimationDelay);
   }
 
+  // update() {
+  //   super.update();
+  //   this.sliderControlButtons = this.querySelectorAll('.slider-counter__link');
+  //   this.prevButton.removeAttribute('disabled');
+
+  //   if (!this.sliderControlButtons.length) return;
+
+  //   this.sliderControlButtons.forEach((link) => {
+  //     link.classList.remove('slider-counter__link--active');
+  //     link.removeAttribute('aria-current');
+  //   });
+  //   this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
+  //   this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
+  // }
+
+  // my change 
   update() {
     super.update();
+  
+
+    if (this.prevButton) {
+      this.prevButton.removeAttribute('disabled');
+    }
+  
     this.sliderControlButtons = this.querySelectorAll('.slider-counter__link');
-    this.prevButton.removeAttribute('disabled');
-
-    if (!this.sliderControlButtons.length) return;
-
-    this.sliderControlButtons.forEach((link) => {
+  
+    if (!this.sliderControlButtons || this.sliderControlButtons.length === 0) {
+      return; 
+    }
+  
+    this.sliderControlButtons.forEach((link, index) => {
       link.classList.remove('slider-counter__link--active');
       link.removeAttribute('aria-current');
+  
+      if (index === this.currentPage - 1) {
+        link.classList.add('slider-counter__link--active');
+        link.setAttribute('aria-current', true);
+      }
     });
-    this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
-    this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
   }
 
   autoPlayToggle() {
