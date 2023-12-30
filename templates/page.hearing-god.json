@@ -316,6 +316,12 @@
             "content": "25% discount when you buy 10 or more books",
             "color_content_label": "#1d2228"
           }
+        },
+        "7cbedec8-0bf7-4132-9e4c-0b81d72d8ea7": {
+          "type": "image-product",
+          "settings": {
+            "image_product": "shopify:\/\/shop_images\/HearingGod-ResourceMockup.png"
+          }
         }
       },
       "block_order": [
@@ -325,13 +331,14 @@
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-price-1",
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-quantity_selector-1",
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-buy_buttons-1",
-        "71c97878-d821-4aae-8029-692a3d170baa"
+        "71c97878-d821-4aae-8029-692a3d170baa",
+        "7cbedec8-0bf7-4132-9e4c-0b81d72d8ea7"
       ],
       "settings": {
         "product": "miracles",
         "id_for_anchor": "miracleee",
         "class": "mira",
-        "background": "shopify:\/\/shop_images\/Screenshot_2023-12-28_at_3.31.25_PM.png",
+        "background": "shopify:\/\/shop_images\/Screenshot_2023-12-21_at_11.54.48_AM.png",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
@@ -343,7 +350,7 @@
         "purchase": "Purchase a study guide",
         "color_purchase_label": "#1d2228",
         "hide_variants": false,
-        "height": "931"
+        "height": ""
       }
     },
     "93476d84-5b6c-4013-8f70-07495f85a3e3": {
