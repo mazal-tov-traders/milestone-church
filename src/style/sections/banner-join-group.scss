@@ -45,11 +45,13 @@
       gap: 30px;
       justify-content: center;
       .btn-wrap__button {
-        .btn-wrap__button {
+        .my-custom-btn {
           font-size: 15px;
           font-weight: 700;
           line-height: 18px;
           letter-spacing: 0em;
+          max-width: none;
+          width: 100%;
         }
       }
     }

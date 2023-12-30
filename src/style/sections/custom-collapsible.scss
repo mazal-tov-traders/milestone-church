@@ -6,14 +6,18 @@
   .collapsible-content__header {
     .collapsible-content__heading {
       font-family: "Nova-400";
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 400;
-      line-height: 60px;
+      line-height: 45px;
       letter-spacing: 0em;
       text-align: center;
       color: #1d2228;
       margin-bottom: 50px;
       text-transform: uppercase;
+      @media screen and (min-width: 500px) {
+        line-height: 60px;
+        font-size: 50px;
+      }
     }
   }
   .details-custom {

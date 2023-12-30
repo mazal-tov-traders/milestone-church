@@ -41,12 +41,13 @@
       &__heading {
         font-family: "Nova-700";
         font-weight: 700;
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 50px;
         text-transform: uppercase;
         margin-bottom: 30px;
         @media (min-width: 1024px) {
           font-size: 70px;
+          line-height: 60px;
         }
       }
       &__box .banner__heading + * {

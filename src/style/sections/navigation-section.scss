@@ -9,18 +9,20 @@
       flex-direction: column;
       justify-content: center;
       &_heading {
-        font-size: 31px;
-        line-height: 37px;
-        margin-bottom: 25px;
         font-family: "Nova-400";
         letter-spacing: 0em;
         text-align: left;
         text-transform: uppercase;
         margin-top: 0;
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 501px) {
         line-height: 60px;
         font-size: 50px;
         margin-bottom: 30px;
+        }
+        @media screen and (max-width: 500px) {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
         }
       }
       &_text {
@@ -142,11 +144,4 @@ banner-video .videobann {
   .banner-video__wrapper_text {
     max-width: 700px;
   }
-}
-
-
-.navigation-section .page-hearing-good .navigation-section__box_heading {
-  font-size: 31px;
-  line-height: 37px;
-  margin-bottom: 25px;
 }
