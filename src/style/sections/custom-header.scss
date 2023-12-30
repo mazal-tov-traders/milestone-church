@@ -43,19 +43,18 @@ summary.header__menu-item {
     color: #1d2228;
   }
 }
-details[open] summary .wrapper-icon-caret {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-details[open] summary .wrapper-icon-caret-home {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
-.for-rotate-svg[open] summary .wrapper-mobile-icon-cart {
+
+.for-rotate-svg[open] summary .icon_caret_custom {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
 
+@media screen and (min-width: 990px) {
+details[open] summary .icon_caret_custom {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+}
 
 
 @media screen and (min-width: 990px) {

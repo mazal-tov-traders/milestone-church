@@ -256,7 +256,6 @@
                             href="{{ block.settings.button_link_1 }}"
                           {% endif %}
                           class="link-drawer-contact"
-                          
                         >
                           {{- block.settings.button_label_1 | escape -}}
                         </a>
@@ -273,7 +272,7 @@
                     <div class="email-addresses__wrapperr">
                       {% render 'icon-email' %}
                       <div class="email-addresses__wrapperr_mail">
-                        <a href="mailto:{{ block.settings.email | strip_html}}>{{ block.settings.email }}</a>
+                        <a href="mailto:{{ block.settings.email | strip_html }}">{{ block.settings.email | strip_html }}</a>
                       </div>
                     </div>
                   </div>
