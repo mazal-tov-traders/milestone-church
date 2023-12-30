@@ -287,16 +287,17 @@
       }
     }
   }
+  .custom-featured-product.mira{
+    .grid{
+      flex-direction: column-reverse;
+    }
+  } 
 }
 
 //
 @media screen and (min-width: 801px) {
   .custom-featured-product.mira {
-    .grid__item.product__media-wrapper {
-      padding-left: 98px;
-    }
     .product__info-wrapper {
-      padding: 0 0 0 98px !important;
       .custom-featured-product__heading1 {
         max-width: 546px;
       }
@@ -317,13 +318,17 @@
         }
       }
     }
+    .grid {
+      justify-content: center;
+    }
   }
   .custom-featured-product {
     .product__media-wrapper {
       text-align: end;
     }
     .product__media-wrapper {
-      height: 616px;
+      min-height: 616px;
     }
   }
 }
+
