@@ -43,19 +43,16 @@
       max-width: 570px;
       padding-top: 17px;
       .content_heading {
-        background-image: linear-gradient(90deg, transparent 0%, #e5be5e 0);
-        background-position: -1% 31px;
-        background-repeat: no-repeat;
-        background-size: 6% 3px;
-        color: #e5be5e;
         font-family: Nova-700;
         font-size: 20px;
         letter-spacing: 0;
         margin-bottom: 0px;
         line-height: 18px;
-        padding-bottom: 14px;
         text-align: left;
         text-transform: uppercase;
+      }
+      .border-line.on {
+        margin-left: 0px;
       }
       .content_text {
         font-family: "Nova-400";
@@ -63,7 +60,6 @@
         text-transform: uppercase;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(29, 34, 40, 1);
         p {
           margin-bottom: 23px;
           margin-top: 0px;
@@ -74,7 +70,6 @@
         font-size: 20px;
         letter-spacing: 0em;
         text-align: left;
-        color: rgba(29, 34, 40, 1);
         line-height: 32px;
       }
     }

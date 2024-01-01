@@ -26,11 +26,12 @@
       .quick-add__submit {
         padding: 0rem;
         width: 100% !important;
-        background-color: #e5be5e;
+        background-color: var( --background-button-product);
         text-transform: uppercase;
         font-family: "Nova-700";
         font-size: 14px;
         letter-spacing: 0em;
+        color: var( --color-button-text-product);
         a:not(.button):hover {
           text-decoration: none;
         }
@@ -124,7 +125,6 @@
         padding-bottom: 0rem;
         padding-top: 0rem;
         .full-unstyled-link {
-          color: #1d2228;
           font-family: "Nova-700";
           font-size: 22px;
           font-style: normal;
@@ -133,7 +133,6 @@
           text-transform: uppercase;
         }
         .card__description.truncate_description {
-          color: #1d2228;
           font-family: "Nova-300";
           font-size: 18px;
           font-style: normal;
@@ -150,14 +149,12 @@
         display: flex;
         justify-content: space-between;
         .price-item.price-item--regular {
-          color: #1d2228;
           font-family: "Nova-700";
           font-size: 28px;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
           .price-cent {
-            color: #1d2228;
             line-height: 13px;
             font-family: "Nova-700";
             font-size: 18px;
@@ -166,7 +163,6 @@
           }
         }
         .title-btn_add-cad {
-          color: #1d2228;
           font-family: "Nova-700";
           font-size: 14px;
           font-style: normal;

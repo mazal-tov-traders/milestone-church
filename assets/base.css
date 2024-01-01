@@ -3612,6 +3612,9 @@ details-disclosure > details {
   --color-open-heading-label: var(--color-open-heading-label);
   --color-row-content-label: var(--color-row-content-label);
   --color-price: var( --color-price);
+
+  --color-button-text-product: var( --color-button-text-product);
+  --background-button-product: var( --background-button-product);
 }
 
 
