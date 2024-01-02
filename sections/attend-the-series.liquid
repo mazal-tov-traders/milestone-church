@@ -3,10 +3,10 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'buttons' -%}
-      --color-button-background: {{ block.settings.color_button_background }};
+      --color-button-background: {{ block.settings.color_button_backgroun }};
       --color-color-button-label: {{ block.settings.color_button_label }};
       --color-color-button-border: {{ block.settings.color_button_border }};
-      --hover-color-button-background: {{ block.settings.hover_color_button_background }};
+      --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
       --hover-color-button-border: {{ block.settings.hover_color_button_border }};
       --hover-color-button-label: {{ block.settings.hover_color_button_label }};
       {%- endcase -%}
@@ -82,8 +82,8 @@
             {%- case block.type -%}
               {%- when 'events' -%}
                 {%- if block.settings.date != blank -%}
-                  <div class="inner-box__block-events_item" style=" background: {{ block.settings.color_background_box }};">
-                    <div class="inner-box__block-events_item_date" style=" color: {{ block.settings.color_date_label }}; background: {{ block.settings.color_background_button }};">{{ block.settings.date }}</div>
+                  <div class="inner-box__block-events_item">
+                    <div class="inner-box__block-events_item_date" style=" color: {{ block.settings.color_date_label }};">{{ block.settings.date }}</div>
                     {%- if block.settings.content != blank -%}
                       <div class="inner-box__block-events_item_content" style=" color: {{ block.settings.color_content_label }};">{{ block.settings.content }}</div>
                     {%- endif -%}
@@ -128,7 +128,7 @@
     {
       "type": "color",
       "id": "color_backgroun_number",
-      "label": "Color Background Number",
+      "label": "Color Backgroun Number",
       "default": "#1D2228"
     },
     {
@@ -245,7 +245,7 @@
         },
         {
           "type": "color",
-          "id": "color_button_background",
+          "id": "color_button_backgroun",
           "label": "Button Background Color",
           "default": "rgba(29, 34, 40, 0)"
         },
@@ -263,7 +263,7 @@
         },
         {
           "type": "color",
-          "id": "hover_color_button_background",
+          "id": "hover_color_button_backgroun",
           "label": "Hover Button Background Color",
           "default": "#5491D6"
         },
@@ -287,12 +287,6 @@
       "limit": 4,
       "settings": [
         {
-          "type": "color",
-          "id": "color_background_box",
-          "label": "Color background box",
-          "default": "#fff"
-        },
-        {
           "type": "inline_richtext",
           "id": "date",
           "label": "Date"
@@ -302,12 +296,6 @@
           "id": "color_date_label",
           "label": "Color Date Label",
           "default": "#1D2228"
-        },
-        {
-          "type": "color",
-          "id": "color_background_button",
-          "label": "Color background button",
-          "default": "#E5BE5E"
         },
         {
           "type": "inline_richtext",

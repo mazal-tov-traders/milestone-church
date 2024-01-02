@@ -49,7 +49,7 @@
           "type": "title",
           "disabled": true,
           "settings": {
-            "color_title_label": "#1D2228",
+            "color_title_label": "#1d2228",
             "heading_size": "h1"
           }
         },
@@ -57,27 +57,27 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>AN 10-WEEK STUDY<\/strong>",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "a646343b-40d3-4f8f-b368-c46bf0fddc15": {
           "type": "heading_second",
           "settings": {
             "heading1": "<p>to find safety & security in the Kingdom of God.<\/p>",
-            "color_heading1_label": "#1D2228"
+            "color_heading1_label": "#1d2228"
           }
         },
         "79434a07-c2e9-4ab7-afa2-58cbb6b6a531": {
           "type": "description",
           "settings": {
             "description": "<p>We all face challenges and obstacles that can feel insurmountable. Even the daily responsibilities and pressures of life can feel overwhelming when we trust in our own efforts. The good news is, we have a Savior in Jesus, who is the King of a different Kingdom and worthy of our trust. When we live according to His Kingdom and its principles, we’ll find that our lives in Him are unshakable.<\/p><p>Unshakable provides practical concepts, illustrations, context, bible verses, and questions. The Unshakable study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Unshakable can be read as an individual, but it is also great for group studies.<\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "template--21798232260915__b1bd4938-a71c-4d34-9e2a-d0852c7c44da-price-1": {
           "type": "price",
           "settings": {
-            "color_price_label": "#1D2228"
+            "color_price_label": "#1d2228"
           }
         },
         "a73bb7de-55f4-4987-b702-b35c9f3acc7d": {
@@ -88,12 +88,12 @@
         "template--21798232260915__b1bd4938-a71c-4d34-9e2a-d0852c7c44da-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff",
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -108,7 +108,7 @@
           "type": "content",
           "settings": {
             "content": "25% discount when you buy 10 or more guides",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         }
       },
@@ -131,12 +131,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
-        "color_nubmer": "#1D2228",
-        "color_backgroun_number": "#1D2228",
+        "color_nubmer": "#1d2228",
+        "color_backgroun_number": "#1d2228",
         "border_line": false,
-        "color_border_line": "#1D2228",
+        "color_border_line": "#1d2228",
         "purchase": "",
-        "color_purchase_label": "#1D2228",
+        "color_purchase_label": "#1d2228",
         "hide_variants": false,
         "height": ""
       }
@@ -310,6 +310,13 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "84543481-9e33-4b0b-ae01-2e890ff3521a": {
+      "type": "image-banner-content",
+      "settings": {
+        "class": "",
+        "centered-content": false
+      }
     }
   },
   "order": [
@@ -318,6 +325,7 @@
     "main",
     "related-products",
     "7ca6c60b-1df9-4ae7-a130-3e6053504309",
-    "485dd8a1-c528-4945-a6de-e67397b3d96a"
+    "485dd8a1-c528-4945-a6de-e67397b3d96a",
+    "84543481-9e33-4b0b-ae01-2e890ff3521a"
   ]
 }

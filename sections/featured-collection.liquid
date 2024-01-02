@@ -1,22 +1,3 @@
-{%- style -%}
-  #shopify-section-{{ section.id }} {
-    --color-button-text-product: {{ section.settings.color_button_lable  }};
-    --background-button-product: {{ section.settings.background_button_product  }};
-
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'buttons' -%}
-      --color-button-background: {{ block.settings.color_button_background }};
-      --color-color-button-label: {{ block.settings.color_button_label }};
-      --color-color-button-border: {{ block.settings.color_button_border }};
-      --hover-color-button-background: {{ block.settings.hover_color_button_background }};
-      --hover-color-button-border: {{ block.settings.hover_color_button_border }};
-      --hover-color-button-label: {{ block.settings.hover_color_button_label }};
-      {%- endcase -%}
-    {%- endfor -%}
-  }
-{%- endstyle -%}
-{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
@@ -70,7 +51,7 @@
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2  style=" color: {{ section.settings.color_title_label }};" class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
@@ -78,7 +59,7 @@
         or section.settings.show_description
         and section.settings.collection.description != empty
       -%}
-        <div style=" color: {{ section.settings.color_description_label }};" class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {%- if section.settings.show_description -%}
             {{ section.settings.collection.description }}
           {%- else -%}
@@ -221,46 +202,10 @@
   },
   "settings": [
     {
-      "type": "color",
-      "id": "color_name_product",
-      "label": "Color Name Product",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "color_description_product",
-      "label": "Color Description Product",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "color_price_product",
-      "label": "Color Price Product",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "background_button_product",
-      "label": "Background Price Product",
-      "default": "#1D2228"
-    },
-    {
-      "type": "color",
-      "id": "color_button_lable",
-      "label": "Color Button Lable",
-      "default": "#1D2228"
-    },
-    {
       "type": "inline_richtext",
       "id": "title",
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
-    },
-    {
-      "type": "color",
-      "id": "color_title_label",
-      "label": "Color Heading Label",
-      "default": "#1D2228"
     },
     {
       "type": "text",
@@ -296,12 +241,6 @@
       "type": "richtext",
       "id": "description",
       "label": "t:sections.featured-collection.settings.description.label"
-    },
-    {
-      "type": "color",
-      "id": "color_description_label",
-      "label": "Color Description Label",
-      "default": "#1D2228"
     },
     {
       "type": "checkbox",
@@ -554,42 +493,6 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
-        },
-        {
-          "type": "color",
-          "id": "color_button_background",
-          "label": "Button Background Color",
-          "default": "rgba(29, 34, 40, 0)"
-        },
-        {
-          "type": "color",
-          "id": "color_button_label",
-          "label": "Button Color Label",
-          "default": "#5491D6"
-        },
-        {
-          "type": "color",
-          "id": "color_button_border",
-          "label": "Button Color Border",
-          "default": "#5491D6"
-        },
-        {
-          "type": "color",
-          "id": "hover_color_button_background",
-          "label": "Hover Button Background Color",
-          "default": "#5491D6"
-        },
-        {
-          "type": "color",
-          "id": "hover_color_button_border",
-          "label": "Hover Button Color Border",
-          "default": "#5491D6"
-        },
-        {
-          "type": "color",
-          "id": "hover_color_button_label",
-          "label": "Hover Button Color Label",
-          "default": "#fff"
         }
       ]
     }

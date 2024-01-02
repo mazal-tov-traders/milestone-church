@@ -86,12 +86,12 @@
 
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-      <span class="price-item price-item--regular" style=" color: {{ section.settings.color_price_product }};">
+      <span class="price-item price-item--regular">
         {% assign money_price = money_price | split: '.' %}
         {% assign afterZero = money_price[1] %}
         {% assign money_price = money_price[0] %}
         {{ money_price }}.
-        <span class="price-cent" style=" color: {{ section.settings.color_price_product }};">
+        <span class="price-cent">
           {{ afterZero }}
         </span>
       </span>
