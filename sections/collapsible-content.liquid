@@ -37,7 +37,10 @@
             </p>
           {% endif %}
           {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}" style=" color:{{ section.settings.color_heading_label }};">
+            <h2
+              class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}"
+              style=" color:{{ section.settings.color_heading_label }};"
+            >
               {{ section.settings.heading }}
             </h2>
           {%- else -%}
@@ -121,7 +124,7 @@
     background-image: url({{ section.settings.background | image_url: width: 3840 }});
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  
+    background-size: cover;
     @media screen and (min-width: 450px){
       padding: 120px 0 113px 0;
     }
@@ -130,7 +133,6 @@
     width: 100%;
     margin: 0 auto;
   }
- 
 </style>
 
 {% schema %}
@@ -544,7 +546,7 @@
           "id": "row_content",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
         },
-        
+
         {
           "type": "page",
           "id": "page",

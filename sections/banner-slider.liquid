@@ -1,0 +1,226 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+  {%- for block in section.blocks -%}
+  {%- case block.type -%}
+  {%- when 'slide' -%}
+    .image-slide-{{ forloop.index }}{
+  --color-button-background: {{ block.settings.color_button_backgroun }};
+  --color-color-button-label: {{ block.settings.color_button_label }};
+  --color-color-button-border: {{ block.settings.color_button_border }};
+  --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+  --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+  --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+    }
+  {%- endcase -%}
+  {%- endfor -%}
+  }
+{%- endstyle -%}
+
+<section class="banner-slider">
+  <div class="splide" id="reviews-slider-with-image">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for block in section.blocks %}
+          {% if block.settings %}
+            <li class="splide__slide image-slide-{{ forloop.index }}">
+              <div class="inner">
+                <div class="content-inner">
+                  <div class="splide__wrapper">
+                    {% if block.settings.heading %}
+                      <h1 class="splide__title" style="color: {{ block.settings.color_heading_label }};">
+                        {{ block.settings.heading }}
+                      </h1>
+                    {% endif %}
+                    {% if block.settings.subheading %}
+                      <div class="splide__subheading" style="color: {{ block.settings.color_subheading_label }};">
+                        {{ block.settings.subheading }}
+                      </div>
+                    {% endif %}
+                    {%- if block.settings.button_label != blank -%}
+                      <div class="slider_button">
+                        <a
+                          {% if block.settings.link %}
+                            href="{{ block.settings.link }}"
+                          {% else %}
+                            role="link" aria-disabled="true"
+                          {% endif %}
+                          class="my-custom-btn my-custom-btn-{{ forloop.index }}"
+                        >
+                          {{- block.settings.button_label | escape -}}
+                        </a>
+                      </div>
+                    {%- endif -%}
+                  </div>
+                  <div class="slide__image">
+                    {% if block.settings.illustration %}
+                      <img src="{{ block.settings.illustration | img_url: 'original'  }}" alt="">
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+  {%- for block in section.blocks -%}
+  {%- case block.type -%}
+  {%- when 'slide' -%}
+  .image-slide-{{ forloop.index }}{
+  background-image: url({{ block.settings.image | image_url: width: 1920 }});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1920px !important;
+  width: 100%;
+  .my-custom-btn-{{ forloop.index }}{
+  background-color: var(--color-button-background);
+  color: var(--color-color-button-label);
+  border: 1px solid var(--color-color-button-border);
+  }
+  .my-custom-btn-{{ forloop.index }}:hover{
+  background-color: var(--hover-color-button-background);
+  border: 1px solid var(--hover-color-button-border);
+  color: var(--hover-color-button-label);
+  }
+  }
+
+  {%- endcase -%}
+  {%- endfor -%}
+  }
+{% endstyle %}
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<script>
+  const reviewsSliderWithImage = document.querySelector('#reviews-slider-with-image');
+
+  if (reviewsSliderWithImage) {
+    reviewsSliderWithImage.classList.add('splide_ready');
+
+    new Splide('#reviews-slider-with-image', {
+      type: 'loop',
+      perPage: 1,
+      gap: 30,
+      autoplay: true,
+      interval: 7000,
+      speed: 2000,
+      easing: 'ease-out',
+      arrows: false,
+      pauseOnHover: true,
+      pagination: true,
+    }).mount();
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Banner Slider",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "illustration",
+          "label": "illustration"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Image slide",
+          "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
+        },
+        {
+          "type": "color",
+          "id": "color_heading_label",
+          "label": "Color Heading Label",
+          "default": "#1D2228"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "subheading",
+          "default": "Tell your brand's story through images",
+          "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
+        },
+        {
+          "type": "color",
+          "id": "color_subheading_label",
+          "label": "Color Subheading Label",
+          "default": "#1D2228"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
+          "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.slideshow.blocks.slide.settings.link.label"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Slider"
+    }
+  ]
+}
+{% endschema %}
