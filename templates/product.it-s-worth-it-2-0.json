@@ -5,12 +5,14 @@
       "blocks": {
         "9e9cde9c-8237-4697-9c56-f6f4f0d2b622": {
           "type": "title_screen",
+          "disabled": true,
           "settings": {
             "screen_reader_text": "It's Worht It 2.0"
           }
         },
         "6eeef642-47de-4f54-924f-cec8a6c3b54f": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "content": "Discovering God’s Plan for you in a place you might not expect",
             "color_content_label": "#ffffff"
@@ -18,6 +20,7 @@
         },
         "f19435f1-9084-4cab-8e15-b1457d573bff": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Buy the book",
             "button_link_1": "#jeffwrote",
@@ -36,8 +39,7 @@
         "f19435f1-9084-4cab-8e15-b1457d573bff"
       ],
       "settings": {
-        "background": "shopify:\/\/shop_images\/Closer_WebsiteHeader_2560x1037_38cdb86f-3a0b-417b-a399-7d94a5f4bad5.jpg",
-        "hero_image": "shopify:\/\/shop_images\/IT_S_WORTh_IT2.0.png",
+        "background": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.47.19_PM.png",
         "secon_class": "thewin"
       }
     },
@@ -117,22 +119,22 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Ps. Jeff wrote this book with you in mind! <\/strong>",
-            "color_heading_label": "#1D2228"
+            "heading": "",
+            "color_heading_label": "#1d2228"
           }
         },
         "9e17b7da-a87b-486d-b292-02a8ce949b9a": {
           "type": "heading_second",
           "settings": {
-            "heading1": "<p>It’s Worth It 2.0 was created to help you:<\/p>",
-            "color_heading1_label": "#1D2228"
+            "heading1": "<p>THIS BOOK was created to help you:<\/p>",
+            "color_heading1_label": "#1d2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
           "settings": {
-            "color_title_label": "#1D2228",
+            "color_title_label": "#1d2228",
             "heading_size": "h1"
           }
         },
@@ -140,7 +142,7 @@
           "type": "description",
           "settings": {
             "description": "<ul><li>See the hidden treasure waiting in God’s plan for your life<\/li><li>Take practical steps towards your purpose<\/li><li>Explore the values of Milestone Church and how they impact the way you live<\/li><li>Find the joy that comes from learning these things in a group with other people<\/li><\/ul>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -151,12 +153,12 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff",
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -164,7 +166,7 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
           "type": "price",
           "settings": {
-            "color_price_label": "#1D2228"
+            "color_price_label": "#1d2228"
           }
         },
         "4efa4abd-17f9-4962-b188-3c23177f35ba": {
@@ -179,7 +181,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Other ways to buy<\/p>",
-            "color_text_label": "#1D2228"
+            "color_text_label": "#1d2228"
           }
         },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
@@ -202,19 +204,19 @@
         "01d84b51-48b0-4b19-b936-ef982e604daa"
       ],
       "settings": {
-        "product": "closer",
+        "product": "its-worth-it-2-0",
         "id_for_anchor": "jeffwrote",
         "class": "",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
-        "color_nubmer": "#1D2228",
-        "color_backgroun_number": "#1D2228",
+        "color_nubmer": "#1d2228",
+        "color_backgroun_number": "#1d2228",
         "border_line": false,
-        "color_border_line": "#1D2228",
+        "color_border_line": "#1d2228",
         "purchase": "",
-        "color_purchase_label": "#1D2228",
+        "color_purchase_label": "#1d2228",
         "hide_variants": false,
         "height": ""
       }

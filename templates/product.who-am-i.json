@@ -110,22 +110,22 @@
         "e0ce6000-a201-427c-b418-b1e455efe299": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Who am I?<\/strong>",
-            "color_heading_label": "#1D2228"
+            "heading": "",
+            "color_heading_label": "#1d2228"
           }
         },
         "a5883f25-81b5-4898-a1a4-e12a9cc2323a": {
           "type": "heading_second",
           "settings": {
             "heading1": "<p>Life’s most basic question is also one of the most difficult to answer.<\/p>",
-            "color_heading1_label": "#1D2228"
+            "color_heading1_label": "#1d2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
           "type": "title",
           "disabled": true,
           "settings": {
-            "color_title_label": "#1D2228",
+            "color_title_label": "#1d2228",
             "heading_size": "h1"
           }
         },
@@ -133,7 +133,7 @@
           "type": "description",
           "settings": {
             "description": "<p>Often it’s the first question we ask as a child and yet it’s never far from those about to take their last breath. We can avoid it, but deep down… every single one of us needs to answer this one simple question: Who Am I?<\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
@@ -144,12 +144,12 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff",
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -157,7 +157,7 @@
         "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
           "type": "price",
           "settings": {
-            "color_price_label": "#1D2228"
+            "color_price_label": "#1d2228"
           }
         },
         "01d84b51-48b0-4b19-b936-ef982e604daa": {
@@ -185,12 +185,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
-        "color_nubmer": "#1D2228",
-        "color_backgroun_number": "#1D2228",
+        "color_nubmer": "#1d2228",
+        "color_backgroun_number": "#1d2228",
         "border_line": false,
-        "color_border_line": "#1D2228",
+        "color_border_line": "#1d2228",
         "purchase": "",
-        "color_purchase_label": "#1D2228",
+        "color_purchase_label": "#1d2228",
         "hide_variants": false,
         "height": ""
       }

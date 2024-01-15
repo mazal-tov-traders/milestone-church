@@ -598,7 +598,8 @@
 </script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    function updatePrice(element, dataPrice, elementSum) {
+
+function updatePrice(element, dataPrice, elementSum) {
       let quantityInput = Number(element.querySelector('.quantity__input').value);
       let unitPrice = dataPrice;
 
@@ -615,6 +616,9 @@
         </span>
       `;
     }
+
+
+
 
     const buttonsWrapper = document.querySelectorAll('.wrapper-baton-and-quantity');
 
@@ -634,7 +638,10 @@
       });
     });
   });
-</script>
+</script> 
+
+
+
 
 {% if product.media.size > 0 %}
   <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>

@@ -5,6 +5,7 @@
       "blocks": {
         "203bdf35-3216-4054-b30e-30285c1e635b": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Unshakable",
             "color_heading_label": "#ffffff"
@@ -12,6 +13,7 @@
         },
         "720490b9-7caf-4d54-9e73-6bfbae0c625c": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "content": "Finding safety and Security in the Kingdom of God",
             "color_content_label": "#ffffff"
@@ -19,6 +21,7 @@
         },
         "ef707a05-d3a6-4acd-a94b-6d66dabca8e2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "buy the study guide",
             "button_link_1": "#weekstudy",
@@ -38,7 +41,7 @@
       ],
       "settings": {
         "class": "srsdsd",
-        "background": "shopify:\/\/shop_images\/banner-who-am-i.jpg",
+        "background": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.58.24_PM.png",
         "centered-content": true
       }
     },
@@ -56,7 +59,7 @@
         "32fe27fa-bbc8-4302-868f-3c891bad72d7": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>AN 10-WEEK STUDY<\/strong>",
+            "heading": "<strong>A 10-WEEK STUDY<\/strong>",
             "color_heading_label": "#1d2228"
           }
         },

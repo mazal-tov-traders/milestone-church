@@ -49,7 +49,7 @@
           "type": "title",
           "disabled": true,
           "settings": {
-            "color_title_label": "#1D2228",
+            "color_title_label": "#1d2228",
             "heading_size": "h1"
           }
         },
@@ -57,27 +57,27 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>An 8-week study guide <\/strong>",
-            "color_heading_label": "#1D2228"
+            "color_heading_label": "#1d2228"
           }
         },
         "a646343b-40d3-4f8f-b368-c46bf0fddc15": {
           "type": "heading_second",
           "settings": {
             "heading1": "<p>on the Promises of God.<\/p>",
-            "color_heading1_label": "#1D2228"
+            "color_heading1_label": "#1d2228"
           }
         },
         "79434a07-c2e9-4ab7-afa2-58cbb6b6a531": {
           "type": "description",
           "settings": {
             "description": "<p>What if someone significant believed in your future so strongly that they put their name and reputation on the line? Now, imagine if God himself did that for you. How would that change your confidence? How would it help you face your challenges?<\/p><p>Promises provides practical concepts, illustrations, context, bible verses, and questions. The Promises study also includes perforated memory cards that you can tear out and take with you through the week so you can learn God’s Word in a practical way.<\/p><p>Promises can be read as an individual, but it is also great for group studies.<\/p>",
-            "color_description_label": "#1D2228"
+            "color_description_label": "#1d2228"
           }
         },
         "template--21798232260915__b1bd4938-a71c-4d34-9e2a-d0852c7c44da-price-1": {
           "type": "price",
           "settings": {
-            "color_price_label": "#1D2228"
+            "color_price_label": "#1d2228"
           }
         },
         "a73bb7de-55f4-4987-b702-b35c9f3acc7d": {
@@ -88,12 +88,12 @@
         "template--21798232260915__b1bd4938-a71c-4d34-9e2a-d0852c7c44da-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
-            "color_button_backgroun": "#5491D6",
-            "color_button_label": "#fff",
-            "color_button_border": "#5491D6",
-            "hover_color_button_backgroun": "#5491D6",
-            "hover_color_button_border": "#5491D6",
-            "hover_color_button_label": "#fff",
+            "color_button_backgroun": "#5491d6",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#5491d6",
+            "hover_color_button_backgroun": "#5491d6",
+            "hover_color_button_border": "#5491d6",
+            "hover_color_button_label": "#ffffff",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
@@ -101,14 +101,14 @@
         "58cbc364-989a-48dc-a6da-9e07dca50d62": {
           "type": "image-product",
           "settings": {
-            "image_product": "shopify:\/\/shop_images\/Promises018.png"
+            "image_product": "shopify:\/\/shop_images\/Screenshot_2024-01-05_at_4.05.46_PM.png"
           }
         },
         "60034bb4-9cd2-48f5-9458-a7eb84848d8d": {
           "type": "content",
           "settings": {
             "content": "25% discount when you buy 10 or more guides",
-            "color_content_label": "#1D2228"
+            "color_content_label": "#1d2228"
           }
         }
       },
@@ -131,12 +131,12 @@
         "media_fit": "contain",
         "media_position": "right",
         "nubmer_navigat": "",
-        "color_nubmer": "#1D2228",
-        "color_backgroun_number": "#1D2228",
+        "color_nubmer": "#1d2228",
+        "color_backgroun_number": "#1d2228",
         "border_line": false,
-        "color_border_line": "#1D2228",
+        "color_border_line": "#1d2228",
         "purchase": "",
-        "color_purchase_label": "#1D2228",
+        "color_purchase_label": "#1d2228",
         "hide_variants": false,
         "height": ""
       }

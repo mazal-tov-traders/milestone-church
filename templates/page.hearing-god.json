@@ -52,7 +52,7 @@
       ],
       "settings": {
         "class": "hearing-god",
-        "image": "shopify:\/\/shop_images\/Hearing_God_Resources_Website_Header-100_7026a467-0248-450c-a9bf-b32e3b02da02.heic",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-02_at_3.15.31_PM.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -139,7 +139,7 @@
         "56c236e8-2126-4287-81f3-f446cbbfb34a": {
           "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HearingGod-WebThumbnail-1920x1080.jpg",
+            "image": "shopify:\/\/shop_images\/HG-PreRoll-NOQR-1920x1080.jpg",
             "image_youtube": "shopify:\/\/shop_images\/black_button_2.png",
             "content": "",
             "color_content_label": "#1d2228"
