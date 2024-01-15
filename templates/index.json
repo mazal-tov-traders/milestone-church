@@ -97,11 +97,80 @@
         "layout": "full_bleed",
         "slide_height": "medium",
         "slider_visual": "dots",
-        "auto_rotate": true,
+        "auto_rotate": false,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "banner_slider_fxFRnP": {
+      "type": "banner-slider",
+      "blocks": {
+        "slide_nwbfEz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-02_at_3.15.31_PM.png",
+            "illustration": "shopify:\/\/shop_images\/HearingGod-ResourceMockup.png",
+            "heading": "Hearing God",
+            "color_heading_label": "#fff",
+            "subheading": "New Series launching in January 2024!",
+            "color_subheading_label": "#fff",
+            "button_label": "Button label",
+            "link": "shopify:\/\/pages\/hearing-god",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491d6"
+          }
+        },
+        "slide_qBtPQB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133714_1_14328c06-da52-40c9-afc1-3064813bf906.jpg",
+            "illustration": "shopify:\/\/shop_images\/TWTW_book_transparent_1_1_c0de2706-3fdb-4903-a706-bd41f38970da.png",
+            "heading": "The Way To Win",
+            "color_heading_label": "#fff",
+            "subheading": "A growth and development guide for men, this new resource aims to develop men in the areas that matter most.",
+            "color_subheading_label": "#fff",
+            "button_label": "Buy The Book",
+            "link": "shopify:\/\/products\/the-way-to-win",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491d6"
+          }
+        },
+        "slide_NGGE9j": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4133714_2_83dbecab-83a2-4a68-a6f5-35d18ed8611c.jpg",
+            "illustration": "shopify:\/\/shop_images\/Foundations.png",
+            "heading": "The Foundations Book",
+            "color_heading_label": "#fff",
+            "subheading": "How can we experience the best version of our lives?",
+            "color_subheading_label": "#fff",
+            "button_label": "Buy The Book",
+            "link": "shopify:\/\/products\/the-foundations-book",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#fff",
+            "color_button_border": "#fff",
+            "hover_color_button_backgroun": "#fff",
+            "hover_color_button_border": "#fff",
+            "hover_color_button_label": "#5491d6"
+          }
+        }
+      },
+      "block_order": [
+        "slide_nwbfEz",
+        "slide_qBtPQB",
+        "slide_NGGE9j"
+      ],
+      "settings": {
       }
     },
     "d1e6bd71-d395-407c-8da5-9e951d3384e7": {
@@ -378,6 +447,7 @@
   },
   "order": [
     "d2a02b91-d655-48b8-97ec-4607f47a8dee",
+    "banner_slider_fxFRnP",
     "d1e6bd71-d395-407c-8da5-9e951d3384e7",
     "featured_collection",
     "0c7d9e2e-a44b-4605-92d0-0d6b65888ec3",
