@@ -295,12 +295,9 @@
                         %}
                       {%- when 'page' -%}
                         <div class="article-card-wrapper card-wrapper underline-links-hover">
-             
                             {% if item.metafields.custom.page_image %}
                               <img class="metafields__page-image" src="{{ item.metafields.custom.page_image | img_url : 'master' }}">
                             {% endif %}
-                            
-                   
                           <div
                             class="card card--card card--text ratio color-{{ settings.blog_card_color_scheme }}"
                             style="--ratio-percent: 100%;"

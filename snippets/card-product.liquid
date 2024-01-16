@@ -155,11 +155,12 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-
+          {% if request.page_type != 'search' %}
           <div class="card__description truncate_description">
             {{ card_product.description }}
           </div>
-          <script>
+        {% endif %}
+          <script >
             document.addEventListener('DOMContentLoaded', function () {
               var descriptionElements = document.querySelectorAll('.truncate_description');
               descriptionElements.forEach(function (element) {
