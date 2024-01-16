@@ -16,16 +16,15 @@
   content: "|";
   margin: 0 0.2em;
   color: rgba(29, 34, 40, 1);
-  font-family: 'Nova-400';
+  font-family: "Nova-400";
   font-size: 14px;
   margin-left: 4px;
 }
 
-
 .breadcrumbs__item {
   .breadcrumbs__link {
     padding-left: 8px;
-    font-family: 'Nova-400';
+    font-family: "Nova-400";
     font-size: 14px;
     letter-spacing: 0em;
     text-align: left;
@@ -34,7 +33,6 @@
     text-transform: capitalize;
   }
 }
-
 
 .breadcrumbs__link[aria-current="page"] {
   color: inherit;
@@ -56,5 +54,35 @@
     font-size: 14px;
     letter-spacing: 0em;
     text-align: left;
+  }
+}
+
+// search result page
+
+.template-search__results {
+  .metafields__page-image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card__badge {
+    z-index: 2;
+    position: fixed;
+  }
+  .full-unstyled-link {
+    color: #1d2228;
+    font-family: Nova-700;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 12px 15px;
+    position: sticky;
+    z-index: 2;
   }
 }
