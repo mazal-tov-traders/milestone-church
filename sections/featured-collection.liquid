@@ -1,3 +1,24 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+      --color-button-background: {{ section.settings.color_button_backgroun }};
+      --color-color-button-label: {{ section.settings.color_button_label }};
+      --color-color-button-border: {{ section.settings.color_button_border }};
+      --hover-color-button-background: {{ section.settings.hover_color_button_backgroun }};
+      --hover-color-button-border: {{ section.settings.hover_color_button_border }};
+      --hover-color-button-label: {{ section.settings.hover_color_button_label }};
+
+      .quick-add__submit{
+        background-color: var(--color-button-background);
+        color: var(--color-color-button-label);
+        border: 1px solid var(--color-color-button-border);
+      }
+      .quick-add__submit:hover{
+        background-color: var(--hover-color-button-background);
+        border: 1px solid var(--hover-color-button-border);
+        color: var(--hover-color-button-label);
+      }
+  }
+{%- endstyle -%}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
@@ -160,37 +181,35 @@
     {%- endif -%}
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-    {%- when 'buttons' -%}
-      <div
-        class="banner-innerr__box_button page-width"
-      >
-        {%- if block.settings.button_label_1 != blank -%}
-          <a
-            {% if block.settings.button_link_1 == blank %}
-              role="link" aria-disabled="true"
-            {% else %}
-              href="{{ block.settings.button_link_1 }}"
-            {% endif %}
-            class="buttonn"
+        {%- when 'buttons' -%}
+          <div
+            class="banner-innerr__box_button page-width"
           >
-            {{- block.settings.button_label_1 | escape -}}
-          </a>
-        {%- endif -%}
-      </div>
-    {%- endcase -%}
+            {%- if block.settings.button_label_1 != blank -%}
+              <a
+                {% if block.settings.button_link_1 == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ block.settings.button_link_1 }}"
+                {% endif %}
+                class="buttonn"
+              >
+                {{- block.settings.button_label_1 | escape -}}
+              </a>
+            {%- endif -%}
+          </div>
+      {%- endcase -%}
     {%- endfor -%}
   </div>
 </div>
 {% style %}
-    .collection__backgroun-fon.{{ section.settings.class }}{
-      background-image: url({{ section.settings.background | image_url: width: 3840 }});
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
+  .collection__backgroun-fon.{{ section.settings.class }}{
+    background-image: url({{ section.settings.background | image_url: width: 3840 }});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 {% endstyle %}
-
-
 
 {% schema %}
 {
@@ -475,6 +494,42 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "color_button_backgroun",
+      "label": "Button Background Color",
+      "default": "#E5BE5E"
+    },
+    {
+      "type": "color",
+      "id": "color_button_label",
+      "label": "Button Color Label",
+      "default": "#1D2228"
+    },
+    {
+      "type": "color",
+      "id": "color_button_border",
+      "label": "Button Color Border",
+      "default": "#E5BE5E"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_backgroun",
+      "label": "Hover Button Background Color",
+      "default": "#E5BE5E"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_border",
+      "label": "Hover Button Color Border",
+      "default": "#E5BE5E"
+    },
+    {
+      "type": "color",
+      "id": "hover_color_button_label",
+      "label": "Hover Button Color Label",
+      "default": "#1D2228"
     }
   ],
   "blocks": [

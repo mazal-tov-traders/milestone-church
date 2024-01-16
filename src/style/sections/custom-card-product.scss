@@ -26,12 +26,10 @@
       .quick-add__submit {
         padding: 0rem;
         width: 100% !important;
-        background-color: var( --background-button-product);
         text-transform: uppercase;
         font-family: "Nova-700";
         font-size: 14px;
         letter-spacing: 0em;
-        color: var( --color-button-text-product);
         a:not(.button):hover {
           text-decoration: none;
         }
