@@ -12,32 +12,23 @@
 }
 .additional-resources {
   padding: 120px 0;
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 450px) {
     padding: 80px 0;
   }
   &__wrapper {
     &_heading {
-      font-family: "Nova-400";
-      font-weight: 400;
-      letter-spacing: 0em;
+      margin-bottom: 9px;
+      @include text-style-text-headline-1;
       text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      line-height: 45px;
-      font-size: 40px;
-      margin-top: 0;
-      @media screen and (min-width: 500px) {
-        margin-bottom: 9px;
-        line-height: 63px;
-        font-size: 50px;
+      @media screen and (max-width: 500px) {
+        margin-bottom: 15px;
+        line-height: 45px;
+        font-size: 40px;
+        margin-top: 0;
       }
     }
     &_content {
-      font-family: "Nova-300";
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 32px;
-      letter-spacing: 0em;
+      @include text-style-text-content-1;
       text-align: center;
       max-width: 570px;
       margin: 0 auto;
@@ -65,22 +56,11 @@
           margin-bottom: 12px;
         }
         &_heading {
-          font-family: "Nova-700";
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 18px;
-          letter-spacing: 0em;
-          text-align: left;
+          @include text-style-text-title-2;
           margin-bottom: 10px;
-          text-transform: uppercase;
         }
         &_content {
-          font-family: "Nova-300";
-          font-size: 18px;
-          font-weight: 300;
-          line-height: 22px;
-          letter-spacing: 0em;
-          text-align: left;
+          @include text-style-text-content-2;
           margin-bottom: 20px;
         }
         &_button {
@@ -107,6 +87,4 @@
       }
     }
   }
-}
-@media screen and (max-width: 740px) {
 }

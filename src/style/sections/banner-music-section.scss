@@ -1,4 +1,4 @@
-.banner-music.index-banner-music {slider-counter__lin
+.banner-music.index-banner-music {
   .banner-inner-music {
     .page-width {
       .banner-innerr__box {
@@ -21,55 +21,36 @@
       }
 
       .banner-innerr__box {
-        .border-line.on{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .border-line.on {
           width: 20px;
           margin-left: 0px;
         }
         &_title {
-          font-family: "Nova-700";
-          font-size: 20px;
-          letter-spacing: 0;
-          margin-top: 122px;
-          text-align: left;
-          text-transform: uppercase;
-          margin-bottom: 13px;
+          @include text-style-text-title-1;
+          margin-bottom: 15px;
         }
         &_heading {
           max-width: 500px;
-          font-family: "Nova-400";
-          font-size: 50px;
-          letter-spacing: 0em;
-          text-align: left;
-          text-transform: uppercase;
-          margin-top: 0px;
-          line-height: 60px;
-          margin-bottom: 26px;
+          @include text-style-text-headline-1;
+          margin-top: 10px;
+          margin-bottom: 30px;
         }
         &_text {
           max-width: 625px;
+          @include text-style-text-content-1;
           width: 100%;
-          font-family: "Nova-300";
-          font-size: 20px;
-          line-height: 32px;
-          letter-spacing: 0em;
-          text-align: left;
           opacity: 90%;
           p {
             max-width: 570px;
           }
         }
-        &_button {
+        .inner_button {
           display: flex;
           justify-content: start;
-          margin-top: 49px;
-          margin-bottom: 10px;
-          background: transparent;
-          .my-custom-btn {
-            font-family: "Nova-700";
-            font-size: 15px;
-            letter-spacing: 0em;
-            padding: 11px 34px;
-          }
+          margin-top: 50px;
         }
       }
       .banner-innerr__hero-image {
@@ -116,8 +97,6 @@
           &_text {
             width: 100%;
             max-width: 100%;
-            font-family: "Nova-300";
-            line-height: 32px;
           }
         }
         .banner-innerr__hero-image {
@@ -145,29 +124,15 @@
           font-size: 30px;
           line-height: 37px;
         }
-        .banner-innerr__box_button {
-          background: transparent;
-          display: flex;
-          justify-content: center;
-          margin-bottom: 1px;
-          margin-top: 48px;
-          .my-custom-btn {
-            max-width: max-content;
-            width: 100%;
-            text-align: center;
-            font-family: 'Nova-700';
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-transform: uppercase;
+        .banner-innerr__box {
+          .inner_button {
+            justify-content: center;
           }
         }
       }
     }
   }
 }
-//
 
 .header-wrapper {
   margin-top: 0px;

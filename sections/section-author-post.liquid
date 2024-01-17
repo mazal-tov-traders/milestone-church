@@ -33,7 +33,7 @@
                 {% endif %}
               </div>
               {% if block.settings.heading != blank %}
-                <h2 class="author__heading">
+                <h2 class="author__heading" style=" color:{{ block.settings.color_heading }};">
                   {{ block.settings.heading }}
                 </h2>
               {% endif %}
@@ -41,7 +41,7 @@
           {% when 'content' %}
             <div class="content-box">
               {% if block.settings.content != blank %}
-                <div class="content-box_text">
+                <div class="content-box_text" style=" color:{{ block.settings.color_content }};">
                   {{ block.settings.content }}
                 </div>
               {% endif %}
@@ -97,6 +97,12 @@
           "type": "richtext",
           "id": "heading",
           "label": "heading"
+        },
+        {
+          "type": "color",
+          "id": "color_heading",
+          "label": "Color Heading",
+          "default": "#5491D6"
         }
       ]
     },
@@ -109,6 +115,12 @@
           "type": "richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "color",
+          "id": "color_content",
+          "label": "Color Content",
+          "default": "#1D2228"
         }
       ]
     }

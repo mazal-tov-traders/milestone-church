@@ -19,19 +19,13 @@
       text-align: center;
       padding-top: 20px;
       &_text {
-        background-image: linear-gradient(90deg,transparent 70%,#e5be5e 0);
-        background-position: 63px 0px;
-        background-repeat: no-repeat;
-        padding-top: 20px;
-        background-size: 34% 2px;
-        color: #fff;
-        font-family: 'Nova-400';
+        font-family: "Nova-400";
         font-size: 20px;
         letter-spacing: 0;
         line-height: 32px;
         text-align: center;
         margin-bottom: 40px;
-    }
+      }
       &_button {
       }
     }

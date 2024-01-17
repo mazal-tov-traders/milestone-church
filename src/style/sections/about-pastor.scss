@@ -1,3 +1,4 @@
+@import "../mixins/media.scss";
 .about-pastor {
   padding-bottom: 111px;
   @media screen and (max-width: 500px) {
@@ -43,34 +44,21 @@
       max-width: 570px;
       padding-top: 17px;
       .content_heading {
-        font-family: Nova-700;
-        font-size: 20px;
-        letter-spacing: 0;
-        margin-bottom: 0px;
-        line-height: 18px;
-        text-align: left;
-        text-transform: uppercase;
+        @include text-style-text-title-1;
+        margin-bottom: 10px;
       }
       .border-line.on {
         margin-left: 0px;
       }
       .content_text {
-        font-family: "Nova-400";
-        font-size: 50px;
-        text-transform: uppercase;
-        letter-spacing: 0em;
-        text-align: left;
+        @include text-style-text-headline-1;
         p {
-          margin-bottom: 23px;
-          margin-top: 0px;
+          margin-bottom: 40px;
+          margin-top: 10px;
         }
       }
       .content_content {
-        font-family: "Nova-300";
-        font-size: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-        line-height: 32px;
+        @include  text-style-text-content-1;
       }
     }
   }

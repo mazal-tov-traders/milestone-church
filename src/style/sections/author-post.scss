@@ -49,11 +49,7 @@
       }
       .author__heading {
         width: 164px;
-        font-family: "Nova-700";
-        font-size: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: rgba(84, 145, 214, 1);
+        @include text-style-text-title-1;
         line-height: 28px;
         p {
           margin: 0;
@@ -65,7 +61,6 @@
         font-family: "Nova-300";
         font-size: 20px;
         letter-spacing: 0em;
-        color: rgba(29, 34, 40, 1);
         line-height: 35px;
         p {
           margin: 0;
@@ -119,5 +114,3 @@
     }
   }
 }
-
-//

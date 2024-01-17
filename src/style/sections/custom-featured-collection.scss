@@ -5,11 +5,6 @@
   }
   .collection__title {
     .title:not(:only-child) {
-      background-image: linear-gradient(90deg, transparent 96%, #e5be5e 0);
-      background-position: 0 56px;
-      background-repeat: no-repeat;
-      background-size: 51% 1px;
-      color: #e5be5e;
       font-family: "Nova-700";
       font-size: 20px;
       letter-spacing: 0;
@@ -25,7 +20,6 @@
       font-size: 50px;
       letter-spacing: 0em;
       text-align: center;
-      color: #1d2228;
       margin-top: 16px;
       margin-bottom: 47px;
       line-height: 60px;
@@ -45,14 +39,9 @@
       font-family: "Nova-700";
       font-size: 15px;
       text-transform: uppercase;
-      color: rgba(84, 145, 214, 1);
-      border: 1px solid rgba(84, 145, 214, 1);
       background-color: transparent;
       padding: 11px 30px;
-      &:hover {
-        color: #fff;
-        background-color: rgba(84, 145, 214, 1);
-      }
+   
     }
   }
  
@@ -69,9 +58,6 @@
       font-family: "Nova-700";
       font-size: 15px;
       text-transform: uppercase;
-      color: rgba(84, 145, 214, 1);
-      border: 1px solid rgba(84, 145, 214, 1);
-      background-color: transparent;
       padding: 11px 30px;
     }
   }

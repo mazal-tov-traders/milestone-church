@@ -3,7 +3,7 @@
 <div id="announcementbar_wrap" class="custom-announcement-bar">
     <div class="custom-announcement-bar__wrap">
       {% if section.settings.main_text != blank %}
-        <div class="custom-announcement-bar__wrap_text">
+        <div class="custom-announcement-bar__wrap_text" style=" color: {{ section.settings.color_heading }};">
           {{ section.settings.main_text }}
         </div>
       {% endif %}
@@ -26,6 +26,12 @@
       "id": "main_text",
       "label": "Text Main",
       "default": "test"
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Color Heading",
+      "default": "#E5BE5E"
     },
     {
       "type": "html",

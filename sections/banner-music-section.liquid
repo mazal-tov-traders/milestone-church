@@ -12,7 +12,7 @@
       {%- endcase -%}
     {%- endfor -%}
   }
-{%- endstyle -%}
+{%- endstyle -%} 
 {{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 <div class="banner banner-music {{ section.settings.class }}">
   <div class="banner-inner-music">
@@ -49,7 +49,7 @@
               {%- when 'buttons' -%}
                 {%- if block.settings.button_label_1 != blank -%}
                   <div
-                    class="banner-innerr__box_button"
+                    class="inner_button"
                   >
                     <a
                       {% if block.settings.button_link_1 == blank %}

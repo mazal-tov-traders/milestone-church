@@ -3,12 +3,14 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'buttons' -%}
+          .my-custom-btn-{{ forloop.index }}{
       --color-button-background: {{ block.settings.color_button_backgroun }};
       --color-color-button-label: {{ block.settings.color_button_label }};
       --color-color-button-border: {{ block.settings.color_button_border }};
       --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
       --hover-color-button-border: {{ block.settings.hover_color_button_border }};
       --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+    }
       {%- endcase -%}
     {%- endfor -%}
   }
@@ -48,7 +50,7 @@
                     {% else %}
                       href="{{ block.settings.button_link_1 }}"
                     {% endif %}
-                    class="my-custom-btn" 
+                    class="my-custom-btn my-custom-btn-{{ forloop.index }}" 
                   >
                     {{- block.settings.button_label_1 | escape -}}
                   </a>

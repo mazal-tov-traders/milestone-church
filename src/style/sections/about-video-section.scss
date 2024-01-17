@@ -51,7 +51,6 @@
     }
     .video__img-box {
       position: relative;
-      padding-top: 7px;
 
       &_img {
         img {
@@ -81,33 +80,22 @@
     }
     .video__content-box {
       &_title {
-        font-family: "Nova-700";
-        font-size: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-        text-transform: uppercase;
+        @include text-style-text-title-1;
+        padding-top: 17px;
+        margin-bottom: 15px;
       }
       .border-line.on {
         width: 20px;
         margin-left: 0px;
       }
       &_heading {
-        font-family: "Nova-400";
-        font-size: 50px;
-        letter-spacing: 0;
-        line-height: 58px;
-        margin-top: 6px;
+        @include text-style-text-headline-1;
+        margin-top: 10px;
         padding-bottom: 9px;
-        text-align: left;
-        text-transform: uppercase;
       }
       &_text {
         max-width: 1270px;
-        font-family: "Nova-300";
-        font-size: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-        line-height: 31px;
+        @include text-style-text-content-1;
         p {
           margin-top: 25px;
         }
@@ -145,7 +133,6 @@
           font-size: 20px;
           letter-spacing: 0em;
           text-align: left;
-          color: #1d2228;
           line-height: 32px;
           max-width: 570px;
           p {
@@ -174,7 +161,7 @@
     position: absolute;
     right: 10px;
     width: 570px;
-    bottom: 120px;
+    bottom: 95px;
   }
 }
 

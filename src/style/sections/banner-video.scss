@@ -7,12 +7,7 @@
     align-items: center;
 
     &_heading {
-      background-image: linear-gradient(90deg, transparent 77%, #e5be5e 0);
-      background-position: 10px 32px;
-      background-repeat: no-repeat;
-      background-size: 50% 1px;
-      color: #e5be5e;
-      font-family: Nova-700;
+      font-family: 'Nova-700';
       letter-spacing: 0;
       font-size: 20px;
       font-style: normal;
@@ -32,8 +27,6 @@
       line-height: 60px;
       letter-spacing: 0em;
       text-align: center;
-      color: rgba(255, 255, 255, 1);
-
       p {
         margin-top: 0;
         margin-bottom: 0px;
@@ -46,7 +39,6 @@
       line-height: 32px;
       letter-spacing: 0em;
       text-align: center;
-      color: rgba(255, 255, 255, 1);
       margin-bottom: 10px;
       max-width: 680px;
       margin-top: 10px;
@@ -62,7 +54,6 @@
       line-height: 24px;
       letter-spacing: 0em;
       text-align: center;
-      color: rgba(255, 255, 255, 1);
       max-width: 680px;
       p {
         margin: 0;

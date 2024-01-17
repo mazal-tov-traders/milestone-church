@@ -6,6 +6,19 @@
       --hover-color-button-background: {{ section.settings.hover_color_button_backgroun }};
       --hover-color-button-border: {{ section.settings.hover_color_button_border }};
       --hover-color-button-label: {{ section.settings.hover_color_button_label }};
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'buttons' -%}
+            .my-custom-btn-{{ forloop.index }}{
+            --color-button-background: {{ block.settings.color_button_backgroun }};
+        --color-color-button-label: {{ block.settings.color_button_label }};
+        --color-color-button-border: {{ block.settings.color_button_border }};
+        --hover-color-button-background: {{ block.settings.hover_color_button_backgroun }};
+        --hover-color-button-border: {{ block.settings.hover_color_button_border }};
+        --hover-color-button-label: {{ block.settings.hover_color_button_label }};
+      }
+        {%- endcase -%}
+      {%- endfor -%}
 
       .quick-add__submit{
         background-color: var(--color-button-background);
@@ -17,8 +30,13 @@
         border: 1px solid var(--hover-color-button-border);
         color: var(--hover-color-button-label);
       }
+      .full-unstyled-link, .card__description, .price-item, .price-cent {
+        color: {{ section.settings.color_product }};
+      }
   }
 {%- endstyle -%}
+
+{{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
@@ -72,7 +90,9 @@
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          style="color: {{section.settings.color_title }};"
+        >
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
@@ -80,7 +100,9 @@
         or section.settings.show_description
         and section.settings.collection.description != empty
       -%}
-        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          style="color: {{section.settings.color_description }};"
+        >
           {%- if section.settings.show_description -%}
             {{ section.settings.collection.description }}
           {%- else -%}
@@ -192,7 +214,7 @@
                 {% else %}
                   href="{{ block.settings.button_link_1 }}"
                 {% endif %}
-                class="buttonn"
+                class="my-custom-btn my-custom-btn-{{ forloop.index }}"
               >
                 {{- block.settings.button_label_1 | escape -}}
               </a>
@@ -227,6 +249,12 @@
       "label": "t:sections.featured-collection.settings.title.label"
     },
     {
+      "type": "color",
+      "id": "color_title",
+      "label": "Color Title",
+      "default": "#E5BE5E"
+    },
+    {
       "type": "text",
       "id": "class",
       "label": "Second class for backgroun"
@@ -237,29 +265,15 @@
       "label": "Background image"
     },
     {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    },
-    {
       "type": "richtext",
       "id": "description",
       "label": "t:sections.featured-collection.settings.description.label"
+    },
+    {
+      "type": "color",
+      "id": "color_description",
+      "label": "Color Description",
+      "default": "#1D2228"
     },
     {
       "type": "checkbox",
@@ -268,24 +282,10 @@
       "default": false
     },
     {
-      "type": "select",
-      "id": "description_style",
-      "label": "t:sections.featured-collection.settings.description_style.label",
-      "options": [
-        {
-          "value": "body",
-          "label": "t:sections.featured-collection.settings.description_style.options__1.label"
-        },
-        {
-          "value": "subtitle",
-          "label": "t:sections.featured-collection.settings.description_style.options__2.label"
-        },
-        {
-          "value": "uppercase",
-          "label": "t:sections.featured-collection.settings.description_style.options__3.label"
-        }
-      ],
-      "default": "body"
+      "type": "color",
+      "id": "color_product",
+      "label": "Product Text Color",
+      "default": "#1D2228"
     },
     {
       "type": "collection",
@@ -548,6 +548,42 @@
           "type": "url",
           "id": "button_link_1",
           "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "color_button_backgroun",
+          "label": "Button Background Color",
+          "default": "rgba(29, 34, 40, 0)"
+        },
+        {
+          "type": "color",
+          "id": "color_button_label",
+          "label": "Button Color Label",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "color_button_border",
+          "label": "Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_backgroun",
+          "label": "Hover Button Background Color",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_border",
+          "label": "Hover Button Color Border",
+          "default": "#5491D6"
+        },
+        {
+          "type": "color",
+          "id": "hover_color_button_label",
+          "label": "Hover Button Color Label",
+          "default": "#fff"
         }
       ]
     }

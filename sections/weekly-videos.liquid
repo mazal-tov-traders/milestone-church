@@ -49,7 +49,7 @@
                   {% else %}
                     href="{{ block.settings.button_link }}"
                   {% endif %}
-                  
+                  style=' color: {{ block.settings.color_file_label }};'
                   class="video-block__wrapper-link_link"
                 >
                   {{- block.settings.button_label | escape -}}
@@ -154,6 +154,12 @@
           "type": "text",
           "id": "button_label",
           "label": "File label"
+        },
+        {
+          "type": "color",
+          "id": "color_file_label",
+          "label": "Color File label",
+          "default": "#1D2228"
         },
         {
           "type": "url",
