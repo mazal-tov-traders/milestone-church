@@ -20,6 +20,12 @@
       padding: 0 34px;
       font-weight: 700;
       letter-spacing: 0em;
+      @media screen and (max-width: 450px) {
+        width: 100%;
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+      }
     }
   }
   .banner__box > * + .banner__buttons {
@@ -42,7 +48,7 @@
           width: 100%;
           font-family: "Nova-700";
           font-size: 70px;
-          text-transform: uppercase; 
+          text-transform: uppercase;
           margin-top: 53px;
           margin-bottom: 7px;
         }
@@ -173,10 +179,10 @@
 // custom-image-banner
 .custom-image-banner {
   .banner {
-    @media screen and (min-width: 750px){
+    @media screen and (min-width: 750px) {
       &.banner--medium:not(.banner--adapt) {
         min-height: 400px;
       }
-    } 
+    }
   }
 }

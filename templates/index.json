@@ -10,9 +10,9 @@
             "illustration": "shopify:\/\/shop_images\/HearingGod-ResourceMockup.png",
             "heading": "Hearing God",
             "color_heading_label": "#ffffff",
-            "subheading": "New Series launching in January 2024!",
+            "subheading": "Series starts January 20th. Small Groups kick off February 3rd.",
             "color_subheading_label": "#ffffff",
-            "button_label": "Buy the book",
+            "button_label": "Learn More",
             "link": "shopify:\/\/pages\/hearing-god",
             "color_button_backgroun": "rgba(0,0,0,0)",
             "color_button_label": "#ffffff",
@@ -111,7 +111,13 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "View all books",
-            "button_link_1": "shopify:\/\/pages\/books"
+            "button_link_1": "shopify:\/\/pages\/books",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -120,11 +126,12 @@
       ],
       "settings": {
         "title": "",
+        "color_title": "#E5BE5E",
         "class": "",
-        "heading_size": "h2",
         "description": "<p>BOOKS<\/p>",
+        "color_description": "#1D2228",
         "show_description": false,
-        "description_style": "uppercase",
+        "color_product": "#1D2228",
         "collection": "you-may-enjoy",
         "products_to_show": 3,
         "columns_desktop": 3,
@@ -142,7 +149,13 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 92
+        "padding_bottom": 92,
+        "color_button_backgroun": "#E5BE5E",
+        "color_button_label": "#1D2228",
+        "color_button_border": "#E5BE5E",
+        "hover_color_button_backgroun": "#E5BE5E",
+        "hover_color_button_border": "#E5BE5E",
+        "hover_color_button_label": "#1D2228"
       }
     },
     "0c7d9e2e-a44b-4605-92d0-0d6b65888ec3": {
@@ -152,7 +165,13 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "View all Study Guides",
-            "button_link_1": "shopify:\/\/pages\/study-guides"
+            "button_link_1": "shopify:\/\/pages\/study-guides",
+            "color_button_backgroun": "rgba(29, 34, 40, 0)",
+            "color_button_label": "#5491D6",
+            "color_button_border": "#5491D6",
+            "hover_color_button_backgroun": "#5491D6",
+            "hover_color_button_border": "#5491D6",
+            "hover_color_button_label": "#fff"
           }
         }
       },
@@ -161,12 +180,13 @@
       ],
       "settings": {
         "title": "",
+        "color_title": "#E5BE5E",
         "class": "imgfon",
         "background": "shopify:\/\/shop_images\/fon.jpg",
-        "heading_size": "h1",
         "description": "<p>Study Guides<\/p>",
+        "color_description": "#1D2228",
         "show_description": false,
-        "description_style": "uppercase",
+        "color_product": "#1D2228",
         "collection": "study-guides-collection",
         "products_to_show": 3,
         "columns_desktop": 2,
@@ -184,7 +204,13 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 80
+        "padding_bottom": 80,
+        "color_button_backgroun": "#E5BE5E",
+        "color_button_label": "#1D2228",
+        "color_button_border": "#E5BE5E",
+        "hover_color_button_backgroun": "#E5BE5E",
+        "hover_color_button_border": "#E5BE5E",
+        "hover_color_button_label": "#1D2228"
       }
     },
     "1458c43a-ad5a-4427-a3c5-d95f7d0e58f3": {

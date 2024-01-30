@@ -13,7 +13,7 @@
         --color-price: {{ block.settings.color_price_label }};
       {%- endcase -%}
     {%- endfor -%}
-  } 
+  }
 {%- endstyle -%}
 {{ 'custom-style-buttons.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -69,7 +69,10 @@
     .
   </div>
   {%- if section.settings.purchase != blank -%}
-    <div class="custom-featured-product_headingg pege-width" style=" color: {{ section.settings.color_purchase_label }};">
+    <div
+      class="custom-featured-product_headingg pege-width"
+      style=" color: {{ section.settings.color_purchase_label }};"
+    >
       {{ section.settings.purchase }}
     </div>
   {%- endif -%}
@@ -408,6 +411,7 @@
                         </volume-pricing>
                       {%- endif -%}
                     </div>
+
                   {%- when 'buy_buttons' -%}
                     {%- render 'custom-buy-buttons',
                       block: block,
@@ -598,8 +602,7 @@
 </script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-
-function updatePrice(element, dataPrice, elementSum) {
+    function updatePrice(element, dataPrice, elementSum) {
       let quantityInput = Number(element.querySelector('.quantity__input').value);
       let unitPrice = dataPrice;
 
@@ -607,18 +610,15 @@ function updatePrice(element, dataPrice, elementSum) {
         unitPrice *= 0.75;
       }
 
-      const formattedNumber = (unitPrice / 100).toFixed(2);
+      const formattedNumber = (Math.ceil(unitPrice) / 100).toFixed(2);
       const [integerPart, decimalPart] = formattedNumber.split('.');
 
       elementSum.innerHTML = `
-        <span class="product-form__price_rcp">     
-          $${integerPart}.<sup class="price-cent">${decimalPart}</sup>
-        </span>
-      `;
+      <span class="product-form__price_rcp">     
+        $${integerPart}.<sup class="price-cent">${decimalPart}</sup>
+      </span>
+    `;
     }
-
-
-
 
     const buttonsWrapper = document.querySelectorAll('.wrapper-baton-and-quantity');
 
@@ -638,10 +638,7 @@ function updatePrice(element, dataPrice, elementSum) {
       });
     });
   });
-</script> 
-
-
-
+</script>
 
 {% if product.media.size > 0 %}
   <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>

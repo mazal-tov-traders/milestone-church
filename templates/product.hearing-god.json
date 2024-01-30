@@ -1,0 +1,303 @@
+{
+  "sections": {
+    "fcf192f2-2e74-404a-a578-7cc0a5731d53": {
+      "type": "image-banner-content",
+      "blocks": {
+        "c4468950-6318-433f-b1a8-96dc1667b1a6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hearing god",
+            "color_heading_label": "#ffffff"
+          }
+        },
+        "bbe7262e-d0b7-4222-892d-705a229d9543": {
+          "type": "content",
+          "settings": {
+            "content": "Recognizing His Voice in a World Full of Noise",
+            "color_content_label": "#ffffff"
+          }
+        },
+        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Purchase a guide",
+            "button_link_1": "#miracless",
+            "color_button_backgroun": "rgba(0,0,0,0)",
+            "color_button_label": "#ffffff",
+            "color_button_border": "#ffffff",
+            "hover_color_button_backgroun": "#ffffff",
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#121212"
+          }
+        }
+      },
+      "block_order": [
+        "c4468950-6318-433f-b1a8-96dc1667b1a6",
+        "bbe7262e-d0b7-4222-892d-705a229d9543",
+        "c746d13d-3b84-4abd-86d6-8b4ef7bb6f12"
+      ],
+      "disabled": true,
+      "settings": {
+        "class": "srsdsd",
+        "background": "shopify:\/\/shop_images\/Screenshot_2024-01-02_at_3.15.31_PM.png",
+        "centered-content": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "description",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "right",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "image_banner_7MHtqh": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_cEkrd7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hearing God",
+            "color_heading_label": "#fff",
+            "heading_size": "h1"
+          }
+        },
+        "text_MpA3Cq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Recognizing His voice in a world full of noise",
+            "color_text": "#fff",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cEkrd7",
+        "text_MpA3Cq"
+      ],
+      "settings": {
+        "class": "",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-01-02_at_3.15.31_PM.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a": {
+      "type": "custom-featured-product",
+      "blocks": {
+        "e0ce6000-a201-427c-b418-b1e455efe299": {
+          "type": "heading",
+          "settings": {
+            "heading": "RECOGNIZING HIS VOICE IN A WORLD FULL OF NOISE.",
+            "color_heading_label": "#1d2228"
+          }
+        },
+        "3caee679-5b38-40ee-a91e-0350882b6892": {
+          "type": "heading_second",
+          "disabled": true,
+          "settings": {
+            "heading1": "<p>Does He see what I’m going through?<\/p>",
+            "color_heading1_label": "#1d2228"
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "color_title_label": "#1d2228",
+            "heading_size": "h1"
+          }
+        },
+        "31965910-c30d-40c9-955f-d28368ae3ed5": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Does God know what I'm going through? Does He see me? Does He have something to say about my situation? How do I know what He's saying?<\/p><p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are.<\/p>",
+            "color_description_label": "#1d2228"
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "color_button_backgroun": "#e7dcca",
+            "color_button_label": "#121212",
+            "color_button_border": "#121212",
+            "hover_color_button_backgroun": "#ffffff",
+            "hover_color_button_border": "#ffffff",
+            "hover_color_button_label": "#e7dcca",
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1": {
+          "type": "price",
+          "settings": {
+            "color_price_label": "#1d2228"
+          }
+        },
+        "4efa4abd-17f9-4962-b188-3c23177f35ba": {
+          "type": "button-link",
+          "disabled": true,
+          "settings": {
+            "button_link1": "https:\/\/www.amazon.com\/Miracles-Journey-Jesus-Life-Yours-ebook\/dp\/B0CH4B1S29\/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1702919154&sr=8-1",
+            "icon_button1": "shopify:\/\/shop_images\/image_8_2.png",
+            "button_link2": ""
+          }
+        },
+        "9194a408-007d-4456-a769-061017e3d0a1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Other ways to buy<\/p>",
+            "color_text_label": "#1d2228"
+          }
+        },
+        "01d84b51-48b0-4b19-b936-ef982e604daa": {
+          "type": "image-product",
+          "settings": {
+            "image_product": "shopify:\/\/shop_images\/HearingGod_002.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e0ce6000-a201-427c-b418-b1e455efe299",
+        "3caee679-5b38-40ee-a91e-0350882b6892",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-title-1",
+        "31965910-c30d-40c9-955f-d28368ae3ed5",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-quantity_selector-1",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-buy_buttons-1",
+        "template--21649905189171__d6aa3b46-a6b4-406f-99f6-bdec74a5de4a-price-1",
+        "4efa4abd-17f9-4962-b188-3c23177f35ba",
+        "9194a408-007d-4456-a769-061017e3d0a1",
+        "01d84b51-48b0-4b19-b936-ef982e604daa"
+      ],
+      "settings": {
+        "product": "hearing-god",
+        "id_for_anchor": "miracless",
+        "class": "",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "nubmer_navigat": "",
+        "color_nubmer": "#1d2228",
+        "color_backgroun_number": "#1d2228",
+        "border_line": false,
+        "color_border_line": "#1d2228",
+        "purchase": "",
+        "color_purchase_label": "#1d2228",
+        "hide_variants": false,
+        "height": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "c3ac9b07-c27c-4582-bcc8-9f5d392c8c4b": {
+      "type": "image-banner-content",
+      "settings": {
+        "class": "",
+        "centered-content": false
+      }
+    }
+  },
+  "order": [
+    "fcf192f2-2e74-404a-a578-7cc0a5731d53",
+    "main",
+    "image_banner_7MHtqh",
+    "d6aa3b46-a6b4-406f-99f6-bdec74a5de4a",
+    "related-products",
+    "c3ac9b07-c27c-4582-bcc8-9f5d392c8c4b"
+  ]
+}

@@ -30,11 +30,11 @@
         "46aff6f0-517b-4e21-8d57-5b758b72193c": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Lead a group",
-            "button_link_1": "https:\/\/my.milestonechurch.com\/page\/921",
+            "button_label_1": "Join a Group",
+            "button_link_1": "https:\/\/my.milestonechurch.com\/groupfinder",
             "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "shopify:\/\/pages\/weekly-videos",
+            "button_label_2": "Purchase a Guide",
+            "button_link_2": "shopify:\/\/products\/hearing-god",
             "button_style_secondary_2": true,
             "color_button_backgroun": "rgba(0,0,0,0)",
             "color_button_label": "#ffffff",
@@ -158,7 +158,7 @@
         "color_content_label": "#121212",
         "text": "<p>Does God know what I’m going through? Does He see me? Does He have something to say about my situation? How do I know what He’s saying?<\/p>",
         "color_text_label": "#121212",
-        "description": "<p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are. We invite you to join us for a new series in January, as we look at the incredible ways God communicates with us.<\/p>",
+        "description": "<p>If you’ve ever thought about these questions, you aren’t alone. The good news is, God cares about you and He wants to speak to you right where you are.<\/p>",
         "color_description_label": "#121212",
         "id_for_anchor": "hdvideo",
         "class": "videobann"
@@ -210,8 +210,10 @@
         "6701c67e-2ec2-4069-a536-e262375fb2c2": {
           "type": "events",
           "settings": {
+            "background_box": "#ffffff",
             "date": "Jan 20-21",
             "color_date_label": "#121212",
+            "background_date": "#e5be5e",
             "content": "Series Intro Part 1",
             "color_content_label": "#121212"
           }
@@ -219,8 +221,10 @@
         "df329bd9-c10d-4570-8c39-555bf50eb36c": {
           "type": "events",
           "settings": {
+            "background_box": "#ffffff",
             "date": "Jan 27-28",
             "color_date_label": "#1d2228",
+            "background_date": "#e5be5e",
             "content": "Series Intro Part 2",
             "color_content_label": "#1d2228"
           }
@@ -228,8 +232,10 @@
         "1e3be94c-943c-4354-aa50-3c4796d8e8cc": {
           "type": "events",
           "settings": {
+            "background_box": "#ffffff",
             "date": "Feb 3-4",
             "color_date_label": "#1d2228",
+            "background_date": "#e5be5e",
             "content": "Small Groups Launch",
             "color_content_label": "#1d2228"
           }
@@ -277,6 +283,7 @@
         },
         "219dd411-f230-48cf-b900-4e816a51713a": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "description": "<p>Study guides will be available for purchase here or during weekend services starting January 20.<\/p>",
             "color_description_label": "#1d2228"
@@ -284,29 +291,26 @@
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-price-1": {
           "type": "price",
-          "disabled": true,
           "settings": {
             "color_price_label": "#1d2228"
           }
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-quantity_selector-1": {
           "type": "quantity_selector",
-          "disabled": true,
           "settings": {
           }
         },
         "template--21728198295828__42db2455-ea88-4cf9-94a6-d8fba61de7de-buy_buttons-1": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "color_button_backgroun": "rgba(0,0,0,0)",
-            "color_button_label": "#5491d6",
-            "color_button_border": "#5491d6",
-            "hover_color_button_backgroun": "#5491d6",
-            "hover_color_button_border": "#5491d6",
+            "color_button_label": "#121212",
+            "color_button_border": "#121212",
+            "hover_color_button_backgroun": "#e7dcca",
+            "hover_color_button_border": "#e7dcca",
             "hover_color_button_label": "#ffffff",
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": false
           }
         },
         "71c97878-d821-4aae-8029-692a3d170baa": {
@@ -335,7 +339,7 @@
         "7cbedec8-0bf7-4132-9e4c-0b81d72d8ea7"
       ],
       "settings": {
-        "product": "miracles",
+        "product": "hearing-god",
         "id_for_anchor": "miracleee",
         "class": "mira",
         "background": "shopify:\/\/shop_images\/Screenshot_2023-12-21_at_11.54.48_AM.png",
@@ -411,15 +415,15 @@
             "resources_image": "shopify:\/\/shop_images\/Hearing_God_Weekly_Videos.jpg",
             "heading": "Weekly Small Group Videos",
             "color_heading_label": "#1d2228",
-            "content": "Pastor Jeff and Brandy shot these videos specifically for your weekly Small Group.",
+            "content": "Pastor Jeff and Brandy filmed these videos specifically for your weekly Small Group.",
             "color_content_label": "#1d2228",
-            "button_label": "",
+            "button_label": "Weekly Videos",
             "button_link": "shopify:\/\/pages\/weekly-videos",
             "color_button_backgroun": "rgba(0,0,0,0)",
-            "color_button_label": "#5491d6",
-            "color_button_border": "#5491d6",
-            "hover_color_button_backgroun": "#5491d6",
-            "hover_color_button_border": "#5491d6",
+            "color_button_label": "#242833",
+            "color_button_border": "#121212",
+            "hover_color_button_backgroun": "#e7dcca",
+            "hover_color_button_border": "#e7dcca",
             "hover_color_button_label": "#ffffff"
           }
         },
@@ -431,13 +435,13 @@
             "color_heading_label": "#1d2228",
             "content": "This guide has everything you need to lead your Small Group. It includes tips on what to communicate, how to pray, what to expect, and Small Group discussion questions. The leader guide is available for mobile download, or you can pick them up at your campus.",
             "color_content_label": "#1d2228",
-            "button_label": "",
-            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_Leader_Guide.pdf?v=1702906429",
+            "button_label": "DOWNLOAD PDF",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Hearing_God_Leader_Guide.pdf?v=1706039126",
             "color_button_backgroun": "rgba(0,0,0,0)",
-            "color_button_label": "#5491d6",
-            "color_button_border": "#5491d6",
-            "hover_color_button_backgroun": "#5491d6",
-            "hover_color_button_border": "#5491d6",
+            "color_button_label": "#242833",
+            "color_button_border": "#121212",
+            "hover_color_button_backgroun": "#e7dcca",
+            "hover_color_button_border": "#e7dcca",
             "hover_color_button_label": "#ffffff"
           }
         },
@@ -445,17 +449,17 @@
           "type": "resources-card",
           "settings": {
             "resources_image": "shopify:\/\/shop_images\/Hearing_God_Kids_Resource.jpg",
-            "heading": "Milestone Kid’s Resource",
+            "heading": "Milestone Kids Resource",
             "color_heading_label": "#1d2228",
             "content": "This resource was designed to help your kid grow in God’s word and is a great way to bring them along in the Hearing God series. Each week features a scripture reading, an application activity, and a prayer.",
             "color_content_label": "#1d2228",
-            "button_label": "",
-            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0795\/8531\/3044\/files\/Miracles_KidsResource_final_web.pdf?v=1702907107",
+            "button_label": "AVAILABLE FEBRUARY 3RD",
+            "button_link": "",
             "color_button_backgroun": "rgba(0,0,0,0)",
-            "color_button_label": "#5491d6",
-            "color_button_border": "#5491d6",
-            "hover_color_button_backgroun": "#5491d6",
-            "hover_color_button_border": "#5491d6",
+            "color_button_label": "#242833",
+            "color_button_border": "#121212",
+            "hover_color_button_backgroun": "#e7dcca",
+            "hover_color_button_border": "#e7dcca",
             "hover_color_button_label": "#ffffff"
           }
         }
@@ -509,7 +513,7 @@
           "settings": {
             "heading": "Can I host a group?",
             "icon": "none",
-            "row_content": "<p>Yes you can! We love working with first-time group leaders. We'd like to get some info from you so we can help you succeed as a group leader. Please shoot an email to smallgroups@milestonechurch.com<\/p>",
+            "row_content": "<p>Yes you can! We love working with first-time group leaders. We'd like to get some info from you so we can help you succeed as a group leader. Please send an email to smallgroups@milestonechurch.com<\/p>",
             "page": ""
           }
         },

@@ -51,14 +51,14 @@
     </div>
   </div>
 </section>
-<style>
+{% style %}
   .banner-inner-music.{{ section.settings.secon_class }}{
     background-image: url({{ section.settings.background | image_url: width: 3840 }});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-</style>
+{% endstyle %}
 {% schema %}
 {
   "name": "Author Post",
